@@ -1,0 +1,812 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Inventory.EquipSlotUI
+  commentId: T:TaleOfTiles.Inventory.EquipSlotUI
+  id: EquipSlotUI
+  parent: TaleOfTiles.Inventory
+  children:
+  - TaleOfTiles.Inventory.EquipSlotUI.ActivateItem
+  - TaleOfTiles.Inventory.EquipSlotUI.ClearSlot
+  - TaleOfTiles.Inventory.EquipSlotUI.DeSelect
+  - TaleOfTiles.Inventory.EquipSlotUI.LoadItem
+  - TaleOfTiles.Inventory.EquipSlotUI.OnValidate
+  - TaleOfTiles.Inventory.EquipSlotUI.Select
+  - TaleOfTiles.Inventory.EquipSlotUI.SetItem(EquipmentItem)
+  - TaleOfTiles.Inventory.EquipSlotUI.ShowAvaliableItems
+  - TaleOfTiles.Inventory.EquipSlotUI.common_frame
+  - TaleOfTiles.Inventory.EquipSlotUI.item
+  - TaleOfTiles.Inventory.EquipSlotUI.item_frame
+  - TaleOfTiles.Inventory.EquipSlotUI.item_image_component
+  - TaleOfTiles.Inventory.EquipSlotUI.item_place
+  - TaleOfTiles.Inventory.EquipSlotUI.item_selection_effect_image
+  - TaleOfTiles.Inventory.EquipSlotUI.legendary_frame
+  - TaleOfTiles.Inventory.EquipSlotUI.mythical_frame
+  - TaleOfTiles.Inventory.EquipSlotUI.rare_frame
+  - TaleOfTiles.Inventory.EquipSlotUI.slot_item_changed_event
+  - TaleOfTiles.Inventory.EquipSlotUI.uncommon_frame
+  langs:
+  - csharp
+  - vb
+  name: EquipSlotUI
+  nameWithType: EquipSlotUI
+  fullName: TaleOfTiles.Inventory.EquipSlotUI
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EquipSlotUI
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Handles the display and functionality of an equipment slot in the UI.
+  example: []
+  syntax:
+    content: 'public class EquipSlotUI : MonoBehaviour'
+    content.vb: Public Class EquipSlotUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Inventory.EquipSlotUI.item_image_component
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.item_image_component
+  id: item_image_component
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: item_image_component
+  nameWithType: EquipSlotUI.item_image_component
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.item_image_component
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: item_image_component
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The UI component for displaying the item's image.
+  example: []
+  syntax:
+    content: public Image item_image_component
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public item_image_component As Image
+- uid: TaleOfTiles.Inventory.EquipSlotUI.item_frame
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.item_frame
+  id: item_frame
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: item_frame
+  nameWithType: EquipSlotUI.item_frame
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.item_frame
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: item_frame
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The UI component for displaying the item's frame.
+  example: []
+  syntax:
+    content: public Image item_frame
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public item_frame As Image
+- uid: TaleOfTiles.Inventory.EquipSlotUI.item_selection_effect_image
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.item_selection_effect_image
+  id: item_selection_effect_image
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: item_selection_effect_image
+  nameWithType: EquipSlotUI.item_selection_effect_image
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.item_selection_effect_image
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: item_selection_effect_image
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The UI component for displaying the item's selection effect.
+  example: []
+  syntax:
+    content: public Image item_selection_effect_image
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public item_selection_effect_image As Image
+- uid: TaleOfTiles.Inventory.EquipSlotUI.item
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.item
+  id: item
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: item
+  nameWithType: EquipSlotUI.item
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.item
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: item
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The item to be displayed in the slot.
+  example: []
+  syntax:
+    content: public EquipmentItem item
+    return:
+      type: EquipmentItem
+    content.vb: Public item As EquipmentItem
+- uid: TaleOfTiles.Inventory.EquipSlotUI.item_place
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.item_place
+  id: item_place
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: item_place
+  nameWithType: EquipSlotUI.item_place
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.item_place
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: item_place
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The place of the item.
+  example: []
+  syntax:
+    content: public ItemPlace item_place
+    return:
+      type: ItemPlace
+    content.vb: Public item_place As ItemPlace
+- uid: TaleOfTiles.Inventory.EquipSlotUI.common_frame
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.common_frame
+  id: common_frame
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: common_frame
+  nameWithType: EquipSlotUI.common_frame
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.common_frame
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: common_frame
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The sprite for the common frame.
+  example: []
+  syntax:
+    content: public Sprite common_frame
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public common_frame As Sprite
+- uid: TaleOfTiles.Inventory.EquipSlotUI.uncommon_frame
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.uncommon_frame
+  id: uncommon_frame
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: uncommon_frame
+  nameWithType: EquipSlotUI.uncommon_frame
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.uncommon_frame
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: uncommon_frame
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The sprite for the uncommon frame.
+  example: []
+  syntax:
+    content: public Sprite uncommon_frame
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public uncommon_frame As Sprite
+- uid: TaleOfTiles.Inventory.EquipSlotUI.rare_frame
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.rare_frame
+  id: rare_frame
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: rare_frame
+  nameWithType: EquipSlotUI.rare_frame
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.rare_frame
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: rare_frame
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The sprite for the rare frame.
+  example: []
+  syntax:
+    content: public Sprite rare_frame
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public rare_frame As Sprite
+- uid: TaleOfTiles.Inventory.EquipSlotUI.mythical_frame
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.mythical_frame
+  id: mythical_frame
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: mythical_frame
+  nameWithType: EquipSlotUI.mythical_frame
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.mythical_frame
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: mythical_frame
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The sprite for the mythical frame.
+  example: []
+  syntax:
+    content: public Sprite mythical_frame
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public mythical_frame As Sprite
+- uid: TaleOfTiles.Inventory.EquipSlotUI.legendary_frame
+  commentId: F:TaleOfTiles.Inventory.EquipSlotUI.legendary_frame
+  id: legendary_frame
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: legendary_frame
+  nameWithType: EquipSlotUI.legendary_frame
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.legendary_frame
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: legendary_frame
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: The sprite for the legendary frame.
+  example: []
+  syntax:
+    content: public Sprite legendary_frame
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public legendary_frame As Sprite
+- uid: TaleOfTiles.Inventory.EquipSlotUI.slot_item_changed_event
+  commentId: E:TaleOfTiles.Inventory.EquipSlotUI.slot_item_changed_event
+  id: slot_item_changed_event
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: slot_item_changed_event
+  nameWithType: EquipSlotUI.slot_item_changed_event
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.slot_item_changed_event
+  type: Event
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: slot_item_changed_event
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Event triggered when the item in the slot changes.
+  example: []
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public event EquipSlotUI.ItemChangedEvent slot_item_changed_event
+    return:
+      type: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+    content.vb: >-
+      <HideInInspector>
+
+      Public Event slot_item_changed_event As EquipSlotUI.ItemChangedEvent
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: TaleOfTiles.Inventory.EquipSlotUI.ActivateItem
+  commentId: M:TaleOfTiles.Inventory.EquipSlotUI.ActivateItem
+  id: ActivateItem
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: ActivateItem()
+  nameWithType: EquipSlotUI.ActivateItem()
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.ActivateItem()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ActivateItem
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Activates the item in the slot.
+  example: []
+  syntax:
+    content: >-
+      [ContextMenu("Activate Item")]
+
+      public void ActivateItem()
+    content.vb: >-
+      <ContextMenu("Activate Item")>
+
+      Public Sub ActivateItem()
+  overload: TaleOfTiles.Inventory.EquipSlotUI.ActivateItem*
+  attributes:
+  - type: UnityEngine.ContextMenu
+    ctor: UnityEngine.ContextMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Activate Item
+- uid: TaleOfTiles.Inventory.EquipSlotUI.SetItem(EquipmentItem)
+  commentId: M:TaleOfTiles.Inventory.EquipSlotUI.SetItem(EquipmentItem)
+  id: SetItem(EquipmentItem)
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: SetItem(EquipmentItem)
+  nameWithType: EquipSlotUI.SetItem(EquipmentItem)
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.SetItem(EquipmentItem)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetItem
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Sets a new item for the slot.
+  example: []
+  syntax:
+    content: public void SetItem(EquipmentItem new_item)
+    parameters:
+    - id: new_item
+      type: EquipmentItem
+      description: The new item to be set.
+    content.vb: Public Sub SetItem(new_item As EquipmentItem)
+  overload: TaleOfTiles.Inventory.EquipSlotUI.SetItem*
+- uid: TaleOfTiles.Inventory.EquipSlotUI.LoadItem
+  commentId: M:TaleOfTiles.Inventory.EquipSlotUI.LoadItem
+  id: LoadItem
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: LoadItem()
+  nameWithType: EquipSlotUI.LoadItem()
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.LoadItem()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadItem
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 143
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Loads the item into the slot.
+  example: []
+  syntax:
+    content: public void LoadItem()
+    content.vb: Public Sub LoadItem()
+  overload: TaleOfTiles.Inventory.EquipSlotUI.LoadItem*
+- uid: TaleOfTiles.Inventory.EquipSlotUI.ClearSlot
+  commentId: M:TaleOfTiles.Inventory.EquipSlotUI.ClearSlot
+  id: ClearSlot
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: ClearSlot()
+  nameWithType: EquipSlotUI.ClearSlot()
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.ClearSlot()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ClearSlot
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 159
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Clears the slot.
+  example: []
+  syntax:
+    content: public void ClearSlot()
+    content.vb: Public Sub ClearSlot()
+  overload: TaleOfTiles.Inventory.EquipSlotUI.ClearSlot*
+- uid: TaleOfTiles.Inventory.EquipSlotUI.OnValidate
+  commentId: M:TaleOfTiles.Inventory.EquipSlotUI.OnValidate
+  id: OnValidate
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: OnValidate()
+  nameWithType: EquipSlotUI.OnValidate()
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.OnValidate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnValidate
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 170
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Validates the object in the editor.
+  example: []
+  syntax:
+    content: public void OnValidate()
+    content.vb: Public Sub OnValidate()
+  overload: TaleOfTiles.Inventory.EquipSlotUI.OnValidate*
+- uid: TaleOfTiles.Inventory.EquipSlotUI.ShowAvaliableItems
+  commentId: M:TaleOfTiles.Inventory.EquipSlotUI.ShowAvaliableItems
+  id: ShowAvaliableItems
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: ShowAvaliableItems()
+  nameWithType: EquipSlotUI.ShowAvaliableItems()
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.ShowAvaliableItems()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowAvaliableItems
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 178
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Shows the available items for this slot.
+  example: []
+  syntax:
+    content: public void ShowAvaliableItems()
+    content.vb: Public Sub ShowAvaliableItems()
+  overload: TaleOfTiles.Inventory.EquipSlotUI.ShowAvaliableItems*
+- uid: TaleOfTiles.Inventory.EquipSlotUI.Select
+  commentId: M:TaleOfTiles.Inventory.EquipSlotUI.Select
+  id: Select
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: Select()
+  nameWithType: EquipSlotUI.Select()
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.Select()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Select
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 186
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Selects the item in the slot.
+  example: []
+  syntax:
+    content: public void Select()
+    content.vb: Public Sub [Select]()
+  overload: TaleOfTiles.Inventory.EquipSlotUI.Select*
+- uid: TaleOfTiles.Inventory.EquipSlotUI.DeSelect
+  commentId: M:TaleOfTiles.Inventory.EquipSlotUI.DeSelect
+  id: DeSelect
+  parent: TaleOfTiles.Inventory.EquipSlotUI
+  langs:
+  - csharp
+  - vb
+  name: DeSelect()
+  nameWithType: EquipSlotUI.DeSelect()
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.DeSelect()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/EquipSlotUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DeSelect
+    path: ../Assets/Scripts/EquipSlotUI.cs
+    startLine: 194
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Deselects the item in the slot.
+  example: []
+  syntax:
+    content: public void DeSelect()
+    content.vb: Public Sub DeSelect()
+  overload: TaleOfTiles.Inventory.EquipSlotUI.DeSelect*
+references:
+- uid: TaleOfTiles.Inventory
+  commentId: N:TaleOfTiles.Inventory
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Inventory
+  nameWithType: TaleOfTiles.Inventory
+  fullName: TaleOfTiles.Inventory
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Inventory
+    name: Inventory
+    href: TaleOfTiles.Inventory.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Inventory
+    name: Inventory
+    href: TaleOfTiles.Inventory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: EquipmentItem
+  commentId: T:EquipmentItem
+  href: EquipmentItem.html
+  name: EquipmentItem
+  nameWithType: EquipmentItem
+  fullName: EquipmentItem
+- uid: ItemPlace
+  commentId: T:ItemPlace
+  href: ItemPlace.html
+  name: ItemPlace
+  nameWithType: ItemPlace
+  fullName: ItemPlace
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+  commentId: T:TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+  parent: TaleOfTiles.Inventory
+  href: TaleOfTiles.Inventory.EquipSlotUI.html
+  name: EquipSlotUI.ItemChangedEvent
+  nameWithType: EquipSlotUI.ItemChangedEvent
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+  spec.csharp:
+  - uid: TaleOfTiles.Inventory.EquipSlotUI
+    name: EquipSlotUI
+    href: TaleOfTiles.Inventory.EquipSlotUI.html
+  - name: .
+  - uid: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+    name: ItemChangedEvent
+    href: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent.html
+  spec.vb:
+  - uid: TaleOfTiles.Inventory.EquipSlotUI
+    name: EquipSlotUI
+    href: TaleOfTiles.Inventory.EquipSlotUI.html
+  - name: .
+  - uid: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+    name: ItemChangedEvent
+    href: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent.html
+- uid: TaleOfTiles.Inventory.EquipSlotUI.ActivateItem*
+  commentId: Overload:TaleOfTiles.Inventory.EquipSlotUI.ActivateItem
+  href: TaleOfTiles.Inventory.EquipSlotUI.html#TaleOfTiles_Inventory_EquipSlotUI_ActivateItem
+  name: ActivateItem
+  nameWithType: EquipSlotUI.ActivateItem
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.ActivateItem
+- uid: TaleOfTiles.Inventory.EquipSlotUI.SetItem*
+  commentId: Overload:TaleOfTiles.Inventory.EquipSlotUI.SetItem
+  href: TaleOfTiles.Inventory.EquipSlotUI.html#TaleOfTiles_Inventory_EquipSlotUI_SetItem_EquipmentItem_
+  name: SetItem
+  nameWithType: EquipSlotUI.SetItem
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.SetItem
+- uid: TaleOfTiles.Inventory.EquipSlotUI.LoadItem*
+  commentId: Overload:TaleOfTiles.Inventory.EquipSlotUI.LoadItem
+  href: TaleOfTiles.Inventory.EquipSlotUI.html#TaleOfTiles_Inventory_EquipSlotUI_LoadItem
+  name: LoadItem
+  nameWithType: EquipSlotUI.LoadItem
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.LoadItem
+- uid: TaleOfTiles.Inventory.EquipSlotUI.ClearSlot*
+  commentId: Overload:TaleOfTiles.Inventory.EquipSlotUI.ClearSlot
+  href: TaleOfTiles.Inventory.EquipSlotUI.html#TaleOfTiles_Inventory_EquipSlotUI_ClearSlot
+  name: ClearSlot
+  nameWithType: EquipSlotUI.ClearSlot
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.ClearSlot
+- uid: TaleOfTiles.Inventory.EquipSlotUI.OnValidate*
+  commentId: Overload:TaleOfTiles.Inventory.EquipSlotUI.OnValidate
+  href: TaleOfTiles.Inventory.EquipSlotUI.html#TaleOfTiles_Inventory_EquipSlotUI_OnValidate
+  name: OnValidate
+  nameWithType: EquipSlotUI.OnValidate
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.OnValidate
+- uid: TaleOfTiles.Inventory.EquipSlotUI.ShowAvaliableItems*
+  commentId: Overload:TaleOfTiles.Inventory.EquipSlotUI.ShowAvaliableItems
+  href: TaleOfTiles.Inventory.EquipSlotUI.html#TaleOfTiles_Inventory_EquipSlotUI_ShowAvaliableItems
+  name: ShowAvaliableItems
+  nameWithType: EquipSlotUI.ShowAvaliableItems
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.ShowAvaliableItems
+- uid: TaleOfTiles.Inventory.EquipSlotUI.Select*
+  commentId: Overload:TaleOfTiles.Inventory.EquipSlotUI.Select
+  href: TaleOfTiles.Inventory.EquipSlotUI.html#TaleOfTiles_Inventory_EquipSlotUI_Select
+  name: Select
+  nameWithType: EquipSlotUI.Select
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.Select
+- uid: TaleOfTiles.Inventory.EquipSlotUI.DeSelect*
+  commentId: Overload:TaleOfTiles.Inventory.EquipSlotUI.DeSelect
+  href: TaleOfTiles.Inventory.EquipSlotUI.html#TaleOfTiles_Inventory_EquipSlotUI_DeSelect
+  name: DeSelect
+  nameWithType: EquipSlotUI.DeSelect
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.DeSelect

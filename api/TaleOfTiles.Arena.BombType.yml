@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.BombType
+  commentId: T:TaleOfTiles.Arena.BombType
+  id: BombType
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.BombType.Adjacent
+  - TaleOfTiles.Arena.BombType.Color
+  - TaleOfTiles.Arena.BombType.Column
+  - TaleOfTiles.Arena.BombType.None
+  - TaleOfTiles.Arena.BombType.Row
+  langs:
+  - csharp
+  - vb
+  name: BombType
+  nameWithType: BombType
+  fullName: TaleOfTiles.Arena.BombType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Bomb.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BombType
+    path: ../Assets/Scripts/Bomb.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Enum for the various bombs available in the game.
+  example: []
+  syntax:
+    content: public enum BombType
+    content.vb: Public Enum BombType
+- uid: TaleOfTiles.Arena.BombType.None
+  commentId: F:TaleOfTiles.Arena.BombType.None
+  id: None
+  parent: TaleOfTiles.Arena.BombType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: BombType.None
+  fullName: TaleOfTiles.Arena.BombType.None
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Bomb.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: None
+    path: ../Assets/Scripts/Bomb.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: None = 0
+    return:
+      type: TaleOfTiles.Arena.BombType
+- uid: TaleOfTiles.Arena.BombType.Column
+  commentId: F:TaleOfTiles.Arena.BombType.Column
+  id: Column
+  parent: TaleOfTiles.Arena.BombType
+  langs:
+  - csharp
+  - vb
+  name: Column
+  nameWithType: BombType.Column
+  fullName: TaleOfTiles.Arena.BombType.Column
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Bomb.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Column
+    path: ../Assets/Scripts/Bomb.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Column = 1
+    return:
+      type: TaleOfTiles.Arena.BombType
+- uid: TaleOfTiles.Arena.BombType.Row
+  commentId: F:TaleOfTiles.Arena.BombType.Row
+  id: Row
+  parent: TaleOfTiles.Arena.BombType
+  langs:
+  - csharp
+  - vb
+  name: Row
+  nameWithType: BombType.Row
+  fullName: TaleOfTiles.Arena.BombType.Row
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Bomb.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Row
+    path: ../Assets/Scripts/Bomb.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Row = 2
+    return:
+      type: TaleOfTiles.Arena.BombType
+- uid: TaleOfTiles.Arena.BombType.Adjacent
+  commentId: F:TaleOfTiles.Arena.BombType.Adjacent
+  id: Adjacent
+  parent: TaleOfTiles.Arena.BombType
+  langs:
+  - csharp
+  - vb
+  name: Adjacent
+  nameWithType: BombType.Adjacent
+  fullName: TaleOfTiles.Arena.BombType.Adjacent
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Bomb.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Adjacent
+    path: ../Assets/Scripts/Bomb.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Adjacent = 3
+    return:
+      type: TaleOfTiles.Arena.BombType
+- uid: TaleOfTiles.Arena.BombType.Color
+  commentId: F:TaleOfTiles.Arena.BombType.Color
+  id: Color
+  parent: TaleOfTiles.Arena.BombType
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: BombType.Color
+  fullName: TaleOfTiles.Arena.BombType.Color
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Bomb.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Color
+    path: ../Assets/Scripts/Bomb.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Color = 4
+    return:
+      type: TaleOfTiles.Arena.BombType
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: TaleOfTiles.Arena.BombType
+  commentId: T:TaleOfTiles.Arena.BombType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BombType.html
+  name: BombType
+  nameWithType: BombType
+  fullName: TaleOfTiles.Arena.BombType

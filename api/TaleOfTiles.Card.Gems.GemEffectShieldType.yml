@@ -1,0 +1,203 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.Gems.GemEffectShieldType
+  commentId: T:TaleOfTiles.Card.Gems.GemEffectShieldType
+  id: GemEffectShieldType
+  parent: TaleOfTiles.Card.Gems
+  children:
+  - TaleOfTiles.Card.Gems.GemEffectShieldType.Fire
+  - TaleOfTiles.Card.Gems.GemEffectShieldType.Ice
+  - TaleOfTiles.Card.Gems.GemEffectShieldType.None
+  - TaleOfTiles.Card.Gems.GemEffectShieldType.Physical
+  - TaleOfTiles.Card.Gems.GemEffectShieldType.Pure
+  langs:
+  - csharp
+  - vb
+  name: GemEffectShieldType
+  nameWithType: GemEffectShieldType
+  fullName: TaleOfTiles.Card.Gems.GemEffectShieldType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GemEffectShieldType
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 168
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Defines the types of shields associated with gem effects.
+  example: []
+  syntax:
+    content: public enum GemEffectShieldType
+    content.vb: Public Enum GemEffectShieldType
+- uid: TaleOfTiles.Card.Gems.GemEffectShieldType.None
+  commentId: F:TaleOfTiles.Card.Gems.GemEffectShieldType.None
+  id: None
+  parent: TaleOfTiles.Card.Gems.GemEffectShieldType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: GemEffectShieldType.None
+  fullName: TaleOfTiles.Card.Gems.GemEffectShieldType.None
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: None
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 170
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  syntax:
+    content: None = 0
+    return:
+      type: TaleOfTiles.Card.Gems.GemEffectShieldType
+- uid: TaleOfTiles.Card.Gems.GemEffectShieldType.Pure
+  commentId: F:TaleOfTiles.Card.Gems.GemEffectShieldType.Pure
+  id: Pure
+  parent: TaleOfTiles.Card.Gems.GemEffectShieldType
+  langs:
+  - csharp
+  - vb
+  name: Pure
+  nameWithType: GemEffectShieldType.Pure
+  fullName: TaleOfTiles.Card.Gems.GemEffectShieldType.Pure
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Pure
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 171
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  syntax:
+    content: Pure = 1
+    return:
+      type: TaleOfTiles.Card.Gems.GemEffectShieldType
+- uid: TaleOfTiles.Card.Gems.GemEffectShieldType.Physical
+  commentId: F:TaleOfTiles.Card.Gems.GemEffectShieldType.Physical
+  id: Physical
+  parent: TaleOfTiles.Card.Gems.GemEffectShieldType
+  langs:
+  - csharp
+  - vb
+  name: Physical
+  nameWithType: GemEffectShieldType.Physical
+  fullName: TaleOfTiles.Card.Gems.GemEffectShieldType.Physical
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Physical
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 172
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  syntax:
+    content: Physical = 2
+    return:
+      type: TaleOfTiles.Card.Gems.GemEffectShieldType
+- uid: TaleOfTiles.Card.Gems.GemEffectShieldType.Fire
+  commentId: F:TaleOfTiles.Card.Gems.GemEffectShieldType.Fire
+  id: Fire
+  parent: TaleOfTiles.Card.Gems.GemEffectShieldType
+  langs:
+  - csharp
+  - vb
+  name: Fire
+  nameWithType: GemEffectShieldType.Fire
+  fullName: TaleOfTiles.Card.Gems.GemEffectShieldType.Fire
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Fire
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 173
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  syntax:
+    content: Fire = 3
+    return:
+      type: TaleOfTiles.Card.Gems.GemEffectShieldType
+- uid: TaleOfTiles.Card.Gems.GemEffectShieldType.Ice
+  commentId: F:TaleOfTiles.Card.Gems.GemEffectShieldType.Ice
+  id: Ice
+  parent: TaleOfTiles.Card.Gems.GemEffectShieldType
+  langs:
+  - csharp
+  - vb
+  name: Ice
+  nameWithType: GemEffectShieldType.Ice
+  fullName: TaleOfTiles.Card.Gems.GemEffectShieldType.Ice
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Ice
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 174
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  syntax:
+    content: Ice = 4
+    return:
+      type: TaleOfTiles.Card.Gems.GemEffectShieldType
+references:
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: TaleOfTiles.Card.Gems.GemEffectShieldType
+  commentId: T:TaleOfTiles.Card.Gems.GemEffectShieldType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemEffectShieldType.html
+  name: GemEffectShieldType
+  nameWithType: GemEffectShieldType
+  fullName: TaleOfTiles.Card.Gems.GemEffectShieldType

@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LoadingScreenManager
+ | Tale of Tiles Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LoadingScreenManager
+ | Tale of Tiles Documentation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ElementalMagic/Match-3-Mobile-Game/new/dev/apiSpec/new?filename=TaleOfTiles_UI_LoadingScreenManager.md&amp;value=---%0Auid%3A%20TaleOfTiles.UI.LoadingScreenManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Tale of Tiles Documentation">
+            Tale of Tiles Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleOfTiles.UI.LoadingScreenManager">
+
+
+
+  <h1 id="TaleOfTiles_UI_LoadingScreenManager" data-uid="TaleOfTiles.UI.LoadingScreenManager" class="text-break">
+    Class LoadingScreenManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleOfTiles.html">TaleOfTiles</a>.<a class="xref" href="TaleOfTiles.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The LoadingScreenManager class is a singleton that manages the game's loading screen.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LoadingScreenManager : Singleton&lt;LoadingScreenManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="TaleOfTiles.Misc.SingletonBase.html">SingletonBase</a></div>
+      <div><a class="xref" href="TaleOfTiles.Misc.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="TaleOfTiles.UI.LoadingScreenManager.html">LoadingScreenManager</a>&gt;</div>
+      <div><span class="xref">LoadingScreenManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance">Singleton&lt;LoadingScreenManager&gt;.m_instance</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance">Singleton&lt;LoadingScreenManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake">Singleton&lt;LoadingScreenManager&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons">SingletonBase.AllSingletons</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_animating" data-uid="TaleOfTiles.UI.LoadingScreenManager.animating">
+  animating
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool animating</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether the loading screen is currently animating.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_background" data-uid="TaleOfTiles.UI.LoadingScreenManager.background">
+  background
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image background</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd><p>Gets and sets the background image of the loading screen.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_enable" data-uid="TaleOfTiles.UI.LoadingScreenManager.enable">
+  enable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enable</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Gets and sets the state of the loading screen. If true, the loading screen is enabled.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_loader_init_pos" data-uid="TaleOfTiles.UI.LoadingScreenManager.loader_init_pos">
+  loader_init_pos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Vector3 loader_init_pos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd><p>Holds the initial position of the loading circle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_loading_circle" data-uid="TaleOfTiles.UI.LoadingScreenManager.loading_circle">
+  loading_circle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public GameObject loading_circle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>Gets and sets the loading circle object displayed on the loading screen.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_text" data-uid="TaleOfTiles.UI.LoadingScreenManager.text">
+  text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text text</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd><p>Gets and sets the text displayed on the loading screen.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleOfTiles_UI_LoadingScreenManager_DisableLoaderCircle_" data-uid="TaleOfTiles.UI.LoadingScreenManager.DisableLoaderCircle*"></a>
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_DisableLoaderCircle" data-uid="TaleOfTiles.UI.LoadingScreenManager.DisableLoaderCircle">
+  DisableLoaderCircle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disables the loading circle on the loading screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableLoaderCircle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_UI_LoadingScreenManager_EnableLoaderCircle_" data-uid="TaleOfTiles.UI.LoadingScreenManager.EnableLoaderCircle*"></a>
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_EnableLoaderCircle" data-uid="TaleOfTiles.UI.LoadingScreenManager.EnableLoaderCircle">
+  EnableLoaderCircle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables the loading circle on the loading screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableLoaderCircle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_UI_LoadingScreenManager_Prepare_" data-uid="TaleOfTiles.UI.LoadingScreenManager.Prepare*"></a>
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_Prepare" data-uid="TaleOfTiles.UI.LoadingScreenManager.Prepare">
+  Prepare()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prepares the loading screen manager for operation. Override of Singleton's Prepare method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerator Prepare()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>An IEnumerator that can be used to execute the method over time.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_UI_LoadingScreenManager_SetLoadingScreenText_" data-uid="TaleOfTiles.UI.LoadingScreenManager.SetLoadingScreenText*"></a>
+
+  <h3 id="TaleOfTiles_UI_LoadingScreenManager_SetLoadingScreenText_System_String_" data-uid="TaleOfTiles.UI.LoadingScreenManager.SetLoadingScreenText(System.String)">
+  SetLoadingScreenText(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the text displayed on the loading screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLoadingScreenText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text to be displayed on the loading screen.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/LoadingScreenManager.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

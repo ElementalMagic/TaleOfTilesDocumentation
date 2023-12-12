@@ -1,0 +1,495 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  id: GemSuperCombo.HexCombo
+  parent: TaleOfTiles.Card.Gems
+  children:
+  - TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor
+  - TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor(System.Int32,System.Single,System.Int32,TaleOfTiles.Card.Gems.GemItem)
+  - TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.GetCount
+  - TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.MakeCopy
+  - TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.combo_count_activation
+  - TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.duration
+  - TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.part_of_board
+  - TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.turn_into_gem
+  langs:
+  - csharp
+  - vb
+  name: GemSuperCombo.HexCombo
+  nameWithType: GemSuperCombo.HexCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  type: Class
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HexCombo
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 627
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Represents a Hex Combo in the Gem Super Combo system, which applies a hex effect on a part of the board.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class GemSuperCombo.HexCombo : ISuperCombo
+    content.vb: >-
+      <Serializable>
+
+      Public Class GemSuperCombo.HexCombo Implements ISuperCombo
+  inheritance:
+  - System.Object
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.duration
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.duration
+  id: duration
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  langs:
+  - csharp
+  - vb
+  name: duration
+  nameWithType: GemSuperCombo.HexCombo.duration
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: duration
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 634
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The duration of the Hex Combo effect in turns.
+  example: []
+  syntax:
+    content: >-
+      [Range(1, 10)]
+
+      public int duration
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Range(1, 10)>
+
+      Public duration As Integer
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 1
+    - type: System.Single
+      value: 10
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.part_of_board
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.part_of_board
+  id: part_of_board
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  langs:
+  - csharp
+  - vb
+  name: part_of_board
+  nameWithType: GemSuperCombo.HexCombo.part_of_board
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.part_of_board
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: part_of_board
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 640
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The proportion of the board affected by the Hex Combo.
+  example: []
+  syntax:
+    content: >-
+      [Range(0, 1)]
+
+      public float part_of_board
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(0, 1)>
+
+      Public part_of_board As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.turn_into_gem
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.turn_into_gem
+  id: turn_into_gem
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  langs:
+  - csharp
+  - vb
+  name: turn_into_gem
+  nameWithType: GemSuperCombo.HexCombo.turn_into_gem
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.turn_into_gem
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: turn_into_gem
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 645
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The specific GemItem to which affected board parts are turned into during the combo effect.
+  example: []
+  syntax:
+    content: public GemItem turn_into_gem
+    return:
+      type: TaleOfTiles.Card.Gems.GemItem
+    content.vb: Public turn_into_gem As GemItem
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.combo_count_activation
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.combo_count_activation
+  id: combo_count_activation
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  langs:
+  - csharp
+  - vb
+  name: combo_count_activation
+  nameWithType: GemSuperCombo.HexCombo.combo_count_activation
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.combo_count_activation
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: combo_count_activation
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 651
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The number of combo activations required to trigger the Hex Combo.
+  example: []
+  syntax:
+    content: >-
+      [Range(3, 12)]
+
+      public int combo_count_activation
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Range(3, 12)>
+
+      Public combo_count_activation As Integer
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 3
+    - type: System.Single
+      value: 12
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor
+  id: '#ctor'
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  langs:
+  - csharp
+  - vb
+  name: HexCombo()
+  nameWithType: GemSuperCombo.HexCombo.HexCombo()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.HexCombo()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 656
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Default constructor for the Hex Combo.
+  example: []
+  syntax:
+    content: public HexCombo()
+    content.vb: Public Sub New()
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor*
+  nameWithType.vb: GemSuperCombo.HexCombo.New()
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.New()
+  name.vb: New()
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor(System.Int32,System.Single,System.Int32,TaleOfTiles.Card.Gems.GemItem)
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor(System.Int32,System.Single,System.Int32,TaleOfTiles.Card.Gems.GemItem)
+  id: '#ctor(System.Int32,System.Single,System.Int32,TaleOfTiles.Card.Gems.GemItem)'
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  langs:
+  - csharp
+  - vb
+  name: HexCombo(int, float, int, GemItem)
+  nameWithType: GemSuperCombo.HexCombo.HexCombo(int, float, int, GemItem)
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.HexCombo(int, float, int, TaleOfTiles.Card.Gems.GemItem)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 665
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Constructs a Hex Combo with specified parameters.
+  example: []
+  syntax:
+    content: public HexCombo(int duration, float part_of_board, int combo_count_activation, GemItem turn_into_gem)
+    parameters:
+    - id: duration
+      type: System.Int32
+      description: Duration of the effect in turns.
+    - id: part_of_board
+      type: System.Single
+      description: Proportion of the board affected by the combo.
+    - id: combo_count_activation
+      type: System.Int32
+      description: Number of activations required for the combo.
+    - id: turn_into_gem
+      type: TaleOfTiles.Card.Gems.GemItem
+      description: The GemItem to turn affected parts into.
+    content.vb: Public Sub New(duration As Integer, part_of_board As Single, combo_count_activation As Integer, turn_into_gem As GemItem)
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor*
+  nameWithType.vb: GemSuperCombo.HexCombo.New(Integer, Single, Integer, GemItem)
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.New(Integer, Single, Integer, TaleOfTiles.Card.Gems.GemItem)
+  name.vb: New(Integer, Single, Integer, GemItem)
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.MakeCopy
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.MakeCopy
+  id: MakeCopy
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  langs:
+  - csharp
+  - vb
+  name: MakeCopy()
+  nameWithType: GemSuperCombo.HexCombo.MakeCopy()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.MakeCopy()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MakeCopy
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 677
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Creates a copy of the current Hex Combo.
+  example: []
+  syntax:
+    content: public ISuperCombo MakeCopy()
+    return:
+      type: TaleOfTiles.Card.Gems.ISuperCombo
+      description: A new instance of HexCombo with the same settings.
+    content.vb: Public Function MakeCopy() As ISuperCombo
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.MakeCopy*
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.GetCount
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.GetCount
+  id: GetCount
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: GemSuperCombo.HexCombo.GetCount()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.GetCount()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetCount
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 686
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Retrieves the count of activations required for the combo.
+  example: []
+  syntax:
+    content: public int GetCount()
+    return:
+      type: System.Int32
+      description: The number of activations needed for the combo.
+    content.vb: Public Function GetCount() As Integer
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.GetCount*
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+references:
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TaleOfTiles.Card.Gems.ISuperCombo
+  commentId: T:TaleOfTiles.Card.Gems.ISuperCombo
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html
+  name: ISuperCombo
+  nameWithType: ISuperCombo
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TaleOfTiles.Card.Gems.GemItem
+  commentId: T:TaleOfTiles.Card.Gems.GemItem
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemItem.html
+  name: GemItem
+  nameWithType: GemItem
+  fullName: TaleOfTiles.Card.Gems.GemItem
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.#ctor
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.html#TaleOfTiles_Card_Gems_GemSuperCombo_HexCombo__ctor
+  name: HexCombo
+  nameWithType: GemSuperCombo.HexCombo.HexCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.HexCombo
+  nameWithType.vb: GemSuperCombo.HexCombo.New
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.New
+  name.vb: New
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.MakeCopy*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.MakeCopy
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.html#TaleOfTiles_Card_Gems_GemSuperCombo_HexCombo_MakeCopy
+  name: MakeCopy
+  nameWithType: GemSuperCombo.HexCombo.MakeCopy
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.MakeCopy
+- uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+  commentId: M:TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+  parent: TaleOfTiles.Card.Gems.ISuperCombo
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  name: MakeCopy()
+  nameWithType: ISuperCombo.MakeCopy()
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy()
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+    name: MakeCopy
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+    name: MakeCopy
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.GetCount*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.GetCount
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.html#TaleOfTiles_Card_Gems_GemSuperCombo_HexCombo_GetCount
+  name: GetCount
+  nameWithType: GemSuperCombo.HexCombo.GetCount
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.GetCount
+- uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+  commentId: M:TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+  parent: TaleOfTiles.Card.Gems.ISuperCombo
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  name: GetCount()
+  nameWithType: ISuperCombo.GetCount()
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo.GetCount()
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+    name: GetCount
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+    name: GetCount
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  - name: (
+  - name: )

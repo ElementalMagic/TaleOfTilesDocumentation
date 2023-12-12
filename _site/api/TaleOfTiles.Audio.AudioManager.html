@@ -1,0 +1,1020 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AudioManager
+ | Tale of Tiles Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AudioManager
+ | Tale of Tiles Documentation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ElementalMagic/Match-3-Mobile-Game/new/dev/apiSpec/new?filename=TaleOfTiles_Audio_AudioManager.md&amp;value=---%0Auid%3A%20TaleOfTiles.Audio.AudioManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Tale of Tiles Documentation">
+            Tale of Tiles Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleOfTiles.Audio.AudioManager">
+
+
+
+  <h1 id="TaleOfTiles_Audio_AudioManager" data-uid="TaleOfTiles.Audio.AudioManager" class="text-break">
+    Class AudioManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleOfTiles.html">TaleOfTiles</a>.<a class="xref" href="TaleOfTiles.Audio.html">Audio</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class handles the functionality of the game's audio.
+It inherits from the Singleton class to ensure only one instance of this class exists.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(AudioSource))]
+public class AudioManager : Singleton&lt;AudioManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="TaleOfTiles.Misc.SingletonBase.html">SingletonBase</a></div>
+      <div><a class="xref" href="TaleOfTiles.Misc.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="TaleOfTiles.Audio.AudioManager.html">AudioManager</a>&gt;</div>
+      <div><span class="xref">AudioManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance">Singleton&lt;AudioManager&gt;.m_instance</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance">Singleton&lt;AudioManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake">Singleton&lt;AudioManager&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons">SingletonBase.AllSingletons</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_background_music" data-uid="TaleOfTiles.Audio.AudioManager.background_music">
+  background_music
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The audio source for the game's background music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource background_music</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_effect_sounds" data-uid="TaleOfTiles.Audio.AudioManager.effect_sounds">
+  effect_sounds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The audio source for the game's effect sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource effect_sounds</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_enemy_sounds" data-uid="TaleOfTiles.Audio.AudioManager.enemy_sounds">
+  enemy_sounds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The audio source for the enemy's sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource enemy_sounds</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_general_audio_group" data-uid="TaleOfTiles.Audio.AudioManager.general_audio_group">
+  general_audio_group
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The group of general audio clips.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GeneralAudioGroup general_audio_group</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Audio.GeneralAudioGroup.html">GeneralAudioGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_own_audio_player" data-uid="TaleOfTiles.Audio.AudioManager.own_audio_player">
+  own_audio_player
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The game's own audio player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource own_audio_player</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_player_sounds" data-uid="TaleOfTiles.Audio.AudioManager.player_sounds">
+  player_sounds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The audio source for the player's sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource player_sounds</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioSource</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_defeat_audio_clip_" data-uid="TaleOfTiles.Audio.AudioManager.defeat_audio_clip*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_defeat_audio_clip" data-uid="TaleOfTiles.Audio.AudioManager.defeat_audio_clip">
+  defeat_audio_clip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The audio clip for the defeat screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClip defeat_audio_clip { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioClip</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_loading_screen_audio_clip_" data-uid="TaleOfTiles.Audio.AudioManager.loading_screen_audio_clip*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_loading_screen_audio_clip" data-uid="TaleOfTiles.Audio.AudioManager.loading_screen_audio_clip">
+  loading_screen_audio_clip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The audio clip for the loading screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClip loading_screen_audio_clip { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioClip</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_player_get_damage_sounds_" data-uid="TaleOfTiles.Audio.AudioManager.player_get_damage_sounds*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_player_get_damage_sounds" data-uid="TaleOfTiles.Audio.AudioManager.player_get_damage_sounds">
+  player_get_damage_sounds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The list of audio clips for when the player gets damaged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AudioClip&gt; player_get_damage_sounds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">AudioClip</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_player_hit_sounds_" data-uid="TaleOfTiles.Audio.AudioManager.player_hit_sounds*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_player_hit_sounds" data-uid="TaleOfTiles.Audio.AudioManager.player_hit_sounds">
+  player_hit_sounds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The list of audio clips for when the player hits an enemy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AudioClip&gt; player_hit_sounds { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">AudioClip</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_victory_audio_clip_" data-uid="TaleOfTiles.Audio.AudioManager.victory_audio_clip*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_victory_audio_clip" data-uid="TaleOfTiles.Audio.AudioManager.victory_audio_clip">
+  victory_audio_clip
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The audio clip for the victory screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClip victory_audio_clip { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AudioClip</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_ChangeBackgroundMusic_" data-uid="TaleOfTiles.Audio.AudioManager.ChangeBackgroundMusic*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_ChangeBackgroundMusic_UnityEngine_AudioClip_System_Single_" data-uid="TaleOfTiles.Audio.AudioManager.ChangeBackgroundMusic(UnityEngine.AudioClip,System.Single)">
+  ChangeBackgroundMusic(AudioClip, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes the background music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeBackgroundMusic(AudioClip new_clip, float fade_time)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>new_clip</code> <span class="xref">AudioClip</span></dt>
+    <dd></dd>
+    <dt><code>fade_time</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_ChangeMusic_" data-uid="TaleOfTiles.Audio.AudioManager.ChangeMusic*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_ChangeMusic_UnityEngine_AudioSource_UnityEngine_AudioClip_System_Single_" data-uid="TaleOfTiles.Audio.AudioManager.ChangeMusic(UnityEngine.AudioSource,UnityEngine.AudioClip,System.Single)">
+  ChangeMusic(AudioSource, AudioClip, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes the music from the current audio source to a new audio clip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void ChangeMusic(AudioSource audioSource, AudioClip newClip, float fadeTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioSource</code> <span class="xref">AudioSource</span></dt>
+    <dd></dd>
+    <dt><code>newClip</code> <span class="xref">AudioClip</span></dt>
+    <dd></dd>
+    <dt><code>fadeTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_ChangeMusicCoroutine_" data-uid="TaleOfTiles.Audio.AudioManager.ChangeMusicCoroutine*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_ChangeMusicCoroutine_UnityEngine_AudioSource_UnityEngine_AudioClip_System_Single_" data-uid="TaleOfTiles.Audio.AudioManager.ChangeMusicCoroutine(UnityEngine.AudioSource,UnityEngine.AudioClip,System.Single)">
+  ChangeMusicCoroutine(AudioSource, AudioClip, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to handle the transition of music from the current audio clip to a new audio clip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator ChangeMusicCoroutine(AudioSource audioSource, AudioClip newClip, float fadeTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioSource</code> <span class="xref">AudioSource</span></dt>
+    <dd></dd>
+    <dt><code>newClip</code> <span class="xref">AudioClip</span></dt>
+    <dd></dd>
+    <dt><code>fadeTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_FadeInCoroutine_" data-uid="TaleOfTiles.Audio.AudioManager.FadeInCoroutine*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_FadeInCoroutine_UnityEngine_AudioSource_System_Single_" data-uid="TaleOfTiles.Audio.AudioManager.FadeInCoroutine(UnityEngine.AudioSource,System.Single)">
+  FadeInCoroutine(AudioSource, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to fade in an audio source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator FadeInCoroutine(AudioSource audioSource, float fadeTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioSource</code> <span class="xref">AudioSource</span></dt>
+    <dd></dd>
+    <dt><code>fadeTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_FadeOutCoroutine_" data-uid="TaleOfTiles.Audio.AudioManager.FadeOutCoroutine*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_FadeOutCoroutine_UnityEngine_AudioSource_System_Single_" data-uid="TaleOfTiles.Audio.AudioManager.FadeOutCoroutine(UnityEngine.AudioSource,System.Single)">
+  FadeOutCoroutine(AudioSource, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to fade out an audio source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator FadeOutCoroutine(AudioSource audioSource, float fadeTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>audioSource</code> <span class="xref">AudioSource</span></dt>
+    <dd></dd>
+    <dt><code>fadeTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_MuteBackgroundMusic_" data-uid="TaleOfTiles.Audio.AudioManager.MuteBackgroundMusic*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_MuteBackgroundMusic" data-uid="TaleOfTiles.Audio.AudioManager.MuteBackgroundMusic">
+  MuteBackgroundMusic()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Mutes the background music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MuteBackgroundMusic()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_MuteEffects_" data-uid="TaleOfTiles.Audio.AudioManager.MuteEffects*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_MuteEffects" data-uid="TaleOfTiles.Audio.AudioManager.MuteEffects">
+  MuteEffects()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Mutes the effect sounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MuteEffects()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_PlayBackgroundMusic_" data-uid="TaleOfTiles.Audio.AudioManager.PlayBackgroundMusic*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_PlayBackgroundMusic_UnityEngine_AudioClip_" data-uid="TaleOfTiles.Audio.AudioManager.PlayBackgroundMusic(UnityEngine.AudioClip)">
+  PlayBackgroundMusic(AudioClip)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays the background music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayBackgroundMusic(AudioClip clip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clip</code> <span class="xref">AudioClip</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_PlayDefeatMusic_" data-uid="TaleOfTiles.Audio.AudioManager.PlayDefeatMusic*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_PlayDefeatMusic" data-uid="TaleOfTiles.Audio.AudioManager.PlayDefeatMusic">
+  PlayDefeatMusic()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays the defeat music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayDefeatMusic()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_PlayEnemySound_" data-uid="TaleOfTiles.Audio.AudioManager.PlayEnemySound*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_PlayEnemySound_UnityEngine_AudioClip_" data-uid="TaleOfTiles.Audio.AudioManager.PlayEnemySound(UnityEngine.AudioClip)">
+  PlayEnemySound(AudioClip)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays an enemy sound.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayEnemySound(AudioClip clip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clip</code> <span class="xref">AudioClip</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_PlayLoadingScreenMusic_" data-uid="TaleOfTiles.Audio.AudioManager.PlayLoadingScreenMusic*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_PlayLoadingScreenMusic" data-uid="TaleOfTiles.Audio.AudioManager.PlayLoadingScreenMusic">
+  PlayLoadingScreenMusic()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays the loading screen music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayLoadingScreenMusic()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_PlayPlayerSound_" data-uid="TaleOfTiles.Audio.AudioManager.PlayPlayerSound*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_PlayPlayerSound_UnityEngine_AudioClip_" data-uid="TaleOfTiles.Audio.AudioManager.PlayPlayerSound(UnityEngine.AudioClip)">
+  PlayPlayerSound(AudioClip)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Play a specific sound clip from the player's audio source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayPlayerSound(AudioClip clip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clip</code> <span class="xref">AudioClip</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_PlaySoundSingleTime_" data-uid="TaleOfTiles.Audio.AudioManager.PlaySoundSingleTime*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_PlaySoundSingleTime_UnityEngine_AudioClip_" data-uid="TaleOfTiles.Audio.AudioManager.PlaySoundSingleTime(UnityEngine.AudioClip)">
+  PlaySoundSingleTime(AudioClip)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays a sound once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaySoundSingleTime(AudioClip clip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clip</code> <span class="xref">AudioClip</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_PlayVictoryMusic_" data-uid="TaleOfTiles.Audio.AudioManager.PlayVictoryMusic*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_PlayVictoryMusic" data-uid="TaleOfTiles.Audio.AudioManager.PlayVictoryMusic">
+  PlayVictoryMusic()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plays the victory music.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayVictoryMusic()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Audio_AudioManager_Prepare_" data-uid="TaleOfTiles.Audio.AudioManager.Prepare*"></a>
+
+  <h3 id="TaleOfTiles_Audio_AudioManager_Prepare" data-uid="TaleOfTiles.Audio.AudioManager.Prepare">
+  Prepare()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prepares the audio manager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerator Prepare()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/AudioManager.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,713 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Journey.JourneyMap
+  commentId: T:TaleOfTiles.Journey.JourneyMap
+  id: JourneyMap
+  parent: TaleOfTiles.Journey
+  children:
+  - TaleOfTiles.Journey.JourneyMap.GenerateMap(System.Int32)
+  - TaleOfTiles.Journey.JourneyMap.ID
+  - TaleOfTiles.Journey.JourneyMap.OnValidate
+  - TaleOfTiles.Journey.JourneyMap.SaveConfig
+  - TaleOfTiles.Journey.JourneyMap.UpdateConfig
+  - TaleOfTiles.Journey.JourneyMap.activity_prefab
+  - TaleOfTiles.Journey.JourneyMap.asset_bundle
+  - TaleOfTiles.Journey.JourneyMap.config_id
+  - TaleOfTiles.Journey.JourneyMap.journey_map_blocks_config
+  - TaleOfTiles.Journey.JourneyMap.possible_enemies
+  - TaleOfTiles.Journey.JourneyMap.possible_levels
+  - TaleOfTiles.Journey.JourneyMap.use_for_journey
+  langs:
+  - csharp
+  - vb
+  name: JourneyMap
+  nameWithType: JourneyMap
+  fullName: TaleOfTiles.Journey.JourneyMap
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: JourneyMap
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: >-
+    Represents a Journey Map in the game, holding configurations for journey map blocks, potential enemies, levels, and other settings.
+
+    This class is a ScriptableObject that can be created via the Unity Editor.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Journey Map Block", menuName = "Journey Map/new Map", order = 0)]
+
+      public class JourneyMap : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Journey Map Block", menuName:="Journey Map/new Map", order:=0)>
+
+      Public Class JourneyMap Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Journey Map Block
+    - name: menuName
+      type: System.String
+      value: Journey Map/new Map
+    - name: order
+      type: System.Int32
+      value: 0
+- uid: TaleOfTiles.Journey.JourneyMap.ID
+  commentId: F:TaleOfTiles.Journey.JourneyMap.ID
+  id: ID
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: JourneyMap.ID
+  fullName: TaleOfTiles.Journey.JourneyMap.ID
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ID
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public string ID
+    return:
+      type: System.String
+    content.vb: Public ID As String
+- uid: TaleOfTiles.Journey.JourneyMap.config_id
+  commentId: F:TaleOfTiles.Journey.JourneyMap.config_id
+  id: config_id
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: config_id
+  nameWithType: JourneyMap.config_id
+  fullName: TaleOfTiles.Journey.JourneyMap.config_id
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: config_id
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public string config_id
+    return:
+      type: System.String
+    content.vb: Public config_id As String
+- uid: TaleOfTiles.Journey.JourneyMap.journey_map_blocks_config
+  commentId: F:TaleOfTiles.Journey.JourneyMap.journey_map_blocks_config
+  id: journey_map_blocks_config
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: journey_map_blocks_config
+  nameWithType: JourneyMap.journey_map_blocks_config
+  fullName: TaleOfTiles.Journey.JourneyMap.journey_map_blocks_config
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: journey_map_blocks_config
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public List<JourneyMapBlock.JourneyMapBlockConfig> journey_map_blocks_config
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig}
+    content.vb: Public journey_map_blocks_config As List(Of JourneyMapBlock.JourneyMapBlockConfig)
+- uid: TaleOfTiles.Journey.JourneyMap.asset_bundle
+  commentId: F:TaleOfTiles.Journey.JourneyMap.asset_bundle
+  id: asset_bundle
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: asset_bundle
+  nameWithType: JourneyMap.asset_bundle
+  fullName: TaleOfTiles.Journey.JourneyMap.asset_bundle
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: asset_bundle
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public JourneyMapAssetBundle asset_bundle
+    return:
+      type: TaleOfTiles.Journey.JourneyMapAssetBundle
+    content.vb: Public asset_bundle As JourneyMapAssetBundle
+- uid: TaleOfTiles.Journey.JourneyMap.possible_enemies
+  commentId: F:TaleOfTiles.Journey.JourneyMap.possible_enemies
+  id: possible_enemies
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: possible_enemies
+  nameWithType: JourneyMap.possible_enemies
+  fullName: TaleOfTiles.Journey.JourneyMap.possible_enemies
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: possible_enemies
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public List<EnemyObject> possible_enemies
+    return:
+      type: System.Collections.Generic.List{EnemyObject}
+    content.vb: Public possible_enemies As List(Of EnemyObject)
+- uid: TaleOfTiles.Journey.JourneyMap.possible_levels
+  commentId: F:TaleOfTiles.Journey.JourneyMap.possible_levels
+  id: possible_levels
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: possible_levels
+  nameWithType: JourneyMap.possible_levels
+  fullName: TaleOfTiles.Journey.JourneyMap.possible_levels
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: possible_levels
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public List<LevelObject> possible_levels
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Level.LevelObject}
+    content.vb: Public possible_levels As List(Of LevelObject)
+- uid: TaleOfTiles.Journey.JourneyMap.activity_prefab
+  commentId: F:TaleOfTiles.Journey.JourneyMap.activity_prefab
+  id: activity_prefab
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: activity_prefab
+  nameWithType: JourneyMap.activity_prefab
+  fullName: TaleOfTiles.Journey.JourneyMap.activity_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: activity_prefab
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public GameObject activity_prefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public activity_prefab As GameObject
+- uid: TaleOfTiles.Journey.JourneyMap.use_for_journey
+  commentId: F:TaleOfTiles.Journey.JourneyMap.use_for_journey
+  id: use_for_journey
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: use_for_journey
+  nameWithType: JourneyMap.use_for_journey
+  fullName: TaleOfTiles.Journey.JourneyMap.use_for_journey
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: use_for_journey
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public bool use_for_journey
+    return:
+      type: System.Boolean
+    content.vb: Public use_for_journey As Boolean
+- uid: TaleOfTiles.Journey.JourneyMap.GenerateMap(System.Int32)
+  commentId: M:TaleOfTiles.Journey.JourneyMap.GenerateMap(System.Int32)
+  id: GenerateMap(System.Int32)
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: GenerateMap(int)
+  nameWithType: JourneyMap.GenerateMap(int)
+  fullName: TaleOfTiles.Journey.JourneyMap.GenerateMap(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GenerateMap
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: >-
+      [ContextMenu("Generate Map")]
+
+      public void GenerateMap(int activities = 4)
+    parameters:
+    - id: activities
+      type: System.Int32
+    content.vb: >-
+      <ContextMenu("Generate Map")>
+
+      Public Sub GenerateMap(activities As Integer = 4)
+  overload: TaleOfTiles.Journey.JourneyMap.GenerateMap*
+  attributes:
+  - type: UnityEngine.ContextMenu
+    ctor: UnityEngine.ContextMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Generate Map
+  nameWithType.vb: JourneyMap.GenerateMap(Integer)
+  fullName.vb: TaleOfTiles.Journey.JourneyMap.GenerateMap(Integer)
+  name.vb: GenerateMap(Integer)
+- uid: TaleOfTiles.Journey.JourneyMap.OnValidate
+  commentId: M:TaleOfTiles.Journey.JourneyMap.OnValidate
+  id: OnValidate
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: OnValidate()
+  nameWithType: JourneyMap.OnValidate()
+  fullName: TaleOfTiles.Journey.JourneyMap.OnValidate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnValidate
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: Validates the object, generating a new unique ID if necessary.
+  example: []
+  syntax:
+    content: public void OnValidate()
+    content.vb: Public Sub OnValidate()
+  overload: TaleOfTiles.Journey.JourneyMap.OnValidate*
+- uid: TaleOfTiles.Journey.JourneyMap.UpdateConfig
+  commentId: M:TaleOfTiles.Journey.JourneyMap.UpdateConfig
+  id: UpdateConfig
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: UpdateConfig()
+  nameWithType: JourneyMap.UpdateConfig()
+  fullName: TaleOfTiles.Journey.JourneyMap.UpdateConfig()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: UpdateConfig
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public void UpdateConfig()
+    content.vb: Public Sub UpdateConfig()
+  overload: TaleOfTiles.Journey.JourneyMap.UpdateConfig*
+- uid: TaleOfTiles.Journey.JourneyMap.SaveConfig
+  commentId: M:TaleOfTiles.Journey.JourneyMap.SaveConfig
+  id: SaveConfig
+  parent: TaleOfTiles.Journey.JourneyMap
+  langs:
+  - csharp
+  - vb
+  name: SaveConfig()
+  nameWithType: JourneyMap.SaveConfig()
+  fullName: TaleOfTiles.Journey.JourneyMap.SaveConfig()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMap.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SaveConfig
+    path: ../Assets/Scripts/LevelGenerator/JourneyMap.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public void SaveConfig()
+    content.vb: Public Sub SaveConfig()
+  overload: TaleOfTiles.Journey.JourneyMap.SaveConfig*
+references:
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<JourneyMapBlock.JourneyMapBlockConfig>
+  nameWithType: List<JourneyMapBlock.JourneyMapBlockConfig>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig>
+  nameWithType.vb: List(Of JourneyMapBlock.JourneyMapBlockConfig)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig)
+  name.vb: List(Of JourneyMapBlock.JourneyMapBlockConfig)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+    name: JourneyMapBlockConfig
+    href: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+    name: JourneyMapBlockConfig
+    href: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TaleOfTiles.Journey.JourneyMapAssetBundle
+  commentId: T:TaleOfTiles.Journey.JourneyMapAssetBundle
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapAssetBundle.html
+  name: JourneyMapAssetBundle
+  nameWithType: JourneyMapAssetBundle
+  fullName: TaleOfTiles.Journey.JourneyMapAssetBundle
+- uid: System.Collections.Generic.List{EnemyObject}
+  commentId: T:System.Collections.Generic.List{EnemyObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EnemyObject>
+  nameWithType: List<EnemyObject>
+  fullName: System.Collections.Generic.List<EnemyObject>
+  nameWithType.vb: List(Of EnemyObject)
+  fullName.vb: System.Collections.Generic.List(Of EnemyObject)
+  name.vb: List(Of EnemyObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: EnemyObject
+    name: EnemyObject
+    href: EnemyObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EnemyObject
+    name: EnemyObject
+    href: EnemyObject.html
+  - name: )
+- uid: System.Collections.Generic.List{TaleOfTiles.Level.LevelObject}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Level.LevelObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LevelObject>
+  nameWithType: List<LevelObject>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Level.LevelObject>
+  nameWithType.vb: List(Of LevelObject)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Level.LevelObject)
+  name.vb: List(Of LevelObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Level.LevelObject
+    name: LevelObject
+    href: TaleOfTiles.Level.LevelObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Level.LevelObject
+    name: LevelObject
+    href: TaleOfTiles.Level.LevelObject.html
+  - name: )
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TaleOfTiles.Journey.JourneyMap.GenerateMap*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMap.GenerateMap
+  href: TaleOfTiles.Journey.JourneyMap.html#TaleOfTiles_Journey_JourneyMap_GenerateMap_System_Int32_
+  name: GenerateMap
+  nameWithType: JourneyMap.GenerateMap
+  fullName: TaleOfTiles.Journey.JourneyMap.GenerateMap
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TaleOfTiles.Journey.JourneyMap.OnValidate*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMap.OnValidate
+  href: TaleOfTiles.Journey.JourneyMap.html#TaleOfTiles_Journey_JourneyMap_OnValidate
+  name: OnValidate
+  nameWithType: JourneyMap.OnValidate
+  fullName: TaleOfTiles.Journey.JourneyMap.OnValidate
+- uid: TaleOfTiles.Journey.JourneyMap.UpdateConfig*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMap.UpdateConfig
+  href: TaleOfTiles.Journey.JourneyMap.html#TaleOfTiles_Journey_JourneyMap_UpdateConfig
+  name: UpdateConfig
+  nameWithType: JourneyMap.UpdateConfig
+  fullName: TaleOfTiles.Journey.JourneyMap.UpdateConfig
+- uid: TaleOfTiles.Journey.JourneyMap.SaveConfig*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMap.SaveConfig
+  href: TaleOfTiles.Journey.JourneyMap.html#TaleOfTiles_Journey_JourneyMap_SaveConfig
+  name: SaveConfig
+  nameWithType: JourneyMap.SaveConfig
+  fullName: TaleOfTiles.Journey.JourneyMap.SaveConfig

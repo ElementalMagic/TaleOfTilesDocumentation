@@ -1,0 +1,545 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.UI.ParticleManager
+  commentId: T:TaleOfTiles.UI.ParticleManager
+  id: ParticleManager
+  parent: TaleOfTiles.UI
+  children:
+  - TaleOfTiles.UI.ParticleManager.BombFXAt(System.Int32,System.Int32,System.Int32)
+  - TaleOfTiles.UI.ParticleManager.BreakTileFXAt(System.Int32,System.Int32,System.Int32,System.Int32)
+  - TaleOfTiles.UI.ParticleManager.ClearPieceFXAt(System.Int32,System.Int32,System.Int32)
+  - TaleOfTiles.UI.ParticleManager.PlaceFXObject(UnityEngine.GameObject,System.Int32,System.Int32)
+  - TaleOfTiles.UI.ParticleManager.Start
+  - TaleOfTiles.UI.ParticleManager.board
+  - TaleOfTiles.UI.ParticleManager.bombFXPrefab
+  - TaleOfTiles.UI.ParticleManager.breakFXPrefab
+  - TaleOfTiles.UI.ParticleManager.clearFXPrefab
+  - TaleOfTiles.UI.ParticleManager.doubleBreakFXPrefab
+  - TaleOfTiles.UI.ParticleManager.effectsGrid
+  langs:
+  - csharp
+  - vb
+  name: ParticleManager
+  nameWithType: ParticleManager
+  fullName: TaleOfTiles.UI.ParticleManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ParticleManager
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Manages particle effects for various game events, such as clearing pieces or breaking tiles.
+  example: []
+  syntax:
+    content: 'public class ParticleManager : MonoBehaviour'
+    content.vb: Public Class ParticleManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.UI.ParticleManager.clearFXPrefab
+  commentId: F:TaleOfTiles.UI.ParticleManager.clearFXPrefab
+  id: clearFXPrefab
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: clearFXPrefab
+  nameWithType: ParticleManager.clearFXPrefab
+  fullName: TaleOfTiles.UI.ParticleManager.clearFXPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: clearFXPrefab
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: public GameObject clearFXPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public clearFXPrefab As GameObject
+- uid: TaleOfTiles.UI.ParticleManager.breakFXPrefab
+  commentId: F:TaleOfTiles.UI.ParticleManager.breakFXPrefab
+  id: breakFXPrefab
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: breakFXPrefab
+  nameWithType: ParticleManager.breakFXPrefab
+  fullName: TaleOfTiles.UI.ParticleManager.breakFXPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: breakFXPrefab
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: public GameObject breakFXPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public breakFXPrefab As GameObject
+- uid: TaleOfTiles.UI.ParticleManager.doubleBreakFXPrefab
+  commentId: F:TaleOfTiles.UI.ParticleManager.doubleBreakFXPrefab
+  id: doubleBreakFXPrefab
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: doubleBreakFXPrefab
+  nameWithType: ParticleManager.doubleBreakFXPrefab
+  fullName: TaleOfTiles.UI.ParticleManager.doubleBreakFXPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: doubleBreakFXPrefab
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: public GameObject doubleBreakFXPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public doubleBreakFXPrefab As GameObject
+- uid: TaleOfTiles.UI.ParticleManager.bombFXPrefab
+  commentId: F:TaleOfTiles.UI.ParticleManager.bombFXPrefab
+  id: bombFXPrefab
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: bombFXPrefab
+  nameWithType: ParticleManager.bombFXPrefab
+  fullName: TaleOfTiles.UI.ParticleManager.bombFXPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: bombFXPrefab
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: public GameObject bombFXPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public bombFXPrefab As GameObject
+- uid: TaleOfTiles.UI.ParticleManager.effectsGrid
+  commentId: F:TaleOfTiles.UI.ParticleManager.effectsGrid
+  id: effectsGrid
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: effectsGrid
+  nameWithType: ParticleManager.effectsGrid
+  fullName: TaleOfTiles.UI.ParticleManager.effectsGrid
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: effectsGrid
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: public GameObject effectsGrid
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public effectsGrid As GameObject
+- uid: TaleOfTiles.UI.ParticleManager.board
+  commentId: F:TaleOfTiles.UI.ParticleManager.board
+  id: board
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: board
+  nameWithType: ParticleManager.board
+  fullName: TaleOfTiles.UI.ParticleManager.board
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: board
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: public BoardManager board
+    return:
+      type: TaleOfTiles.Arena.BoardManager
+    content.vb: Public board As BoardManager
+- uid: TaleOfTiles.UI.ParticleManager.Start
+  commentId: M:TaleOfTiles.UI.ParticleManager.Start
+  id: Start
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ParticleManager.Start()
+  fullName: TaleOfTiles.UI.ParticleManager.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Initializes the ParticleManager by assigning the BoardManager component.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.UI.ParticleManager.Start*
+- uid: TaleOfTiles.UI.ParticleManager.PlaceFXObject(UnityEngine.GameObject,System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.UI.ParticleManager.PlaceFXObject(UnityEngine.GameObject,System.Int32,System.Int32)
+  id: PlaceFXObject(UnityEngine.GameObject,System.Int32,System.Int32)
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: PlaceFXObject(GameObject, int, int)
+  nameWithType: ParticleManager.PlaceFXObject(GameObject, int, int)
+  fullName: TaleOfTiles.UI.ParticleManager.PlaceFXObject(UnityEngine.GameObject, int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: PlaceFXObject
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Places and initializes an FX object at a specified board position.
+  example: []
+  syntax:
+    content: private GameObject PlaceFXObject(GameObject prefab, int x, int y)
+    parameters:
+    - id: prefab
+      type: UnityEngine.GameObject
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Private Function PlaceFXObject(prefab As GameObject, x As Integer, y As Integer) As GameObject
+  overload: TaleOfTiles.UI.ParticleManager.PlaceFXObject*
+  nameWithType.vb: ParticleManager.PlaceFXObject(GameObject, Integer, Integer)
+  fullName.vb: TaleOfTiles.UI.ParticleManager.PlaceFXObject(UnityEngine.GameObject, Integer, Integer)
+  name.vb: PlaceFXObject(GameObject, Integer, Integer)
+- uid: TaleOfTiles.UI.ParticleManager.ClearPieceFXAt(System.Int32,System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.UI.ParticleManager.ClearPieceFXAt(System.Int32,System.Int32,System.Int32)
+  id: ClearPieceFXAt(System.Int32,System.Int32,System.Int32)
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: ClearPieceFXAt(int, int, int)
+  nameWithType: ParticleManager.ClearPieceFXAt(int, int, int)
+  fullName: TaleOfTiles.UI.ParticleManager.ClearPieceFXAt(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ClearPieceFXAt
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Plays the clear piece effect at a specific position on the board.
+  example: []
+  syntax:
+    content: public void ClearPieceFXAt(int x, int y, int z = 0)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    - id: z
+      type: System.Int32
+    content.vb: Public Sub ClearPieceFXAt(x As Integer, y As Integer, z As Integer = 0)
+  overload: TaleOfTiles.UI.ParticleManager.ClearPieceFXAt*
+  nameWithType.vb: ParticleManager.ClearPieceFXAt(Integer, Integer, Integer)
+  fullName.vb: TaleOfTiles.UI.ParticleManager.ClearPieceFXAt(Integer, Integer, Integer)
+  name.vb: ClearPieceFXAt(Integer, Integer, Integer)
+- uid: TaleOfTiles.UI.ParticleManager.BreakTileFXAt(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.UI.ParticleManager.BreakTileFXAt(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: BreakTileFXAt(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: BreakTileFXAt(int, int, int, int)
+  nameWithType: ParticleManager.BreakTileFXAt(int, int, int, int)
+  fullName: TaleOfTiles.UI.ParticleManager.BreakTileFXAt(int, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BreakTileFXAt
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Plays the break tile effect based on breakable value at a specific position.
+  example: []
+  syntax:
+    content: public void BreakTileFXAt(int breakableValue, int x, int y, int z = 0)
+    parameters:
+    - id: breakableValue
+      type: System.Int32
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    - id: z
+      type: System.Int32
+    content.vb: Public Sub BreakTileFXAt(breakableValue As Integer, x As Integer, y As Integer, z As Integer = 0)
+  overload: TaleOfTiles.UI.ParticleManager.BreakTileFXAt*
+  nameWithType.vb: ParticleManager.BreakTileFXAt(Integer, Integer, Integer, Integer)
+  fullName.vb: TaleOfTiles.UI.ParticleManager.BreakTileFXAt(Integer, Integer, Integer, Integer)
+  name.vb: BreakTileFXAt(Integer, Integer, Integer, Integer)
+- uid: TaleOfTiles.UI.ParticleManager.BombFXAt(System.Int32,System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.UI.ParticleManager.BombFXAt(System.Int32,System.Int32,System.Int32)
+  id: BombFXAt(System.Int32,System.Int32,System.Int32)
+  parent: TaleOfTiles.UI.ParticleManager
+  langs:
+  - csharp
+  - vb
+  name: BombFXAt(int, int, int)
+  nameWithType: ParticleManager.BombFXAt(int, int, int)
+  fullName: TaleOfTiles.UI.ParticleManager.BombFXAt(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BombFXAt
+    path: ../Assets/Scripts/ParticleManager.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Plays the bomb effect at a specific position on the board.
+  example: []
+  syntax:
+    content: public void BombFXAt(int x, int y, int z = 0)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    - id: z
+      type: System.Int32
+    content.vb: Public Sub BombFXAt(x As Integer, y As Integer, z As Integer = 0)
+  overload: TaleOfTiles.UI.ParticleManager.BombFXAt*
+  nameWithType.vb: ParticleManager.BombFXAt(Integer, Integer, Integer)
+  fullName.vb: TaleOfTiles.UI.ParticleManager.BombFXAt(Integer, Integer, Integer)
+  name.vb: BombFXAt(Integer, Integer, Integer)
+references:
+- uid: TaleOfTiles.UI
+  commentId: N:TaleOfTiles.UI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.UI
+  nameWithType: TaleOfTiles.UI
+  fullName: TaleOfTiles.UI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: TaleOfTiles.Arena.BoardManager
+  commentId: T:TaleOfTiles.Arena.BoardManager
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BoardManager.html
+  name: BoardManager
+  nameWithType: BoardManager
+  fullName: TaleOfTiles.Arena.BoardManager
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: TaleOfTiles.UI.ParticleManager.Start*
+  commentId: Overload:TaleOfTiles.UI.ParticleManager.Start
+  href: TaleOfTiles.UI.ParticleManager.html#TaleOfTiles_UI_ParticleManager_Start
+  name: Start
+  nameWithType: ParticleManager.Start
+  fullName: TaleOfTiles.UI.ParticleManager.Start
+- uid: TaleOfTiles.UI.ParticleManager.PlaceFXObject*
+  commentId: Overload:TaleOfTiles.UI.ParticleManager.PlaceFXObject
+  href: TaleOfTiles.UI.ParticleManager.html#TaleOfTiles_UI_ParticleManager_PlaceFXObject_UnityEngine_GameObject_System_Int32_System_Int32_
+  name: PlaceFXObject
+  nameWithType: ParticleManager.PlaceFXObject
+  fullName: TaleOfTiles.UI.ParticleManager.PlaceFXObject
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TaleOfTiles.UI.ParticleManager.ClearPieceFXAt*
+  commentId: Overload:TaleOfTiles.UI.ParticleManager.ClearPieceFXAt
+  href: TaleOfTiles.UI.ParticleManager.html#TaleOfTiles_UI_ParticleManager_ClearPieceFXAt_System_Int32_System_Int32_System_Int32_
+  name: ClearPieceFXAt
+  nameWithType: ParticleManager.ClearPieceFXAt
+  fullName: TaleOfTiles.UI.ParticleManager.ClearPieceFXAt
+- uid: TaleOfTiles.UI.ParticleManager.BreakTileFXAt*
+  commentId: Overload:TaleOfTiles.UI.ParticleManager.BreakTileFXAt
+  href: TaleOfTiles.UI.ParticleManager.html#TaleOfTiles_UI_ParticleManager_BreakTileFXAt_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: BreakTileFXAt
+  nameWithType: ParticleManager.BreakTileFXAt
+  fullName: TaleOfTiles.UI.ParticleManager.BreakTileFXAt
+- uid: TaleOfTiles.UI.ParticleManager.BombFXAt*
+  commentId: Overload:TaleOfTiles.UI.ParticleManager.BombFXAt
+  href: TaleOfTiles.UI.ParticleManager.html#TaleOfTiles_UI_ParticleManager_BombFXAt_System_Int32_System_Int32_System_Int32_
+  name: BombFXAt
+  nameWithType: ParticleManager.BombFXAt
+  fullName: TaleOfTiles.UI.ParticleManager.BombFXAt

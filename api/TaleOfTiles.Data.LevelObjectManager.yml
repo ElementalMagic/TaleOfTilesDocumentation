@@ -1,0 +1,364 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Data.LevelObjectManager
+  commentId: T:TaleOfTiles.Data.LevelObjectManager
+  id: LevelObjectManager
+  parent: TaleOfTiles.Data
+  children:
+  - TaleOfTiles.Data.LevelObjectManager.LoadAllBundleObjects
+  - TaleOfTiles.Data.LevelObjectManager.LoadLevelBundleObject(System.String)
+  - TaleOfTiles.Data.LevelObjectManager.cashed_level_jobject_bundles
+  - TaleOfTiles.Data.LevelObjectManager.resourcePath
+  langs:
+  - csharp
+  - vb
+  name: LevelObjectManager
+  nameWithType: LevelObjectManager
+  fullName: TaleOfTiles.Data.LevelObjectManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LevelObjectManager
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 889
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  summary: Manages operations related to LevelObject bundles, including loading and retrieval.
+  example: []
+  syntax:
+    content: public class LevelObjectManager
+    content.vb: Public Class LevelObjectManager
+  inheritance:
+  - System.Object
+- uid: TaleOfTiles.Data.LevelObjectManager.resourcePath
+  commentId: F:TaleOfTiles.Data.LevelObjectManager.resourcePath
+  id: resourcePath
+  parent: TaleOfTiles.Data.LevelObjectManager
+  langs:
+  - csharp
+  - vb
+  name: resourcePath
+  nameWithType: LevelObjectManager.resourcePath
+  fullName: TaleOfTiles.Data.LevelObjectManager.resourcePath
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: resourcePath
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 891
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: private const string resourcePath = "ScriptableObjects/Levels/Bundles/"
+    return:
+      type: System.String
+    content.vb: Private Const resourcePath As String = "ScriptableObjects/Levels/Bundles/"
+- uid: TaleOfTiles.Data.LevelObjectManager.cashed_level_jobject_bundles
+  commentId: F:TaleOfTiles.Data.LevelObjectManager.cashed_level_jobject_bundles
+  id: cashed_level_jobject_bundles
+  parent: TaleOfTiles.Data.LevelObjectManager
+  langs:
+  - csharp
+  - vb
+  name: cashed_level_jobject_bundles
+  nameWithType: LevelObjectManager.cashed_level_jobject_bundles
+  fullName: TaleOfTiles.Data.LevelObjectManager.cashed_level_jobject_bundles
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: cashed_level_jobject_bundles
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 892
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: private List<LevelObjectsBundle> cashed_level_jobject_bundles
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Level.LevelObjectsBundle}
+    content.vb: Private cashed_level_jobject_bundles As List(Of LevelObjectsBundle)
+- uid: TaleOfTiles.Data.LevelObjectManager.LoadAllBundleObjects
+  commentId: M:TaleOfTiles.Data.LevelObjectManager.LoadAllBundleObjects
+  id: LoadAllBundleObjects
+  parent: TaleOfTiles.Data.LevelObjectManager
+  langs:
+  - csharp
+  - vb
+  name: LoadAllBundleObjects()
+  nameWithType: LevelObjectManager.LoadAllBundleObjects()
+  fullName: TaleOfTiles.Data.LevelObjectManager.LoadAllBundleObjects()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadAllBundleObjects
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 893
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: public LevelObjectsBundle[] LoadAllBundleObjects()
+    return:
+      type: TaleOfTiles.Level.LevelObjectsBundle[]
+    content.vb: Public Function LoadAllBundleObjects() As LevelObjectsBundle()
+  overload: TaleOfTiles.Data.LevelObjectManager.LoadAllBundleObjects*
+- uid: TaleOfTiles.Data.LevelObjectManager.LoadLevelBundleObject(System.String)
+  commentId: M:TaleOfTiles.Data.LevelObjectManager.LoadLevelBundleObject(System.String)
+  id: LoadLevelBundleObject(System.String)
+  parent: TaleOfTiles.Data.LevelObjectManager
+  langs:
+  - csharp
+  - vb
+  name: LoadLevelBundleObject(string)
+  nameWithType: LevelObjectManager.LoadLevelBundleObject(string)
+  fullName: TaleOfTiles.Data.LevelObjectManager.LoadLevelBundleObject(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadLevelBundleObject
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 907
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: public LevelObjectsBundle LoadLevelBundleObject(string bundle_id)
+    parameters:
+    - id: bundle_id
+      type: System.String
+    return:
+      type: TaleOfTiles.Level.LevelObjectsBundle
+    content.vb: Public Function LoadLevelBundleObject(bundle_id As String) As LevelObjectsBundle
+  overload: TaleOfTiles.Data.LevelObjectManager.LoadLevelBundleObject*
+  nameWithType.vb: LevelObjectManager.LoadLevelBundleObject(String)
+  fullName.vb: TaleOfTiles.Data.LevelObjectManager.LoadLevelBundleObject(String)
+  name.vb: LoadLevelBundleObject(String)
+references:
+- uid: TaleOfTiles.Data
+  commentId: N:TaleOfTiles.Data
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Data
+  nameWithType: TaleOfTiles.Data
+  fullName: TaleOfTiles.Data
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{TaleOfTiles.Level.LevelObjectsBundle}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Level.LevelObjectsBundle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LevelObjectsBundle>
+  nameWithType: List<LevelObjectsBundle>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Level.LevelObjectsBundle>
+  nameWithType.vb: List(Of LevelObjectsBundle)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Level.LevelObjectsBundle)
+  name.vb: List(Of LevelObjectsBundle)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Level.LevelObjectsBundle
+    name: LevelObjectsBundle
+    href: TaleOfTiles.Level.LevelObjectsBundle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Level.LevelObjectsBundle
+    name: LevelObjectsBundle
+    href: TaleOfTiles.Level.LevelObjectsBundle.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TaleOfTiles.Data.LevelObjectManager.LoadAllBundleObjects*
+  commentId: Overload:TaleOfTiles.Data.LevelObjectManager.LoadAllBundleObjects
+  href: TaleOfTiles.Data.LevelObjectManager.html#TaleOfTiles_Data_LevelObjectManager_LoadAllBundleObjects
+  name: LoadAllBundleObjects
+  nameWithType: LevelObjectManager.LoadAllBundleObjects
+  fullName: TaleOfTiles.Data.LevelObjectManager.LoadAllBundleObjects
+- uid: TaleOfTiles.Level.LevelObjectsBundle[]
+  isExternal: true
+  href: TaleOfTiles.Level.LevelObjectsBundle.html
+  name: LevelObjectsBundle[]
+  nameWithType: LevelObjectsBundle[]
+  fullName: TaleOfTiles.Level.LevelObjectsBundle[]
+  nameWithType.vb: LevelObjectsBundle()
+  fullName.vb: TaleOfTiles.Level.LevelObjectsBundle()
+  name.vb: LevelObjectsBundle()
+  spec.csharp:
+  - uid: TaleOfTiles.Level.LevelObjectsBundle
+    name: LevelObjectsBundle
+    href: TaleOfTiles.Level.LevelObjectsBundle.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: TaleOfTiles.Level.LevelObjectsBundle
+    name: LevelObjectsBundle
+    href: TaleOfTiles.Level.LevelObjectsBundle.html
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Data.LevelObjectManager.LoadLevelBundleObject*
+  commentId: Overload:TaleOfTiles.Data.LevelObjectManager.LoadLevelBundleObject
+  href: TaleOfTiles.Data.LevelObjectManager.html#TaleOfTiles_Data_LevelObjectManager_LoadLevelBundleObject_System_String_
+  name: LoadLevelBundleObject
+  nameWithType: LevelObjectManager.LoadLevelBundleObject
+  fullName: TaleOfTiles.Data.LevelObjectManager.LoadLevelBundleObject
+- uid: TaleOfTiles.Level.LevelObjectsBundle
+  commentId: T:TaleOfTiles.Level.LevelObjectsBundle
+  parent: TaleOfTiles.Level
+  href: TaleOfTiles.Level.LevelObjectsBundle.html
+  name: LevelObjectsBundle
+  nameWithType: LevelObjectsBundle
+  fullName: TaleOfTiles.Level.LevelObjectsBundle
+- uid: TaleOfTiles.Level
+  commentId: N:TaleOfTiles.Level
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Level
+  nameWithType: TaleOfTiles.Level
+  fullName: TaleOfTiles.Level
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html

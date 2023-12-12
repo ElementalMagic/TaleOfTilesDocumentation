@@ -1,0 +1,309 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Misc.CameraSingleton
+  commentId: T:TaleOfTiles.Misc.CameraSingleton
+  id: CameraSingleton
+  parent: TaleOfTiles.Misc
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CameraSingleton
+  nameWithType: CameraSingleton
+  fullName: TaleOfTiles.Misc.CameraSingleton
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/CameraSingleton.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CameraSingleton
+    path: ../Assets/Scripts/CameraSingleton.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Misc
+  summary: Singleton instance for the Camera. Inherits from the generic Singleton class.
+  example: []
+  syntax:
+    content: 'public class CameraSingleton : Singleton<CameraSingleton>'
+    content.vb: Public Class CameraSingleton Inherits Singleton(Of CameraSingleton)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - TaleOfTiles.Misc.SingletonBase
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}
+  inheritedMembers:
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.m_instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Awake
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Prepare
+  - TaleOfTiles.Misc.SingletonBase.AllSingletons
+references:
+- uid: TaleOfTiles.Misc
+  commentId: N:TaleOfTiles.Misc
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Misc
+  nameWithType: TaleOfTiles.Misc
+  fullName: TaleOfTiles.Misc
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Misc.SingletonBase
+  commentId: T:TaleOfTiles.Misc.SingletonBase
+  parent: TaleOfTiles.Misc
+  href: TaleOfTiles.Misc.SingletonBase.html
+  name: SingletonBase
+  nameWithType: SingletonBase
+  fullName: TaleOfTiles.Misc.SingletonBase
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}
+  commentId: T:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}
+  parent: TaleOfTiles.Misc
+  definition: TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<CameraSingleton>
+  nameWithType: Singleton<CameraSingleton>
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.CameraSingleton>
+  nameWithType.vb: Singleton(Of CameraSingleton)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.CameraSingleton)
+  name.vb: Singleton(Of CameraSingleton)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - uid: TaleOfTiles.Misc.CameraSingleton
+    name: CameraSingleton
+    href: TaleOfTiles.Misc.CameraSingleton.html
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Misc.CameraSingleton
+    name: CameraSingleton
+    href: TaleOfTiles.Misc.CameraSingleton.html
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.m_instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}
+  definition: TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<CameraSingleton>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.CameraSingleton>.m_instance
+  nameWithType.vb: Singleton(Of CameraSingleton).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.CameraSingleton).m_instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}
+  definition: TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<CameraSingleton>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.CameraSingleton>.Instance
+  nameWithType.vb: Singleton(Of CameraSingleton).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.CameraSingleton).Instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Awake
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}
+  definition: TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<CameraSingleton>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.CameraSingleton>.Awake()
+  nameWithType.vb: Singleton(Of CameraSingleton).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.CameraSingleton).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Prepare
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}
+  definition: TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<CameraSingleton>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.CameraSingleton>.Prepare()
+  nameWithType.vb: Singleton(Of CameraSingleton).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.CameraSingleton).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.CameraSingleton}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.SingletonBase.AllSingletons
+  commentId: F:TaleOfTiles.Misc.SingletonBase.AllSingletons
+  parent: TaleOfTiles.Misc.SingletonBase
+  href: TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons
+  name: AllSingletons
+  nameWithType: SingletonBase.AllSingletons
+  fullName: TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Misc.Singleton`1
+  commentId: T:TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: TaleOfTiles.Misc.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton`1.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<T>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.m_instance
+  nameWithType.vb: Singleton(Of T).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).m_instance
+- uid: TaleOfTiles.Misc.Singleton`1.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Instance
+- uid: TaleOfTiles.Misc.Singleton`1.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton`1.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<T>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Prepare()
+  nameWithType.vb: Singleton(Of T).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )

@@ -1,0 +1,384 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.MatchValue
+  commentId: T:TaleOfTiles.Arena.MatchValue
+  id: MatchValue
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.MatchValue.Blue
+  - TaleOfTiles.Arena.MatchValue.Cyan
+  - TaleOfTiles.Arena.MatchValue.Green
+  - TaleOfTiles.Arena.MatchValue.Indigo
+  - TaleOfTiles.Arena.MatchValue.Magenta
+  - TaleOfTiles.Arena.MatchValue.None
+  - TaleOfTiles.Arena.MatchValue.Orange
+  - TaleOfTiles.Arena.MatchValue.Purple
+  - TaleOfTiles.Arena.MatchValue.Red
+  - TaleOfTiles.Arena.MatchValue.Teal
+  - TaleOfTiles.Arena.MatchValue.Wild
+  - TaleOfTiles.Arena.MatchValue.Yellow
+  langs:
+  - csharp
+  - vb
+  name: MatchValue
+  nameWithType: MatchValue
+  fullName: TaleOfTiles.Arena.MatchValue
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MatchValue
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Enum for the possible match values.
+  example: []
+  syntax:
+    content: public enum MatchValue
+    content.vb: Public Enum MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Yellow
+  commentId: F:TaleOfTiles.Arena.MatchValue.Yellow
+  id: Yellow
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Yellow
+  nameWithType: MatchValue.Yellow
+  fullName: TaleOfTiles.Arena.MatchValue.Yellow
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Yellow
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Yellow = 0
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Blue
+  commentId: F:TaleOfTiles.Arena.MatchValue.Blue
+  id: Blue
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Blue
+  nameWithType: MatchValue.Blue
+  fullName: TaleOfTiles.Arena.MatchValue.Blue
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Blue
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Blue = 1
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Magenta
+  commentId: F:TaleOfTiles.Arena.MatchValue.Magenta
+  id: Magenta
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Magenta
+  nameWithType: MatchValue.Magenta
+  fullName: TaleOfTiles.Arena.MatchValue.Magenta
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Magenta
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Magenta = 2
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Indigo
+  commentId: F:TaleOfTiles.Arena.MatchValue.Indigo
+  id: Indigo
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Indigo
+  nameWithType: MatchValue.Indigo
+  fullName: TaleOfTiles.Arena.MatchValue.Indigo
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Indigo
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Indigo = 3
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Green
+  commentId: F:TaleOfTiles.Arena.MatchValue.Green
+  id: Green
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Green
+  nameWithType: MatchValue.Green
+  fullName: TaleOfTiles.Arena.MatchValue.Green
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Green
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Green = 4
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Teal
+  commentId: F:TaleOfTiles.Arena.MatchValue.Teal
+  id: Teal
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Teal
+  nameWithType: MatchValue.Teal
+  fullName: TaleOfTiles.Arena.MatchValue.Teal
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Teal
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Teal = 5
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Red
+  commentId: F:TaleOfTiles.Arena.MatchValue.Red
+  id: Red
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Red
+  nameWithType: MatchValue.Red
+  fullName: TaleOfTiles.Arena.MatchValue.Red
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Red
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Red = 6
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Cyan
+  commentId: F:TaleOfTiles.Arena.MatchValue.Cyan
+  id: Cyan
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Cyan
+  nameWithType: MatchValue.Cyan
+  fullName: TaleOfTiles.Arena.MatchValue.Cyan
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Cyan
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Cyan = 7
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Purple
+  commentId: F:TaleOfTiles.Arena.MatchValue.Purple
+  id: Purple
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Purple
+  nameWithType: MatchValue.Purple
+  fullName: TaleOfTiles.Arena.MatchValue.Purple
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Purple
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Purple = 8
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Orange
+  commentId: F:TaleOfTiles.Arena.MatchValue.Orange
+  id: Orange
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Orange
+  nameWithType: MatchValue.Orange
+  fullName: TaleOfTiles.Arena.MatchValue.Orange
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Orange
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Orange = 9
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.Wild
+  commentId: F:TaleOfTiles.Arena.MatchValue.Wild
+  id: Wild
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: Wild
+  nameWithType: MatchValue.Wild
+  fullName: TaleOfTiles.Arena.MatchValue.Wild
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Wild
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Wild = 10
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.MatchValue.None
+  commentId: F:TaleOfTiles.Arena.MatchValue.None
+  id: None
+  parent: TaleOfTiles.Arena.MatchValue
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: MatchValue.None
+  fullName: TaleOfTiles.Arena.MatchValue.None
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: None
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: None = 11
+    return:
+      type: TaleOfTiles.Arena.MatchValue
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: TaleOfTiles.Arena.MatchValue
+  commentId: T:TaleOfTiles.Arena.MatchValue
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.MatchValue.html
+  name: MatchValue
+  nameWithType: MatchValue
+  fullName: TaleOfTiles.Arena.MatchValue

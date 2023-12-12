@@ -1,0 +1,415 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle
+  commentId: T:TaleOfTiles.Journey.EnemiesObjectsBundle
+  id: EnemiesObjectsBundle
+  parent: TaleOfTiles.Journey
+  children:
+  - TaleOfTiles.Journey.EnemiesObjectsBundle.ID
+  - TaleOfTiles.Journey.EnemiesObjectsBundle.OnValidate
+  - TaleOfTiles.Journey.EnemiesObjectsBundle.bundle_name
+  - TaleOfTiles.Journey.EnemiesObjectsBundle.easy_enemies
+  - TaleOfTiles.Journey.EnemiesObjectsBundle.hard_enemies
+  - TaleOfTiles.Journey.EnemiesObjectsBundle.medium_enemies
+  langs:
+  - csharp
+  - vb
+  name: EnemiesObjectsBundle
+  nameWithType: EnemiesObjectsBundle
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/EnemiesObjectsBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EnemiesObjectsBundle
+    path: ../Assets/Scripts/EnemiesObjectsBundle.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: >-
+    Represents a bundle of enemies in the game, categorized by difficulty. 
+
+    This is a ScriptableObject which allows for easier management in the Unity editor.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "new Enemies Bundle", menuName = "Enemies/new Enemies Bundle", order = 0)]
+
+      public class EnemiesObjectsBundle : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="new Enemies Bundle", menuName:="Enemies/new Enemies Bundle", order:=0)>
+
+      Public Class EnemiesObjectsBundle Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: new Enemies Bundle
+    - name: menuName
+      type: System.String
+      value: Enemies/new Enemies Bundle
+    - name: order
+      type: System.Int32
+      value: 0
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle.easy_enemies
+  commentId: F:TaleOfTiles.Journey.EnemiesObjectsBundle.easy_enemies
+  id: easy_enemies
+  parent: TaleOfTiles.Journey.EnemiesObjectsBundle
+  langs:
+  - csharp
+  - vb
+  name: easy_enemies
+  nameWithType: EnemiesObjectsBundle.easy_enemies
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle.easy_enemies
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EnemiesObjectsBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: easy_enemies
+    path: ../Assets/Scripts/EnemiesObjectsBundle.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: List of easy difficulty enemies.
+  example: []
+  syntax:
+    content: public List<EnemyObject> easy_enemies
+    return:
+      type: System.Collections.Generic.List{EnemyObject}
+    content.vb: Public easy_enemies As List(Of EnemyObject)
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle.medium_enemies
+  commentId: F:TaleOfTiles.Journey.EnemiesObjectsBundle.medium_enemies
+  id: medium_enemies
+  parent: TaleOfTiles.Journey.EnemiesObjectsBundle
+  langs:
+  - csharp
+  - vb
+  name: medium_enemies
+  nameWithType: EnemiesObjectsBundle.medium_enemies
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle.medium_enemies
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EnemiesObjectsBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: medium_enemies
+    path: ../Assets/Scripts/EnemiesObjectsBundle.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: List of medium difficulty enemies.
+  example: []
+  syntax:
+    content: public List<EnemyObject> medium_enemies
+    return:
+      type: System.Collections.Generic.List{EnemyObject}
+    content.vb: Public medium_enemies As List(Of EnemyObject)
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle.hard_enemies
+  commentId: F:TaleOfTiles.Journey.EnemiesObjectsBundle.hard_enemies
+  id: hard_enemies
+  parent: TaleOfTiles.Journey.EnemiesObjectsBundle
+  langs:
+  - csharp
+  - vb
+  name: hard_enemies
+  nameWithType: EnemiesObjectsBundle.hard_enemies
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle.hard_enemies
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EnemiesObjectsBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: hard_enemies
+    path: ../Assets/Scripts/EnemiesObjectsBundle.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: List of hard difficulty enemies.
+  example: []
+  syntax:
+    content: public List<EnemyObject> hard_enemies
+    return:
+      type: System.Collections.Generic.List{EnemyObject}
+    content.vb: Public hard_enemies As List(Of EnemyObject)
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle.bundle_name
+  commentId: F:TaleOfTiles.Journey.EnemiesObjectsBundle.bundle_name
+  id: bundle_name
+  parent: TaleOfTiles.Journey.EnemiesObjectsBundle
+  langs:
+  - csharp
+  - vb
+  name: bundle_name
+  nameWithType: EnemiesObjectsBundle.bundle_name
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle.bundle_name
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EnemiesObjectsBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: bundle_name
+    path: ../Assets/Scripts/EnemiesObjectsBundle.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: The name of the bundle.
+  example: []
+  syntax:
+    content: public string bundle_name
+    return:
+      type: System.String
+    content.vb: Public bundle_name As String
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle.ID
+  commentId: F:TaleOfTiles.Journey.EnemiesObjectsBundle.ID
+  id: ID
+  parent: TaleOfTiles.Journey.EnemiesObjectsBundle
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: EnemiesObjectsBundle.ID
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle.ID
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/EnemiesObjectsBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ID
+    path: ../Assets/Scripts/EnemiesObjectsBundle.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: The unique identifier of the bundle.
+  example: []
+  syntax:
+    content: public string ID
+    return:
+      type: System.String
+    content.vb: Public ID As String
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle.OnValidate
+  commentId: M:TaleOfTiles.Journey.EnemiesObjectsBundle.OnValidate
+  id: OnValidate
+  parent: TaleOfTiles.Journey.EnemiesObjectsBundle
+  langs:
+  - csharp
+  - vb
+  name: OnValidate()
+  nameWithType: EnemiesObjectsBundle.OnValidate()
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle.OnValidate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/EnemiesObjectsBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnValidate
+    path: ../Assets/Scripts/EnemiesObjectsBundle.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: >-
+    Validates the object in the editor.
+
+    If the ID is not set, it generates a new unique identifier.
+  example: []
+  syntax:
+    content: public void OnValidate()
+    content.vb: Public Sub OnValidate()
+  overload: TaleOfTiles.Journey.EnemiesObjectsBundle.OnValidate*
+references:
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Collections.Generic.List{EnemyObject}
+  commentId: T:System.Collections.Generic.List{EnemyObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EnemyObject>
+  nameWithType: List<EnemyObject>
+  fullName: System.Collections.Generic.List<EnemyObject>
+  nameWithType.vb: List(Of EnemyObject)
+  fullName.vb: System.Collections.Generic.List(Of EnemyObject)
+  name.vb: List(Of EnemyObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: EnemyObject
+    name: EnemyObject
+    href: EnemyObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: EnemyObject
+    name: EnemyObject
+    href: EnemyObject.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle.OnValidate*
+  commentId: Overload:TaleOfTiles.Journey.EnemiesObjectsBundle.OnValidate
+  href: TaleOfTiles.Journey.EnemiesObjectsBundle.html#TaleOfTiles_Journey_EnemiesObjectsBundle_OnValidate
+  name: OnValidate
+  nameWithType: EnemiesObjectsBundle.OnValidate
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle.OnValidate

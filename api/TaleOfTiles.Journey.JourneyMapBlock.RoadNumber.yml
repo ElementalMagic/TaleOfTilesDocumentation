@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  id: JourneyMapBlock.RoadNumber
+  parent: TaleOfTiles.Journey
+  children:
+  - TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.One
+  - TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Three
+  - TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Two
+  - TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Zero
+  langs:
+  - csharp
+  - vb
+  name: JourneyMapBlock.RoadNumber
+  nameWithType: JourneyMapBlock.RoadNumber
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: RoadNumber
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: Enum defining the number of roads.
+  example: []
+  syntax:
+    content: public enum JourneyMapBlock.RoadNumber
+    content.vb: Public Enum JourneyMapBlock.RoadNumber
+- uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Zero
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Zero
+  id: Zero
+  parent: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  langs:
+  - csharp
+  - vb
+  name: Zero
+  nameWithType: JourneyMapBlock.RoadNumber.Zero
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Zero
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Zero
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: Zero = 0
+    return:
+      type: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+- uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.One
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.One
+  id: One
+  parent: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  langs:
+  - csharp
+  - vb
+  name: One
+  nameWithType: JourneyMapBlock.RoadNumber.One
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.One
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: One
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: One = 1
+    return:
+      type: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+- uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Two
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Two
+  id: Two
+  parent: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  langs:
+  - csharp
+  - vb
+  name: Two
+  nameWithType: JourneyMapBlock.RoadNumber.Two
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Two
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Two
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: Two = 2
+    return:
+      type: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+- uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Three
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Three
+  id: Three
+  parent: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  langs:
+  - csharp
+  - vb
+  name: Three
+  nameWithType: JourneyMapBlock.RoadNumber.Three
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.Three
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Three
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: Three = 3
+    return:
+      type: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+references:
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlock.html
+  name: JourneyMapBlock.RoadNumber
+  nameWithType: JourneyMapBlock.RoadNumber
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+    name: RoadNumber
+    href: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+    name: RoadNumber
+    href: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.html

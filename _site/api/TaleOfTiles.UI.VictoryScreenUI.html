@@ -1,0 +1,840 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VictoryScreenUI
+ | Tale of Tiles Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VictoryScreenUI
+ | Tale of Tiles Documentation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ElementalMagic/Match-3-Mobile-Game/new/dev/apiSpec/new?filename=TaleOfTiles_UI_VictoryScreenUI.md&amp;value=---%0Auid%3A%20TaleOfTiles.UI.VictoryScreenUI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Tale of Tiles Documentation">
+            Tale of Tiles Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleOfTiles.UI.VictoryScreenUI">
+
+
+
+  <h1 id="TaleOfTiles_UI_VictoryScreenUI" data-uid="TaleOfTiles.UI.VictoryScreenUI" class="text-break">
+    Class VictoryScreenUI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleOfTiles.html">TaleOfTiles</a>.<a class="xref" href="TaleOfTiles.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Manages the UI for the victory screen in the game, including display of rewards and navigation buttons.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VictoryScreenUI : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">VictoryScreenUI</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_background" data-uid="TaleOfTiles.UI.VictoryScreenUI.background">
+  background
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image background</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Image</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_background_init_color" data-uid="TaleOfTiles.UI.VictoryScreenUI.background_init_color">
+  background_init_color
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Color background_init_color</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_button_go_home" data-uid="TaleOfTiles.UI.VictoryScreenUI.button_go_home">
+  button_go_home
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+private Button button_go_home</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Button</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_button_go_next" data-uid="TaleOfTiles.UI.VictoryScreenUI.button_go_next">
+  button_go_next
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+private Button button_go_next</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Button</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_button_reload_level" data-uid="TaleOfTiles.UI.VictoryScreenUI.button_reload_level">
+  button_reload_level
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+private Button button_reload_level</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Button</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_card_prefab" data-uid="TaleOfTiles.UI.VictoryScreenUI.card_prefab">
+  card_prefab
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+private GameObject card_prefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_cards_container" data-uid="TaleOfTiles.UI.VictoryScreenUI.cards_container">
+  cards_container
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+private GameObject cards_container</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_cards_reward_panel" data-uid="TaleOfTiles.UI.VictoryScreenUI.cards_reward_panel">
+  cards_reward_panel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+private GameObject cards_reward_panel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_exp_text" data-uid="TaleOfTiles.UI.VictoryScreenUI.exp_text">
+  exp_text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMeshProUGUI exp_text</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextMeshProUGUI</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_gold_text" data-uid="TaleOfTiles.UI.VictoryScreenUI.gold_text">
+  gold_text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMeshProUGUI gold_text</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextMeshProUGUI</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_init_size" data-uid="TaleOfTiles.UI.VictoryScreenUI.init_size">
+  init_size
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Vector2 init_size</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_item_prefab" data-uid="TaleOfTiles.UI.VictoryScreenUI.item_prefab">
+  item_prefab
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+private GameObject item_prefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_items_container" data-uid="TaleOfTiles.UI.VictoryScreenUI.items_container">
+  items_container
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+private GameObject items_container</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_items_reward_panel" data-uid="TaleOfTiles.UI.VictoryScreenUI.items_reward_panel">
+  items_reward_panel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+private GameObject items_reward_panel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_message_text" data-uid="TaleOfTiles.UI.VictoryScreenUI.message_text">
+  message_text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextMeshProUGUI message_text</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextMeshProUGUI</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_popup_form" data-uid="TaleOfTiles.UI.VictoryScreenUI.popup_form">
+  popup_form
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform popup_form</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_popup_init_pos" data-uid="TaleOfTiles.UI.VictoryScreenUI.popup_init_pos">
+  popup_init_pos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Vector3 popup_init_pos</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleOfTiles_UI_VictoryScreenUI_Hide_" data-uid="TaleOfTiles.UI.VictoryScreenUI.Hide*"></a>
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_Hide" data-uid="TaleOfTiles.UI.VictoryScreenUI.Hide">
+  Hide()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Hides the victory screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_UI_VictoryScreenUI_HideCoroutine_" data-uid="TaleOfTiles.UI.VictoryScreenUI.HideCoroutine*"></a>
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_HideCoroutine" data-uid="TaleOfTiles.UI.VictoryScreenUI.HideCoroutine">
+  HideCoroutine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to manage hiding animation for the victory screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator HideCoroutine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_UI_VictoryScreenUI_Popup_" data-uid="TaleOfTiles.UI.VictoryScreenUI.Popup*"></a>
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_Popup" data-uid="TaleOfTiles.UI.VictoryScreenUI.Popup">
+  Popup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Activates the popup animation for the victory screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Popup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_UI_VictoryScreenUI_Start_" data-uid="TaleOfTiles.UI.VictoryScreenUI.Start*"></a>
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_Start" data-uid="TaleOfTiles.UI.VictoryScreenUI.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the victory screen UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_UI_VictoryScreenUI_UpdateScreen_" data-uid="TaleOfTiles.UI.VictoryScreenUI.UpdateScreen*"></a>
+
+  <h3 id="TaleOfTiles_UI_VictoryScreenUI_UpdateScreen_System_Int32_System_Int32_System_Collections_Generic_List_CardObject__System_Collections_Generic_List_EquipmentItem__" data-uid="TaleOfTiles.UI.VictoryScreenUI.UpdateScreen(System.Int32,System.Int32,System.Collections.Generic.List{CardObject},System.Collections.Generic.List{EquipmentItem})">
+  UpdateScreen(int, int, List&lt;CardObject&gt;, List&lt;EquipmentItem&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the screen with provided rewards and information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateScreen(int gold, int exp, List&lt;CardObject&gt; card_reward = null, List&lt;EquipmentItem&gt; equipment_reward = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Gold earned.</p>
+</dd>
+    <dt><code>exp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Experience points earned.</p>
+</dd>
+    <dt><code>card_reward</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CardObject.html">CardObject</a>&gt;</dt>
+    <dd><p>List of card rewards.</p>
+</dd>
+    <dt><code>equipment_reward</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EquipmentItem.html">EquipmentItem</a>&gt;</dt>
+    <dd><p>List of equipment rewards.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/VictoryScreenUI.cs/#L15" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

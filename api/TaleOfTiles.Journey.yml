@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  id: TaleOfTiles.Journey
+  children:
+  - TaleOfTiles.Journey.EnemiesObjectsBundle
+  - TaleOfTiles.Journey.JourneyManager
+  - TaleOfTiles.Journey.JourneyMap
+  - TaleOfTiles.Journey.JourneyMapAssetBundle
+  - TaleOfTiles.Journey.JourneyMapBlock
+  - TaleOfTiles.Journey.JourneyMapBlock.BlockType
+  - TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+  - TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  - TaleOfTiles.Journey.JourneyMapBlockActivity
+  - TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+  - TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType
+  - TaleOfTiles.Journey.JourneyMapBuilder
+  - TaleOfTiles.Journey.JourneyMapButtonsController
+  - TaleOfTiles.Journey.JourneyMapConfig
+  - TaleOfTiles.Journey.JourneyMapContainer
+  - TaleOfTiles.Journey.JourneyMapGenerator
+  - TaleOfTiles.Journey.JourneyObject
+  - TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  - TaleOfTiles.Journey.JourneysUIContainer
+  - TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.Journey.JourneyMapGenerator
+  commentId: T:TaleOfTiles.Journey.JourneyMapGenerator
+  href: TaleOfTiles.Journey.JourneyMapGenerator.html
+  name: JourneyMapGenerator
+  nameWithType: JourneyMapGenerator
+  fullName: TaleOfTiles.Journey.JourneyMapGenerator
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle
+  commentId: T:TaleOfTiles.Journey.EnemiesObjectsBundle
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.EnemiesObjectsBundle.html
+  name: EnemiesObjectsBundle
+  nameWithType: EnemiesObjectsBundle
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle
+- uid: TaleOfTiles.Journey.JourneyMapBlock
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlock.html
+  name: JourneyMapBlock
+  nameWithType: JourneyMapBlock
+  fullName: TaleOfTiles.Journey.JourneyMapBlock
+- uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlock.html
+  name: JourneyMapBlock.RoadNumber
+  nameWithType: JourneyMapBlock.RoadNumber
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+    name: RoadNumber
+    href: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+    name: RoadNumber
+    href: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.html
+- uid: TaleOfTiles.Journey.JourneyMapBlock.BlockType
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock.BlockType
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlock.html
+  name: JourneyMapBlock.BlockType
+  nameWithType: JourneyMapBlock.BlockType
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.BlockType
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.BlockType
+    name: BlockType
+    href: TaleOfTiles.Journey.JourneyMapBlock.BlockType.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.BlockType
+    name: BlockType
+    href: TaleOfTiles.Journey.JourneyMapBlock.BlockType.html
+- uid: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlock.html
+  name: JourneyMapBlock.JourneyMapBlockConfig
+  nameWithType: JourneyMapBlock.JourneyMapBlockConfig
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+    name: JourneyMapBlockConfig
+    href: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+    name: JourneyMapBlockConfig
+    href: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig.html
+- uid: TaleOfTiles.Journey.JourneyMapBlockActivity
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlockActivity
+  href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  name: JourneyMapBlockActivity
+  nameWithType: JourneyMapBlockActivity
+  fullName: TaleOfTiles.Journey.JourneyMapBlockActivity
+- uid: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  name: JourneyMapBlockActivity.ActivityType
+  nameWithType: JourneyMapBlockActivity.ActivityType
+  fullName: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity
+    name: JourneyMapBlockActivity
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType
+    name: ActivityType
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity
+    name: JourneyMapBlockActivity
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType
+    name: ActivityType
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType.html
+- uid: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  name: JourneyMapBlockActivity.ActivityStatus
+  nameWithType: JourneyMapBlockActivity.ActivityStatus
+  fullName: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity
+    name: JourneyMapBlockActivity
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+    name: ActivityStatus
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity
+    name: JourneyMapBlockActivity
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+    name: ActivityStatus
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus.html
+- uid: TaleOfTiles.Journey.JourneyMapButtonsController
+  commentId: T:TaleOfTiles.Journey.JourneyMapButtonsController
+  href: TaleOfTiles.Journey.JourneyMapButtonsController.html
+  name: JourneyMapButtonsController
+  nameWithType: JourneyMapButtonsController
+  fullName: TaleOfTiles.Journey.JourneyMapButtonsController
+- uid: TaleOfTiles.Journey.JourneyObject
+  commentId: T:TaleOfTiles.Journey.JourneyObject
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyObject.html
+  name: JourneyObject
+  nameWithType: JourneyObject
+  fullName: TaleOfTiles.Journey.JourneyObject
+- uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  commentId: T:TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyObject.html
+  name: JourneyObject.JourneyHardness
+  nameWithType: JourneyObject.JourneyHardness
+  fullName: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyObject
+    name: JourneyObject
+    href: TaleOfTiles.Journey.JourneyObject.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+    name: JourneyHardness
+    href: TaleOfTiles.Journey.JourneyObject.JourneyHardness.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyObject
+    name: JourneyObject
+    href: TaleOfTiles.Journey.JourneyObject.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+    name: JourneyHardness
+    href: TaleOfTiles.Journey.JourneyObject.JourneyHardness.html
+- uid: TaleOfTiles.Journey.JourneysUIContainer
+  commentId: T:TaleOfTiles.Journey.JourneysUIContainer
+  href: TaleOfTiles.Journey.JourneysUIContainer.html
+  name: JourneysUIContainer
+  nameWithType: JourneysUIContainer
+  fullName: TaleOfTiles.Journey.JourneysUIContainer
+- uid: TaleOfTiles.Journey.JourneyMapContainer
+  commentId: T:TaleOfTiles.Journey.JourneyMapContainer
+  href: TaleOfTiles.Journey.JourneyMapContainer.html
+  name: JourneyMapContainer
+  nameWithType: JourneyMapContainer
+  fullName: TaleOfTiles.Journey.JourneyMapContainer
+- uid: TaleOfTiles.Journey.JourneyMapBuilder
+  commentId: T:TaleOfTiles.Journey.JourneyMapBuilder
+  href: TaleOfTiles.Journey.JourneyMapBuilder.html
+  name: JourneyMapBuilder
+  nameWithType: JourneyMapBuilder
+  fullName: TaleOfTiles.Journey.JourneyMapBuilder
+- uid: TaleOfTiles.Journey.JourneyMap
+  commentId: T:TaleOfTiles.Journey.JourneyMap
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMap.html
+  name: JourneyMap
+  nameWithType: JourneyMap
+  fullName: TaleOfTiles.Journey.JourneyMap
+- uid: TaleOfTiles.Journey.JourneyMapConfig
+  commentId: T:TaleOfTiles.Journey.JourneyMapConfig
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapConfig.html
+  name: JourneyMapConfig
+  nameWithType: JourneyMapConfig
+  fullName: TaleOfTiles.Journey.JourneyMapConfig
+- uid: TaleOfTiles.Journey.JourneyMapAssetBundle
+  commentId: T:TaleOfTiles.Journey.JourneyMapAssetBundle
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapAssetBundle.html
+  name: JourneyMapAssetBundle
+  nameWithType: JourneyMapAssetBundle
+  fullName: TaleOfTiles.Journey.JourneyMapAssetBundle
+- uid: TaleOfTiles.Journey.JourneyManager
+  commentId: T:TaleOfTiles.Journey.JourneyManager
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyManager.html
+  name: JourneyManager
+  nameWithType: JourneyManager
+  fullName: TaleOfTiles.Journey.JourneyManager
+- uid: TaleOfTiles.Journey.MapActivityUIObject
+  commentId: T:TaleOfTiles.Journey.MapActivityUIObject
+  href: TaleOfTiles.Journey.MapActivityUIObject.html
+  name: MapActivityUIObject
+  nameWithType: MapActivityUIObject
+  fullName: TaleOfTiles.Journey.MapActivityUIObject
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html

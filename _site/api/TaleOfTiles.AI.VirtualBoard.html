@@ -1,0 +1,976 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VirtualBoard
+ | Tale of Tiles Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VirtualBoard
+ | Tale of Tiles Documentation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ElementalMagic/Match-3-Mobile-Game/new/dev/apiSpec/new?filename=TaleOfTiles_AI_VirtualBoard.md&amp;value=---%0Auid%3A%20TaleOfTiles.AI.VirtualBoard%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Tale of Tiles Documentation">
+            Tale of Tiles Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleOfTiles.AI.VirtualBoard">
+
+
+
+  <h1 id="TaleOfTiles_AI_VirtualBoard" data-uid="TaleOfTiles.AI.VirtualBoard" class="text-break">
+    Class VirtualBoard
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleOfTiles.html">TaleOfTiles</a>.<a class="xref" href="TaleOfTiles.AI.html">AI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a virtual game board used for AI decision-making.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VirtualBoard</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">VirtualBoard</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_ChooseMove_" data-uid="TaleOfTiles.AI.VirtualBoard.ChooseMove*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_ChooseMove_System_Collections_Generic_List_TaleOfTiles_AI_Move__TaleOfTiles_Player_PlayerCharacter_TaleOfTiles_Card_Gems_GemActiveEffectType_TaleOfTiles_Card_Gems_GemStatusEffectType_System_Single_" data-uid="TaleOfTiles.AI.VirtualBoard.ChooseMove(System.Collections.Generic.List{TaleOfTiles.AI.Move},TaleOfTiles.Player.PlayerCharacter,TaleOfTiles.Card.Gems.GemActiveEffectType,TaleOfTiles.Card.Gems.GemStatusEffectType,System.Single)">
+  ChooseMove(List&lt;Move&gt;, PlayerCharacter, GemActiveEffectType, GemStatusEffectType, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Chooses the best move for a player based on the current game situation, possible move effects, and AI intelligence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Move ChooseMove(List&lt;Move&gt; moves, PlayerCharacter player, GemActiveEffectType target_effect = GemActiveEffectType.None, GemStatusEffectType target_status_effect = GemStatusEffectType.None, float intelligence = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>moves</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>List of potential moves.</p>
+</dd>
+    <dt><code>player</code> <a class="xref" href="TaleOfTiles.Player.PlayerCharacter.html">PlayerCharacter</a></dt>
+    <dd><p>The player character for whom the move is being calculated.</p>
+</dd>
+    <dt><code>target_effect</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemActiveEffectType.html">GemActiveEffectType</a></dt>
+    <dd><p>The targeted active gem effect.</p>
+</dd>
+    <dt><code>target_status_effect</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemStatusEffectType.html">GemStatusEffectType</a></dt>
+    <dd><p>The targeted status effect.</p>
+</dd>
+    <dt><code>intelligence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The intelligence level of the AI making the decision.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.Move.html">Move</a></dt>
+    <dd><p>The chosen move based on the criteria.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_ChooseMoveInSortedListByGemEffectAndIntelligence_" data-uid="TaleOfTiles.AI.VirtualBoard.ChooseMoveInSortedListByGemEffectAndIntelligence*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_ChooseMoveInSortedListByGemEffectAndIntelligence_System_Collections_Generic_List_TaleOfTiles_AI_Move__TaleOfTiles_Card_Gems_GemActiveEffectType_System_Single_System_Int32_" data-uid="TaleOfTiles.AI.VirtualBoard.ChooseMoveInSortedListByGemEffectAndIntelligence(System.Collections.Generic.List{TaleOfTiles.AI.Move},TaleOfTiles.Card.Gems.GemActiveEffectType,System.Single,System.Int32)">
+  ChooseMoveInSortedListByGemEffectAndIntelligence(List&lt;Move&gt;, GemActiveEffectType, float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Chooses a move from a sorted list of moves based on a specific gem effect type and AI intelligence level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Move ChooseMoveInSortedListByGemEffectAndIntelligence(List&lt;Move&gt; avaliable_moves, GemActiveEffectType effect_type, float intelligence, int start_index = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>avaliable_moves</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>List of available moves.</p>
+</dd>
+    <dt><code>effect_type</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemActiveEffectType.html">GemActiveEffectType</a></dt>
+    <dd><p>The gem effect type to consider.</p>
+</dd>
+    <dt><code>intelligence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The AI intelligence level.</p>
+</dd>
+    <dt><code>start_index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The starting index for choosing a move.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.Move.html">Move</a></dt>
+    <dd><p>The chosen move based on the specified criteria.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_ChooseMoveInSortedListByGemStatusEffectAndIntelligence_" data-uid="TaleOfTiles.AI.VirtualBoard.ChooseMoveInSortedListByGemStatusEffectAndIntelligence*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_ChooseMoveInSortedListByGemStatusEffectAndIntelligence_System_Collections_Generic_List_TaleOfTiles_AI_Move__TaleOfTiles_Card_Gems_GemStatusEffectType_System_Single_System_Int32_" data-uid="TaleOfTiles.AI.VirtualBoard.ChooseMoveInSortedListByGemStatusEffectAndIntelligence(System.Collections.Generic.List{TaleOfTiles.AI.Move},TaleOfTiles.Card.Gems.GemStatusEffectType,System.Single,System.Int32)">
+  ChooseMoveInSortedListByGemStatusEffectAndIntelligence(List&lt;Move&gt;, GemStatusEffectType, float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Chooses a move from a sorted list of moves based on a specific gem status effect type and AI intelligence level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Move ChooseMoveInSortedListByGemStatusEffectAndIntelligence(List&lt;Move&gt; avaliable_moves, GemStatusEffectType effect_type, float intelligence, int start_index = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>avaliable_moves</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>List of available moves.</p>
+</dd>
+    <dt><code>effect_type</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemStatusEffectType.html">GemStatusEffectType</a></dt>
+    <dd><p>The gem status effect type to consider.</p>
+</dd>
+    <dt><code>intelligence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The AI intelligence level.</p>
+</dd>
+    <dt><code>start_index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The starting index for choosing a move.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.Move.html">Move</a></dt>
+    <dd><p>The chosen move based on the specified criteria.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_CollapseBoard_" data-uid="TaleOfTiles.AI.VirtualBoard.CollapseBoard*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_CollapseBoard_TaleOfTiles_AI_VirtualGamePiece_0__0___" data-uid="TaleOfTiles.AI.VirtualBoard.CollapseBoard(TaleOfTiles.AI.VirtualGamePiece[0:,0:])">
+  CollapseBoard(VirtualGamePiece[,])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L920"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collapses the game board, moving game pieces down to fill empty spaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CollapseBoard(VirtualGamePiece[,] board_field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>board_field</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The game board to collapse.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if any pieces were moved; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_FillBoard_" data-uid="TaleOfTiles.AI.VirtualBoard.FillBoard*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_FillBoard_TaleOfTiles_AI_VirtualGamePiece_0__0___TaleOfTiles_AI_VirtualGamePiece___" data-uid="TaleOfTiles.AI.VirtualBoard.FillBoard(TaleOfTiles.AI.VirtualGamePiece[0:,0:],TaleOfTiles.AI.VirtualGamePiece[])">
+  FillBoard(VirtualGamePiece[,], VirtualGamePiece[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L717"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills the game board with virtual game pieces, ensuring no immediate matches are formed upon filling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualGamePiece[,] FillBoard(VirtualGamePiece[,] board_field, VirtualGamePiece[] gems)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>board_field</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The game board to fill.</p>
+</dd>
+    <dt><code>gems</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[]</dt>
+    <dd><p>Array of virtual game pieces to use for filling.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The filled game board.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_FilterMovesListGemEffect_" data-uid="TaleOfTiles.AI.VirtualBoard.FilterMovesListGemEffect*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_FilterMovesListGemEffect_System_Collections_Generic_List_TaleOfTiles_AI_Move__TaleOfTiles_Card_Gems_GemActiveEffectType_" data-uid="TaleOfTiles.AI.VirtualBoard.FilterMovesListGemEffect(System.Collections.Generic.List{TaleOfTiles.AI.Move},TaleOfTiles.Card.Gems.GemActiveEffectType)">
+  FilterMovesListGemEffect(List&lt;Move&gt;, GemActiveEffectType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Filters a list of moves based on a specific gem effect type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;Move&gt; FilterMovesListGemEffect(List&lt;Move&gt; moves, GemActiveEffectType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>moves</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>List of potential moves.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemActiveEffectType.html">GemActiveEffectType</a></dt>
+    <dd><p>The type of gem effect to filter by.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>A list of moves filtered by the specified gem effect type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_FilterMovesListGemStatusEffect_" data-uid="TaleOfTiles.AI.VirtualBoard.FilterMovesListGemStatusEffect*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_FilterMovesListGemStatusEffect_System_Collections_Generic_List_TaleOfTiles_AI_Move__TaleOfTiles_Card_Gems_GemStatusEffectType_" data-uid="TaleOfTiles.AI.VirtualBoard.FilterMovesListGemStatusEffect(System.Collections.Generic.List{TaleOfTiles.AI.Move},TaleOfTiles.Card.Gems.GemStatusEffectType)">
+  FilterMovesListGemStatusEffect(List&lt;Move&gt;, GemStatusEffectType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Filters a list of moves based on a specific gem status effect type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;Move&gt; FilterMovesListGemStatusEffect(List&lt;Move&gt; moves, GemStatusEffectType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>moves</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>List of potential moves.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemStatusEffectType.html">GemStatusEffectType</a></dt>
+    <dd><p>The type of gem status effect to filter by.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>A list of moves filtered by the specified gem status effect type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_FindAllMatches_" data-uid="TaleOfTiles.AI.VirtualBoard.FindAllMatches*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_FindAllMatches_TaleOfTiles_AI_VirtualGamePiece_0__0___" data-uid="TaleOfTiles.AI.VirtualBoard.FindAllMatches(TaleOfTiles.AI.VirtualGamePiece[0:,0:])">
+  FindAllMatches(VirtualGamePiece[,])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1088"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all matches on the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;BoardPos&gt; FindAllMatches(VirtualGamePiece[,] board_field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>board_field</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The game board to search for matches.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.BoardPos.html">BoardPos</a>&gt;</dt>
+    <dd><p>A list of positions where matches are found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_FindAllMoves_" data-uid="TaleOfTiles.AI.VirtualBoard.FindAllMoves*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_FindAllMoves_TaleOfTiles_AI_VirtualGamePiece_0__0___" data-uid="TaleOfTiles.AI.VirtualBoard.FindAllMoves(TaleOfTiles.AI.VirtualGamePiece[0:,0:])">
+  FindAllMoves(VirtualGamePiece[,])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all possible moves on the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;Move&gt; FindAllMoves(VirtualGamePiece[,] board_field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>board_field</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The game board to search for moves.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>A list of all possible moves.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_FindBestMove_" data-uid="TaleOfTiles.AI.VirtualBoard.FindBestMove*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_FindBestMove_TaleOfTiles_AI_VirtualGamePiece_0__0___TaleOfTiles_Player_PlayerCharacter_TaleOfTiles_Card_Gems_GemActiveEffectType_TaleOfTiles_Card_Gems_GemStatusEffectType_System_Single_" data-uid="TaleOfTiles.AI.VirtualBoard.FindBestMove(TaleOfTiles.AI.VirtualGamePiece[0:,0:],TaleOfTiles.Player.PlayerCharacter,TaleOfTiles.Card.Gems.GemActiveEffectType,TaleOfTiles.Card.Gems.GemStatusEffectType,System.Single)">
+  FindBestMove(VirtualGamePiece[,], PlayerCharacter, GemActiveEffectType, GemStatusEffectType, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Identifies the best move for a player based on the current state of the game board and desired effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Move FindBestMove(VirtualGamePiece[,] board_field, PlayerCharacter player, GemActiveEffectType target_effect = GemActiveEffectType.None, GemStatusEffectType target_status_effect = GemStatusEffectType.None, float intelligence = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>board_field</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The current game board.</p>
+</dd>
+    <dt><code>player</code> <a class="xref" href="TaleOfTiles.Player.PlayerCharacter.html">PlayerCharacter</a></dt>
+    <dd><p>The player character for whom the move is being calculated.</p>
+</dd>
+    <dt><code>target_effect</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemActiveEffectType.html">GemActiveEffectType</a></dt>
+    <dd><p>The targeted active gem effect.</p>
+</dd>
+    <dt><code>target_status_effect</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemStatusEffectType.html">GemStatusEffectType</a></dt>
+    <dd><p>The targeted status effect.</p>
+</dd>
+    <dt><code>intelligence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The intelligence level of the AI making the decision.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.Move.html">Move</a></dt>
+    <dd><p>The best move identified, or null if no moves are available.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_FindMatches_" data-uid="TaleOfTiles.AI.VirtualBoard.FindMatches*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_FindMatches_System_Int32_System_Int32_UnityEngine_Vector2_TaleOfTiles_AI_VirtualGamePiece_0__0___System_Int32_" data-uid="TaleOfTiles.AI.VirtualBoard.FindMatches(System.Int32,System.Int32,UnityEngine.Vector2,TaleOfTiles.AI.VirtualGamePiece[0:,0:],System.Int32)">
+  FindMatches(int, int, Vector2, VirtualGamePiece[,], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L783"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;VirtualGamePiece&gt; FindMatches(int startX, int startY, Vector2 searchDirection, VirtualGamePiece[,] board, int minLength = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>startY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>searchDirection</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>board</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd></dd>
+    <dt><code>minLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_FindMatchesAt_" data-uid="TaleOfTiles.AI.VirtualBoard.FindMatchesAt*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_FindMatchesAt_System_Int32_System_Int32_TaleOfTiles_AI_VirtualGamePiece_0__0___" data-uid="TaleOfTiles.AI.VirtualBoard.FindMatchesAt(System.Int32,System.Int32,TaleOfTiles.AI.VirtualGamePiece[0:,0:])">
+  FindMatchesAt(int, int, VirtualGamePiece[,])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L949"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all matches on the board that include a virtual game piece at a specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;BoardPos&gt; FindMatchesAt(int x, int y, VirtualGamePiece[,] board_field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>X-coordinate of the game piece.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Y-coordinate of the game piece.</p>
+</dd>
+    <dt><code>board_field</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The game board to search for matches.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.BoardPos.html">BoardPos</a>&gt;</dt>
+    <dd><p>A list of positions where matches are found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_GetRandomVirtualGamePiece_" data-uid="TaleOfTiles.AI.VirtualBoard.GetRandomVirtualGamePiece*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_GetRandomVirtualGamePiece_TaleOfTiles_AI_VirtualGamePiece___" data-uid="TaleOfTiles.AI.VirtualBoard.GetRandomVirtualGamePiece(TaleOfTiles.AI.VirtualGamePiece[])">
+  GetRandomVirtualGamePiece(VirtualGamePiece[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L873"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects a random virtual game piece from an array, considering the rarity of each piece.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualGamePiece GetRandomVirtualGamePiece(VirtualGamePiece[] gems)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gems</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[]</dt>
+    <dd><p>Array of virtual game pieces to choose from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a></dt>
+    <dd><p>A randomly selected virtual game piece.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_HasMatchOnFill_" data-uid="TaleOfTiles.AI.VirtualBoard.HasMatchOnFill*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_HasMatchOnFill_System_Int32_System_Int32_TaleOfTiles_AI_VirtualGamePiece_0__0___System_Int32_" data-uid="TaleOfTiles.AI.VirtualBoard.HasMatchOnFill(System.Int32,System.Int32,TaleOfTiles.AI.VirtualGamePiece[0:,0:],System.Int32)">
+  HasMatchOnFill(int, int, VirtualGamePiece[,], int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L761"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool HasMatchOnFill(int x, int y, VirtualGamePiece[,] board_field, int minLength = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>board_field</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd></dd>
+    <dt><code>minLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_IsWithinBounds_" data-uid="TaleOfTiles.AI.VirtualBoard.IsWithinBounds*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_IsWithinBounds_System_Int32_System_Int32_TaleOfTiles_AI_VirtualGamePiece_0__0___" data-uid="TaleOfTiles.AI.VirtualBoard.IsWithinBounds(System.Int32,System.Int32,TaleOfTiles.AI.VirtualGamePiece[0:,0:])">
+  IsWithinBounds(int, int, VirtualGamePiece[,])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L863"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a given position is within the bounds of the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool IsWithinBounds(int x, int y, VirtualGamePiece[,] board)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>X-coordinate of the position to check.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Y-coordinate of the position to check.</p>
+</dd>
+    <dt><code>board</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The game board.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the position is within bounds; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_MakeCopyBoard_" data-uid="TaleOfTiles.AI.VirtualBoard.MakeCopyBoard*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_MakeCopyBoard_TaleOfTiles_AI_VirtualGamePiece_0__0___" data-uid="TaleOfTiles.AI.VirtualBoard.MakeCopyBoard(TaleOfTiles.AI.VirtualGamePiece[0:,0:])">
+  MakeCopyBoard(VirtualGamePiece[,])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1068"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a copy of the given game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualGamePiece[,] MakeCopyBoard(VirtualGamePiece[,] board_field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>board_field</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The game board to be copied.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>A new copy of the provided game board.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_SelectMoveByBiggestGemEffect_" data-uid="TaleOfTiles.AI.VirtualBoard.SelectMoveByBiggestGemEffect*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_SelectMoveByBiggestGemEffect_System_Collections_Generic_List_TaleOfTiles_AI_Move__TaleOfTiles_Card_Gems_GemActiveEffectType_" data-uid="TaleOfTiles.AI.VirtualBoard.SelectMoveByBiggestGemEffect(System.Collections.Generic.List{TaleOfTiles.AI.Move},TaleOfTiles.Card.Gems.GemActiveEffectType)">
+  SelectMoveByBiggestGemEffect(List&lt;Move&gt;, GemActiveEffectType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects the best move based on the highest gem effect value of a specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Move SelectMoveByBiggestGemEffect(List&lt;Move&gt; moves, GemActiveEffectType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>moves</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>List of potential moves.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemActiveEffectType.html">GemActiveEffectType</a></dt>
+    <dd><p>The type of gem effect to consider for selection.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.Move.html">Move</a></dt>
+    <dd><p>The move with the highest gem effect value of the specified type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_SelectMoveByBiggestGemStatusEffect_" data-uid="TaleOfTiles.AI.VirtualBoard.SelectMoveByBiggestGemStatusEffect*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_SelectMoveByBiggestGemStatusEffect_System_Collections_Generic_List_TaleOfTiles_AI_Move__TaleOfTiles_Card_Gems_GemStatusEffectType_" data-uid="TaleOfTiles.AI.VirtualBoard.SelectMoveByBiggestGemStatusEffect(System.Collections.Generic.List{TaleOfTiles.AI.Move},TaleOfTiles.Card.Gems.GemStatusEffectType)">
+  SelectMoveByBiggestGemStatusEffect(List&lt;Move&gt;, GemStatusEffectType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects the best move based on the highest gem status effect value of a specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Move SelectMoveByBiggestGemStatusEffect(List&lt;Move&gt; moves, GemStatusEffectType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>moves</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>List of potential moves.</p>
+</dd>
+    <dt><code>type</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemStatusEffectType.html">GemStatusEffectType</a></dt>
+    <dd><p>The type of gem status effect to consider for selection.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.Move.html">Move</a></dt>
+    <dd><p>The move with the highest gem status effect value of the specified type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_AI_VirtualBoard_ShuffleBoard_" data-uid="TaleOfTiles.AI.VirtualBoard.ShuffleBoard*"></a>
+
+  <h3 id="TaleOfTiles_AI_VirtualBoard_ShuffleBoard_TaleOfTiles_AI_VirtualGamePiece_0__0___" data-uid="TaleOfTiles.AI.VirtualBoard.ShuffleBoard(TaleOfTiles.AI.VirtualGamePiece[0:,0:])">
+  ShuffleBoard(VirtualGamePiece[,])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L1705"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shuffles the positions of virtual game pieces on the board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualGamePiece[,] ShuffleBoard(VirtualGamePiece[,] board)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>board</code> <a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The virtual game board to be shuffled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.AI.VirtualGamePiece.html">VirtualGamePiece</a>[,]</dt>
+    <dd><p>The shuffled virtual game board.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/AI/AIBehaviour.cs/#L708" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

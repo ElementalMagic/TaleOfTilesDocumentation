@@ -1,0 +1,423 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.BubbleText
+  commentId: T:TaleOfTiles.Arena.BubbleText
+  id: BubbleText
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.BubbleText.EnlargeAndDestroy(System.Single,UnityEngine.Vector2)
+  - TaleOfTiles.Arena.BubbleText.Init(UnityEngine.Color,System.String,UnityEngine.Vector2,System.Single,System.Single,TaleOfTiles.Arena.AnimationType)
+  - TaleOfTiles.Arena.BubbleText.MoveAnim(UnityEngine.Vector2,System.Single)
+  - TaleOfTiles.Arena.BubbleText.effect_text_front
+  - TaleOfTiles.Arena.BubbleText.effect_text_shadow
+  langs:
+  - csharp
+  - vb
+  name: BubbleText
+  nameWithType: BubbleText
+  fullName: TaleOfTiles.Arena.BubbleText
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/BubbleText.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BubbleText
+    path: ../Assets/Scripts/BubbleText.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Handles the display and animation of bubble text in the game.
+  example: []
+  syntax:
+    content: 'public class BubbleText : MonoBehaviour'
+    content.vb: Public Class BubbleText Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Arena.BubbleText.effect_text_shadow
+  commentId: F:TaleOfTiles.Arena.BubbleText.effect_text_shadow
+  id: effect_text_shadow
+  parent: TaleOfTiles.Arena.BubbleText
+  langs:
+  - csharp
+  - vb
+  name: effect_text_shadow
+  nameWithType: BubbleText.effect_text_shadow
+  fullName: TaleOfTiles.Arena.BubbleText.effect_text_shadow
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BubbleText.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: effect_text_shadow
+    path: ../Assets/Scripts/BubbleText.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The shadow of the text effect.
+  example: []
+  syntax:
+    content: public Text effect_text_shadow
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public effect_text_shadow As Text
+- uid: TaleOfTiles.Arena.BubbleText.effect_text_front
+  commentId: F:TaleOfTiles.Arena.BubbleText.effect_text_front
+  id: effect_text_front
+  parent: TaleOfTiles.Arena.BubbleText
+  langs:
+  - csharp
+  - vb
+  name: effect_text_front
+  nameWithType: BubbleText.effect_text_front
+  fullName: TaleOfTiles.Arena.BubbleText.effect_text_front
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BubbleText.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: effect_text_front
+    path: ../Assets/Scripts/BubbleText.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The front of the text effect.
+  example: []
+  syntax:
+    content: public Text effect_text_front
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public effect_text_front As Text
+- uid: TaleOfTiles.Arena.BubbleText.Init(UnityEngine.Color,System.String,UnityEngine.Vector2,System.Single,System.Single,TaleOfTiles.Arena.AnimationType)
+  commentId: M:TaleOfTiles.Arena.BubbleText.Init(UnityEngine.Color,System.String,UnityEngine.Vector2,System.Single,System.Single,TaleOfTiles.Arena.AnimationType)
+  id: Init(UnityEngine.Color,System.String,UnityEngine.Vector2,System.Single,System.Single,TaleOfTiles.Arena.AnimationType)
+  parent: TaleOfTiles.Arena.BubbleText
+  langs:
+  - csharp
+  - vb
+  name: Init(Color, string, Vector2, float, float, AnimationType)
+  nameWithType: BubbleText.Init(Color, string, Vector2, float, float, AnimationType)
+  fullName: TaleOfTiles.Arena.BubbleText.Init(UnityEngine.Color, string, UnityEngine.Vector2, float, float, TaleOfTiles.Arena.AnimationType)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BubbleText.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Init
+    path: ../Assets/Scripts/BubbleText.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Initializes and starts the animation for the bubble text.
+  example: []
+  syntax:
+    content: public void Init(Color text_color, string text_value, Vector2 destination, float delay, float size_multiplicator = 1, AnimationType anim = AnimationType.Bubble)
+    parameters:
+    - id: text_color
+      type: UnityEngine.Color
+      description: The color of the text.
+    - id: text_value
+      type: System.String
+      description: The string value of the text.
+    - id: destination
+      type: UnityEngine.Vector2
+      description: The destination position for the text.
+    - id: delay
+      type: System.Single
+      description: The delay before the animation starts.
+    - id: size_multiplicator
+      type: System.Single
+      description: The size multiplier for the text.
+    - id: anim
+      type: TaleOfTiles.Arena.AnimationType
+      description: The type of animation to perform.
+    content.vb: Public Sub Init(text_color As Color, text_value As String, destination As Vector2, delay As Single, size_multiplicator As Single = 1, anim As AnimationType = AnimationType.Bubble)
+  overload: TaleOfTiles.Arena.BubbleText.Init*
+  nameWithType.vb: BubbleText.Init(Color, String, Vector2, Single, Single, AnimationType)
+  fullName.vb: TaleOfTiles.Arena.BubbleText.Init(UnityEngine.Color, String, UnityEngine.Vector2, Single, Single, TaleOfTiles.Arena.AnimationType)
+  name.vb: Init(Color, String, Vector2, Single, Single, AnimationType)
+- uid: TaleOfTiles.Arena.BubbleText.EnlargeAndDestroy(System.Single,UnityEngine.Vector2)
+  commentId: M:TaleOfTiles.Arena.BubbleText.EnlargeAndDestroy(System.Single,UnityEngine.Vector2)
+  id: EnlargeAndDestroy(System.Single,UnityEngine.Vector2)
+  parent: TaleOfTiles.Arena.BubbleText
+  langs:
+  - csharp
+  - vb
+  name: EnlargeAndDestroy(float, Vector2)
+  nameWithType: BubbleText.EnlargeAndDestroy(float, Vector2)
+  fullName: TaleOfTiles.Arena.BubbleText.EnlargeAndDestroy(float, UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BubbleText.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EnlargeAndDestroy
+    path: ../Assets/Scripts/BubbleText.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to enlarge and then destroy the bubble text.
+  example: []
+  syntax:
+    content: private IEnumerator EnlargeAndDestroy(float delay, Vector2 init_size)
+    parameters:
+    - id: delay
+      type: System.Single
+      description: The delay before the resizing starts.
+    - id: init_size
+      type: UnityEngine.Vector2
+      description: The initial size of the bubble text.
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function EnlargeAndDestroy(delay As Single, init_size As Vector2) As IEnumerator
+  overload: TaleOfTiles.Arena.BubbleText.EnlargeAndDestroy*
+  nameWithType.vb: BubbleText.EnlargeAndDestroy(Single, Vector2)
+  fullName.vb: TaleOfTiles.Arena.BubbleText.EnlargeAndDestroy(Single, UnityEngine.Vector2)
+  name.vb: EnlargeAndDestroy(Single, Vector2)
+- uid: TaleOfTiles.Arena.BubbleText.MoveAnim(UnityEngine.Vector2,System.Single)
+  commentId: M:TaleOfTiles.Arena.BubbleText.MoveAnim(UnityEngine.Vector2,System.Single)
+  id: MoveAnim(UnityEngine.Vector2,System.Single)
+  parent: TaleOfTiles.Arena.BubbleText
+  langs:
+  - csharp
+  - vb
+  name: MoveAnim(Vector2, float)
+  nameWithType: BubbleText.MoveAnim(Vector2, float)
+  fullName: TaleOfTiles.Arena.BubbleText.MoveAnim(UnityEngine.Vector2, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BubbleText.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MoveAnim
+    path: ../Assets/Scripts/BubbleText.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to move the bubble text and then destroy it.
+  example: []
+  syntax:
+    content: private IEnumerator MoveAnim(Vector2 destination, float delay)
+    parameters:
+    - id: destination
+      type: UnityEngine.Vector2
+      description: The destination position for the text.
+    - id: delay
+      type: System.Single
+      description: The delay before the movement starts.
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function MoveAnim(destination As Vector2, delay As Single) As IEnumerator
+  overload: TaleOfTiles.Arena.BubbleText.MoveAnim*
+  nameWithType.vb: BubbleText.MoveAnim(Vector2, Single)
+  fullName.vb: TaleOfTiles.Arena.BubbleText.MoveAnim(UnityEngine.Vector2, Single)
+  name.vb: MoveAnim(Vector2, Single)
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: TaleOfTiles.Arena.BubbleText.Init*
+  commentId: Overload:TaleOfTiles.Arena.BubbleText.Init
+  href: TaleOfTiles.Arena.BubbleText.html#TaleOfTiles_Arena_BubbleText_Init_UnityEngine_Color_System_String_UnityEngine_Vector2_System_Single_System_Single_TaleOfTiles_Arena_AnimationType_
+  name: Init
+  nameWithType: BubbleText.Init
+  fullName: TaleOfTiles.Arena.BubbleText.Init
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TaleOfTiles.Arena.AnimationType
+  commentId: T:TaleOfTiles.Arena.AnimationType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.AnimationType.html
+  name: AnimationType
+  nameWithType: AnimationType
+  fullName: TaleOfTiles.Arena.AnimationType
+- uid: TaleOfTiles.Arena.BubbleText.EnlargeAndDestroy*
+  commentId: Overload:TaleOfTiles.Arena.BubbleText.EnlargeAndDestroy
+  href: TaleOfTiles.Arena.BubbleText.html#TaleOfTiles_Arena_BubbleText_EnlargeAndDestroy_System_Single_UnityEngine_Vector2_
+  name: EnlargeAndDestroy
+  nameWithType: BubbleText.EnlargeAndDestroy
+  fullName: TaleOfTiles.Arena.BubbleText.EnlargeAndDestroy
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TaleOfTiles.Arena.BubbleText.MoveAnim*
+  commentId: Overload:TaleOfTiles.Arena.BubbleText.MoveAnim
+  href: TaleOfTiles.Arena.BubbleText.html#TaleOfTiles_Arena_BubbleText_MoveAnim_UnityEngine_Vector2_System_Single_
+  name: MoveAnim
+  nameWithType: BubbleText.MoveAnim
+  fullName: TaleOfTiles.Arena.BubbleText.MoveAnim

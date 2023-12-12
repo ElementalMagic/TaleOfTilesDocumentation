@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.GemEffectAttributeUI
+  commentId: T:TaleOfTiles.Card.GemEffectAttributeUI
+  id: GemEffectAttributeUI
+  parent: TaleOfTiles.Card
+  children:
+  - TaleOfTiles.Card.GemEffectAttributeUI.SetAttribute(TaleOfTiles.Card.GemEffectAttribute)
+  - TaleOfTiles.Card.GemEffectAttributeUI.attribute_name
+  - TaleOfTiles.Card.GemEffectAttributeUI.attribute_value
+  langs:
+  - csharp
+  - vb
+  name: GemEffectAttributeUI
+  nameWithType: GemEffectAttributeUI
+  fullName: TaleOfTiles.Card.GemEffectAttributeUI
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/GemEffectAttributeUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GemEffectAttributeUI
+    path: ../Assets/Scripts/GemEffectAttributeUI.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Handles the display of gem effect attributes in the user interface.
+  example: []
+  syntax:
+    content: 'public class GemEffectAttributeUI : MonoBehaviour'
+    content.vb: Public Class GemEffectAttributeUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Card.GemEffectAttributeUI.attribute_name
+  commentId: F:TaleOfTiles.Card.GemEffectAttributeUI.attribute_name
+  id: attribute_name
+  parent: TaleOfTiles.Card.GemEffectAttributeUI
+  langs:
+  - csharp
+  - vb
+  name: attribute_name
+  nameWithType: GemEffectAttributeUI.attribute_name
+  fullName: TaleOfTiles.Card.GemEffectAttributeUI.attribute_name
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GemEffectAttributeUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: attribute_name
+    path: ../Assets/Scripts/GemEffectAttributeUI.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The UI element displaying the name of the attribute.
+  example: []
+  syntax:
+    content: public Text attribute_name
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public attribute_name As Text
+- uid: TaleOfTiles.Card.GemEffectAttributeUI.attribute_value
+  commentId: F:TaleOfTiles.Card.GemEffectAttributeUI.attribute_value
+  id: attribute_value
+  parent: TaleOfTiles.Card.GemEffectAttributeUI
+  langs:
+  - csharp
+  - vb
+  name: attribute_value
+  nameWithType: GemEffectAttributeUI.attribute_value
+  fullName: TaleOfTiles.Card.GemEffectAttributeUI.attribute_value
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GemEffectAttributeUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: attribute_value
+    path: ../Assets/Scripts/GemEffectAttributeUI.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The UI element displaying the value of the attribute.
+  example: []
+  syntax:
+    content: public Text attribute_value
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public attribute_value As Text
+- uid: TaleOfTiles.Card.GemEffectAttributeUI.SetAttribute(TaleOfTiles.Card.GemEffectAttribute)
+  commentId: M:TaleOfTiles.Card.GemEffectAttributeUI.SetAttribute(TaleOfTiles.Card.GemEffectAttribute)
+  id: SetAttribute(TaleOfTiles.Card.GemEffectAttribute)
+  parent: TaleOfTiles.Card.GemEffectAttributeUI
+  langs:
+  - csharp
+  - vb
+  name: SetAttribute(GemEffectAttribute)
+  nameWithType: GemEffectAttributeUI.SetAttribute(GemEffectAttribute)
+  fullName: TaleOfTiles.Card.GemEffectAttributeUI.SetAttribute(TaleOfTiles.Card.GemEffectAttribute)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GemEffectAttributeUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetAttribute
+    path: ../Assets/Scripts/GemEffectAttributeUI.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Sets the attribute's name and value in the UI.
+  example: []
+  syntax:
+    content: public IEnumerator SetAttribute(GemEffectAttribute attr)
+    parameters:
+    - id: attr
+      type: TaleOfTiles.Card.GemEffectAttribute
+      description: The gem effect attribute to display.
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine management.
+    content.vb: Public Function SetAttribute(attr As GemEffectAttribute) As IEnumerator
+  overload: TaleOfTiles.Card.GemEffectAttributeUI.SetAttribute*
+references:
+- uid: TaleOfTiles.Card
+  commentId: N:TaleOfTiles.Card
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card
+  nameWithType: TaleOfTiles.Card
+  fullName: TaleOfTiles.Card
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: TaleOfTiles.Card.GemEffectAttributeUI.SetAttribute*
+  commentId: Overload:TaleOfTiles.Card.GemEffectAttributeUI.SetAttribute
+  href: TaleOfTiles.Card.GemEffectAttributeUI.html#TaleOfTiles_Card_GemEffectAttributeUI_SetAttribute_TaleOfTiles_Card_GemEffectAttribute_
+  name: SetAttribute
+  nameWithType: GemEffectAttributeUI.SetAttribute
+  fullName: TaleOfTiles.Card.GemEffectAttributeUI.SetAttribute
+- uid: TaleOfTiles.Card.GemEffectAttribute
+  commentId: T:TaleOfTiles.Card.GemEffectAttribute
+  parent: TaleOfTiles.Card
+  href: TaleOfTiles.Card.GemEffectAttribute.html
+  name: GemEffectAttribute
+  nameWithType: GemEffectAttribute
+  fullName: TaleOfTiles.Card.GemEffectAttribute
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections

@@ -1,0 +1,4016 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BoardManager
+ | Tale of Tiles Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BoardManager
+ | Tale of Tiles Documentation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ElementalMagic/Match-3-Mobile-Game/new/dev/apiSpec/new?filename=TaleOfTiles_Arena_BoardManager.md&amp;value=---%0Auid%3A%20TaleOfTiles.Arena.BoardManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Tale of Tiles Documentation">
+            Tale of Tiles Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleOfTiles.Arena.BoardManager">
+
+
+
+  <h1 id="TaleOfTiles_Arena_BoardManager" data-uid="TaleOfTiles.Arena.BoardManager" class="text-break">
+    Class BoardManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleOfTiles.html">TaleOfTiles</a>.<a class="xref" href="TaleOfTiles.Arena.html">Arena</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Class that manages the game board and related functions.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BoardManager : MonoBehaviour</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><span class="xref">BoardManager</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager__score" data-uid="TaleOfTiles.Arena.BoardManager._score">
+  _score
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current score of the game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float _score</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_adjacentBombPrefabs" data-uid="TaleOfTiles.Arena.BoardManager.adjacentBombPrefabs">
+  adjacentBombPrefabs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Array of GameObjects representing the prefabs for adjacent bombs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] adjacentBombPrefabs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_allGamePieces" data-uid="TaleOfTiles.Arena.BoardManager.allGamePieces">
+  allGamePieces
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A 2D array of all the game pieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GamePiece[,] allGamePieces</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_allTilesArray" data-uid="TaleOfTiles.Arena.BoardManager.allTilesArray">
+  allTilesArray
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A 2D array of all the tiles present in the game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tile[,] allTilesArray</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_baseGemPrefab" data-uid="TaleOfTiles.Arena.BoardManager.baseGemPrefab">
+  baseGemPrefab
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Base gem prefab to be used for creating gems.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject baseGemPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_chameleon_activated" data-uid="TaleOfTiles.Arena.BoardManager.chameleon_activated">
+  chameleon_activated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag to check if the chameleon is currently activated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool chameleon_activated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_chanceForCollectible" data-uid="TaleOfTiles.Arena.BoardManager.chanceForCollectible">
+  chanceForCollectible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Chance for a top-row tile to get a collectible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Range(0, 1)]
+public float chanceForCollectible</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_clickedTile" data-uid="TaleOfTiles.Arena.BoardManager.clickedTile">
+  clickedTile
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The currently clicked tile by the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tile clickedTile</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_collapseTime" data-uid="TaleOfTiles.Arena.BoardManager.collapseTime">
+  collapseTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The amount of time required for the board to collapse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float collapseTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_collectibleCount" data-uid="TaleOfTiles.Arena.BoardManager.collectibleCount">
+  collectibleCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current number of collectibles on the board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int collectibleCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_collectiblePrefabs" data-uid="TaleOfTiles.Arena.BoardManager.collectiblePrefabs">
+  collectiblePrefabs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Array of GameObjects representing the collectible prefabs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] collectiblePrefabs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_colorBombPrefab" data-uid="TaleOfTiles.Arena.BoardManager.colorBombPrefab">
+  colorBombPrefab
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>GameObject representing the color bomb prefab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject colorBombPrefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_columnBombPrefabs" data-uid="TaleOfTiles.Arena.BoardManager.columnBombPrefabs">
+  columnBombPrefabs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Array of GameObjects representing the prefabs for column bombs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] columnBombPrefabs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_combo_counter" data-uid="TaleOfTiles.Arena.BoardManager.combo_counter">
+  combo_counter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Text component for displaying combo count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text combo_counter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_debug_board_fill" data-uid="TaleOfTiles.Arena.BoardManager.debug_board_fill">
+  debug_board_fill
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag to debug board fill.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool debug_board_fill</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_fillMoveTime" data-uid="TaleOfTiles.Arena.BoardManager.fillMoveTime">
+  fillMoveTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Time used to fill the board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fillMoveTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_fillYOffset" data-uid="TaleOfTiles.Arena.BoardManager.fillYOffset">
+  fillYOffset
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Y Offset used to make the pieces &quot;fall&quot; into place to fill the Board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int fillYOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_gemSize" data-uid="TaleOfTiles.Arena.BoardManager.gemSize">
+  gemSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Size of a gem on the board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Vector2 gemSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_gemsGrid" data-uid="TaleOfTiles.Arena.BoardManager.gemsGrid">
+  gemsGrid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Game object representing the grid of gems.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject gemsGrid</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_gemsPrefabs" data-uid="TaleOfTiles.Arena.BoardManager.gemsPrefabs">
+  gemsPrefabs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>List of GameObjects representing the gem prefabs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;GameObject&gt; gemsPrefabs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">GameObject</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_height" data-uid="TaleOfTiles.Arena.BoardManager.height">
+  height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The height of the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int height</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_isRefilling" data-uid="TaleOfTiles.Arena.BoardManager.isRefilling">
+  isRefilling
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag indicating whether the board is refilling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isRefilling</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_m_boardDeadlock" data-uid="TaleOfTiles.Arena.BoardManager.m_boardDeadlock">
+  m_boardDeadlock
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instance of the BoardDeadlock class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private BoardDeadlock m_boardDeadlock</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.BoardDeadlock.html">BoardDeadlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_m_boardShuffler" data-uid="TaleOfTiles.Arena.BoardManager.m_boardShuffler">
+  m_boardShuffler
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instance of the BoardShuffler class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private BoardShuffler m_boardShuffler</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.BoardShuffler.html">BoardShuffler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_m_clickedTileBomb" data-uid="TaleOfTiles.Arena.BoardManager.m_clickedTileBomb">
+  m_clickedTileBomb
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reference to a bomb created on the clicked tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GameObject m_clickedTileBomb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_m_particleManager" data-uid="TaleOfTiles.Arena.BoardManager.m_particleManager">
+  m_particleManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Instance of the ParticleManager class for managing particle effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private ParticleManager m_particleManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.UI.ParticleManager.html">ParticleManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_m_playerInputEnabled" data-uid="TaleOfTiles.Arena.BoardManager.m_playerInputEnabled">
+  m_playerInputEnabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag indicating whether the player's input is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool m_playerInputEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_m_scoreMultiplier" data-uid="TaleOfTiles.Arena.BoardManager.m_scoreMultiplier">
+  m_scoreMultiplier
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current score multiplier, based on the number of chain reactions caused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private int m_scoreMultiplier</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_m_targetTileBomb" data-uid="TaleOfTiles.Arena.BoardManager.m_targetTileBomb">
+  m_targetTileBomb
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reference to a bomb created on the target tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GameObject m_targetTileBomb</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_maxCollectibles" data-uid="TaleOfTiles.Arena.BoardManager.maxCollectibles">
+  maxCollectibles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum number of collectibles allowed per board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int maxCollectibles</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_player" data-uid="TaleOfTiles.Arena.BoardManager.player">
+  player
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>PlayerCharacter object representing the player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerCharacter player</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Player.PlayerCharacter.html">PlayerCharacter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_rowBombPrefabs" data-uid="TaleOfTiles.Arena.BoardManager.rowBombPrefabs">
+  rowBombPrefabs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Array of GameObjects representing the prefabs for row bombs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject[] rowBombPrefabs</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_score_counter" data-uid="TaleOfTiles.Arena.BoardManager.score_counter">
+  score_counter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Text component for displaying score.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text score_counter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Text</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_static_random" data-uid="TaleOfTiles.Arena.BoardManager.static_random">
+  static_random
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>System.Random instance for generating random numbers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private Random static_random</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.random">Random</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_swapTime" data-uid="TaleOfTiles.Arena.BoardManager.swapTime">
+  swapTime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The amount of time required to swap game pieces between the target and clicked tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float swapTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_targetTile" data-uid="TaleOfTiles.Arena.BoardManager.targetTile">
+  targetTile
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The tile that is being targeted by the player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tile targetTile</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_tilesGrid" data-uid="TaleOfTiles.Arena.BoardManager.tilesGrid">
+  tilesGrid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>GameObject representing the grid of tiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject tilesGrid</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_width" data-uid="TaleOfTiles.Arena.BoardManager.width">
+  width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The width of the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int width</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_score_" data-uid="TaleOfTiles.Arena.BoardManager.score*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_score" data-uid="TaleOfTiles.Arena.BoardManager.score">
+  score
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Property to get and set the score. Updates the score_counter text on set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float score { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ActivateBomb_" data-uid="TaleOfTiles.Arena.BoardManager.ActivateBomb*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ActivateBomb_UnityEngine_GameObject_" data-uid="TaleOfTiles.Arena.BoardManager.ActivateBomb(UnityEngine.GameObject)">
+  ActivateBomb(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1098"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Activates a bomb in the game board and treats it as a normal GamePiece.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void ActivateBomb(GameObject bomb)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bomb</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The bomb to be activated.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_BreakTileAt_" data-uid="TaleOfTiles.Arena.BoardManager.BreakTileAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_BreakTileAt_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.BreakTileAt(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  BreakTileAt(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1822"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Damages breakable tiles corresponding to a list of game pieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void BreakTileAt(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces whose positions should have their tiles damaged.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_BreakTileAt_" data-uid="TaleOfTiles.Arena.BoardManager.BreakTileAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_BreakTileAt_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.BreakTileAt(System.Int32,System.Int32)">
+  BreakTileAt(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1801"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Damages a breakable tile at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void BreakTileAt(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the tile's position.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the tile's position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_CanAddCollectible_" data-uid="TaleOfTiles.Arena.BoardManager.CanAddCollectible*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_CanAddCollectible" data-uid="TaleOfTiles.Arena.BoardManager.CanAddCollectible">
+  CanAddCollectible()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a collectible can be added to the game board. Currently always returns false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool CanAddCollectible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_CheckDeadLock_" data-uid="TaleOfTiles.Arena.BoardManager.CheckDeadLock*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_CheckDeadLock" data-uid="TaleOfTiles.Arena.BoardManager.CheckDeadLock">
+  CheckDeadLock()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L2307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the game board is in a deadlock situation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ContextMenu(&quot;Check Deadlock&quot;)]
+public bool CheckDeadLock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the board is in deadlock, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ClearAndCollapseRoutine_" data-uid="TaleOfTiles.Arena.BoardManager.ClearAndCollapseRoutine*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ClearAndCollapseRoutine_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.ClearAndCollapseRoutine(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  ClearAndCollapseRoutine(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1972"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to clear GamePieces from the Board and collapse any empty spaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator ClearAndCollapseRoutine(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The game pieces to clear from the board.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ClearAndRefillBoard_" data-uid="TaleOfTiles.Arena.BoardManager.ClearAndRefillBoard*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ClearAndRefillBoard_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.ClearAndRefillBoard(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  ClearAndRefillBoard(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1683"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears and refills the Board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void ClearAndRefillBoard(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The game pieces to clear from the board.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ClearAndRefillBoardRoutine_" data-uid="TaleOfTiles.Arena.BoardManager.ClearAndRefillBoardRoutine*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ClearAndRefillBoardRoutine_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.ClearAndRefillBoardRoutine(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  ClearAndRefillBoardRoutine(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1696"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to clear GamePieces and collapse empty spaces, then refill the Board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator ClearAndRefillBoardRoutine(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The game pieces to clear from the board.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ClearBoard_" data-uid="TaleOfTiles.Arena.BoardManager.ClearBoard*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ClearBoard" data-uid="TaleOfTiles.Arena.BoardManager.ClearBoard">
+  ClearBoard()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the board by iterating over all game pieces and clearing them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearBoard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ClearPieceAt_" data-uid="TaleOfTiles.Arena.BoardManager.ClearPieceAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ClearPieceAt_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__System_Collections_Generic_List_TaleOfTiles_AI_Combination__" data-uid="TaleOfTiles.Arena.BoardManager.ClearPieceAt(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece},System.Collections.Generic.List{TaleOfTiles.AI.Combination})">
+  ClearPieceAt(List&lt;GamePiece&gt;, List&lt;Combination&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears a list of game pieces and scores combinations of pieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator ClearPieceAt(List&lt;GamePiece&gt; gamePieces, List&lt;Combination&gt; combinations)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces to clear.</p>
+</dd>
+    <dt><code>combinations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Combination.html">Combination</a>&gt;</dt>
+    <dd><p>The list of combinations to score.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>An IEnumerator to be used in a coroutine.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ClearPieceAt_" data-uid="TaleOfTiles.Arena.BoardManager.ClearPieceAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ClearPieceAt_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.ClearPieceAt(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece},System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  ClearPieceAt(List&lt;GamePiece&gt;, List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears a list of game pieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator ClearPieceAt(List&lt;GamePiece&gt; gamePieces, List&lt;GamePiece&gt; bombedPieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces to clear.</p>
+</dd>
+    <dt><code>bombedPieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces destroyed by bombs.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>An IEnumerator to be used in a coroutine.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ClearPieceAt_" data-uid="TaleOfTiles.Arena.BoardManager.ClearPieceAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ClearPieceAt_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.ClearPieceAt(System.Int32,System.Int32)">
+  ClearPieceAt(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the game piece at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void ClearPieceAt(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the position to clear.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the position to clear.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ClickTile_" data-uid="TaleOfTiles.Arena.BoardManager.ClickTile*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ClickTile_TaleOfTiles_Arena_Tile_" data-uid="TaleOfTiles.Arena.BoardManager.ClickTile(TaleOfTiles.Arena.Tile)">
+  ClickTile(Tile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the clicked tile to the specified tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClickTile(Tile gem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gem</code> <a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The tile that was clicked.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_CollapseColumn_" data-uid="TaleOfTiles.Arena.BoardManager.CollapseColumn*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_CollapseColumn_System_Collections_Generic_List_System_Int32__" data-uid="TaleOfTiles.Arena.BoardManager.CollapseColumn(System.Collections.Generic.List{System.Int32})">
+  CollapseColumn(List&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1931"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compresses all columns given a list of column indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; CollapseColumn(List&lt;int&gt; columnsToCollapse)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>columnsToCollapse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>The list of column indices to compress.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects that were moved during the compression.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_CollapseColumn_" data-uid="TaleOfTiles.Arena.BoardManager.CollapseColumn*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_CollapseColumn_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.CollapseColumn(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  CollapseColumn(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1912"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compresses all columns given a list of GamePieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; CollapseColumn(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces whose columns should be compressed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects that were moved during the compression.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_CollapseColumn_" data-uid="TaleOfTiles.Arena.BoardManager.CollapseColumn*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_CollapseColumn_System_Int32_System_Single_" data-uid="TaleOfTiles.Arena.BoardManager.CollapseColumn(System.Int32,System.Single)">
+  CollapseColumn(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1863"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compresses a given column to remove any empty Tile spaces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; CollapseColumn(int column, float collapseTime = 0.1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The column to compress.</p>
+</dd>
+    <dt><code>collapseTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The time it takes for the compression to occur.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects that were moved during the compression.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_CreateGemsPrefabs_" data-uid="TaleOfTiles.Arena.BoardManager.CreateGemsPrefabs*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_CreateGemsPrefabs" data-uid="TaleOfTiles.Arena.BoardManager.CreateGemsPrefabs">
+  CreateGemsPrefabs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates gem prefabs based on the player's active skills.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateGemsPrefabs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_DropBomb_" data-uid="TaleOfTiles.Arena.BoardManager.DropBomb*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_DropBomb_System_Int32_System_Int32_UnityEngine_Vector2_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.DropBomb(System.Int32,System.Int32,UnityEngine.Vector2,System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  DropBomb(int, int, Vector2, List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L910"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Drops a bomb at the specified position on the game board, given a list of matching game pieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GameObject DropBomb(int x, int y, Vector2 swapDirection, List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the position.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the position.</p>
+</dd>
+    <dt><code>swapDirection</code> <span class="xref">Vector2</span></dt>
+    <dd><p>The direction of the swap that created the match.</p>
+</dd>
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of matching game pieces.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>The Bomb object created at the specified position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_EndTurn_" data-uid="TaleOfTiles.Arena.BoardManager.EndTurn*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_EndTurn" data-uid="TaleOfTiles.Arena.BoardManager.EndTurn">
+  EndTurn()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L2115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ends the turn by calling EndTurn on all game pieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndTurn()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FillBoard_" data-uid="TaleOfTiles.Arena.BoardManager.FillBoard*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FillBoard_System_Int32_System_Single_" data-uid="TaleOfTiles.Arena.BoardManager.FillBoard(System.Int32,System.Single)">
+  FillBoard(int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills the game board with game pieces, ensuring no matches are created during the fill.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void FillBoard(int falseYOffset = 0, float moveTime = 0.1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>falseYOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y offset for filling the board.</p>
+</dd>
+    <dt><code>moveTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The time taken to move a piece.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FillBoardFromList_" data-uid="TaleOfTiles.Arena.BoardManager.FillBoardFromList*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FillBoardFromList_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.FillBoardFromList(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  FillBoardFromList(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fills the game board using a known list of game pieces, ensuring no matches are created during the fill.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void FillBoardFromList(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces to use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FillRandomCollectibleAt_" data-uid="TaleOfTiles.Arena.BoardManager.FillRandomCollectibleAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FillRandomCollectibleAt_System_Int32_System_Int32_System_Int32_System_Single_" data-uid="TaleOfTiles.Arena.BoardManager.FillRandomCollectibleAt(System.Int32,System.Int32,System.Int32,System.Single)">
+  FillRandomCollectibleAt(int, int, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L861"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a random collectible at the specified position on the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GamePiece FillRandomCollectibleAt(int x, int y, int falseYOffset = 0, float moveTime = 0.1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the position.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the position.</p>
+</dd>
+    <dt><code>falseYOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y offset for creating the collectible.</p>
+</dd>
+    <dt><code>moveTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The time taken to move a piece.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a></dt>
+    <dd><p>The GamePiece object created at the specified position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FillRandomGamePieceAt_" data-uid="TaleOfTiles.Arena.BoardManager.FillRandomGamePieceAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FillRandomGamePieceAt_System_Int32_System_Int32_System_Int32_System_Single_" data-uid="TaleOfTiles.Arena.BoardManager.FillRandomGamePieceAt(System.Int32,System.Int32,System.Int32,System.Single)">
+  FillRandomGamePieceAt(int, int, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L840"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a random game piece at the specified position on the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GamePiece FillRandomGamePieceAt(int x, int y, int falseYOffset = 0, float moveTime = 0.1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the position.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the position.</p>
+</dd>
+    <dt><code>falseYOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y offset for creating the game piece.</p>
+</dd>
+    <dt><code>moveTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The time taken to move a piece.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a></dt>
+    <dd><p>The GamePiece object created at the specified position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindAllCollectibles_" data-uid="TaleOfTiles.Arena.BoardManager.FindAllCollectibles*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindAllCollectibles" data-uid="TaleOfTiles.Arena.BoardManager.FindAllCollectibles">
+  FindAllCollectibles()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all Collectibles in the Board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; FindAllCollectibles()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects that are collectibles.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindAllMatchValue_" data-uid="TaleOfTiles.Arena.BoardManager.FindAllMatchValue*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindAllMatchValue_System_String_" data-uid="TaleOfTiles.Arena.BoardManager.FindAllMatchValue(System.String)">
+  FindAllMatchValue(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1256"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all GamePieces on the Board with a certain MatchValue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; FindAllMatchValue(string mValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The match value to search for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects with the specified match value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindAllMatches_" data-uid="TaleOfTiles.Arena.BoardManager.FindAllMatches*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindAllMatches" data-uid="TaleOfTiles.Arena.BoardManager.FindAllMatches">
+  FindAllMatches()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1618"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all matches in the game Board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; FindAllMatches()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of all GamePiece objects that are part of a match.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindAllMoves_" data-uid="TaleOfTiles.Arena.BoardManager.FindAllMoves*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindAllMoves" data-uid="TaleOfTiles.Arena.BoardManager.FindAllMoves">
+  FindAllMoves()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1531"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all possible moves and matches afterwards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Move&gt; FindAllMoves()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.AI.Move.html">Move</a>&gt;</dt>
+    <dd><p>A list of all possible Move objects.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindCollectiblesAt_" data-uid="TaleOfTiles.Arena.BoardManager.FindCollectiblesAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindCollectiblesAt_System_Int32_System_Boolean_" data-uid="TaleOfTiles.Arena.BoardManager.FindCollectiblesAt(System.Int32,System.Boolean)">
+  FindCollectiblesAt(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all Collectibles at a certain row.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; FindCollectiblesAt(int row, bool clearedAtBottomOnly = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The row to search for collectibles.</p>
+</dd>
+    <dt><code>clearedAtBottomOnly</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, only returns collectibles that can be cleared at the bottom.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects that are collectibles in the specified row.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindGamePieceByMatchValue_" data-uid="TaleOfTiles.Arena.BoardManager.FindGamePieceByMatchValue*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindGamePieceByMatchValue_UnityEngine_GameObject___System_String_" data-uid="TaleOfTiles.Arena.BoardManager.FindGamePieceByMatchValue(UnityEngine.GameObject[],System.String)">
+  FindGamePieceByMatchValue(GameObject[], string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds a GamePiece prefab with a given match value from an array of prefabs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GameObject FindGamePieceByMatchValue(GameObject[] gamePiecePrefabs, string matchValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePiecePrefabs</code> <span class="xref">GameObject</span>[]</dt>
+    <dd><p>The array of prefabs to search from.</p>
+</dd>
+    <dt><code>matchValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The match value to search for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>A GameObject from the prefabs that has the specified match value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindHorizontalMatches_" data-uid="TaleOfTiles.Arena.BoardManager.FindHorizontalMatches*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindHorizontalMatches_System_Int32_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.FindHorizontalMatches(System.Int32,System.Int32,System.Int32)">
+  FindHorizontalMatches(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all horizontal matches given a position (x,y) in the Board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; FindHorizontalMatches(int startX, int startY, int minLength = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the starting position.</p>
+</dd>
+    <dt><code>startY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the starting position.</p>
+</dd>
+    <dt><code>minLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum length of a match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of matching GamePiece objects if a match is found, null otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindMatchValue_" data-uid="TaleOfTiles.Arena.BoardManager.FindMatchValue*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindMatchValue_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.FindMatchValue(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  FindMatchValue(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given a list of GamePieces, returns the first valid MatchValue found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private string FindMatchValue(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces to search from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The match value of the first valid game piece in the list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindMatches_" data-uid="TaleOfTiles.Arena.BoardManager.FindMatches*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindMatches_System_Int32_System_Int32_UnityEngine_Vector2_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.FindMatches(System.Int32,System.Int32,UnityEngine.Vector2,System.Int32)">
+  FindMatches(int, int, Vector2, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds matches of game pieces starting from a position and searching in a specific direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; FindMatches(int startX, int startY, Vector2 searchDirection, int minLength = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the starting position.</p>
+</dd>
+    <dt><code>startY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the starting position.</p>
+</dd>
+    <dt><code>searchDirection</code> <span class="xref">Vector2</span></dt>
+    <dd><p>The direction to search in.</p>
+</dd>
+    <dt><code>minLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum length of a match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of matching GamePiece objects if a match is found, null otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindMatchesAt_" data-uid="TaleOfTiles.Arena.BoardManager.FindMatchesAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindMatchesAt_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.FindMatchesAt(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece},System.Int32)">
+  FindMatchesAt(List&lt;GamePiece&gt;, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all matches given a list of GamePieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; FindMatchesAt(List&lt;GamePiece&gt; gamePieces, int minLength = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces to search from.</p>
+</dd>
+    <dt><code>minLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum length of a match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of matching GamePiece objects if a match is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindMatchesAt_" data-uid="TaleOfTiles.Arena.BoardManager.FindMatchesAt*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindMatchesAt_System_Int32_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.FindMatchesAt(System.Int32,System.Int32,System.Int32)">
+  FindMatchesAt(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds horizontal and vertical matches at a position (x,y) in the Board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; FindMatchesAt(int x, int y, int minLength = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the position.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the position.</p>
+</dd>
+    <dt><code>minLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum length of a match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of matching GamePiece objects if a match is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_FindVerticalMatches_" data-uid="TaleOfTiles.Arena.BoardManager.FindVerticalMatches*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_FindVerticalMatches_System_Int32_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.FindVerticalMatches(System.Int32,System.Int32,System.Int32)">
+  FindVerticalMatches(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all vertical matches given a position (x,y) in the Board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; FindVerticalMatches(int startX, int startY, int minLength = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the starting position.</p>
+</dd>
+    <dt><code>startY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the starting position.</p>
+</dd>
+    <dt><code>minLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum length of a match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of matching GamePiece objects if a match is found, null otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetAdjacentPieces_" data-uid="TaleOfTiles.Arena.BoardManager.GetAdjacentPieces*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetAdjacentPieces_System_Int32_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.GetAdjacentPieces(System.Int32,System.Int32,System.Int32)">
+  GetAdjacentPieces(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1020"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all GamePieces adjacent to a position (x,y).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; GetAdjacentPieces(int x, int y, int offset = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the position.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the position.</p>
+</dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The distance from the position to consider as adjacent.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects adjacent to the specified position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetBombedPieces_" data-uid="TaleOfTiles.Arena.BoardManager.GetBombedPieces*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetBombedPieces_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.GetBombedPieces(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  GetBombedPieces(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1045"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given a list of GamePieces, returns a new List of GamePieces that would be destroyed by bombs from the original list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; GetBombedPieces(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The original list of game pieces.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects that would be destroyed by bombs from the original list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetColumnPieces_" data-uid="TaleOfTiles.Arena.BoardManager.GetColumnPieces*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetColumnPieces_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.GetColumnPieces(System.Int32)">
+  GetColumnPieces(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L978"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a list of GamePieces in a specified column.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; GetColumnPieces(int column)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>column</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The column to retrieve game pieces from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects in the specified column.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetColumns_" data-uid="TaleOfTiles.Arena.BoardManager.GetColumns*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetColumns_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.GetColumns(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  GetColumns(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1839"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given a List of GamePieces, return a list of columns by index number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;int&gt; GetColumns(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces to find columns from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>A list of column indices that the game pieces are in.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetGamePiece_" data-uid="TaleOfTiles.Arena.BoardManager.GetGamePiece*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetGamePiece_TaleOfTiles_Arena_Tile_" data-uid="TaleOfTiles.Arena.BoardManager.GetGamePiece(TaleOfTiles.Arena.Tile)">
+  GetGamePiece(Tile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L2107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the GamePiece associated with a Tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GamePiece GetGamePiece(Tile tile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tile</code> <a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The tile to get the game piece for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a></dt>
+    <dd><p>The GamePiece associated with the provided tile.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetRandomCollectible_" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomCollectible*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetRandomCollectible" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomCollectible">
+  GetRandomCollectible()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L765"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a random collectible from the set of collectible prefabs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GameObject GetRandomCollectible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>A GameObject representing a random collectible.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetRandomExistingGamePiece_" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomExistingGamePiece*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetRandomExistingGamePiece" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomExistingGamePiece">
+  GetRandomExistingGamePiece()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L691"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a random existing game piece from the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GamePiece GetRandomExistingGamePiece()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a></dt>
+    <dd><p>A GamePiece object randomly chosen from the existing game pieces on the board.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetRandomExistingGamePieceWithStatus_" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomExistingGamePieceWithStatus*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetRandomExistingGamePieceWithStatus_TaleOfTiles_Card_Gems_GemStatusEffectType_" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomExistingGamePieceWithStatus(TaleOfTiles.Card.Gems.GemStatusEffectType)">
+  GetRandomExistingGamePieceWithStatus(GemStatusEffectType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a random existing game piece with a specific status from the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GamePiece GetRandomExistingGamePieceWithStatus(GemStatusEffectType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemStatusEffectType.html">GemStatusEffectType</a></dt>
+    <dd><p>The status type to filter game pieces by.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a></dt>
+    <dd><p>A GamePiece object randomly chosen from the existing game pieces on the board with the specified status.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetRandomExistingGamePieces_" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomExistingGamePieces*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetRandomExistingGamePieces_System_Single_" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomExistingGamePieces(System.Single)">
+  GetRandomExistingGamePieces(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L725"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a list of random existing game pieces from the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;GamePiece&gt; GetRandomExistingGamePieces(float part_of_board)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>part_of_board</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The fraction of the board to retrieve game pieces from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects randomly chosen from the existing game pieces on the board.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetRandomGamePiece_" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomGamePiece*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetRandomGamePiece" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomGamePiece">
+  GetRandomGamePiece()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a random game piece from the list of gem prefabs, with consideration for gem rarity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GameObject GetRandomGamePiece()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>A GameObject representing a random game piece.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetRandomObject_" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomObject*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetRandomObject_UnityEngine_GameObject___" data-uid="TaleOfTiles.Arena.BoardManager.GetRandomObject(UnityEngine.GameObject[])">
+  GetRandomObject(GameObject[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L626"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a random object from an array of GameObjects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GameObject GetRandomObject(GameObject[] objectArray)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectArray</code> <span class="xref">GameObject</span>[]</dt>
+    <dd><p>Array of GameObjects to choose from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>A random GameObject from the provided array.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetRowPieces_" data-uid="TaleOfTiles.Arena.BoardManager.GetRowPieces*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetRowPieces_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.GetRowPieces(System.Int32)">
+  GetRowPieces(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L998"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a list of GamePieces in a specified row.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; GetRowPieces(int row)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>row</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The row to retrieve game pieces from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects in the specified row.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_GetTile_" data-uid="TaleOfTiles.Arena.BoardManager.GetTile*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_GetTile_TaleOfTiles_Arena_GamePiece_" data-uid="TaleOfTiles.Arena.BoardManager.GetTile(TaleOfTiles.Arena.GamePiece)">
+  GetTile(GamePiece)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L2097"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the Tile associated with a GamePiece.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tile GetTile(GamePiece piece)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>piece</code> <a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a></dt>
+    <dd><p>The game piece to get the tile for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The Tile associated with the provided game piece.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_HasMatchOnFill_" data-uid="TaleOfTiles.Arena.BoardManager.HasMatchOnFill*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_HasMatchOnFill_System_Int32_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.HasMatchOnFill(System.Int32,System.Int32,System.Int32)">
+  HasMatchOnFill(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a match exists in the given direction starting from the position specified by x and y.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool HasMatchOnFill(int x, int y, int minLength = 3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the position to check from.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the position to check from.</p>
+</dd>
+    <dt><code>minLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The minimum length of a match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if a match exists, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_InitTiles_" data-uid="TaleOfTiles.Arena.BoardManager.InitTiles*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_InitTiles" data-uid="TaleOfTiles.Arena.BoardManager.InitTiles">
+  InitTiles()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the tiles on the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void InitTiles()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_IsCollapsed_" data-uid="TaleOfTiles.Arena.BoardManager.IsCollapsed*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_IsCollapsed_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.IsCollapsed(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  IsCollapsed(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1947"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the GamePieces have reached their destination positions on collapse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool IsCollapsed(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if all game pieces have reached their destination, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_IsColorBomb_" data-uid="TaleOfTiles.Arena.BoardManager.IsColorBomb*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_IsColorBomb_TaleOfTiles_Arena_GamePiece_" data-uid="TaleOfTiles.Arena.BoardManager.IsColorBomb(TaleOfTiles.Arena.GamePiece)">
+  IsColorBomb(GamePiece)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a GamePiece is a color bomb.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool IsColorBomb(GamePiece gamePiece)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePiece</code> <a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a></dt>
+    <dd><p>The game piece to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the GamePiece is a color bomb, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_IsCornerMatch_" data-uid="TaleOfTiles.Arena.BoardManager.IsCornerMatch*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_IsCornerMatch_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.IsCornerMatch(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  IsCornerMatch(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a list of matching GamePieces forms an L shaped match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool IsCornerMatch(List&lt;GamePiece&gt; gamePieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the game pieces form an L shaped match, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_IsNextTo_" data-uid="TaleOfTiles.Arena.BoardManager.IsNextTo*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_IsNextTo_TaleOfTiles_Arena_Tile_TaleOfTiles_Arena_Tile_" data-uid="TaleOfTiles.Arena.BoardManager.IsNextTo(TaleOfTiles.Arena.Tile,TaleOfTiles.Arena.Tile)">
+  IsNextTo(Tile, Tile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if two tiles are adjacent to each other.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool IsNextTo(Tile start, Tile end)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The first tile.</p>
+</dd>
+    <dt><code>end</code> <a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The second tile.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the tiles are adjacent, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_IsWithinBounds_" data-uid="TaleOfTiles.Arena.BoardManager.IsWithinBounds*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_IsWithinBounds_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.IsWithinBounds(System.Int32,System.Int32)">
+  IsWithinBounds(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a position is within the game board's bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private bool IsWithinBounds(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the position.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the position is within the game board's bounds, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_MakeBomb_" data-uid="TaleOfTiles.Arena.BoardManager.MakeBomb*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_MakeBomb_UnityEngine_GameObject_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.MakeBomb(UnityEngine.GameObject,System.Int32,System.Int32)">
+  MakeBomb(GameObject, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L880"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a bomb at the specified position on the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private GameObject MakeBomb(GameObject prefab, int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The prefab to create the bomb from.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the position.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>The Bomb object created at the specified position.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_MakeGamePiece_" data-uid="TaleOfTiles.Arena.BoardManager.MakeGamePiece*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_MakeGamePiece_UnityEngine_GameObject_System_Int32_System_Int32_System_Int32_System_Single_" data-uid="TaleOfTiles.Arena.BoardManager.MakeGamePiece(UnityEngine.GameObject,System.Int32,System.Int32,System.Int32,System.Single)">
+  MakeGamePiece(GameObject, int, int, int, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L811"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a game piece at a specific location on the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void MakeGamePiece(GameObject prefab, int x, int y, int falseYOffset = 0, float moveTime = 0.1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prefab</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject to instantiate as a game piece.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the location.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the location.</p>
+</dd>
+    <dt><code>falseYOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y offset for creating the game piece.</p>
+</dd>
+    <dt><code>moveTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The time taken to move a piece.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_PlaceGamePiece_" data-uid="TaleOfTiles.Arena.BoardManager.PlaceGamePiece*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_PlaceGamePiece_TaleOfTiles_Arena_GamePiece_System_Int32_System_Int32_" data-uid="TaleOfTiles.Arena.BoardManager.PlaceGamePiece(TaleOfTiles.Arena.GamePiece,System.Int32,System.Int32)">
+  PlaceGamePiece(GamePiece, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L776"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Places a game piece at a specific location on the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaceGamePiece(GamePiece gamePiece, int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gamePiece</code> <a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a></dt>
+    <dd><p>The game piece to place.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The x-coordinate of the location.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The y-coordinate of the location.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_RefillRoutine_" data-uid="TaleOfTiles.Arena.BoardManager.RefillRoutine*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_RefillRoutine" data-uid="TaleOfTiles.Arena.BoardManager.RefillRoutine">
+  RefillRoutine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Refills the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator RefillRoutine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ReleaseTile_" data-uid="TaleOfTiles.Arena.BoardManager.ReleaseTile*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ReleaseTile" data-uid="TaleOfTiles.Arena.BoardManager.ReleaseTile">
+  ReleaseTile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases the clicked and target tiles and switches their positions if both are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseTile()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ReloadBoard_" data-uid="TaleOfTiles.Arena.BoardManager.ReloadBoard*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ReloadBoard" data-uid="TaleOfTiles.Arena.BoardManager.ReloadBoard">
+  ReloadBoard()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reloads the game board by creating gems, clearing the board, initializing tiles, and filling the board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReloadBoard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_RemoveCollectibles_" data-uid="TaleOfTiles.Arena.BoardManager.RemoveCollectibles*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_RemoveCollectibles_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__" data-uid="TaleOfTiles.Arena.BoardManager.RemoveCollectibles(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})">
+  RemoveCollectibles(List&lt;GamePiece&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes any Collectibles from the list if they can cleared by Bombs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;GamePiece&gt; RemoveCollectibles(List&lt;GamePiece&gt; bombedPieces)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bombedPieces</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>The list of game pieces affected by bombs.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Arena.GamePiece.html">GamePiece</a>&gt;</dt>
+    <dd><p>A list of GamePiece objects after removing collectibles.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_RestartPartcilesOnGamePiece_" data-uid="TaleOfTiles.Arena.BoardManager.RestartPartcilesOnGamePiece*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_RestartPartcilesOnGamePiece" data-uid="TaleOfTiles.Arena.BoardManager.RestartPartcilesOnGamePiece">
+  RestartPartcilesOnGamePiece()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L2346"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restarts particles on all game pieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestartPartcilesOnGamePiece()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_RestartParticlesWithEffect_" data-uid="TaleOfTiles.Arena.BoardManager.RestartParticlesWithEffect*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_RestartParticlesWithEffect_TaleOfTiles_Card_Gems_GemStatusEffectType_" data-uid="TaleOfTiles.Arena.BoardManager.RestartParticlesWithEffect(TaleOfTiles.Card.Gems.GemStatusEffectType)">
+  RestartParticlesWithEffect(GemStatusEffectType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L2319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restarts particle effects with a specific effect status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestartParticlesWithEffect(GemStatusEffectType effect_status)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>effect_status</code> <a class="xref" href="TaleOfTiles.Card.Gems.GemStatusEffectType.html">GemStatusEffectType</a></dt>
+    <dd><p>The effect status to restart particles for.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ScoreMove_" data-uid="TaleOfTiles.Arena.BoardManager.ScoreMove*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ScoreMove" data-uid="TaleOfTiles.Arena.BoardManager.ScoreMove">
+  ScoreMove()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1763"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the scoring of a move and swaps turns if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScoreMove()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_SelectNextTile_" data-uid="TaleOfTiles.Arena.BoardManager.SelectNextTile*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_SelectNextTile_TaleOfTiles_Arena_Tile_" data-uid="TaleOfTiles.Arena.BoardManager.SelectNextTile(TaleOfTiles.Arena.Tile)">
+  SelectNextTile(Tile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the target tile to the specified tile if it is adjacent to the clicked tile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectNextTile(Tile gem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gem</code> <a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The tile to set as the target.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ShuffleBoard_" data-uid="TaleOfTiles.Arena.BoardManager.ShuffleBoard*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ShuffleBoard" data-uid="TaleOfTiles.Arena.BoardManager.ShuffleBoard">
+  ShuffleBoard()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L1790"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the coroutine to shuffle the game board.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShuffleBoard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_ShuffleBoardRoutine_" data-uid="TaleOfTiles.Arena.BoardManager.ShuffleBoardRoutine*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_ShuffleBoardRoutine" data-uid="TaleOfTiles.Arena.BoardManager.ShuffleBoardRoutine">
+  ShuffleBoardRoutine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L2269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to shuffle non-bomb and non-collectible GamePieces.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator ShuffleBoardRoutine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_Start_" data-uid="TaleOfTiles.Arena.BoardManager.Start*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_Start" data-uid="TaleOfTiles.Arena.BoardManager.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Method called at the start of the game. Initializes components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_SwitchTiles_" data-uid="TaleOfTiles.Arena.BoardManager.SwitchTiles*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_SwitchTiles_TaleOfTiles_Arena_Tile_TaleOfTiles_Arena_Tile_" data-uid="TaleOfTiles.Arena.BoardManager.SwitchTiles(TaleOfTiles.Arena.Tile,TaleOfTiles.Arena.Tile)">
+  SwitchTiles(Tile, Tile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L2129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Swaps the positions of two tiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchTiles(Tile clickedTile, Tile targetTile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clickedTile</code> <a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The tile that was clicked on.</p>
+</dd>
+    <dt><code>targetTile</code> <a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The tile to switch with the clicked tile.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_BoardManager_SwitchTilesRoutine_" data-uid="TaleOfTiles.Arena.BoardManager.SwitchTilesRoutine*"></a>
+
+  <h3 id="TaleOfTiles_Arena_BoardManager_SwitchTilesRoutine_TaleOfTiles_Arena_Tile_TaleOfTiles_Arena_Tile_" data-uid="TaleOfTiles.Arena.BoardManager.SwitchTilesRoutine(TaleOfTiles.Arena.Tile,TaleOfTiles.Arena.Tile)">
+  SwitchTilesRoutine(Tile, Tile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L2156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to swap the positions of two tiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator SwitchTilesRoutine(Tile clickedTile, Tile targetTile)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clickedTile</code> <a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The tile that was clicked on.</p>
+</dd>
+    <dt><code>targetTile</code> <a class="xref" href="TaleOfTiles.Arena.Tile.html">Tile</a></dt>
+    <dd><p>The tile to switch with the clicked tile.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/BoardManager.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

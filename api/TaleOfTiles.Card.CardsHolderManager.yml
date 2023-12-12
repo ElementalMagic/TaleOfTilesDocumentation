@@ -1,0 +1,864 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.CardsHolderManager
+  commentId: T:TaleOfTiles.Card.CardsHolderManager
+  id: CardsHolderManager
+  parent: TaleOfTiles.Card
+  children:
+  - TaleOfTiles.Card.CardsHolderManager.ActivateCard(System.String)
+  - TaleOfTiles.Card.CardsHolderManager.DeactivateCard(System.String)
+  - TaleOfTiles.Card.CardsHolderManager.GetCard(System.String)
+  - TaleOfTiles.Card.CardsHolderManager.GivePlayerNewCard(System.String)
+  - TaleOfTiles.Card.CardsHolderManager.Prepare
+  - TaleOfTiles.Card.CardsHolderManager.all_cards_holder
+  - TaleOfTiles.Card.CardsHolderManager.all_player_cards
+  - TaleOfTiles.Card.CardsHolderManager.selected_player_cards
+  langs:
+  - csharp
+  - vb
+  name: CardsHolderManager
+  nameWithType: CardsHolderManager
+  fullName: TaleOfTiles.Card.CardsHolderManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/CardsHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CardsHolderManager
+    path: ../Assets/Scripts/Data Management/CardsHolderManager.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: >-
+    Manages the collection of card objects for a player. This class is responsible for 
+
+    storing, activating, deactivating, and retrieving player's cards. It extends the Singleton pattern 
+
+    to ensure only one instance of the manager exists.
+  example: []
+  syntax:
+    content: 'public class CardsHolderManager : Singleton<CardsHolderManager>'
+    content.vb: Public Class CardsHolderManager Inherits Singleton(Of CardsHolderManager)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - TaleOfTiles.Misc.SingletonBase
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}
+  inheritedMembers:
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.m_instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Awake
+  - TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: TaleOfTiles.Card.CardsHolderManager.all_cards_holder
+  commentId: F:TaleOfTiles.Card.CardsHolderManager.all_cards_holder
+  id: all_cards_holder
+  parent: TaleOfTiles.Card.CardsHolderManager
+  langs:
+  - csharp
+  - vb
+  name: all_cards_holder
+  nameWithType: CardsHolderManager.all_cards_holder
+  fullName: TaleOfTiles.Card.CardsHolderManager.all_cards_holder
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/CardsHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: all_cards_holder
+    path: ../Assets/Scripts/Data Management/CardsHolderManager.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Stores all cards available in the game, indexed by their ID.
+  example: []
+  syntax:
+    content: public Dictionary<string, CardObject> all_cards_holder
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,CardObject}
+    content.vb: Public all_cards_holder As Dictionary(Of String, CardObject)
+- uid: TaleOfTiles.Card.CardsHolderManager.all_player_cards
+  commentId: F:TaleOfTiles.Card.CardsHolderManager.all_player_cards
+  id: all_player_cards
+  parent: TaleOfTiles.Card.CardsHolderManager
+  langs:
+  - csharp
+  - vb
+  name: all_player_cards
+  nameWithType: CardsHolderManager.all_player_cards
+  fullName: TaleOfTiles.Card.CardsHolderManager.all_player_cards
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/CardsHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: all_player_cards
+    path: ../Assets/Scripts/Data Management/CardsHolderManager.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Lists all cards owned by the player.
+  example: []
+  syntax:
+    content: public List<CardObject> all_player_cards
+    return:
+      type: System.Collections.Generic.List{CardObject}
+    content.vb: Public all_player_cards As List(Of CardObject)
+- uid: TaleOfTiles.Card.CardsHolderManager.selected_player_cards
+  commentId: F:TaleOfTiles.Card.CardsHolderManager.selected_player_cards
+  id: selected_player_cards
+  parent: TaleOfTiles.Card.CardsHolderManager
+  langs:
+  - csharp
+  - vb
+  name: selected_player_cards
+  nameWithType: CardsHolderManager.selected_player_cards
+  fullName: TaleOfTiles.Card.CardsHolderManager.selected_player_cards
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/CardsHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: selected_player_cards
+    path: ../Assets/Scripts/Data Management/CardsHolderManager.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Lists all currently active (selected) cards for the player.
+  example: []
+  syntax:
+    content: public List<CardObject> selected_player_cards
+    return:
+      type: System.Collections.Generic.List{CardObject}
+    content.vb: Public selected_player_cards As List(Of CardObject)
+- uid: TaleOfTiles.Card.CardsHolderManager.Prepare
+  commentId: M:TaleOfTiles.Card.CardsHolderManager.Prepare
+  id: Prepare
+  parent: TaleOfTiles.Card.CardsHolderManager
+  langs:
+  - csharp
+  - vb
+  name: Prepare()
+  nameWithType: CardsHolderManager.Prepare()
+  fullName: TaleOfTiles.Card.CardsHolderManager.Prepare()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/CardsHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Prepare
+    path: ../Assets/Scripts/Data Management/CardsHolderManager.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Prepares the card manager by initializing card collections and loading data.
+  example: []
+  syntax:
+    content: public override IEnumerator Prepare()
+    return:
+      type: System.Collections.IEnumerator
+      description: Coroutine for asynchronous operation.
+    content.vb: Public Overrides Function Prepare() As IEnumerator
+  overridden: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Prepare
+  overload: TaleOfTiles.Card.CardsHolderManager.Prepare*
+- uid: TaleOfTiles.Card.CardsHolderManager.ActivateCard(System.String)
+  commentId: M:TaleOfTiles.Card.CardsHolderManager.ActivateCard(System.String)
+  id: ActivateCard(System.String)
+  parent: TaleOfTiles.Card.CardsHolderManager
+  langs:
+  - csharp
+  - vb
+  name: ActivateCard(string)
+  nameWithType: CardsHolderManager.ActivateCard(string)
+  fullName: TaleOfTiles.Card.CardsHolderManager.ActivateCard(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/CardsHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ActivateCard
+    path: ../Assets/Scripts/Data Management/CardsHolderManager.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Activates a card for the player.
+  example: []
+  syntax:
+    content: public void ActivateCard(string ID)
+    parameters:
+    - id: ID
+      type: System.String
+      description: The ID of the card to activate.
+    content.vb: Public Sub ActivateCard(ID As String)
+  overload: TaleOfTiles.Card.CardsHolderManager.ActivateCard*
+  nameWithType.vb: CardsHolderManager.ActivateCard(String)
+  fullName.vb: TaleOfTiles.Card.CardsHolderManager.ActivateCard(String)
+  name.vb: ActivateCard(String)
+- uid: TaleOfTiles.Card.CardsHolderManager.DeactivateCard(System.String)
+  commentId: M:TaleOfTiles.Card.CardsHolderManager.DeactivateCard(System.String)
+  id: DeactivateCard(System.String)
+  parent: TaleOfTiles.Card.CardsHolderManager
+  langs:
+  - csharp
+  - vb
+  name: DeactivateCard(string)
+  nameWithType: CardsHolderManager.DeactivateCard(string)
+  fullName: TaleOfTiles.Card.CardsHolderManager.DeactivateCard(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/CardsHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DeactivateCard
+    path: ../Assets/Scripts/Data Management/CardsHolderManager.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Deactivates a player's card.
+  example: []
+  syntax:
+    content: public void DeactivateCard(string ID)
+    parameters:
+    - id: ID
+      type: System.String
+      description: The ID of the card to deactivate.
+    content.vb: Public Sub DeactivateCard(ID As String)
+  overload: TaleOfTiles.Card.CardsHolderManager.DeactivateCard*
+  nameWithType.vb: CardsHolderManager.DeactivateCard(String)
+  fullName.vb: TaleOfTiles.Card.CardsHolderManager.DeactivateCard(String)
+  name.vb: DeactivateCard(String)
+- uid: TaleOfTiles.Card.CardsHolderManager.GetCard(System.String)
+  commentId: M:TaleOfTiles.Card.CardsHolderManager.GetCard(System.String)
+  id: GetCard(System.String)
+  parent: TaleOfTiles.Card.CardsHolderManager
+  langs:
+  - csharp
+  - vb
+  name: GetCard(string)
+  nameWithType: CardsHolderManager.GetCard(string)
+  fullName: TaleOfTiles.Card.CardsHolderManager.GetCard(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/CardsHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetCard
+    path: ../Assets/Scripts/Data Management/CardsHolderManager.cs
+    startLine: 119
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Retrieves a card by its ID.
+  example: []
+  syntax:
+    content: public CardObject GetCard(string ID)
+    parameters:
+    - id: ID
+      type: System.String
+      description: The ID of the card to retrieve.
+    return:
+      type: CardObject
+      description: The card object if found; otherwise, null.
+    content.vb: Public Function GetCard(ID As String) As CardObject
+  overload: TaleOfTiles.Card.CardsHolderManager.GetCard*
+  nameWithType.vb: CardsHolderManager.GetCard(String)
+  fullName.vb: TaleOfTiles.Card.CardsHolderManager.GetCard(String)
+  name.vb: GetCard(String)
+- uid: TaleOfTiles.Card.CardsHolderManager.GivePlayerNewCard(System.String)
+  commentId: M:TaleOfTiles.Card.CardsHolderManager.GivePlayerNewCard(System.String)
+  id: GivePlayerNewCard(System.String)
+  parent: TaleOfTiles.Card.CardsHolderManager
+  langs:
+  - csharp
+  - vb
+  name: GivePlayerNewCard(string)
+  nameWithType: CardsHolderManager.GivePlayerNewCard(string)
+  fullName: TaleOfTiles.Card.CardsHolderManager.GivePlayerNewCard(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/CardsHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GivePlayerNewCard
+    path: ../Assets/Scripts/Data Management/CardsHolderManager.cs
+    startLine: 132
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Adds a new card to the player's collection.
+  example: []
+  syntax:
+    content: public void GivePlayerNewCard(string ID)
+    parameters:
+    - id: ID
+      type: System.String
+      description: The ID of the card to add.
+    content.vb: Public Sub GivePlayerNewCard(ID As String)
+  overload: TaleOfTiles.Card.CardsHolderManager.GivePlayerNewCard*
+  nameWithType.vb: CardsHolderManager.GivePlayerNewCard(String)
+  fullName.vb: TaleOfTiles.Card.CardsHolderManager.GivePlayerNewCard(String)
+  name.vb: GivePlayerNewCard(String)
+references:
+- uid: TaleOfTiles.Card
+  commentId: N:TaleOfTiles.Card
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card
+  nameWithType: TaleOfTiles.Card
+  fullName: TaleOfTiles.Card
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Misc.SingletonBase
+  commentId: T:TaleOfTiles.Misc.SingletonBase
+  parent: TaleOfTiles.Misc
+  href: TaleOfTiles.Misc.SingletonBase.html
+  name: SingletonBase
+  nameWithType: SingletonBase
+  fullName: TaleOfTiles.Misc.SingletonBase
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}
+  commentId: T:TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}
+  parent: TaleOfTiles.Misc
+  definition: TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<CardsHolderManager>
+  nameWithType: Singleton<CardsHolderManager>
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Card.CardsHolderManager>
+  nameWithType.vb: Singleton(Of CardsHolderManager)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Card.CardsHolderManager)
+  name.vb: Singleton(Of CardsHolderManager)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - uid: TaleOfTiles.Card.CardsHolderManager
+    name: CardsHolderManager
+    href: TaleOfTiles.Card.CardsHolderManager.html
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.CardsHolderManager
+    name: CardsHolderManager
+    href: TaleOfTiles.Card.CardsHolderManager.html
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.m_instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}
+  definition: TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<CardsHolderManager>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Card.CardsHolderManager>.m_instance
+  nameWithType.vb: Singleton(Of CardsHolderManager).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Card.CardsHolderManager).m_instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<CardsHolderManager>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Card.CardsHolderManager>.Instance
+  nameWithType.vb: Singleton(Of CardsHolderManager).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Card.CardsHolderManager).Instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Awake
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<CardsHolderManager>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Card.CardsHolderManager>.Awake()
+  nameWithType.vb: Singleton(Of CardsHolderManager).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Card.CardsHolderManager).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.SingletonBase.AllSingletons
+  commentId: F:TaleOfTiles.Misc.SingletonBase.AllSingletons
+  parent: TaleOfTiles.Misc.SingletonBase
+  href: TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons
+  name: AllSingletons
+  nameWithType: SingletonBase.AllSingletons
+  fullName: TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Misc
+  commentId: N:TaleOfTiles.Misc
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Misc
+  nameWithType: TaleOfTiles.Misc
+  fullName: TaleOfTiles.Misc
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+- uid: TaleOfTiles.Misc.Singleton`1
+  commentId: T:TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: TaleOfTiles.Misc.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton`1.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<T>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.m_instance
+  nameWithType.vb: Singleton(Of T).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).m_instance
+- uid: TaleOfTiles.Misc.Singleton`1.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Instance
+- uid: TaleOfTiles.Misc.Singleton`1.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,CardObject}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,CardObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, CardObject>
+  nameWithType: Dictionary<string, CardObject>
+  fullName: System.Collections.Generic.Dictionary<string, CardObject>
+  nameWithType.vb: Dictionary(Of String, CardObject)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, CardObject)
+  name.vb: Dictionary(Of String, CardObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: CardObject
+    name: CardObject
+    href: CardObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: CardObject
+    name: CardObject
+    href: CardObject.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{CardObject}
+  commentId: T:System.Collections.Generic.List{CardObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CardObject>
+  nameWithType: List<CardObject>
+  fullName: System.Collections.Generic.List<CardObject>
+  nameWithType.vb: List(Of CardObject)
+  fullName.vb: System.Collections.Generic.List(Of CardObject)
+  name.vb: List(Of CardObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: CardObject
+    name: CardObject
+    href: CardObject.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: CardObject
+    name: CardObject
+    href: CardObject.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Prepare
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<CardsHolderManager>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Card.CardsHolderManager>.Prepare()
+  nameWithType.vb: Singleton(Of CardsHolderManager).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Card.CardsHolderManager).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Card.CardsHolderManager}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Card.CardsHolderManager.Prepare*
+  commentId: Overload:TaleOfTiles.Card.CardsHolderManager.Prepare
+  href: TaleOfTiles.Card.CardsHolderManager.html#TaleOfTiles_Card_CardsHolderManager_Prepare
+  name: Prepare
+  nameWithType: CardsHolderManager.Prepare
+  fullName: TaleOfTiles.Card.CardsHolderManager.Prepare
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: TaleOfTiles.Misc.Singleton`1.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<T>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Prepare()
+  nameWithType.vb: Singleton(Of T).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TaleOfTiles.Card.CardsHolderManager.ActivateCard*
+  commentId: Overload:TaleOfTiles.Card.CardsHolderManager.ActivateCard
+  href: TaleOfTiles.Card.CardsHolderManager.html#TaleOfTiles_Card_CardsHolderManager_ActivateCard_System_String_
+  name: ActivateCard
+  nameWithType: CardsHolderManager.ActivateCard
+  fullName: TaleOfTiles.Card.CardsHolderManager.ActivateCard
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TaleOfTiles.Card.CardsHolderManager.DeactivateCard*
+  commentId: Overload:TaleOfTiles.Card.CardsHolderManager.DeactivateCard
+  href: TaleOfTiles.Card.CardsHolderManager.html#TaleOfTiles_Card_CardsHolderManager_DeactivateCard_System_String_
+  name: DeactivateCard
+  nameWithType: CardsHolderManager.DeactivateCard
+  fullName: TaleOfTiles.Card.CardsHolderManager.DeactivateCard
+- uid: TaleOfTiles.Card.CardsHolderManager.GetCard*
+  commentId: Overload:TaleOfTiles.Card.CardsHolderManager.GetCard
+  href: TaleOfTiles.Card.CardsHolderManager.html#TaleOfTiles_Card_CardsHolderManager_GetCard_System_String_
+  name: GetCard
+  nameWithType: CardsHolderManager.GetCard
+  fullName: TaleOfTiles.Card.CardsHolderManager.GetCard
+- uid: CardObject
+  commentId: T:CardObject
+  href: CardObject.html
+  name: CardObject
+  nameWithType: CardObject
+  fullName: CardObject
+- uid: TaleOfTiles.Card.CardsHolderManager.GivePlayerNewCard*
+  commentId: Overload:TaleOfTiles.Card.CardsHolderManager.GivePlayerNewCard
+  href: TaleOfTiles.Card.CardsHolderManager.html#TaleOfTiles_Card_CardsHolderManager_GivePlayerNewCard_System_String_
+  name: GivePlayerNewCard
+  nameWithType: CardsHolderManager.GivePlayerNewCard
+  fullName: TaleOfTiles.Card.CardsHolderManager.GivePlayerNewCard

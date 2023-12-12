@@ -1,0 +1,470 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Level.LevelObject
+  commentId: T:TaleOfTiles.Level.LevelObject
+  id: LevelObject
+  parent: TaleOfTiles.Level
+  children:
+  - TaleOfTiles.Level.LevelObject.CopyOtherLevel(TaleOfTiles.Level.LevelObject)
+  - TaleOfTiles.Level.LevelObject.ID
+  - TaleOfTiles.Level.LevelObject.OnEnable
+  - TaleOfTiles.Level.LevelObject.level_background_image
+  - TaleOfTiles.Level.LevelObject.level_background_music
+  - TaleOfTiles.Level.LevelObject.level_description
+  - TaleOfTiles.Level.LevelObject.level_enemy
+  - TaleOfTiles.Level.LevelObject.level_loading_screen_background_image
+  - TaleOfTiles.Level.LevelObject.level_miniature
+  - TaleOfTiles.Level.LevelObject.level_name
+  langs:
+  - csharp
+  - vb
+  name: LevelObject
+  nameWithType: LevelObject
+  fullName: TaleOfTiles.Level.LevelObject
+  type: Class
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LevelObject
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: The LevelObject class represents a level in the game.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Level", menuName = "Custom/New Level", order = 2)]
+
+      public class LevelObject : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Level", menuName:="Custom/New Level", order:=2)>
+
+      Public Class LevelObject Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Level
+    - name: menuName
+      type: System.String
+      value: Custom/New Level
+    - name: order
+      type: System.Int32
+      value: 2
+- uid: TaleOfTiles.Level.LevelObject.ID
+  commentId: F:TaleOfTiles.Level.LevelObject.ID
+  id: ID
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: LevelObject.ID
+  fullName: TaleOfTiles.Level.LevelObject.ID
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ID
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  example: []
+  syntax:
+    content: public string ID
+    return:
+      type: System.String
+      description: Gets or sets the ID of the level. This property is read-only in the inspector.
+    content.vb: Public ID As String
+- uid: TaleOfTiles.Level.LevelObject.level_name
+  commentId: F:TaleOfTiles.Level.LevelObject.level_name
+  id: level_name
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: level_name
+  nameWithType: LevelObject.level_name
+  fullName: TaleOfTiles.Level.LevelObject.level_name
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: level_name
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  example: []
+  syntax:
+    content: public string level_name
+    return:
+      type: System.String
+      description: Gets or sets the name of the level.
+    content.vb: Public level_name As String
+- uid: TaleOfTiles.Level.LevelObject.level_description
+  commentId: F:TaleOfTiles.Level.LevelObject.level_description
+  id: level_description
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: level_description
+  nameWithType: LevelObject.level_description
+  fullName: TaleOfTiles.Level.LevelObject.level_description
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: level_description
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  example: []
+  syntax:
+    content: public string level_description
+    return:
+      type: System.String
+      description: Gets or sets the description of the level.
+    content.vb: Public level_description As String
+- uid: TaleOfTiles.Level.LevelObject.level_background_image
+  commentId: F:TaleOfTiles.Level.LevelObject.level_background_image
+  id: level_background_image
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: level_background_image
+  nameWithType: LevelObject.level_background_image
+  fullName: TaleOfTiles.Level.LevelObject.level_background_image
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: level_background_image
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  example: []
+  syntax:
+    content: public Sprite level_background_image
+    return:
+      type: UnityEngine.Sprite
+      description: Gets or sets the background image of the level.
+    content.vb: Public level_background_image As Sprite
+- uid: TaleOfTiles.Level.LevelObject.level_loading_screen_background_image
+  commentId: F:TaleOfTiles.Level.LevelObject.level_loading_screen_background_image
+  id: level_loading_screen_background_image
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: level_loading_screen_background_image
+  nameWithType: LevelObject.level_loading_screen_background_image
+  fullName: TaleOfTiles.Level.LevelObject.level_loading_screen_background_image
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: level_loading_screen_background_image
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  example: []
+  syntax:
+    content: public Sprite level_loading_screen_background_image
+    return:
+      type: UnityEngine.Sprite
+      description: Gets or sets the loading screen background image of the level.
+    content.vb: Public level_loading_screen_background_image As Sprite
+- uid: TaleOfTiles.Level.LevelObject.level_miniature
+  commentId: F:TaleOfTiles.Level.LevelObject.level_miniature
+  id: level_miniature
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: level_miniature
+  nameWithType: LevelObject.level_miniature
+  fullName: TaleOfTiles.Level.LevelObject.level_miniature
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: level_miniature
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  example: []
+  syntax:
+    content: public Sprite level_miniature
+    return:
+      type: UnityEngine.Sprite
+      description: Gets or sets the miniature of the level.
+    content.vb: Public level_miniature As Sprite
+- uid: TaleOfTiles.Level.LevelObject.level_background_music
+  commentId: F:TaleOfTiles.Level.LevelObject.level_background_music
+  id: level_background_music
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: level_background_music
+  nameWithType: LevelObject.level_background_music
+  fullName: TaleOfTiles.Level.LevelObject.level_background_music
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: level_background_music
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  example: []
+  syntax:
+    content: public AudioClip level_background_music
+    return:
+      type: UnityEngine.AudioClip
+      description: Gets or sets the background music of the level.
+    content.vb: Public level_background_music As AudioClip
+- uid: TaleOfTiles.Level.LevelObject.level_enemy
+  commentId: F:TaleOfTiles.Level.LevelObject.level_enemy
+  id: level_enemy
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: level_enemy
+  nameWithType: LevelObject.level_enemy
+  fullName: TaleOfTiles.Level.LevelObject.level_enemy
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: level_enemy
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  example: []
+  syntax:
+    content: public EnemyObject level_enemy
+    return:
+      type: EnemyObject
+      description: Gets or sets the enemy of the level.
+    content.vb: Public level_enemy As EnemyObject
+- uid: TaleOfTiles.Level.LevelObject.OnEnable
+  commentId: M:TaleOfTiles.Level.LevelObject.OnEnable
+  id: OnEnable
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: LevelObject.OnEnable()
+  fullName: TaleOfTiles.Level.LevelObject.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnEnable
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: >-
+    OnEnable is called when the script instance is being loaded.
+
+    It generates a new unique ID for the level if it doesn't have one yet.
+  example: []
+  syntax:
+    content: private void OnEnable()
+    content.vb: Private Sub OnEnable()
+  overload: TaleOfTiles.Level.LevelObject.OnEnable*
+- uid: TaleOfTiles.Level.LevelObject.CopyOtherLevel(TaleOfTiles.Level.LevelObject)
+  commentId: M:TaleOfTiles.Level.LevelObject.CopyOtherLevel(TaleOfTiles.Level.LevelObject)
+  id: CopyOtherLevel(TaleOfTiles.Level.LevelObject)
+  parent: TaleOfTiles.Level.LevelObject
+  langs:
+  - csharp
+  - vb
+  name: CopyOtherLevel(LevelObject)
+  nameWithType: LevelObject.CopyOtherLevel(LevelObject)
+  fullName: TaleOfTiles.Level.LevelObject.CopyOtherLevel(TaleOfTiles.Level.LevelObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CopyOtherLevel
+    path: ../Assets/Resources/ScriptableObjects/Levels/LevelObject.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Copies the properties of another level to this one.
+  example: []
+  syntax:
+    content: public void CopyOtherLevel(LevelObject level)
+    parameters:
+    - id: level
+      type: TaleOfTiles.Level.LevelObject
+      description: The LevelObject to copy from.
+    content.vb: Public Sub CopyOtherLevel(level As LevelObject)
+  overload: TaleOfTiles.Level.LevelObject.CopyOtherLevel*
+references:
+- uid: TaleOfTiles.Level
+  commentId: N:TaleOfTiles.Level
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Level
+  nameWithType: TaleOfTiles.Level
+  fullName: TaleOfTiles.Level
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine.AudioClip
+  commentId: T:UnityEngine.AudioClip
+  parent: UnityEngine
+  isExternal: true
+  name: AudioClip
+  nameWithType: AudioClip
+  fullName: UnityEngine.AudioClip
+- uid: EnemyObject
+  commentId: T:EnemyObject
+  href: EnemyObject.html
+  name: EnemyObject
+  nameWithType: EnemyObject
+  fullName: EnemyObject
+- uid: TaleOfTiles.Level.LevelObject.OnEnable*
+  commentId: Overload:TaleOfTiles.Level.LevelObject.OnEnable
+  href: TaleOfTiles.Level.LevelObject.html#TaleOfTiles_Level_LevelObject_OnEnable
+  name: OnEnable
+  nameWithType: LevelObject.OnEnable
+  fullName: TaleOfTiles.Level.LevelObject.OnEnable
+- uid: TaleOfTiles.Level.LevelObject.CopyOtherLevel*
+  commentId: Overload:TaleOfTiles.Level.LevelObject.CopyOtherLevel
+  href: TaleOfTiles.Level.LevelObject.html#TaleOfTiles_Level_LevelObject_CopyOtherLevel_TaleOfTiles_Level_LevelObject_
+  name: CopyOtherLevel
+  nameWithType: LevelObject.CopyOtherLevel
+  fullName: TaleOfTiles.Level.LevelObject.CopyOtherLevel
+- uid: TaleOfTiles.Level.LevelObject
+  commentId: T:TaleOfTiles.Level.LevelObject
+  parent: TaleOfTiles.Level
+  href: TaleOfTiles.Level.LevelObject.html
+  name: LevelObject
+  nameWithType: LevelObject
+  fullName: TaleOfTiles.Level.LevelObject

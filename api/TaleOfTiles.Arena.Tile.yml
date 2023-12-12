@@ -1,0 +1,711 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.Tile
+  commentId: T:TaleOfTiles.Arena.Tile
+  id: Tile
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.Tile.Awake
+  - TaleOfTiles.Arena.Tile.BreakTile
+  - TaleOfTiles.Arena.Tile.BreakTileRoutine
+  - TaleOfTiles.Arena.Tile.OnMouseDown
+  - TaleOfTiles.Arena.Tile.OnMouseEnter
+  - TaleOfTiles.Arena.Tile.OnMouseUp
+  - TaleOfTiles.Arena.Tile.Start
+  - TaleOfTiles.Arena.Tile.board
+  - TaleOfTiles.Arena.Tile.breakableSprites
+  - TaleOfTiles.Arena.Tile.breakableValue
+  - TaleOfTiles.Arena.Tile.m_spriteRenderer
+  - TaleOfTiles.Arena.Tile.normalColor
+  - TaleOfTiles.Arena.Tile.position
+  - TaleOfTiles.Arena.Tile.tileType
+  - TaleOfTiles.Arena.Tile.xIndex
+  - TaleOfTiles.Arena.Tile.yIndex
+  langs:
+  - csharp
+  - vb
+  name: Tile
+  nameWithType: Tile
+  fullName: TaleOfTiles.Arena.Tile
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Tile
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Represents a tile in a game board.
+  example: []
+  syntax:
+    content: 'public class Tile : MonoBehaviour'
+    content.vb: Public Class Tile Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Arena.Tile.xIndex
+  commentId: F:TaleOfTiles.Arena.Tile.xIndex
+  id: xIndex
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: xIndex
+  nameWithType: Tile.xIndex
+  fullName: TaleOfTiles.Arena.Tile.xIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: xIndex
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: public int xIndex
+    return:
+      type: System.Int32
+    content.vb: Public xIndex As Integer
+- uid: TaleOfTiles.Arena.Tile.yIndex
+  commentId: F:TaleOfTiles.Arena.Tile.yIndex
+  id: yIndex
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: yIndex
+  nameWithType: Tile.yIndex
+  fullName: TaleOfTiles.Arena.Tile.yIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: yIndex
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: public int yIndex
+    return:
+      type: System.Int32
+    content.vb: Public yIndex As Integer
+- uid: TaleOfTiles.Arena.Tile.position
+  commentId: F:TaleOfTiles.Arena.Tile.position
+  id: position
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: position
+  nameWithType: Tile.position
+  fullName: TaleOfTiles.Arena.Tile.position
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: position
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: public Vector3 position
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public position As Vector3
+- uid: TaleOfTiles.Arena.Tile.board
+  commentId: F:TaleOfTiles.Arena.Tile.board
+  id: board
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: board
+  nameWithType: Tile.board
+  fullName: TaleOfTiles.Arena.Tile.board
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: board
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: public BoardManager board
+    return:
+      type: TaleOfTiles.Arena.BoardManager
+    content.vb: Public board As BoardManager
+- uid: TaleOfTiles.Arena.Tile.tileType
+  commentId: F:TaleOfTiles.Arena.Tile.tileType
+  id: tileType
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: tileType
+  nameWithType: Tile.tileType
+  fullName: TaleOfTiles.Arena.Tile.tileType
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: tileType
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: public TileType tileType
+    return:
+      type: TaleOfTiles.Arena.TileType
+    content.vb: Public tileType As TileType
+- uid: TaleOfTiles.Arena.Tile.m_spriteRenderer
+  commentId: F:TaleOfTiles.Arena.Tile.m_spriteRenderer
+  id: m_spriteRenderer
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: m_spriteRenderer
+  nameWithType: Tile.m_spriteRenderer
+  fullName: TaleOfTiles.Arena.Tile.m_spriteRenderer
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: m_spriteRenderer
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: private SpriteRenderer m_spriteRenderer
+    return:
+      type: UnityEngine.SpriteRenderer
+    content.vb: Private m_spriteRenderer As SpriteRenderer
+- uid: TaleOfTiles.Arena.Tile.breakableValue
+  commentId: F:TaleOfTiles.Arena.Tile.breakableValue
+  id: breakableValue
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: breakableValue
+  nameWithType: Tile.breakableValue
+  fullName: TaleOfTiles.Arena.Tile.breakableValue
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: breakableValue
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: public int breakableValue
+    return:
+      type: System.Int32
+    content.vb: Public breakableValue As Integer
+- uid: TaleOfTiles.Arena.Tile.breakableSprites
+  commentId: F:TaleOfTiles.Arena.Tile.breakableSprites
+  id: breakableSprites
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: breakableSprites
+  nameWithType: Tile.breakableSprites
+  fullName: TaleOfTiles.Arena.Tile.breakableSprites
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: breakableSprites
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: public Sprite[] breakableSprites
+    return:
+      type: UnityEngine.Sprite[]
+    content.vb: Public breakableSprites As Sprite()
+- uid: TaleOfTiles.Arena.Tile.normalColor
+  commentId: F:TaleOfTiles.Arena.Tile.normalColor
+  id: normalColor
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: normalColor
+  nameWithType: Tile.normalColor
+  fullName: TaleOfTiles.Arena.Tile.normalColor
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: normalColor
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: public Color normalColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public normalColor As Color
+- uid: TaleOfTiles.Arena.Tile.Awake
+  commentId: M:TaleOfTiles.Arena.Tile.Awake
+  id: Awake
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: Tile.Awake()
+  fullName: TaleOfTiles.Arena.Tile.Awake()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Awake
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Initializes the tile.
+  example: []
+  syntax:
+    content: private void Awake()
+    content.vb: Private Sub Awake()
+  overload: TaleOfTiles.Arena.Tile.Awake*
+- uid: TaleOfTiles.Arena.Tile.Start
+  commentId: M:TaleOfTiles.Arena.Tile.Start
+  id: Start
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: Tile.Start()
+  fullName: TaleOfTiles.Arena.Tile.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Sets up the tile at the start of the game.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.Arena.Tile.Start*
+- uid: TaleOfTiles.Arena.Tile.OnMouseDown
+  commentId: M:TaleOfTiles.Arena.Tile.OnMouseDown
+  id: OnMouseDown
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: OnMouseDown()
+  nameWithType: Tile.OnMouseDown()
+  fullName: TaleOfTiles.Arena.Tile.OnMouseDown()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnMouseDown
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Handles the mouse down event on the tile.
+  example: []
+  syntax:
+    content: public void OnMouseDown()
+    content.vb: Public Sub OnMouseDown()
+  overload: TaleOfTiles.Arena.Tile.OnMouseDown*
+- uid: TaleOfTiles.Arena.Tile.OnMouseEnter
+  commentId: M:TaleOfTiles.Arena.Tile.OnMouseEnter
+  id: OnMouseEnter
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: OnMouseEnter()
+  nameWithType: Tile.OnMouseEnter()
+  fullName: TaleOfTiles.Arena.Tile.OnMouseEnter()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnMouseEnter
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Handles the mouse enter event on the tile.
+  example: []
+  syntax:
+    content: public void OnMouseEnter()
+    content.vb: Public Sub OnMouseEnter()
+  overload: TaleOfTiles.Arena.Tile.OnMouseEnter*
+- uid: TaleOfTiles.Arena.Tile.OnMouseUp
+  commentId: M:TaleOfTiles.Arena.Tile.OnMouseUp
+  id: OnMouseUp
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: OnMouseUp()
+  nameWithType: Tile.OnMouseUp()
+  fullName: TaleOfTiles.Arena.Tile.OnMouseUp()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnMouseUp
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Handles the mouse up event on the tile.
+  example: []
+  syntax:
+    content: public void OnMouseUp()
+    content.vb: Public Sub OnMouseUp()
+  overload: TaleOfTiles.Arena.Tile.OnMouseUp*
+- uid: TaleOfTiles.Arena.Tile.BreakTile
+  commentId: M:TaleOfTiles.Arena.Tile.BreakTile
+  id: BreakTile
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: BreakTile()
+  nameWithType: Tile.BreakTile()
+  fullName: TaleOfTiles.Arena.Tile.BreakTile()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BreakTile
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Initiates the process of breaking the tile if it is breakable.
+  example: []
+  syntax:
+    content: public void BreakTile()
+    content.vb: Public Sub BreakTile()
+  overload: TaleOfTiles.Arena.Tile.BreakTile*
+- uid: TaleOfTiles.Arena.Tile.BreakTileRoutine
+  commentId: M:TaleOfTiles.Arena.Tile.BreakTileRoutine
+  id: BreakTileRoutine
+  parent: TaleOfTiles.Arena.Tile
+  langs:
+  - csharp
+  - vb
+  name: BreakTileRoutine()
+  nameWithType: Tile.BreakTileRoutine()
+  fullName: TaleOfTiles.Arena.Tile.BreakTileRoutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Tile.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BreakTileRoutine
+    path: ../Assets/Scripts/Tile.cs
+    startLine: 116
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to handle the breaking of a breakable tile.
+  example: []
+  syntax:
+    content: private IEnumerator BreakTileRoutine()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function BreakTileRoutine() As IEnumerator
+  overload: TaleOfTiles.Arena.Tile.BreakTileRoutine*
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: TaleOfTiles.Arena.BoardManager
+  commentId: T:TaleOfTiles.Arena.BoardManager
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BoardManager.html
+  name: BoardManager
+  nameWithType: BoardManager
+  fullName: TaleOfTiles.Arena.BoardManager
+- uid: TaleOfTiles.Arena.TileType
+  commentId: T:TaleOfTiles.Arena.TileType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.TileType.html
+  name: TileType
+  nameWithType: TileType
+  fullName: TaleOfTiles.Arena.TileType
+- uid: UnityEngine.SpriteRenderer
+  commentId: T:UnityEngine.SpriteRenderer
+  parent: UnityEngine
+  isExternal: true
+  name: SpriteRenderer
+  nameWithType: SpriteRenderer
+  fullName: UnityEngine.SpriteRenderer
+- uid: UnityEngine.Sprite[]
+  isExternal: true
+  name: Sprite[]
+  nameWithType: Sprite[]
+  fullName: UnityEngine.Sprite[]
+  nameWithType.vb: Sprite()
+  fullName.vb: UnityEngine.Sprite()
+  name.vb: Sprite()
+  spec.csharp:
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: TaleOfTiles.Arena.Tile.Awake*
+  commentId: Overload:TaleOfTiles.Arena.Tile.Awake
+  href: TaleOfTiles.Arena.Tile.html#TaleOfTiles_Arena_Tile_Awake
+  name: Awake
+  nameWithType: Tile.Awake
+  fullName: TaleOfTiles.Arena.Tile.Awake
+- uid: TaleOfTiles.Arena.Tile.Start*
+  commentId: Overload:TaleOfTiles.Arena.Tile.Start
+  href: TaleOfTiles.Arena.Tile.html#TaleOfTiles_Arena_Tile_Start
+  name: Start
+  nameWithType: Tile.Start
+  fullName: TaleOfTiles.Arena.Tile.Start
+- uid: TaleOfTiles.Arena.Tile.OnMouseDown*
+  commentId: Overload:TaleOfTiles.Arena.Tile.OnMouseDown
+  href: TaleOfTiles.Arena.Tile.html#TaleOfTiles_Arena_Tile_OnMouseDown
+  name: OnMouseDown
+  nameWithType: Tile.OnMouseDown
+  fullName: TaleOfTiles.Arena.Tile.OnMouseDown
+- uid: TaleOfTiles.Arena.Tile.OnMouseEnter*
+  commentId: Overload:TaleOfTiles.Arena.Tile.OnMouseEnter
+  href: TaleOfTiles.Arena.Tile.html#TaleOfTiles_Arena_Tile_OnMouseEnter
+  name: OnMouseEnter
+  nameWithType: Tile.OnMouseEnter
+  fullName: TaleOfTiles.Arena.Tile.OnMouseEnter
+- uid: TaleOfTiles.Arena.Tile.OnMouseUp*
+  commentId: Overload:TaleOfTiles.Arena.Tile.OnMouseUp
+  href: TaleOfTiles.Arena.Tile.html#TaleOfTiles_Arena_Tile_OnMouseUp
+  name: OnMouseUp
+  nameWithType: Tile.OnMouseUp
+  fullName: TaleOfTiles.Arena.Tile.OnMouseUp
+- uid: TaleOfTiles.Arena.Tile.BreakTile*
+  commentId: Overload:TaleOfTiles.Arena.Tile.BreakTile
+  href: TaleOfTiles.Arena.Tile.html#TaleOfTiles_Arena_Tile_BreakTile
+  name: BreakTile
+  nameWithType: Tile.BreakTile
+  fullName: TaleOfTiles.Arena.Tile.BreakTile
+- uid: TaleOfTiles.Arena.Tile.BreakTileRoutine*
+  commentId: Overload:TaleOfTiles.Arena.Tile.BreakTileRoutine
+  href: TaleOfTiles.Arena.Tile.html#TaleOfTiles_Arena_Tile_BreakTileRoutine
+  name: BreakTileRoutine
+  nameWithType: Tile.BreakTileRoutine
+  fullName: TaleOfTiles.Arena.Tile.BreakTileRoutine
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections

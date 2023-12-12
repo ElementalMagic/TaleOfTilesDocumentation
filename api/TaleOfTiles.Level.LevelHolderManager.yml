@@ -1,0 +1,190 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Level.LevelHolderManager
+  commentId: T:TaleOfTiles.Level.LevelHolderManager
+  id: LevelHolderManager
+  parent: TaleOfTiles.Level
+  children:
+  - TaleOfTiles.Level.LevelHolderManager.Start
+  - TaleOfTiles.Level.LevelHolderManager.Update
+  langs:
+  - csharp
+  - vb
+  name: LevelHolderManager
+  nameWithType: LevelHolderManager
+  fullName: TaleOfTiles.Level.LevelHolderManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/LevelHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LevelHolderManager
+    path: ../Assets/Scripts/Data Management/LevelHolderManager.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: >-
+    Manages level-related functionalities within the game.
+
+    This class is attached to a Unity GameObject and is part of the game's level management system.
+  example: []
+  syntax:
+    content: 'public class LevelHolderManager : MonoBehaviour'
+    content.vb: Public Class LevelHolderManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Level.LevelHolderManager.Start
+  commentId: M:TaleOfTiles.Level.LevelHolderManager.Start
+  id: Start
+  parent: TaleOfTiles.Level.LevelHolderManager
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: LevelHolderManager.Start()
+  fullName: TaleOfTiles.Level.LevelHolderManager.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/LevelHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/Data Management/LevelHolderManager.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: >-
+    Called before the first frame update. 
+
+    Use this for initialization.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.Level.LevelHolderManager.Start*
+- uid: TaleOfTiles.Level.LevelHolderManager.Update
+  commentId: M:TaleOfTiles.Level.LevelHolderManager.Update
+  id: Update
+  parent: TaleOfTiles.Level.LevelHolderManager
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: LevelHolderManager.Update()
+  fullName: TaleOfTiles.Level.LevelHolderManager.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/LevelHolderManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Update
+    path: ../Assets/Scripts/Data Management/LevelHolderManager.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: >-
+    Update is called once per frame.
+
+    Use this method to update the frame-dependent logic.
+  example: []
+  syntax:
+    content: private void Update()
+    content.vb: Private Sub Update()
+  overload: TaleOfTiles.Level.LevelHolderManager.Update*
+references:
+- uid: TaleOfTiles.Level
+  commentId: N:TaleOfTiles.Level
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Level
+  nameWithType: TaleOfTiles.Level
+  fullName: TaleOfTiles.Level
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Level.LevelHolderManager.Start*
+  commentId: Overload:TaleOfTiles.Level.LevelHolderManager.Start
+  href: TaleOfTiles.Level.LevelHolderManager.html#TaleOfTiles_Level_LevelHolderManager_Start
+  name: Start
+  nameWithType: LevelHolderManager.Start
+  fullName: TaleOfTiles.Level.LevelHolderManager.Start
+- uid: TaleOfTiles.Level.LevelHolderManager.Update*
+  commentId: Overload:TaleOfTiles.Level.LevelHolderManager.Update
+  href: TaleOfTiles.Level.LevelHolderManager.html#TaleOfTiles_Level_LevelHolderManager_Update
+  name: Update
+  nameWithType: LevelHolderManager.Update
+  fullName: TaleOfTiles.Level.LevelHolderManager.Update

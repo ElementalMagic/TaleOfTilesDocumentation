@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Damage
+  commentId: N:TaleOfTiles.Damage
+  id: TaleOfTiles.Damage
+  children:
+  - TaleOfTiles.Damage.BattleArenaBackgroundImage
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles.Damage
+  nameWithType: TaleOfTiles.Damage
+  fullName: TaleOfTiles.Damage
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.Damage.BattleArenaBackgroundImage
+  commentId: T:TaleOfTiles.Damage.BattleArenaBackgroundImage
+  href: TaleOfTiles.Damage.BattleArenaBackgroundImage.html
+  name: BattleArenaBackgroundImage
+  nameWithType: BattleArenaBackgroundImage
+  fullName: TaleOfTiles.Damage.BattleArenaBackgroundImage

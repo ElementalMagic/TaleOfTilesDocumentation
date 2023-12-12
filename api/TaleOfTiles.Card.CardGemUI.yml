@@ -1,0 +1,811 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.CardGemUI
+  commentId: T:TaleOfTiles.Card.CardGemUI
+  id: CardGemUI
+  parent: TaleOfTiles.Card
+  children:
+  - TaleOfTiles.Card.CardGemUI.BuildGem
+  - TaleOfTiles.Card.CardGemUI.CardBuilt
+  - TaleOfTiles.Card.CardGemUI.Init(PassiveSkillObject)
+  - TaleOfTiles.Card.CardGemUI.Init(TaleOfTiles.Card.Gems.GemItem)
+  - TaleOfTiles.Card.CardGemUI.ToggleCollapse
+  - TaleOfTiles.Card.CardGemUI.ToggleCollapseCoroutine
+  - TaleOfTiles.Card.CardGemUI.collapsed
+  - TaleOfTiles.Card.CardGemUI.full_height
+  - TaleOfTiles.Card.CardGemUI.gem
+  - TaleOfTiles.Card.CardGemUI.gem_description
+  - TaleOfTiles.Card.CardGemUI.gem_effect_ui_prefab
+  - TaleOfTiles.Card.CardGemUI.gem_effects_container
+  - TaleOfTiles.Card.CardGemUI.gem_icon
+  - TaleOfTiles.Card.CardGemUI.gem_name
+  - TaleOfTiles.Card.CardGemUI.parent
+  - TaleOfTiles.Card.CardGemUI.passive_skill
+  - TaleOfTiles.Card.CardGemUI.short_info_container
+  langs:
+  - csharp
+  - vb
+  name: CardGemUI
+  nameWithType: CardGemUI
+  fullName: TaleOfTiles.Card.CardGemUI
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CardGemUI
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Handles the display and functionality of the gem card in the UI.
+  example: []
+  syntax:
+    content: 'public class CardGemUI : MonoBehaviour'
+    content.vb: Public Class CardGemUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Card.CardGemUI.gem
+  commentId: F:TaleOfTiles.Card.CardGemUI.gem
+  id: gem
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: gem
+  nameWithType: CardGemUI.gem
+  fullName: TaleOfTiles.Card.CardGemUI.gem
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The gem to be displayed in the UI.
+  example: []
+  syntax:
+    content: public GemItem gem
+    return:
+      type: TaleOfTiles.Card.Gems.GemItem
+    content.vb: Public gem As GemItem
+- uid: TaleOfTiles.Card.CardGemUI.passive_skill
+  commentId: F:TaleOfTiles.Card.CardGemUI.passive_skill
+  id: passive_skill
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: passive_skill
+  nameWithType: CardGemUI.passive_skill
+  fullName: TaleOfTiles.Card.CardGemUI.passive_skill
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: passive_skill
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The passive skill to be displayed in the UI.
+  example: []
+  syntax:
+    content: public PassiveSkillObject passive_skill
+    return:
+      type: PassiveSkillObject
+    content.vb: Public passive_skill As PassiveSkillObject
+- uid: TaleOfTiles.Card.CardGemUI.gem_name
+  commentId: F:TaleOfTiles.Card.CardGemUI.gem_name
+  id: gem_name
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: gem_name
+  nameWithType: CardGemUI.gem_name
+  fullName: TaleOfTiles.Card.CardGemUI.gem_name
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_name
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The UI element for displaying the gem's name.
+  example: []
+  syntax:
+    content: public Text gem_name
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public gem_name As Text
+- uid: TaleOfTiles.Card.CardGemUI.gem_description
+  commentId: F:TaleOfTiles.Card.CardGemUI.gem_description
+  id: gem_description
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: gem_description
+  nameWithType: CardGemUI.gem_description
+  fullName: TaleOfTiles.Card.CardGemUI.gem_description
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_description
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The UI element for displaying the gem's description.
+  example: []
+  syntax:
+    content: public Text gem_description
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public gem_description As Text
+- uid: TaleOfTiles.Card.CardGemUI.gem_icon
+  commentId: F:TaleOfTiles.Card.CardGemUI.gem_icon
+  id: gem_icon
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: gem_icon
+  nameWithType: CardGemUI.gem_icon
+  fullName: TaleOfTiles.Card.CardGemUI.gem_icon
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_icon
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The UI element for displaying the gem's icon.
+  example: []
+  syntax:
+    content: public Image gem_icon
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public gem_icon As Image
+- uid: TaleOfTiles.Card.CardGemUI.gem_effects_container
+  commentId: F:TaleOfTiles.Card.CardGemUI.gem_effects_container
+  id: gem_effects_container
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: gem_effects_container
+  nameWithType: CardGemUI.gem_effects_container
+  fullName: TaleOfTiles.Card.CardGemUI.gem_effects_container
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_effects_container
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The container for the gem's effects in the UI.
+  example: []
+  syntax:
+    content: public RectTransform gem_effects_container
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public gem_effects_container As RectTransform
+- uid: TaleOfTiles.Card.CardGemUI.short_info_container
+  commentId: F:TaleOfTiles.Card.CardGemUI.short_info_container
+  id: short_info_container
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: short_info_container
+  nameWithType: CardGemUI.short_info_container
+  fullName: TaleOfTiles.Card.CardGemUI.short_info_container
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: short_info_container
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The container for the gem's short information in the UI.
+  example: []
+  syntax:
+    content: public RectTransform short_info_container
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public short_info_container As RectTransform
+- uid: TaleOfTiles.Card.CardGemUI.gem_effect_ui_prefab
+  commentId: F:TaleOfTiles.Card.CardGemUI.gem_effect_ui_prefab
+  id: gem_effect_ui_prefab
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: gem_effect_ui_prefab
+  nameWithType: CardGemUI.gem_effect_ui_prefab
+  fullName: TaleOfTiles.Card.CardGemUI.gem_effect_ui_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_effect_ui_prefab
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The prefab for the UI of the gem's effect.
+  example: []
+  syntax:
+    content: public GameObject gem_effect_ui_prefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public gem_effect_ui_prefab As GameObject
+- uid: TaleOfTiles.Card.CardGemUI.full_height
+  commentId: F:TaleOfTiles.Card.CardGemUI.full_height
+  id: full_height
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: full_height
+  nameWithType: CardGemUI.full_height
+  fullName: TaleOfTiles.Card.CardGemUI.full_height
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: full_height
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The full height of the gem's card.
+  example: []
+  syntax:
+    content: public float full_height
+    return:
+      type: System.Single
+    content.vb: Public full_height As Single
+- uid: TaleOfTiles.Card.CardGemUI.collapsed
+  commentId: F:TaleOfTiles.Card.CardGemUI.collapsed
+  id: collapsed
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: collapsed
+  nameWithType: CardGemUI.collapsed
+  fullName: TaleOfTiles.Card.CardGemUI.collapsed
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: collapsed
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Flag to indicate whether the gem's card is collapsed or not.
+  example: []
+  syntax:
+    content: private bool collapsed
+    return:
+      type: System.Boolean
+    content.vb: Private collapsed As Boolean
+- uid: TaleOfTiles.Card.CardGemUI.parent
+  commentId: F:TaleOfTiles.Card.CardGemUI.parent
+  id: parent
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: parent
+  nameWithType: CardGemUI.parent
+  fullName: TaleOfTiles.Card.CardGemUI.parent
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: parent
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The parent card UI of this gem UI.
+  example: []
+  syntax:
+    content: public CardUI parent
+    return:
+      type: TaleOfTiles.Card.CardUI
+    content.vb: Public parent As CardUI
+- uid: TaleOfTiles.Card.CardGemUI.Init(TaleOfTiles.Card.Gems.GemItem)
+  commentId: M:TaleOfTiles.Card.CardGemUI.Init(TaleOfTiles.Card.Gems.GemItem)
+  id: Init(TaleOfTiles.Card.Gems.GemItem)
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: Init(GemItem)
+  nameWithType: CardGemUI.Init(GemItem)
+  fullName: TaleOfTiles.Card.CardGemUI.Init(TaleOfTiles.Card.Gems.GemItem)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Init
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Initializes the gem card with a GemItem.
+  example: []
+  syntax:
+    content: public IEnumerator Init(GemItem gem)
+    parameters:
+    - id: gem
+      type: TaleOfTiles.Card.Gems.GemItem
+      description: The gem to display in the card.
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function Init(gem As GemItem) As IEnumerator
+  overload: TaleOfTiles.Card.CardGemUI.Init*
+- uid: TaleOfTiles.Card.CardGemUI.Init(PassiveSkillObject)
+  commentId: M:TaleOfTiles.Card.CardGemUI.Init(PassiveSkillObject)
+  id: Init(PassiveSkillObject)
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: Init(PassiveSkillObject)
+  nameWithType: CardGemUI.Init(PassiveSkillObject)
+  fullName: TaleOfTiles.Card.CardGemUI.Init(PassiveSkillObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Init
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Initializes the gem card with a PassiveSkillObject.
+  example: []
+  syntax:
+    content: public IEnumerator Init(PassiveSkillObject passive_skill)
+    parameters:
+    - id: passive_skill
+      type: PassiveSkillObject
+      description: The passive skill to display in the card.
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function Init(passive_skill As PassiveSkillObject) As IEnumerator
+  overload: TaleOfTiles.Card.CardGemUI.Init*
+- uid: TaleOfTiles.Card.CardGemUI.BuildGem
+  commentId: M:TaleOfTiles.Card.CardGemUI.BuildGem
+  id: BuildGem
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: BuildGem()
+  nameWithType: CardGemUI.BuildGem()
+  fullName: TaleOfTiles.Card.CardGemUI.BuildGem()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BuildGem
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 92
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Builds the gem card UI elements.
+  example: []
+  syntax:
+    content: public IEnumerator BuildGem()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function BuildGem() As IEnumerator
+  overload: TaleOfTiles.Card.CardGemUI.BuildGem*
+- uid: TaleOfTiles.Card.CardGemUI.CardBuilt
+  commentId: M:TaleOfTiles.Card.CardGemUI.CardBuilt
+  id: CardBuilt
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: CardBuilt()
+  nameWithType: CardGemUI.CardBuilt()
+  fullName: TaleOfTiles.Card.CardGemUI.CardBuilt()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CardBuilt
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 126
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Handles the event when the card is built.
+  example: []
+  syntax:
+    content: public void CardBuilt()
+    content.vb: Public Sub CardBuilt()
+  overload: TaleOfTiles.Card.CardGemUI.CardBuilt*
+- uid: TaleOfTiles.Card.CardGemUI.ToggleCollapse
+  commentId: M:TaleOfTiles.Card.CardGemUI.ToggleCollapse
+  id: ToggleCollapse
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: ToggleCollapse()
+  nameWithType: CardGemUI.ToggleCollapse()
+  fullName: TaleOfTiles.Card.CardGemUI.ToggleCollapse()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ToggleCollapse
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 140
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Toggles the collapse state of the gem card.
+  example: []
+  syntax:
+    content: public void ToggleCollapse()
+    content.vb: Public Sub ToggleCollapse()
+  overload: TaleOfTiles.Card.CardGemUI.ToggleCollapse*
+- uid: TaleOfTiles.Card.CardGemUI.ToggleCollapseCoroutine
+  commentId: M:TaleOfTiles.Card.CardGemUI.ToggleCollapseCoroutine
+  id: ToggleCollapseCoroutine
+  parent: TaleOfTiles.Card.CardGemUI
+  langs:
+  - csharp
+  - vb
+  name: ToggleCollapseCoroutine()
+  nameWithType: CardGemUI.ToggleCollapseCoroutine()
+  fullName: TaleOfTiles.Card.CardGemUI.ToggleCollapseCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/CardGemUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ToggleCollapseCoroutine
+    path: ../Assets/Scripts/CardGemUI.cs
+    startLine: 148
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Coroutine to handle the collapse and expand animation of the gem card.
+  example: []
+  syntax:
+    content: private IEnumerator ToggleCollapseCoroutine()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function ToggleCollapseCoroutine() As IEnumerator
+  overload: TaleOfTiles.Card.CardGemUI.ToggleCollapseCoroutine*
+references:
+- uid: TaleOfTiles.Card
+  commentId: N:TaleOfTiles.Card
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card
+  nameWithType: TaleOfTiles.Card
+  fullName: TaleOfTiles.Card
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Card.Gems.GemItem
+  commentId: T:TaleOfTiles.Card.Gems.GemItem
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemItem.html
+  name: GemItem
+  nameWithType: GemItem
+  fullName: TaleOfTiles.Card.Gems.GemItem
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: PassiveSkillObject
+  commentId: T:PassiveSkillObject
+  href: PassiveSkillObject.html
+  name: PassiveSkillObject
+  nameWithType: PassiveSkillObject
+  fullName: PassiveSkillObject
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TaleOfTiles.Card.CardUI
+  commentId: T:TaleOfTiles.Card.CardUI
+  parent: TaleOfTiles.Card
+  href: TaleOfTiles.Card.CardUI.html
+  name: CardUI
+  nameWithType: CardUI
+  fullName: TaleOfTiles.Card.CardUI
+- uid: TaleOfTiles.Card.CardGemUI.Init*
+  commentId: Overload:TaleOfTiles.Card.CardGemUI.Init
+  href: TaleOfTiles.Card.CardGemUI.html#TaleOfTiles_Card_CardGemUI_Init_TaleOfTiles_Card_Gems_GemItem_
+  name: Init
+  nameWithType: CardGemUI.Init
+  fullName: TaleOfTiles.Card.CardGemUI.Init
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TaleOfTiles.Card.CardGemUI.BuildGem*
+  commentId: Overload:TaleOfTiles.Card.CardGemUI.BuildGem
+  href: TaleOfTiles.Card.CardGemUI.html#TaleOfTiles_Card_CardGemUI_BuildGem
+  name: BuildGem
+  nameWithType: CardGemUI.BuildGem
+  fullName: TaleOfTiles.Card.CardGemUI.BuildGem
+- uid: TaleOfTiles.Card.CardGemUI.CardBuilt*
+  commentId: Overload:TaleOfTiles.Card.CardGemUI.CardBuilt
+  href: TaleOfTiles.Card.CardGemUI.html#TaleOfTiles_Card_CardGemUI_CardBuilt
+  name: CardBuilt
+  nameWithType: CardGemUI.CardBuilt
+  fullName: TaleOfTiles.Card.CardGemUI.CardBuilt
+- uid: TaleOfTiles.Card.CardGemUI.ToggleCollapse*
+  commentId: Overload:TaleOfTiles.Card.CardGemUI.ToggleCollapse
+  href: TaleOfTiles.Card.CardGemUI.html#TaleOfTiles_Card_CardGemUI_ToggleCollapse
+  name: ToggleCollapse
+  nameWithType: CardGemUI.ToggleCollapse
+  fullName: TaleOfTiles.Card.CardGemUI.ToggleCollapse
+- uid: TaleOfTiles.Card.CardGemUI.ToggleCollapseCoroutine*
+  commentId: Overload:TaleOfTiles.Card.CardGemUI.ToggleCollapseCoroutine
+  href: TaleOfTiles.Card.CardGemUI.html#TaleOfTiles_Card_CardGemUI_ToggleCollapseCoroutine
+  name: ToggleCollapseCoroutine
+  nameWithType: CardGemUI.ToggleCollapseCoroutine
+  fullName: TaleOfTiles.Card.CardGemUI.ToggleCollapseCoroutine

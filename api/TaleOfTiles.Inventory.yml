@@ -1,0 +1,98 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Inventory
+  commentId: N:TaleOfTiles.Inventory
+  id: TaleOfTiles.Inventory
+  children:
+  - TaleOfTiles.Inventory.EquipSlotUI
+  - TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+  - TaleOfTiles.Inventory.EquipmentHolderManager
+  - TaleOfTiles.Inventory.InventoryPageUI
+  - TaleOfTiles.Inventory.ItemSkillInventoryPanelUI
+  - TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles.Inventory
+  nameWithType: TaleOfTiles.Inventory
+  fullName: TaleOfTiles.Inventory
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.Inventory.EquipSlotUI
+  commentId: T:TaleOfTiles.Inventory.EquipSlotUI
+  parent: TaleOfTiles.Inventory
+  href: TaleOfTiles.Inventory.EquipSlotUI.html
+  name: EquipSlotUI
+  nameWithType: EquipSlotUI
+  fullName: TaleOfTiles.Inventory.EquipSlotUI
+- uid: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+  commentId: T:TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+  parent: TaleOfTiles.Inventory
+  href: TaleOfTiles.Inventory.EquipSlotUI.html
+  name: EquipSlotUI.ItemChangedEvent
+  nameWithType: EquipSlotUI.ItemChangedEvent
+  fullName: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+  spec.csharp:
+  - uid: TaleOfTiles.Inventory.EquipSlotUI
+    name: EquipSlotUI
+    href: TaleOfTiles.Inventory.EquipSlotUI.html
+  - name: .
+  - uid: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+    name: ItemChangedEvent
+    href: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent.html
+  spec.vb:
+  - uid: TaleOfTiles.Inventory.EquipSlotUI
+    name: EquipSlotUI
+    href: TaleOfTiles.Inventory.EquipSlotUI.html
+  - name: .
+  - uid: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent
+    name: ItemChangedEvent
+    href: TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent.html
+- uid: TaleOfTiles.Inventory.InventoryPageUI
+  commentId: T:TaleOfTiles.Inventory.InventoryPageUI
+  href: TaleOfTiles.Inventory.InventoryPageUI.html
+  name: InventoryPageUI
+  nameWithType: InventoryPageUI
+  fullName: TaleOfTiles.Inventory.InventoryPageUI
+- uid: TaleOfTiles.Inventory.ItemsPanelUI
+  commentId: T:TaleOfTiles.Inventory.ItemsPanelUI
+  href: TaleOfTiles.Inventory.ItemsPanelUI.html
+  name: ItemsPanelUI
+  nameWithType: ItemsPanelUI
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI
+- uid: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI
+  commentId: T:TaleOfTiles.Inventory.ItemSkillInventoryPanelUI
+  href: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.html
+  name: ItemSkillInventoryPanelUI
+  nameWithType: ItemSkillInventoryPanelUI
+  fullName: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI
+- uid: TaleOfTiles.Inventory.EquipmentHolderManager
+  commentId: T:TaleOfTiles.Inventory.EquipmentHolderManager
+  href: TaleOfTiles.Inventory.EquipmentHolderManager.html
+  name: EquipmentHolderManager
+  nameWithType: EquipmentHolderManager
+  fullName: TaleOfTiles.Inventory.EquipmentHolderManager
+- uid: TaleOfTiles.Inventory
+  commentId: N:TaleOfTiles.Inventory
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Inventory
+  nameWithType: TaleOfTiles.Inventory
+  fullName: TaleOfTiles.Inventory
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Inventory
+    name: Inventory
+    href: TaleOfTiles.Inventory.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Inventory
+    name: Inventory
+    href: TaleOfTiles.Inventory.html

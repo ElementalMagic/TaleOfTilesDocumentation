@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Journey.MapActivityUIObject
+  commentId: T:TaleOfTiles.Journey.MapActivityUIObject
+  id: MapActivityUIObject
+  parent: TaleOfTiles.Journey
+  children:
+  - TaleOfTiles.Journey.MapActivityUIObject.SetStatus(TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus)
+  - TaleOfTiles.Journey.MapActivityUIObject.activity_blocked_color
+  - TaleOfTiles.Journey.MapActivityUIObject.activity_finished_color
+  - TaleOfTiles.Journey.MapActivityUIObject.activity_neutral_color
+  - TaleOfTiles.Journey.MapActivityUIObject.activity_skipped_color
+  - TaleOfTiles.Journey.MapActivityUIObject.enemy_image
+  - TaleOfTiles.Journey.MapActivityUIObject.status
+  - TaleOfTiles.Journey.MapActivityUIObject.status_background_image
+  - TaleOfTiles.Journey.MapActivityUIObject.status_frame_image
+  langs:
+  - csharp
+  - vb
+  name: MapActivityUIObject
+  nameWithType: MapActivityUIObject
+  fullName: TaleOfTiles.Journey.MapActivityUIObject
+  type: Class
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MapActivityUIObject
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: The MapActivityUIObject class manages the UI for a map activity.
+  example: []
+  syntax:
+    content: 'public class MapActivityUIObject : MonoBehaviour'
+    content.vb: Public Class MapActivityUIObject Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Journey.MapActivityUIObject.enemy_image
+  commentId: F:TaleOfTiles.Journey.MapActivityUIObject.enemy_image
+  id: enemy_image
+  parent: TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: enemy_image
+  nameWithType: MapActivityUIObject.enemy_image
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.enemy_image
+  type: Field
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: enemy_image
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  example: []
+  syntax:
+    content: public Image enemy_image
+    return:
+      type: UnityEngine.UI.Image
+      description: Gets or sets the enemy image.
+    content.vb: Public enemy_image As Image
+- uid: TaleOfTiles.Journey.MapActivityUIObject.status_frame_image
+  commentId: F:TaleOfTiles.Journey.MapActivityUIObject.status_frame_image
+  id: status_frame_image
+  parent: TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: status_frame_image
+  nameWithType: MapActivityUIObject.status_frame_image
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.status_frame_image
+  type: Field
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: status_frame_image
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  example: []
+  syntax:
+    content: public Image status_frame_image
+    return:
+      type: UnityEngine.UI.Image
+      description: Gets or sets the status frame image.
+    content.vb: Public status_frame_image As Image
+- uid: TaleOfTiles.Journey.MapActivityUIObject.status_background_image
+  commentId: F:TaleOfTiles.Journey.MapActivityUIObject.status_background_image
+  id: status_background_image
+  parent: TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: status_background_image
+  nameWithType: MapActivityUIObject.status_background_image
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.status_background_image
+  type: Field
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: status_background_image
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  example: []
+  syntax:
+    content: public Image status_background_image
+    return:
+      type: UnityEngine.UI.Image
+      description: Gets or sets the status background image.
+    content.vb: Public status_background_image As Image
+- uid: TaleOfTiles.Journey.MapActivityUIObject.status
+  commentId: F:TaleOfTiles.Journey.MapActivityUIObject.status
+  id: status
+  parent: TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: status
+  nameWithType: MapActivityUIObject.status
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.status
+  type: Field
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: status
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  example: []
+  syntax:
+    content: public JourneyMapBlockActivity.ActivityStatus status
+    return:
+      type: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+      description: Gets or sets the status of the activity. This property is read-only in the inspector.
+    content.vb: Public status As JourneyMapBlockActivity.ActivityStatus
+- uid: TaleOfTiles.Journey.MapActivityUIObject.activity_finished_color
+  commentId: F:TaleOfTiles.Journey.MapActivityUIObject.activity_finished_color
+  id: activity_finished_color
+  parent: TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: activity_finished_color
+  nameWithType: MapActivityUIObject.activity_finished_color
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.activity_finished_color
+  type: Field
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: activity_finished_color
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  example: []
+  syntax:
+    content: public Color activity_finished_color
+    return:
+      type: UnityEngine.Color
+      description: Gets or sets the color for a finished activity.
+    content.vb: Public activity_finished_color As Color
+- uid: TaleOfTiles.Journey.MapActivityUIObject.activity_skipped_color
+  commentId: F:TaleOfTiles.Journey.MapActivityUIObject.activity_skipped_color
+  id: activity_skipped_color
+  parent: TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: activity_skipped_color
+  nameWithType: MapActivityUIObject.activity_skipped_color
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.activity_skipped_color
+  type: Field
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: activity_skipped_color
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  example: []
+  syntax:
+    content: public Color activity_skipped_color
+    return:
+      type: UnityEngine.Color
+      description: Gets or sets the color for a skipped activity.
+    content.vb: Public activity_skipped_color As Color
+- uid: TaleOfTiles.Journey.MapActivityUIObject.activity_neutral_color
+  commentId: F:TaleOfTiles.Journey.MapActivityUIObject.activity_neutral_color
+  id: activity_neutral_color
+  parent: TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: activity_neutral_color
+  nameWithType: MapActivityUIObject.activity_neutral_color
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.activity_neutral_color
+  type: Field
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: activity_neutral_color
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  example: []
+  syntax:
+    content: public Color activity_neutral_color
+    return:
+      type: UnityEngine.Color
+      description: Gets or sets the color for a neutral activity.
+    content.vb: Public activity_neutral_color As Color
+- uid: TaleOfTiles.Journey.MapActivityUIObject.activity_blocked_color
+  commentId: F:TaleOfTiles.Journey.MapActivityUIObject.activity_blocked_color
+  id: activity_blocked_color
+  parent: TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: activity_blocked_color
+  nameWithType: MapActivityUIObject.activity_blocked_color
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.activity_blocked_color
+  type: Field
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: activity_blocked_color
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  example: []
+  syntax:
+    content: public Color activity_blocked_color
+    return:
+      type: UnityEngine.Color
+      description: Gets or sets the color for a blocked activity.
+    content.vb: Public activity_blocked_color As Color
+- uid: TaleOfTiles.Journey.MapActivityUIObject.SetStatus(TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus)
+  commentId: M:TaleOfTiles.Journey.MapActivityUIObject.SetStatus(TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus)
+  id: SetStatus(TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus)
+  parent: TaleOfTiles.Journey.MapActivityUIObject
+  langs:
+  - csharp
+  - vb
+  name: SetStatus(ActivityStatus)
+  nameWithType: MapActivityUIObject.SetStatus(JourneyMapBlockActivity.ActivityStatus)
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.SetStatus(TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus)
+  type: Method
+  source:
+    remote:
+      path: Assets/MapActivityUIObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetStatus
+    path: ../Assets/MapActivityUIObject.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: Sets the status of the activity and updates the color of the status frame and background images accordingly.
+  example: []
+  syntax:
+    content: public void SetStatus(JourneyMapBlockActivity.ActivityStatus status)
+    parameters:
+    - id: status
+      type: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+      description: The status to set.
+    content.vb: Public Sub SetStatus(status As JourneyMapBlockActivity.ActivityStatus)
+  overload: TaleOfTiles.Journey.MapActivityUIObject.SetStatus*
+references:
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  name: JourneyMapBlockActivity.ActivityStatus
+  nameWithType: JourneyMapBlockActivity.ActivityStatus
+  fullName: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity
+    name: JourneyMapBlockActivity
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+    name: ActivityStatus
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity
+    name: JourneyMapBlockActivity
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus
+    name: ActivityStatus
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus.html
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: TaleOfTiles.Journey.MapActivityUIObject.SetStatus*
+  commentId: Overload:TaleOfTiles.Journey.MapActivityUIObject.SetStatus
+  href: TaleOfTiles.Journey.MapActivityUIObject.html#TaleOfTiles_Journey_MapActivityUIObject_SetStatus_TaleOfTiles_Journey_JourneyMapBlockActivity_ActivityStatus_
+  name: SetStatus
+  nameWithType: MapActivityUIObject.SetStatus
+  fullName: TaleOfTiles.Journey.MapActivityUIObject.SetStatus

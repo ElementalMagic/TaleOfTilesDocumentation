@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Player
+  commentId: N:TaleOfTiles.Player
+  id: TaleOfTiles.Player
+  children:
+  - TaleOfTiles.Player.PlayerCharacter
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles.Player
+  nameWithType: TaleOfTiles.Player
+  fullName: TaleOfTiles.Player
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.Player.PlayerCharacter
+  commentId: T:TaleOfTiles.Player.PlayerCharacter
+  parent: TaleOfTiles.Player
+  href: TaleOfTiles.Player.PlayerCharacter.html
+  name: PlayerCharacter
+  nameWithType: PlayerCharacter
+  fullName: TaleOfTiles.Player.PlayerCharacter
+- uid: TaleOfTiles.Player
+  commentId: N:TaleOfTiles.Player
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Player
+  nameWithType: TaleOfTiles.Player
+  fullName: TaleOfTiles.Player
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Player
+    name: Player
+    href: TaleOfTiles.Player.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Player
+    name: Player
+    href: TaleOfTiles.Player.html

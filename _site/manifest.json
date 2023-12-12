@@ -1,0 +1,1545 @@
+{
+  "source_base_path": "C:/Users/Alexander/UnityProjects/Match-3-Mobile-Game/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.AI.AIBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.AI.AIBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.AI.BoardPos.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.AI.BoardPos.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.AI.Combination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.AI.Combination.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.AI.Move.GemActiveEffectScore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.AI.Move.GemActiveEffectScore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.AI.Move.GemStatusEffectScore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.AI.Move.GemStatusEffectScore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.AI.Move.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.AI.Move.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.AI.VirtualBoard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.AI.VirtualBoard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.AI.VirtualGamePiece.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.AI.VirtualGamePiece.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.AI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.AI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.AnimationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.AnimationType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.BattleArenaBackgroundImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.BattleArenaBackgroundImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.BattleArenaManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.BattleArenaManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.BattleArenaTopButtons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.BattleArenaTopButtons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.BattleButtonsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.BattleButtonsController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.BoardDeadlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.BoardDeadlock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.BoardManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.BoardManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.BoardShuffler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.BoardShuffler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.Bomb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.Bomb.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.BombType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.BombType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.BubbleText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.BubbleText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.Collectible.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.Collectible.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.CombatManager.GameState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.CombatManager.GameState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.CombatManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.CombatManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.CombinationScoreManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.CombinationScoreManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.GamePiece.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.GamePiece.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.HealthBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.HealthBar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.InterpType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.InterpType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.MatchValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.MatchValue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.PlayerBattleCardUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.PlayerBattleCardUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.Probability.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.Probability.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.StatusBarElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.StatusBarElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.StatusBarElementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.StatusBarElementType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.SwitchBoardButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.SwitchBoardButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.Tile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.Tile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.TileType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.TileType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.Utils.GetColorDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.Utils.GetColorDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.Utils.SetColorDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.Utils.SetColorDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.Utils.todo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.Utils.todo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Arena.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Arena.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Audio.AudioManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Audio.AudioManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Audio.GeneralAudioGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Audio.GeneralAudioGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Audio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Audio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.BigCardUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.BigCardUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.CardGemUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.CardGemUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.CardUI.CardBuildEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.CardUI.CardBuildEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.CardUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.CardUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.CardsHolderManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.CardsHolderManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.GemEffectAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.GemEffectAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.GemEffectAttributeUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.GemEffectAttributeUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.GemEffectUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.GemEffectUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemActiveEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemActiveEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemActiveEffectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemActiveEffectType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemEffectShieldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemEffectShieldType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemItemTier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemItemTier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemStatusEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemStatusEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemStatusEffectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemStatusEffectType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.Poison.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.Poison.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperCombo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.GemSuperComboType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.GemSuperComboType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.ISuperCombo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.ISuperCombo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.Gems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.Gems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.SingleCardPageUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.SingleCardPageUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Card.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Card.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Damage.BattleArenaBackgroundImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Damage.BattleArenaBackgroundImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Damage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Damage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Data.DataManager.ActiveItemJSON.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Data.DataManager.ActiveItemJSON.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Data.DataManager.PlayerInventoryJSON.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Data.DataManager.PlayerInventoryJSON.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Data.DataManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Data.DataManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Data.EnemyObjectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Data.EnemyObjectManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Data.JourneyObjectManager.JourneyObjectSerializable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Data.JourneyObjectManager.JourneyObjectSerializable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Data.JourneyObjectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Data.JourneyObjectManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Data.LevelObjectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Data.LevelObjectManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Inventory.EquipSlotUI.ItemChangedEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Inventory.EquipSlotUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Inventory.EquipSlotUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Inventory.EquipmentHolderManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Inventory.EquipmentHolderManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Inventory.InventoryPageUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Inventory.InventoryPageUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Inventory.ItemsPanelUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Inventory.ItemsPanelUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Inventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Inventory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.EnemiesObjectsBundle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.EnemiesObjectsBundle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapAssetBundle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapAssetBundle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapBlock.BlockType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapBlock.BlockType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapBlock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityStatus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapBlockActivity.ActivityType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapBlockActivity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapBlockActivity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapButtonsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapButtonsController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyMapGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyMapGenerator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyObject.JourneyHardness.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyObject.JourneyHardness.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneyObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneyObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.JourneysUIContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.JourneysUIContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.MapActivityUIObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.MapActivityUIObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Journey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Journey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Level.LevelHolderManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Level.LevelHolderManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Level.LevelObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Level.LevelObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Level.LevelObjectsBundle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Level.LevelObjectsBundle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Level.LevelSelectionScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Level.LevelSelectionScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Level.LoadingTextAnim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Level.LoadingTextAnim.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Level.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Level.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.MainGameManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.MainGameManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Misc.CameraSingleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Misc.CameraSingleton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Misc.DontDestroyOnLoad.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Misc.DontDestroyOnLoad.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Misc.EventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Misc.EventBus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Misc.ReadOnlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Misc.ReadOnlyAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Misc.SceneSwitcherManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Misc.SceneSwitcherManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Misc.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Misc.Singleton-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Misc.SingletonBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Misc.SingletonBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Misc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Misc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Player.PlayerCharacter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Player.PlayerCharacter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.Player.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.PlayerLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.PlayerLevel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.AdditionalScreens.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.AdditionalScreens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.CollapseUIScript.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.CollapseUIScript.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.DeckCanvasUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.DeckCanvasUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.DefeatScreenUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.DefeatScreenUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.LoadingScreenManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.LoadingScreenManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.NavigationButtons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.NavigationButtons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.ParticleManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.ParticleManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.ParticlePlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.ParticlePlayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.ParticleSystemSizeAdaptation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.ParticleSystemSizeAdaptation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.TopBarMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.TopBarMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.UIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.UIManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.VictoryScreenUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.VictoryScreenUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.UI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaleOfTiles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaleOfTiles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

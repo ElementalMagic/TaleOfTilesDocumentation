@@ -1,0 +1,1678 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.MainGameManager
+  commentId: T:TaleOfTiles.MainGameManager
+  id: MainGameManager
+  parent: TaleOfTiles
+  children:
+  - TaleOfTiles.MainGameManager.CreatePlayerCharacter
+  - TaleOfTiles.MainGameManager.GetPlayer
+  - TaleOfTiles.MainGameManager.HomeButtonClick(UnityEngine.GameObject)
+  - TaleOfTiles.MainGameManager.LoadBattleArena
+  - TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine
+  - TaleOfTiles.MainGameManager.LoadJourneyMap(System.String,UnityEngine.GameObject)
+  - TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine(UnityEngine.GameObject)
+  - TaleOfTiles.MainGameManager.LoadJourneySelectionScene(UnityEngine.GameObject)
+  - TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine(UnityEngine.GameObject)
+  - TaleOfTiles.MainGameManager.LoadLevelSelectionScreen(UnityEngine.GameObject)
+  - TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine(UnityEngine.GameObject)
+  - TaleOfTiles.MainGameManager.PrepareManagers
+  - TaleOfTiles.MainGameManager.SelectLevel(System.String)
+  - TaleOfTiles.MainGameManager.SelectLevel(TaleOfTiles.Level.LevelObject)
+  - TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases
+  - TaleOfTiles.MainGameManager.Start
+  - TaleOfTiles.MainGameManager.additional_screens_prefab
+  - TaleOfTiles.MainGameManager.audio_manager
+  - TaleOfTiles.MainGameManager.battle_arena_manager
+  - TaleOfTiles.MainGameManager.cards_holder_manager
+  - TaleOfTiles.MainGameManager.combbat_manager
+  - TaleOfTiles.MainGameManager.data_manager
+  - TaleOfTiles.MainGameManager.general_audio_group_prefab
+  - TaleOfTiles.MainGameManager.journey_manager
+  - TaleOfTiles.MainGameManager.loading_screen_manager
+  - TaleOfTiles.MainGameManager.player
+  - TaleOfTiles.MainGameManager.player_level
+  - TaleOfTiles.MainGameManager.scene_switcher_manager
+  - TaleOfTiles.MainGameManager.tosave
+  - TaleOfTiles.MainGameManager.ui_manager
+  langs:
+  - csharp
+  - vb
+  name: MainGameManager
+  nameWithType: MainGameManager
+  fullName: TaleOfTiles.MainGameManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MainGameManager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: The MainGameManager class is a singleton that manages various aspects of the game.
+  remarks: >-
+    This class handles the initialization and coordination of different managers 
+
+    like AudioManager, UIManager, etc. It is responsible for setting up the game environment,
+
+    managing the game state, and transitioning between different scenes and states.
+  example: []
+  syntax:
+    content: 'public class MainGameManager : Singleton<MainGameManager>'
+    content.vb: Public Class MainGameManager Inherits Singleton(Of MainGameManager)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - TaleOfTiles.Misc.SingletonBase
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}
+  inheritedMembers:
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.m_instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Awake
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Prepare
+  - TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: TaleOfTiles.MainGameManager.audio_manager
+  commentId: F:TaleOfTiles.MainGameManager.audio_manager
+  id: audio_manager
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: audio_manager
+  nameWithType: MainGameManager.audio_manager
+  fullName: TaleOfTiles.MainGameManager.audio_manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: audio_manager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public AudioManager audio_manager
+    return:
+      type: TaleOfTiles.Audio.AudioManager
+      description: Manager for handling audio-related functionalities.
+    content.vb: Public audio_manager As AudioManager
+- uid: TaleOfTiles.MainGameManager.ui_manager
+  commentId: F:TaleOfTiles.MainGameManager.ui_manager
+  id: ui_manager
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: ui_manager
+  nameWithType: MainGameManager.ui_manager
+  fullName: TaleOfTiles.MainGameManager.ui_manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ui_manager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public UIManager ui_manager
+    return:
+      type: TaleOfTiles.UI.UIManager
+      description: Manager for user interface elements and interactions.
+    content.vb: Public ui_manager As UIManager
+- uid: TaleOfTiles.MainGameManager.battle_arena_manager
+  commentId: F:TaleOfTiles.MainGameManager.battle_arena_manager
+  id: battle_arena_manager
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: battle_arena_manager
+  nameWithType: MainGameManager.battle_arena_manager
+  fullName: TaleOfTiles.MainGameManager.battle_arena_manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: battle_arena_manager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public BattleArenaManager battle_arena_manager
+    return:
+      type: TaleOfTiles.Arena.BattleArenaManager
+      description: Manager for the battle arena mechanics.
+    content.vb: Public battle_arena_manager As BattleArenaManager
+- uid: TaleOfTiles.MainGameManager.combbat_manager
+  commentId: F:TaleOfTiles.MainGameManager.combbat_manager
+  id: combbat_manager
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: combbat_manager
+  nameWithType: MainGameManager.combbat_manager
+  fullName: TaleOfTiles.MainGameManager.combbat_manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: combbat_manager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public CombatManager combbat_manager
+    return:
+      type: TaleOfTiles.Arena.CombatManager
+      description: Manager for handling combat and game logic.
+    content.vb: Public combbat_manager As CombatManager
+- uid: TaleOfTiles.MainGameManager.data_manager
+  commentId: F:TaleOfTiles.MainGameManager.data_manager
+  id: data_manager
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: data_manager
+  nameWithType: MainGameManager.data_manager
+  fullName: TaleOfTiles.MainGameManager.data_manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: data_manager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public DataManager data_manager
+    return:
+      type: TaleOfTiles.Data.DataManager
+      description: Manager for handling data storage and retrieval.
+    content.vb: Public data_manager As DataManager
+- uid: TaleOfTiles.MainGameManager.cards_holder_manager
+  commentId: F:TaleOfTiles.MainGameManager.cards_holder_manager
+  id: cards_holder_manager
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: cards_holder_manager
+  nameWithType: MainGameManager.cards_holder_manager
+  fullName: TaleOfTiles.MainGameManager.cards_holder_manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: cards_holder_manager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public CardsHolderManager cards_holder_manager
+    return:
+      type: TaleOfTiles.Card.CardsHolderManager
+      description: Manager for the player's card collection.
+    content.vb: Public cards_holder_manager As CardsHolderManager
+- uid: TaleOfTiles.MainGameManager.loading_screen_manager
+  commentId: F:TaleOfTiles.MainGameManager.loading_screen_manager
+  id: loading_screen_manager
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: loading_screen_manager
+  nameWithType: MainGameManager.loading_screen_manager
+  fullName: TaleOfTiles.MainGameManager.loading_screen_manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: loading_screen_manager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public LoadingScreenManager loading_screen_manager
+    return:
+      type: TaleOfTiles.UI.LoadingScreenManager
+      description: Manager for handling loading screens.
+    content.vb: Public loading_screen_manager As LoadingScreenManager
+- uid: TaleOfTiles.MainGameManager.scene_switcher_manager
+  commentId: F:TaleOfTiles.MainGameManager.scene_switcher_manager
+  id: scene_switcher_manager
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: scene_switcher_manager
+  nameWithType: MainGameManager.scene_switcher_manager
+  fullName: TaleOfTiles.MainGameManager.scene_switcher_manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: scene_switcher_manager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public SceneSwitcherManager scene_switcher_manager
+    return:
+      type: TaleOfTiles.Misc.SceneSwitcherManager
+      description: Manager for scene transitions.
+    content.vb: Public scene_switcher_manager As SceneSwitcherManager
+- uid: TaleOfTiles.MainGameManager.journey_manager
+  commentId: F:TaleOfTiles.MainGameManager.journey_manager
+  id: journey_manager
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: journey_manager
+  nameWithType: MainGameManager.journey_manager
+  fullName: TaleOfTiles.MainGameManager.journey_manager
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: journey_manager
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public JourneyManager journey_manager
+    return:
+      type: TaleOfTiles.Journey.JourneyManager
+      description: Manager for handling the game's journey or campaign mode.
+    content.vb: Public journey_manager As JourneyManager
+- uid: TaleOfTiles.MainGameManager.player
+  commentId: F:TaleOfTiles.MainGameManager.player
+  id: player
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: player
+  nameWithType: MainGameManager.player
+  fullName: TaleOfTiles.MainGameManager.player
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: player
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: private PlayerCharacter player
+    return:
+      type: TaleOfTiles.Player.PlayerCharacter
+      description: Represents the player character in the game.
+    content.vb: Private player As PlayerCharacter
+- uid: TaleOfTiles.MainGameManager.player_level
+  commentId: F:TaleOfTiles.MainGameManager.player_level
+  id: player_level
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: player_level
+  nameWithType: MainGameManager.player_level
+  fullName: TaleOfTiles.MainGameManager.player_level
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: player_level
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public PlayerLevel player_level
+    return:
+      type: TaleOfTiles.PlayerLevel
+      description: Represents the player's level in the game.
+    content.vb: Public player_level As PlayerLevel
+- uid: TaleOfTiles.MainGameManager.additional_screens_prefab
+  commentId: F:TaleOfTiles.MainGameManager.additional_screens_prefab
+  id: additional_screens_prefab
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: additional_screens_prefab
+  nameWithType: MainGameManager.additional_screens_prefab
+  fullName: TaleOfTiles.MainGameManager.additional_screens_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: additional_screens_prefab
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public GameObject additional_screens_prefab
+    return:
+      type: UnityEngine.GameObject
+      description: Prefab for additional screens in the game.
+    content.vb: Public additional_screens_prefab As GameObject
+- uid: TaleOfTiles.MainGameManager.general_audio_group_prefab
+  commentId: F:TaleOfTiles.MainGameManager.general_audio_group_prefab
+  id: general_audio_group_prefab
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: general_audio_group_prefab
+  nameWithType: MainGameManager.general_audio_group_prefab
+  fullName: TaleOfTiles.MainGameManager.general_audio_group_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: general_audio_group_prefab
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public GameObject general_audio_group_prefab
+    return:
+      type: UnityEngine.GameObject
+      description: Prefab for general audio in the game.
+    content.vb: Public general_audio_group_prefab As GameObject
+- uid: TaleOfTiles.MainGameManager.tosave
+  commentId: F:TaleOfTiles.MainGameManager.tosave
+  id: tosave
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: tosave
+  nameWithType: MainGameManager.tosave
+  fullName: TaleOfTiles.MainGameManager.tosave
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: tosave
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  example: []
+  syntax:
+    content: public JourneyObject tosave
+    return:
+      type: TaleOfTiles.Journey.JourneyObject
+      description: Object to store the current state of the journey.
+    content.vb: Public tosave As JourneyObject
+- uid: TaleOfTiles.MainGameManager.Start
+  commentId: M:TaleOfTiles.MainGameManager.Start
+  id: Start
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: MainGameManager.Start()
+  fullName: TaleOfTiles.MainGameManager.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Starts the game manager by initializing all the managers and preparing the game environment.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.MainGameManager.Start*
+- uid: TaleOfTiles.MainGameManager.PrepareManagers
+  commentId: M:TaleOfTiles.MainGameManager.PrepareManagers
+  id: PrepareManagers
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: PrepareManagers()
+  nameWithType: MainGameManager.PrepareManagers()
+  fullName: TaleOfTiles.MainGameManager.PrepareManagers()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: PrepareManagers
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 99
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: A coroutine to prepare all the managers sequentially.
+  example: []
+  syntax:
+    content: private IEnumerator PrepareManagers()
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine sequencing.
+    content.vb: Private Function PrepareManagers() As IEnumerator
+  overload: TaleOfTiles.MainGameManager.PrepareManagers*
+- uid: TaleOfTiles.MainGameManager.CreatePlayerCharacter
+  commentId: M:TaleOfTiles.MainGameManager.CreatePlayerCharacter
+  id: CreatePlayerCharacter
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: CreatePlayerCharacter()
+  nameWithType: MainGameManager.CreatePlayerCharacter()
+  fullName: TaleOfTiles.MainGameManager.CreatePlayerCharacter()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CreatePlayerCharacter
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 152
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Creates a new player character and initializes its properties.
+  example: []
+  syntax:
+    content: public void CreatePlayerCharacter()
+    content.vb: Public Sub CreatePlayerCharacter()
+  overload: TaleOfTiles.MainGameManager.CreatePlayerCharacter*
+- uid: TaleOfTiles.MainGameManager.GetPlayer
+  commentId: M:TaleOfTiles.MainGameManager.GetPlayer
+  id: GetPlayer
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: GetPlayer()
+  nameWithType: MainGameManager.GetPlayer()
+  fullName: TaleOfTiles.MainGameManager.GetPlayer()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetPlayer
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 167
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Returns the current player character.
+  example: []
+  syntax:
+    content: public PlayerCharacter GetPlayer()
+    return:
+      type: TaleOfTiles.Player.PlayerCharacter
+      description: The current player character.
+    content.vb: Public Function GetPlayer() As PlayerCharacter
+  overload: TaleOfTiles.MainGameManager.GetPlayer*
+- uid: TaleOfTiles.MainGameManager.SelectLevel(System.String)
+  commentId: M:TaleOfTiles.MainGameManager.SelectLevel(System.String)
+  id: SelectLevel(System.String)
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: SelectLevel(string)
+  nameWithType: MainGameManager.SelectLevel(string)
+  fullName: TaleOfTiles.MainGameManager.SelectLevel(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SelectLevel
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 176
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Selects a level by its ID.
+  example: []
+  syntax:
+    content: public void SelectLevel(string level_id)
+    parameters:
+    - id: level_id
+      type: System.String
+      description: ID of the level to be selected.
+    content.vb: Public Sub SelectLevel(level_id As String)
+  overload: TaleOfTiles.MainGameManager.SelectLevel*
+  nameWithType.vb: MainGameManager.SelectLevel(String)
+  fullName.vb: TaleOfTiles.MainGameManager.SelectLevel(String)
+  name.vb: SelectLevel(String)
+- uid: TaleOfTiles.MainGameManager.SelectLevel(TaleOfTiles.Level.LevelObject)
+  commentId: M:TaleOfTiles.MainGameManager.SelectLevel(TaleOfTiles.Level.LevelObject)
+  id: SelectLevel(TaleOfTiles.Level.LevelObject)
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: SelectLevel(LevelObject)
+  nameWithType: MainGameManager.SelectLevel(LevelObject)
+  fullName: TaleOfTiles.MainGameManager.SelectLevel(TaleOfTiles.Level.LevelObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SelectLevel
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 190
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Selects a level by its LevelObject instance.
+  example: []
+  syntax:
+    content: public void SelectLevel(LevelObject level)
+    parameters:
+    - id: level
+      type: TaleOfTiles.Level.LevelObject
+      description: LevelObject instance of the level to be selected.
+    content.vb: Public Sub SelectLevel(level As LevelObject)
+  overload: TaleOfTiles.MainGameManager.SelectLevel*
+- uid: TaleOfTiles.MainGameManager.LoadLevelSelectionScreen(UnityEngine.GameObject)
+  commentId: M:TaleOfTiles.MainGameManager.LoadLevelSelectionScreen(UnityEngine.GameObject)
+  id: LoadLevelSelectionScreen(UnityEngine.GameObject)
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: LoadLevelSelectionScreen(GameObject)
+  nameWithType: MainGameManager.LoadLevelSelectionScreen(GameObject)
+  fullName: TaleOfTiles.MainGameManager.LoadLevelSelectionScreen(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadLevelSelectionScreen
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 203
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Loads the level selection screen.
+  example: []
+  syntax:
+    content: public void LoadLevelSelectionScreen(GameObject caller = null)
+    parameters:
+    - id: caller
+      type: UnityEngine.GameObject
+      description: The GameObject that calls this method.
+    content.vb: Public Sub LoadLevelSelectionScreen(caller As GameObject = Nothing)
+  overload: TaleOfTiles.MainGameManager.LoadLevelSelectionScreen*
+- uid: TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine(UnityEngine.GameObject)
+  commentId: M:TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine(UnityEngine.GameObject)
+  id: LoadLevelSelectionScreenCoroutine(UnityEngine.GameObject)
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: LoadLevelSelectionScreenCoroutine(GameObject)
+  nameWithType: MainGameManager.LoadLevelSelectionScreenCoroutine(GameObject)
+  fullName: TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadLevelSelectionScreenCoroutine
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 214
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: A coroutine to load the level selection screen.
+  example: []
+  syntax:
+    content: private IEnumerator LoadLevelSelectionScreenCoroutine(GameObject caller = null)
+    parameters:
+    - id: caller
+      type: UnityEngine.GameObject
+      description: The GameObject that calls this method.
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine sequencing.
+    content.vb: Private Function LoadLevelSelectionScreenCoroutine(caller As GameObject = Nothing) As IEnumerator
+  overload: TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine*
+- uid: TaleOfTiles.MainGameManager.LoadBattleArena
+  commentId: M:TaleOfTiles.MainGameManager.LoadBattleArena
+  id: LoadBattleArena
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: LoadBattleArena()
+  nameWithType: MainGameManager.LoadBattleArena()
+  fullName: TaleOfTiles.MainGameManager.LoadBattleArena()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadBattleArena
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 244
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Loads the battle arena.
+  example: []
+  syntax:
+    content: public void LoadBattleArena()
+    content.vb: Public Sub LoadBattleArena()
+  overload: TaleOfTiles.MainGameManager.LoadBattleArena*
+- uid: TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine
+  commentId: M:TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine
+  id: LoadBattleArenaCoroutine
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: LoadBattleArenaCoroutine()
+  nameWithType: MainGameManager.LoadBattleArenaCoroutine()
+  fullName: TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadBattleArenaCoroutine
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 253
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: A coroutine to load the battle arena.
+  example: []
+  syntax:
+    content: private IEnumerator LoadBattleArenaCoroutine()
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine sequencing.
+    content.vb: Private Function LoadBattleArenaCoroutine() As IEnumerator
+  overload: TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine*
+- uid: TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases
+  commentId: M:TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases
+  id: SetMainCameraToAllCanvases
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: SetMainCameraToAllCanvases()
+  nameWithType: MainGameManager.SetMainCameraToAllCanvases()
+  fullName: TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetMainCameraToAllCanvases
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 270
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Sets the main camera to all canvases.
+  example: []
+  syntax:
+    content: private void SetMainCameraToAllCanvases()
+    content.vb: Private Sub SetMainCameraToAllCanvases()
+  overload: TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases*
+- uid: TaleOfTiles.MainGameManager.LoadJourneyMap(System.String,UnityEngine.GameObject)
+  commentId: M:TaleOfTiles.MainGameManager.LoadJourneyMap(System.String,UnityEngine.GameObject)
+  id: LoadJourneyMap(System.String,UnityEngine.GameObject)
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: LoadJourneyMap(string, GameObject)
+  nameWithType: MainGameManager.LoadJourneyMap(string, GameObject)
+  fullName: TaleOfTiles.MainGameManager.LoadJourneyMap(string, UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadJourneyMap
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 288
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Loads the journey map.
+  example: []
+  syntax:
+    content: public void LoadJourneyMap(string journey_id = "", GameObject caller = null)
+    parameters:
+    - id: journey_id
+      type: System.String
+      description: ID of the journey to be loaded.
+    - id: caller
+      type: UnityEngine.GameObject
+      description: The GameObject that calls this method.
+    content.vb: Public Sub LoadJourneyMap(journey_id As String = "", caller As GameObject = Nothing)
+  overload: TaleOfTiles.MainGameManager.LoadJourneyMap*
+  nameWithType.vb: MainGameManager.LoadJourneyMap(String, GameObject)
+  fullName.vb: TaleOfTiles.MainGameManager.LoadJourneyMap(String, UnityEngine.GameObject)
+  name.vb: LoadJourneyMap(String, GameObject)
+- uid: TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine(UnityEngine.GameObject)
+  commentId: M:TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine(UnityEngine.GameObject)
+  id: LoadJourneyMapCoroutine(UnityEngine.GameObject)
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: LoadJourneyMapCoroutine(GameObject)
+  nameWithType: MainGameManager.LoadJourneyMapCoroutine(GameObject)
+  fullName: TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadJourneyMapCoroutine
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 299
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: A coroutine to load the journey map.
+  example: []
+  syntax:
+    content: private IEnumerator LoadJourneyMapCoroutine(GameObject caller = null)
+    parameters:
+    - id: caller
+      type: UnityEngine.GameObject
+      description: The GameObject that calls this method.
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine sequencing.
+    content.vb: Private Function LoadJourneyMapCoroutine(caller As GameObject = Nothing) As IEnumerator
+  overload: TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine*
+- uid: TaleOfTiles.MainGameManager.LoadJourneySelectionScene(UnityEngine.GameObject)
+  commentId: M:TaleOfTiles.MainGameManager.LoadJourneySelectionScene(UnityEngine.GameObject)
+  id: LoadJourneySelectionScene(UnityEngine.GameObject)
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: LoadJourneySelectionScene(GameObject)
+  nameWithType: MainGameManager.LoadJourneySelectionScene(GameObject)
+  fullName: TaleOfTiles.MainGameManager.LoadJourneySelectionScene(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadJourneySelectionScene
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 336
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Loads the journey selection scene.
+  example: []
+  syntax:
+    content: public void LoadJourneySelectionScene(GameObject caller = null)
+    parameters:
+    - id: caller
+      type: UnityEngine.GameObject
+      description: The GameObject that calls this method.
+    content.vb: Public Sub LoadJourneySelectionScene(caller As GameObject = Nothing)
+  overload: TaleOfTiles.MainGameManager.LoadJourneySelectionScene*
+- uid: TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine(UnityEngine.GameObject)
+  commentId: M:TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine(UnityEngine.GameObject)
+  id: LoadJourneySelectionSceneCoroutine(UnityEngine.GameObject)
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: LoadJourneySelectionSceneCoroutine(GameObject)
+  nameWithType: MainGameManager.LoadJourneySelectionSceneCoroutine(GameObject)
+  fullName: TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadJourneySelectionSceneCoroutine
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 346
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: A coroutine to load the journey selection scene.
+  example: []
+  syntax:
+    content: private IEnumerator LoadJourneySelectionSceneCoroutine(GameObject caller = null)
+    parameters:
+    - id: caller
+      type: UnityEngine.GameObject
+      description: The GameObject that calls this method.
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine sequencing.
+    content.vb: Private Function LoadJourneySelectionSceneCoroutine(caller As GameObject = Nothing) As IEnumerator
+  overload: TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine*
+- uid: TaleOfTiles.MainGameManager.HomeButtonClick(UnityEngine.GameObject)
+  commentId: M:TaleOfTiles.MainGameManager.HomeButtonClick(UnityEngine.GameObject)
+  id: HomeButtonClick(UnityEngine.GameObject)
+  parent: TaleOfTiles.MainGameManager
+  langs:
+  - csharp
+  - vb
+  name: HomeButtonClick(GameObject)
+  nameWithType: MainGameManager.HomeButtonClick(GameObject)
+  fullName: TaleOfTiles.MainGameManager.HomeButtonClick(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/MainGameManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HomeButtonClick
+    path: ../Assets/Scripts/Managers/MainGameManager.cs
+    startLine: 379
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles
+  summary: Handles the home button click event.
+  example: []
+  syntax:
+    content: public void HomeButtonClick(GameObject go = null)
+    parameters:
+    - id: go
+      type: UnityEngine.GameObject
+      description: The GameObject that calls this method.
+    content.vb: Public Sub HomeButtonClick(go As GameObject = Nothing)
+  overload: TaleOfTiles.MainGameManager.HomeButtonClick*
+references:
+- uid: TaleOfTiles
+  commentId: N:TaleOfTiles
+  href: TaleOfTiles.html
+  name: TaleOfTiles
+  nameWithType: TaleOfTiles
+  fullName: TaleOfTiles
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Misc.SingletonBase
+  commentId: T:TaleOfTiles.Misc.SingletonBase
+  parent: TaleOfTiles.Misc
+  href: TaleOfTiles.Misc.SingletonBase.html
+  name: SingletonBase
+  nameWithType: SingletonBase
+  fullName: TaleOfTiles.Misc.SingletonBase
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}
+  commentId: T:TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}
+  parent: TaleOfTiles.Misc
+  definition: TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<MainGameManager>
+  nameWithType: Singleton<MainGameManager>
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.MainGameManager>
+  nameWithType.vb: Singleton(Of MainGameManager)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.MainGameManager)
+  name.vb: Singleton(Of MainGameManager)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - uid: TaleOfTiles.MainGameManager
+    name: MainGameManager
+    href: TaleOfTiles.MainGameManager.html
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.MainGameManager
+    name: MainGameManager
+    href: TaleOfTiles.MainGameManager.html
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.m_instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}
+  definition: TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<MainGameManager>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.MainGameManager>.m_instance
+  nameWithType.vb: Singleton(Of MainGameManager).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.MainGameManager).m_instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<MainGameManager>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.MainGameManager>.Instance
+  nameWithType.vb: Singleton(Of MainGameManager).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.MainGameManager).Instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Awake
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<MainGameManager>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.MainGameManager>.Awake()
+  nameWithType.vb: Singleton(Of MainGameManager).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.MainGameManager).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Prepare
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<MainGameManager>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.MainGameManager>.Prepare()
+  nameWithType.vb: Singleton(Of MainGameManager).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.MainGameManager).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.MainGameManager}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.SingletonBase.AllSingletons
+  commentId: F:TaleOfTiles.Misc.SingletonBase.AllSingletons
+  parent: TaleOfTiles.Misc.SingletonBase
+  href: TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons
+  name: AllSingletons
+  nameWithType: SingletonBase.AllSingletons
+  fullName: TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Misc
+  commentId: N:TaleOfTiles.Misc
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Misc
+  nameWithType: TaleOfTiles.Misc
+  fullName: TaleOfTiles.Misc
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+- uid: TaleOfTiles.Misc.Singleton`1
+  commentId: T:TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: TaleOfTiles.Misc.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton`1.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<T>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.m_instance
+  nameWithType.vb: Singleton(Of T).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).m_instance
+- uid: TaleOfTiles.Misc.Singleton`1.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Instance
+- uid: TaleOfTiles.Misc.Singleton`1.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton`1.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<T>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Prepare()
+  nameWithType.vb: Singleton(Of T).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Audio.AudioManager
+  commentId: T:TaleOfTiles.Audio.AudioManager
+  parent: TaleOfTiles.Audio
+  href: TaleOfTiles.Audio.AudioManager.html
+  name: AudioManager
+  nameWithType: AudioManager
+  fullName: TaleOfTiles.Audio.AudioManager
+- uid: TaleOfTiles.Audio
+  commentId: N:TaleOfTiles.Audio
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Audio
+  nameWithType: TaleOfTiles.Audio
+  fullName: TaleOfTiles.Audio
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Audio
+    name: Audio
+    href: TaleOfTiles.Audio.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Audio
+    name: Audio
+    href: TaleOfTiles.Audio.html
+- uid: TaleOfTiles.UI.UIManager
+  commentId: T:TaleOfTiles.UI.UIManager
+  parent: TaleOfTiles.UI
+  href: TaleOfTiles.UI.UIManager.html
+  name: UIManager
+  nameWithType: UIManager
+  fullName: TaleOfTiles.UI.UIManager
+- uid: TaleOfTiles.UI
+  commentId: N:TaleOfTiles.UI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.UI
+  nameWithType: TaleOfTiles.UI
+  fullName: TaleOfTiles.UI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+- uid: TaleOfTiles.Arena.BattleArenaManager
+  commentId: T:TaleOfTiles.Arena.BattleArenaManager
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BattleArenaManager.html
+  name: BattleArenaManager
+  nameWithType: BattleArenaManager
+  fullName: TaleOfTiles.Arena.BattleArenaManager
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: TaleOfTiles.Arena.CombatManager
+  commentId: T:TaleOfTiles.Arena.CombatManager
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.CombatManager.html
+  name: CombatManager
+  nameWithType: CombatManager
+  fullName: TaleOfTiles.Arena.CombatManager
+- uid: TaleOfTiles.Data.DataManager
+  commentId: T:TaleOfTiles.Data.DataManager
+  parent: TaleOfTiles.Data
+  href: TaleOfTiles.Data.DataManager.html
+  name: DataManager
+  nameWithType: DataManager
+  fullName: TaleOfTiles.Data.DataManager
+- uid: TaleOfTiles.Data
+  commentId: N:TaleOfTiles.Data
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Data
+  nameWithType: TaleOfTiles.Data
+  fullName: TaleOfTiles.Data
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+- uid: TaleOfTiles.Card.CardsHolderManager
+  commentId: T:TaleOfTiles.Card.CardsHolderManager
+  parent: TaleOfTiles.Card
+  href: TaleOfTiles.Card.CardsHolderManager.html
+  name: CardsHolderManager
+  nameWithType: CardsHolderManager
+  fullName: TaleOfTiles.Card.CardsHolderManager
+- uid: TaleOfTiles.Card
+  commentId: N:TaleOfTiles.Card
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card
+  nameWithType: TaleOfTiles.Card
+  fullName: TaleOfTiles.Card
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+- uid: TaleOfTiles.UI.LoadingScreenManager
+  commentId: T:TaleOfTiles.UI.LoadingScreenManager
+  parent: TaleOfTiles.UI
+  href: TaleOfTiles.UI.LoadingScreenManager.html
+  name: LoadingScreenManager
+  nameWithType: LoadingScreenManager
+  fullName: TaleOfTiles.UI.LoadingScreenManager
+- uid: TaleOfTiles.Misc.SceneSwitcherManager
+  commentId: T:TaleOfTiles.Misc.SceneSwitcherManager
+  parent: TaleOfTiles.Misc
+  href: TaleOfTiles.Misc.SceneSwitcherManager.html
+  name: SceneSwitcherManager
+  nameWithType: SceneSwitcherManager
+  fullName: TaleOfTiles.Misc.SceneSwitcherManager
+- uid: TaleOfTiles.Journey.JourneyManager
+  commentId: T:TaleOfTiles.Journey.JourneyManager
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyManager.html
+  name: JourneyManager
+  nameWithType: JourneyManager
+  fullName: TaleOfTiles.Journey.JourneyManager
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: TaleOfTiles.Player.PlayerCharacter
+  commentId: T:TaleOfTiles.Player.PlayerCharacter
+  parent: TaleOfTiles.Player
+  href: TaleOfTiles.Player.PlayerCharacter.html
+  name: PlayerCharacter
+  nameWithType: PlayerCharacter
+  fullName: TaleOfTiles.Player.PlayerCharacter
+- uid: TaleOfTiles.Player
+  commentId: N:TaleOfTiles.Player
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Player
+  nameWithType: TaleOfTiles.Player
+  fullName: TaleOfTiles.Player
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Player
+    name: Player
+    href: TaleOfTiles.Player.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Player
+    name: Player
+    href: TaleOfTiles.Player.html
+- uid: TaleOfTiles.PlayerLevel
+  commentId: T:TaleOfTiles.PlayerLevel
+  parent: TaleOfTiles
+  href: TaleOfTiles.PlayerLevel.html
+  name: PlayerLevel
+  nameWithType: PlayerLevel
+  fullName: TaleOfTiles.PlayerLevel
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: TaleOfTiles.Journey.JourneyObject
+  commentId: T:TaleOfTiles.Journey.JourneyObject
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyObject.html
+  name: JourneyObject
+  nameWithType: JourneyObject
+  fullName: TaleOfTiles.Journey.JourneyObject
+- uid: TaleOfTiles.MainGameManager.Start*
+  commentId: Overload:TaleOfTiles.MainGameManager.Start
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_Start
+  name: Start
+  nameWithType: MainGameManager.Start
+  fullName: TaleOfTiles.MainGameManager.Start
+- uid: TaleOfTiles.MainGameManager.PrepareManagers*
+  commentId: Overload:TaleOfTiles.MainGameManager.PrepareManagers
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_PrepareManagers
+  name: PrepareManagers
+  nameWithType: MainGameManager.PrepareManagers
+  fullName: TaleOfTiles.MainGameManager.PrepareManagers
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TaleOfTiles.MainGameManager.CreatePlayerCharacter*
+  commentId: Overload:TaleOfTiles.MainGameManager.CreatePlayerCharacter
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_CreatePlayerCharacter
+  name: CreatePlayerCharacter
+  nameWithType: MainGameManager.CreatePlayerCharacter
+  fullName: TaleOfTiles.MainGameManager.CreatePlayerCharacter
+- uid: TaleOfTiles.MainGameManager.GetPlayer*
+  commentId: Overload:TaleOfTiles.MainGameManager.GetPlayer
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_GetPlayer
+  name: GetPlayer
+  nameWithType: MainGameManager.GetPlayer
+  fullName: TaleOfTiles.MainGameManager.GetPlayer
+- uid: TaleOfTiles.MainGameManager.SelectLevel*
+  commentId: Overload:TaleOfTiles.MainGameManager.SelectLevel
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_SelectLevel_System_String_
+  name: SelectLevel
+  nameWithType: MainGameManager.SelectLevel
+  fullName: TaleOfTiles.MainGameManager.SelectLevel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TaleOfTiles.Level.LevelObject
+  commentId: T:TaleOfTiles.Level.LevelObject
+  parent: TaleOfTiles.Level
+  href: TaleOfTiles.Level.LevelObject.html
+  name: LevelObject
+  nameWithType: LevelObject
+  fullName: TaleOfTiles.Level.LevelObject
+- uid: TaleOfTiles.Level
+  commentId: N:TaleOfTiles.Level
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Level
+  nameWithType: TaleOfTiles.Level
+  fullName: TaleOfTiles.Level
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+- uid: TaleOfTiles.MainGameManager.LoadLevelSelectionScreen*
+  commentId: Overload:TaleOfTiles.MainGameManager.LoadLevelSelectionScreen
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_LoadLevelSelectionScreen_UnityEngine_GameObject_
+  name: LoadLevelSelectionScreen
+  nameWithType: MainGameManager.LoadLevelSelectionScreen
+  fullName: TaleOfTiles.MainGameManager.LoadLevelSelectionScreen
+- uid: TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine*
+  commentId: Overload:TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_LoadLevelSelectionScreenCoroutine_UnityEngine_GameObject_
+  name: LoadLevelSelectionScreenCoroutine
+  nameWithType: MainGameManager.LoadLevelSelectionScreenCoroutine
+  fullName: TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine
+- uid: TaleOfTiles.MainGameManager.LoadBattleArena*
+  commentId: Overload:TaleOfTiles.MainGameManager.LoadBattleArena
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_LoadBattleArena
+  name: LoadBattleArena
+  nameWithType: MainGameManager.LoadBattleArena
+  fullName: TaleOfTiles.MainGameManager.LoadBattleArena
+- uid: TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine*
+  commentId: Overload:TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_LoadBattleArenaCoroutine
+  name: LoadBattleArenaCoroutine
+  nameWithType: MainGameManager.LoadBattleArenaCoroutine
+  fullName: TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine
+- uid: TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases*
+  commentId: Overload:TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_SetMainCameraToAllCanvases
+  name: SetMainCameraToAllCanvases
+  nameWithType: MainGameManager.SetMainCameraToAllCanvases
+  fullName: TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases
+- uid: TaleOfTiles.MainGameManager.LoadJourneyMap*
+  commentId: Overload:TaleOfTiles.MainGameManager.LoadJourneyMap
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_LoadJourneyMap_System_String_UnityEngine_GameObject_
+  name: LoadJourneyMap
+  nameWithType: MainGameManager.LoadJourneyMap
+  fullName: TaleOfTiles.MainGameManager.LoadJourneyMap
+- uid: TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine*
+  commentId: Overload:TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_LoadJourneyMapCoroutine_UnityEngine_GameObject_
+  name: LoadJourneyMapCoroutine
+  nameWithType: MainGameManager.LoadJourneyMapCoroutine
+  fullName: TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine
+- uid: TaleOfTiles.MainGameManager.LoadJourneySelectionScene*
+  commentId: Overload:TaleOfTiles.MainGameManager.LoadJourneySelectionScene
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_LoadJourneySelectionScene_UnityEngine_GameObject_
+  name: LoadJourneySelectionScene
+  nameWithType: MainGameManager.LoadJourneySelectionScene
+  fullName: TaleOfTiles.MainGameManager.LoadJourneySelectionScene
+- uid: TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine*
+  commentId: Overload:TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_LoadJourneySelectionSceneCoroutine_UnityEngine_GameObject_
+  name: LoadJourneySelectionSceneCoroutine
+  nameWithType: MainGameManager.LoadJourneySelectionSceneCoroutine
+  fullName: TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine
+- uid: TaleOfTiles.MainGameManager.HomeButtonClick*
+  commentId: Overload:TaleOfTiles.MainGameManager.HomeButtonClick
+  href: TaleOfTiles.MainGameManager.html#TaleOfTiles_MainGameManager_HomeButtonClick_UnityEngine_GameObject_
+  name: HomeButtonClick
+  nameWithType: MainGameManager.HomeButtonClick
+  fullName: TaleOfTiles.MainGameManager.HomeButtonClick

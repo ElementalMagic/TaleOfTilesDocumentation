@@ -1,0 +1,1692 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.CombatManager
+  commentId: T:TaleOfTiles.Arena.CombatManager
+  id: CombatManager
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.CombatManager.ApplyStatusToGems(TaleOfTiles.Arena.BoardManager,System.Single,TaleOfTiles.AI.Move.GemStatusEffectScore)
+  - TaleOfTiles.Arena.CombatManager.DealDamage(TaleOfTiles.Player.PlayerCharacter,TaleOfTiles.Player.PlayerCharacter,System.Single,TaleOfTiles.Card.Gems.GemEffectShieldType,System.Boolean)
+  - TaleOfTiles.Arena.CombatManager.Defeat
+  - TaleOfTiles.Arena.CombatManager.EnableCombatManager
+  - TaleOfTiles.Arena.CombatManager.EndCoroutine(System.Boolean)
+  - TaleOfTiles.Arena.CombatManager.EnemyTurn
+  - TaleOfTiles.Arena.CombatManager.EnemyTurnCoroutine
+  - TaleOfTiles.Arena.CombatManager.HumanTurn
+  - TaleOfTiles.Arena.CombatManager.HumanTurnCoroutine
+  - TaleOfTiles.Arena.CombatManager.PlayMonsterGetDamageSound
+  - TaleOfTiles.Arena.CombatManager.PlayMonsterMakeHitSound
+  - TaleOfTiles.Arena.CombatManager.PlayPlayerGetDamageSound
+  - TaleOfTiles.Arena.CombatManager.PlayPlayerMakeHitSound
+  - TaleOfTiles.Arena.CombatManager.PlayerEndTurn(TaleOfTiles.Player.PlayerCharacter)
+  - TaleOfTiles.Arena.CombatManager.Prepare
+  - TaleOfTiles.Arena.CombatManager.ResizeBattleCards(System.Boolean)
+  - TaleOfTiles.Arena.CombatManager.ScoreGamePieces(TaleOfTiles.AI.Combination,TaleOfTiles.Arena.BoardManager)
+  - TaleOfTiles.Arena.CombatManager.SetupCombatManagerCoroutine
+  - TaleOfTiles.Arena.CombatManager.ShowMessage(System.String,UnityEngine.Color,System.Single)
+  - TaleOfTiles.Arena.CombatManager.SwapBoard
+  - TaleOfTiles.Arena.CombatManager.SwapBoardCoroutine
+  - TaleOfTiles.Arena.CombatManager.Victory
+  - TaleOfTiles.Arena.CombatManager.ai_agent
+  - TaleOfTiles.Arena.CombatManager.ai_battle_card
+  - TaleOfTiles.Arena.CombatManager.ai_board
+  - TaleOfTiles.Arena.CombatManager.game_state
+  - TaleOfTiles.Arena.CombatManager.human_board
+  - TaleOfTiles.Arena.CombatManager.human_board_on_screen
+  - TaleOfTiles.Arena.CombatManager.move_delay
+  - TaleOfTiles.Arena.CombatManager.player_battle_card
+  langs:
+  - csharp
+  - vb
+  name: CombatManager
+  nameWithType: CombatManager
+  fullName: TaleOfTiles.Arena.CombatManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CombatManager
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: >-
+    This class handles the functionality of the combat in the game. 
+
+    It inherits from the Singleton class to ensure only one instance of this class exists.
+  example: []
+  syntax:
+    content: 'public class CombatManager : Singleton<CombatManager>'
+    content.vb: Public Class CombatManager Inherits Singleton(Of CombatManager)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - TaleOfTiles.Misc.SingletonBase
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}
+  inheritedMembers:
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.m_instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Awake
+  - TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: TaleOfTiles.Arena.CombatManager.human_board
+  commentId: F:TaleOfTiles.Arena.CombatManager.human_board
+  id: human_board
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: human_board
+  nameWithType: CombatManager.human_board
+  fullName: TaleOfTiles.Arena.CombatManager.human_board
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: human_board
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The human player's game board.
+  example: []
+  syntax:
+    content: public BoardManager human_board
+    return:
+      type: TaleOfTiles.Arena.BoardManager
+    content.vb: Public human_board As BoardManager
+- uid: TaleOfTiles.Arena.CombatManager.ai_board
+  commentId: F:TaleOfTiles.Arena.CombatManager.ai_board
+  id: ai_board
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: ai_board
+  nameWithType: CombatManager.ai_board
+  fullName: TaleOfTiles.Arena.CombatManager.ai_board
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ai_board
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The AI player's game board.
+  example: []
+  syntax:
+    content: public BoardManager ai_board
+    return:
+      type: TaleOfTiles.Arena.BoardManager
+    content.vb: Public ai_board As BoardManager
+- uid: TaleOfTiles.Arena.CombatManager.player_battle_card
+  commentId: F:TaleOfTiles.Arena.CombatManager.player_battle_card
+  id: player_battle_card
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: player_battle_card
+  nameWithType: CombatManager.player_battle_card
+  fullName: TaleOfTiles.Arena.CombatManager.player_battle_card
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: player_battle_card
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The UI component for the player's battle card.
+  example: []
+  syntax:
+    content: public RectTransform player_battle_card
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public player_battle_card As RectTransform
+- uid: TaleOfTiles.Arena.CombatManager.ai_battle_card
+  commentId: F:TaleOfTiles.Arena.CombatManager.ai_battle_card
+  id: ai_battle_card
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: ai_battle_card
+  nameWithType: CombatManager.ai_battle_card
+  fullName: TaleOfTiles.Arena.CombatManager.ai_battle_card
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ai_battle_card
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The UI component for the AI's battle card.
+  example: []
+  syntax:
+    content: public RectTransform ai_battle_card
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public ai_battle_card As RectTransform
+- uid: TaleOfTiles.Arena.CombatManager.ai_agent
+  commentId: F:TaleOfTiles.Arena.CombatManager.ai_agent
+  id: ai_agent
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: ai_agent
+  nameWithType: CombatManager.ai_agent
+  fullName: TaleOfTiles.Arena.CombatManager.ai_agent
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ai_agent
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The AI player's behavior.
+  example: []
+  syntax:
+    content: public AIBehaviour ai_agent
+    return:
+      type: TaleOfTiles.AI.AIBehaviour
+    content.vb: Public ai_agent As AIBehaviour
+- uid: TaleOfTiles.Arena.CombatManager.move_delay
+  commentId: F:TaleOfTiles.Arena.CombatManager.move_delay
+  id: move_delay
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: move_delay
+  nameWithType: CombatManager.move_delay
+  fullName: TaleOfTiles.Arena.CombatManager.move_delay
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: move_delay
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The delay between moves.
+  example: []
+  syntax:
+    content: public float move_delay
+    return:
+      type: System.Single
+    content.vb: Public move_delay As Single
+- uid: TaleOfTiles.Arena.CombatManager.game_state
+  commentId: F:TaleOfTiles.Arena.CombatManager.game_state
+  id: game_state
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: game_state
+  nameWithType: CombatManager.game_state
+  fullName: TaleOfTiles.Arena.CombatManager.game_state
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: game_state
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The current state of the game.
+  example: []
+  syntax:
+    content: public CombatManager.GameState game_state
+    return:
+      type: TaleOfTiles.Arena.CombatManager.GameState
+    content.vb: Public game_state As CombatManager.GameState
+- uid: TaleOfTiles.Arena.CombatManager.human_board_on_screen
+  commentId: F:TaleOfTiles.Arena.CombatManager.human_board_on_screen
+  id: human_board_on_screen
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: human_board_on_screen
+  nameWithType: CombatManager.human_board_on_screen
+  fullName: TaleOfTiles.Arena.CombatManager.human_board_on_screen
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: human_board_on_screen
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Whether the human player's board is currently on screen.
+  example: []
+  syntax:
+    content: public bool human_board_on_screen
+    return:
+      type: System.Boolean
+    content.vb: Public human_board_on_screen As Boolean
+- uid: TaleOfTiles.Arena.CombatManager.Prepare
+  commentId: M:TaleOfTiles.Arena.CombatManager.Prepare
+  id: Prepare
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: Prepare()
+  nameWithType: CombatManager.Prepare()
+  fullName: TaleOfTiles.Arena.CombatManager.Prepare()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Prepare
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Prepares the combat manager.
+  example: []
+  syntax:
+    content: public override IEnumerator Prepare()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Overrides Function Prepare() As IEnumerator
+  overridden: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Prepare
+  overload: TaleOfTiles.Arena.CombatManager.Prepare*
+- uid: TaleOfTiles.Arena.CombatManager.SetupCombatManagerCoroutine
+  commentId: M:TaleOfTiles.Arena.CombatManager.SetupCombatManagerCoroutine
+  id: SetupCombatManagerCoroutine
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: SetupCombatManagerCoroutine()
+  nameWithType: CombatManager.SetupCombatManagerCoroutine()
+  fullName: TaleOfTiles.Arena.CombatManager.SetupCombatManagerCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetupCombatManagerCoroutine
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to set up the combat manager.
+  example: []
+  syntax:
+    content: public IEnumerator SetupCombatManagerCoroutine()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function SetupCombatManagerCoroutine() As IEnumerator
+  overload: TaleOfTiles.Arena.CombatManager.SetupCombatManagerCoroutine*
+- uid: TaleOfTiles.Arena.CombatManager.EnableCombatManager
+  commentId: M:TaleOfTiles.Arena.CombatManager.EnableCombatManager
+  id: EnableCombatManager
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: EnableCombatManager()
+  nameWithType: CombatManager.EnableCombatManager()
+  fullName: TaleOfTiles.Arena.CombatManager.EnableCombatManager()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EnableCombatManager
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 108
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Enables the combat manager, unblocking the player's input and blocking the AI's input.
+  example: []
+  syntax:
+    content: public void EnableCombatManager()
+    content.vb: Public Sub EnableCombatManager()
+  overload: TaleOfTiles.Arena.CombatManager.EnableCombatManager*
+- uid: TaleOfTiles.Arena.CombatManager.PlayerEndTurn(TaleOfTiles.Player.PlayerCharacter)
+  commentId: M:TaleOfTiles.Arena.CombatManager.PlayerEndTurn(TaleOfTiles.Player.PlayerCharacter)
+  id: PlayerEndTurn(TaleOfTiles.Player.PlayerCharacter)
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: PlayerEndTurn(PlayerCharacter)
+  nameWithType: CombatManager.PlayerEndTurn(PlayerCharacter)
+  fullName: TaleOfTiles.Arena.CombatManager.PlayerEndTurn(TaleOfTiles.Player.PlayerCharacter)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: PlayerEndTurn
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 120
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Ends the player's turn.
+  example: []
+  syntax:
+    content: public IEnumerator PlayerEndTurn(PlayerCharacter player)
+    parameters:
+    - id: player
+      type: TaleOfTiles.Player.PlayerCharacter
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function PlayerEndTurn(player As PlayerCharacter) As IEnumerator
+  overload: TaleOfTiles.Arena.CombatManager.PlayerEndTurn*
+- uid: TaleOfTiles.Arena.CombatManager.EnemyTurn
+  commentId: M:TaleOfTiles.Arena.CombatManager.EnemyTurn
+  id: EnemyTurn
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: EnemyTurn()
+  nameWithType: CombatManager.EnemyTurn()
+  fullName: TaleOfTiles.Arena.CombatManager.EnemyTurn()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EnemyTurn
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 218
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Starts the enemy's turn.
+  example: []
+  syntax:
+    content: >-
+      [ContextMenu("Enemy Turn")]
+
+      public void EnemyTurn()
+    content.vb: >-
+      <ContextMenu("Enemy Turn")>
+
+      Public Sub EnemyTurn()
+  overload: TaleOfTiles.Arena.CombatManager.EnemyTurn*
+  attributes:
+  - type: UnityEngine.ContextMenu
+    ctor: UnityEngine.ContextMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Enemy Turn
+- uid: TaleOfTiles.Arena.CombatManager.ResizeBattleCards(System.Boolean)
+  commentId: M:TaleOfTiles.Arena.CombatManager.ResizeBattleCards(System.Boolean)
+  id: ResizeBattleCards(System.Boolean)
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: ResizeBattleCards(bool)
+  nameWithType: CombatManager.ResizeBattleCards(bool)
+  fullName: TaleOfTiles.Arena.CombatManager.ResizeBattleCards(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ResizeBattleCards
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 236
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to resize the battle cards.
+  example: []
+  syntax:
+    content: public IEnumerator ResizeBattleCards(bool make_player_card_bigger = true)
+    parameters:
+    - id: make_player_card_bigger
+      type: System.Boolean
+      description: Whether to make the player's card bigger.
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function ResizeBattleCards(make_player_card_bigger As Boolean = True) As IEnumerator
+  overload: TaleOfTiles.Arena.CombatManager.ResizeBattleCards*
+  nameWithType.vb: CombatManager.ResizeBattleCards(Boolean)
+  fullName.vb: TaleOfTiles.Arena.CombatManager.ResizeBattleCards(Boolean)
+  name.vb: ResizeBattleCards(Boolean)
+- uid: TaleOfTiles.Arena.CombatManager.EnemyTurnCoroutine
+  commentId: M:TaleOfTiles.Arena.CombatManager.EnemyTurnCoroutine
+  id: EnemyTurnCoroutine
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: EnemyTurnCoroutine()
+  nameWithType: CombatManager.EnemyTurnCoroutine()
+  fullName: TaleOfTiles.Arena.CombatManager.EnemyTurnCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EnemyTurnCoroutine
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 265
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine for the enemy's turn.
+  example: []
+  syntax:
+    content: private IEnumerator EnemyTurnCoroutine()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function EnemyTurnCoroutine() As IEnumerator
+  overload: TaleOfTiles.Arena.CombatManager.EnemyTurnCoroutine*
+- uid: TaleOfTiles.Arena.CombatManager.SwapBoard
+  commentId: M:TaleOfTiles.Arena.CombatManager.SwapBoard
+  id: SwapBoard
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: SwapBoard()
+  nameWithType: CombatManager.SwapBoard()
+  fullName: TaleOfTiles.Arena.CombatManager.SwapBoard()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SwapBoard
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 313
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Starts the process of swapping the game board.
+  example: []
+  syntax:
+    content: public void SwapBoard()
+    content.vb: Public Sub SwapBoard()
+  overload: TaleOfTiles.Arena.CombatManager.SwapBoard*
+- uid: TaleOfTiles.Arena.CombatManager.SwapBoardCoroutine
+  commentId: M:TaleOfTiles.Arena.CombatManager.SwapBoardCoroutine
+  id: SwapBoardCoroutine
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: SwapBoardCoroutine()
+  nameWithType: CombatManager.SwapBoardCoroutine()
+  fullName: TaleOfTiles.Arena.CombatManager.SwapBoardCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SwapBoardCoroutine
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 321
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to swap the game board.
+  example: []
+  syntax:
+    content: public IEnumerator SwapBoardCoroutine()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function SwapBoardCoroutine() As IEnumerator
+  overload: TaleOfTiles.Arena.CombatManager.SwapBoardCoroutine*
+- uid: TaleOfTiles.Arena.CombatManager.HumanTurn
+  commentId: M:TaleOfTiles.Arena.CombatManager.HumanTurn
+  id: HumanTurn
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: HumanTurn()
+  nameWithType: CombatManager.HumanTurn()
+  fullName: TaleOfTiles.Arena.CombatManager.HumanTurn()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HumanTurn
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 378
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Starts the human player's turn.
+  example: []
+  syntax:
+    content: >-
+      [ContextMenu("Human Turn")]
+
+      public void HumanTurn()
+    content.vb: >-
+      <ContextMenu("Human Turn")>
+
+      Public Sub HumanTurn()
+  overload: TaleOfTiles.Arena.CombatManager.HumanTurn*
+  attributes:
+  - type: UnityEngine.ContextMenu
+    ctor: UnityEngine.ContextMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Human Turn
+- uid: TaleOfTiles.Arena.CombatManager.HumanTurnCoroutine
+  commentId: M:TaleOfTiles.Arena.CombatManager.HumanTurnCoroutine
+  id: HumanTurnCoroutine
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: HumanTurnCoroutine()
+  nameWithType: CombatManager.HumanTurnCoroutine()
+  fullName: TaleOfTiles.Arena.CombatManager.HumanTurnCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HumanTurnCoroutine
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 392
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine for the human player's turn.
+  example: []
+  syntax:
+    content: private IEnumerator HumanTurnCoroutine()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function HumanTurnCoroutine() As IEnumerator
+  overload: TaleOfTiles.Arena.CombatManager.HumanTurnCoroutine*
+- uid: TaleOfTiles.Arena.CombatManager.ShowMessage(System.String,UnityEngine.Color,System.Single)
+  commentId: M:TaleOfTiles.Arena.CombatManager.ShowMessage(System.String,UnityEngine.Color,System.Single)
+  id: ShowMessage(System.String,UnityEngine.Color,System.Single)
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: ShowMessage(string, Color, float)
+  nameWithType: CombatManager.ShowMessage(string, Color, float)
+  fullName: TaleOfTiles.Arena.CombatManager.ShowMessage(string, UnityEngine.Color, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowMessage
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 442
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Displays a message on the UI.
+  example: []
+  syntax:
+    content: public void ShowMessage(string message, Color color, float size = 1.5)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to display.
+    - id: color
+      type: UnityEngine.Color
+      description: The color of the message.
+    - id: size
+      type: System.Single
+      description: The size of the message.
+    content.vb: Public Sub ShowMessage(message As String, color As Color, size As Single = 1.5)
+  overload: TaleOfTiles.Arena.CombatManager.ShowMessage*
+  nameWithType.vb: CombatManager.ShowMessage(String, Color, Single)
+  fullName.vb: TaleOfTiles.Arena.CombatManager.ShowMessage(String, UnityEngine.Color, Single)
+  name.vb: ShowMessage(String, Color, Single)
+- uid: TaleOfTiles.Arena.CombatManager.DealDamage(TaleOfTiles.Player.PlayerCharacter,TaleOfTiles.Player.PlayerCharacter,System.Single,TaleOfTiles.Card.Gems.GemEffectShieldType,System.Boolean)
+  commentId: M:TaleOfTiles.Arena.CombatManager.DealDamage(TaleOfTiles.Player.PlayerCharacter,TaleOfTiles.Player.PlayerCharacter,System.Single,TaleOfTiles.Card.Gems.GemEffectShieldType,System.Boolean)
+  id: DealDamage(TaleOfTiles.Player.PlayerCharacter,TaleOfTiles.Player.PlayerCharacter,System.Single,TaleOfTiles.Card.Gems.GemEffectShieldType,System.Boolean)
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: DealDamage(PlayerCharacter, PlayerCharacter, float, GemEffectShieldType, bool)
+  nameWithType: CombatManager.DealDamage(PlayerCharacter, PlayerCharacter, float, GemEffectShieldType, bool)
+  fullName: TaleOfTiles.Arena.CombatManager.DealDamage(TaleOfTiles.Player.PlayerCharacter, TaleOfTiles.Player.PlayerCharacter, float, TaleOfTiles.Card.Gems.GemEffectShieldType, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DealDamage
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 455
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Deals damage to a target player from an attacking player.
+  example: []
+  syntax:
+    content: private void DealDamage(PlayerCharacter attacker, PlayerCharacter target, float base_damage, GemEffectShieldType damage_type, bool poison = false)
+    parameters:
+    - id: attacker
+      type: TaleOfTiles.Player.PlayerCharacter
+      description: The attacking player.
+    - id: target
+      type: TaleOfTiles.Player.PlayerCharacter
+      description: The target player.
+    - id: base_damage
+      type: System.Single
+      description: The base damage to deal.
+    - id: damage_type
+      type: TaleOfTiles.Card.Gems.GemEffectShieldType
+      description: The type of damage to deal.
+    - id: poison
+      type: System.Boolean
+      description: Whether the damage is poison damage.
+    content.vb: Private Sub DealDamage(attacker As PlayerCharacter, target As PlayerCharacter, base_damage As Single, damage_type As GemEffectShieldType, poison As Boolean = False)
+  overload: TaleOfTiles.Arena.CombatManager.DealDamage*
+  nameWithType.vb: CombatManager.DealDamage(PlayerCharacter, PlayerCharacter, Single, GemEffectShieldType, Boolean)
+  fullName.vb: TaleOfTiles.Arena.CombatManager.DealDamage(TaleOfTiles.Player.PlayerCharacter, TaleOfTiles.Player.PlayerCharacter, Single, TaleOfTiles.Card.Gems.GemEffectShieldType, Boolean)
+  name.vb: DealDamage(PlayerCharacter, PlayerCharacter, Single, GemEffectShieldType, Boolean)
+- uid: TaleOfTiles.Arena.CombatManager.ScoreGamePieces(TaleOfTiles.AI.Combination,TaleOfTiles.Arena.BoardManager)
+  commentId: M:TaleOfTiles.Arena.CombatManager.ScoreGamePieces(TaleOfTiles.AI.Combination,TaleOfTiles.Arena.BoardManager)
+  id: ScoreGamePieces(TaleOfTiles.AI.Combination,TaleOfTiles.Arena.BoardManager)
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: ScoreGamePieces(Combination, BoardManager)
+  nameWithType: CombatManager.ScoreGamePieces(Combination, BoardManager)
+  fullName: TaleOfTiles.Arena.CombatManager.ScoreGamePieces(TaleOfTiles.AI.Combination, TaleOfTiles.Arena.BoardManager)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ScoreGamePieces
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 503
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Scores game pieces as part of a combination on a game board.
+  example: []
+  syntax:
+    content: public IEnumerator ScoreGamePieces(Combination combo, BoardManager board)
+    parameters:
+    - id: combo
+      type: TaleOfTiles.AI.Combination
+      description: The combination of game pieces.
+    - id: board
+      type: TaleOfTiles.Arena.BoardManager
+      description: The game board.
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function ScoreGamePieces(combo As Combination, board As BoardManager) As IEnumerator
+  overload: TaleOfTiles.Arena.CombatManager.ScoreGamePieces*
+- uid: TaleOfTiles.Arena.CombatManager.ApplyStatusToGems(TaleOfTiles.Arena.BoardManager,System.Single,TaleOfTiles.AI.Move.GemStatusEffectScore)
+  commentId: M:TaleOfTiles.Arena.CombatManager.ApplyStatusToGems(TaleOfTiles.Arena.BoardManager,System.Single,TaleOfTiles.AI.Move.GemStatusEffectScore)
+  id: ApplyStatusToGems(TaleOfTiles.Arena.BoardManager,System.Single,TaleOfTiles.AI.Move.GemStatusEffectScore)
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: ApplyStatusToGems(BoardManager, float, GemStatusEffectScore)
+  nameWithType: CombatManager.ApplyStatusToGems(BoardManager, float, Move.GemStatusEffectScore)
+  fullName: TaleOfTiles.Arena.CombatManager.ApplyStatusToGems(TaleOfTiles.Arena.BoardManager, float, TaleOfTiles.AI.Move.GemStatusEffectScore)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ApplyStatusToGems
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 796
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Applies a status effect to a certain number of gems on a game board.
+  example: []
+  syntax:
+    content: private void ApplyStatusToGems(BoardManager target_board, float gems_count, Move.GemStatusEffectScore status_effect)
+    parameters:
+    - id: target_board
+      type: TaleOfTiles.Arena.BoardManager
+      description: The game board to apply the status effect to.
+    - id: gems_count
+      type: System.Single
+      description: The number of gems to apply the status effect to.
+    - id: status_effect
+      type: TaleOfTiles.AI.Move.GemStatusEffectScore
+      description: The status effect to apply.
+    content.vb: Private Sub ApplyStatusToGems(target_board As BoardManager, gems_count As Single, status_effect As Move.GemStatusEffectScore)
+  overload: TaleOfTiles.Arena.CombatManager.ApplyStatusToGems*
+  nameWithType.vb: CombatManager.ApplyStatusToGems(BoardManager, Single, Move.GemStatusEffectScore)
+  fullName.vb: TaleOfTiles.Arena.CombatManager.ApplyStatusToGems(TaleOfTiles.Arena.BoardManager, Single, TaleOfTiles.AI.Move.GemStatusEffectScore)
+  name.vb: ApplyStatusToGems(BoardManager, Single, GemStatusEffectScore)
+- uid: TaleOfTiles.Arena.CombatManager.Defeat
+  commentId: M:TaleOfTiles.Arena.CombatManager.Defeat
+  id: Defeat
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: Defeat()
+  nameWithType: CombatManager.Defeat()
+  fullName: TaleOfTiles.Arena.CombatManager.Defeat()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Defeat
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 844
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Ends the game and declares the AI player as the winner.
+  example: []
+  syntax:
+    content: public void Defeat()
+    content.vb: Public Sub Defeat()
+  overload: TaleOfTiles.Arena.CombatManager.Defeat*
+- uid: TaleOfTiles.Arena.CombatManager.Victory
+  commentId: M:TaleOfTiles.Arena.CombatManager.Victory
+  id: Victory
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: Victory()
+  nameWithType: CombatManager.Victory()
+  fullName: TaleOfTiles.Arena.CombatManager.Victory()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Victory
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 864
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Ends the game and declares the human player as the winner.
+  example: []
+  syntax:
+    content: public void Victory()
+    content.vb: Public Sub Victory()
+  overload: TaleOfTiles.Arena.CombatManager.Victory*
+- uid: TaleOfTiles.Arena.CombatManager.EndCoroutine(System.Boolean)
+  commentId: M:TaleOfTiles.Arena.CombatManager.EndCoroutine(System.Boolean)
+  id: EndCoroutine(System.Boolean)
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: EndCoroutine(bool)
+  nameWithType: CombatManager.EndCoroutine(bool)
+  fullName: TaleOfTiles.Arena.CombatManager.EndCoroutine(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EndCoroutine
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 885
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to end the game.
+  example: []
+  syntax:
+    content: private IEnumerator EndCoroutine(bool victory)
+    parameters:
+    - id: victory
+      type: System.Boolean
+      description: Whether the game was won.
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function EndCoroutine(victory As Boolean) As IEnumerator
+  overload: TaleOfTiles.Arena.CombatManager.EndCoroutine*
+  nameWithType.vb: CombatManager.EndCoroutine(Boolean)
+  fullName.vb: TaleOfTiles.Arena.CombatManager.EndCoroutine(Boolean)
+  name.vb: EndCoroutine(Boolean)
+- uid: TaleOfTiles.Arena.CombatManager.PlayMonsterMakeHitSound
+  commentId: M:TaleOfTiles.Arena.CombatManager.PlayMonsterMakeHitSound
+  id: PlayMonsterMakeHitSound
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: PlayMonsterMakeHitSound()
+  nameWithType: CombatManager.PlayMonsterMakeHitSound()
+  fullName: TaleOfTiles.Arena.CombatManager.PlayMonsterMakeHitSound()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: PlayMonsterMakeHitSound
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 903
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Plays the sound effect for the AI player making a hit.
+  example: []
+  syntax:
+    content: public void PlayMonsterMakeHitSound()
+    content.vb: Public Sub PlayMonsterMakeHitSound()
+  overload: TaleOfTiles.Arena.CombatManager.PlayMonsterMakeHitSound*
+- uid: TaleOfTiles.Arena.CombatManager.PlayPlayerMakeHitSound
+  commentId: M:TaleOfTiles.Arena.CombatManager.PlayPlayerMakeHitSound
+  id: PlayPlayerMakeHitSound
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: PlayPlayerMakeHitSound()
+  nameWithType: CombatManager.PlayPlayerMakeHitSound()
+  fullName: TaleOfTiles.Arena.CombatManager.PlayPlayerMakeHitSound()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: PlayPlayerMakeHitSound
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 935
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Plays the sound effect for the human player making a hit.
+  example: []
+  syntax:
+    content: public void PlayPlayerMakeHitSound()
+    content.vb: Public Sub PlayPlayerMakeHitSound()
+  overload: TaleOfTiles.Arena.CombatManager.PlayPlayerMakeHitSound*
+- uid: TaleOfTiles.Arena.CombatManager.PlayPlayerGetDamageSound
+  commentId: M:TaleOfTiles.Arena.CombatManager.PlayPlayerGetDamageSound
+  id: PlayPlayerGetDamageSound
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: PlayPlayerGetDamageSound()
+  nameWithType: CombatManager.PlayPlayerGetDamageSound()
+  fullName: TaleOfTiles.Arena.CombatManager.PlayPlayerGetDamageSound()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: PlayPlayerGetDamageSound
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 965
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Plays the sound effect for the human player receiving damage.
+  example: []
+  syntax:
+    content: public void PlayPlayerGetDamageSound()
+    content.vb: Public Sub PlayPlayerGetDamageSound()
+  overload: TaleOfTiles.Arena.CombatManager.PlayPlayerGetDamageSound*
+- uid: TaleOfTiles.Arena.CombatManager.PlayMonsterGetDamageSound
+  commentId: M:TaleOfTiles.Arena.CombatManager.PlayMonsterGetDamageSound
+  id: PlayMonsterGetDamageSound
+  parent: TaleOfTiles.Arena.CombatManager
+  langs:
+  - csharp
+  - vb
+  name: PlayMonsterGetDamageSound()
+  nameWithType: CombatManager.PlayMonsterGetDamageSound()
+  fullName: TaleOfTiles.Arena.CombatManager.PlayMonsterGetDamageSound()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: PlayMonsterGetDamageSound
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 995
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Plays the sound effect for the AI player receiving damage.
+  example: []
+  syntax:
+    content: public void PlayMonsterGetDamageSound()
+    content.vb: Public Sub PlayMonsterGetDamageSound()
+  overload: TaleOfTiles.Arena.CombatManager.PlayMonsterGetDamageSound*
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Misc.SingletonBase
+  commentId: T:TaleOfTiles.Misc.SingletonBase
+  parent: TaleOfTiles.Misc
+  href: TaleOfTiles.Misc.SingletonBase.html
+  name: SingletonBase
+  nameWithType: SingletonBase
+  fullName: TaleOfTiles.Misc.SingletonBase
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}
+  commentId: T:TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}
+  parent: TaleOfTiles.Misc
+  definition: TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<CombatManager>
+  nameWithType: Singleton<CombatManager>
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Arena.CombatManager>
+  nameWithType.vb: Singleton(Of CombatManager)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Arena.CombatManager)
+  name.vb: Singleton(Of CombatManager)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - uid: TaleOfTiles.Arena.CombatManager
+    name: CombatManager
+    href: TaleOfTiles.Arena.CombatManager.html
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Arena.CombatManager
+    name: CombatManager
+    href: TaleOfTiles.Arena.CombatManager.html
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.m_instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}
+  definition: TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<CombatManager>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Arena.CombatManager>.m_instance
+  nameWithType.vb: Singleton(Of CombatManager).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Arena.CombatManager).m_instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<CombatManager>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Arena.CombatManager>.Instance
+  nameWithType.vb: Singleton(Of CombatManager).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Arena.CombatManager).Instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Awake
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<CombatManager>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Arena.CombatManager>.Awake()
+  nameWithType.vb: Singleton(Of CombatManager).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Arena.CombatManager).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.SingletonBase.AllSingletons
+  commentId: F:TaleOfTiles.Misc.SingletonBase.AllSingletons
+  parent: TaleOfTiles.Misc.SingletonBase
+  href: TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons
+  name: AllSingletons
+  nameWithType: SingletonBase.AllSingletons
+  fullName: TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Misc
+  commentId: N:TaleOfTiles.Misc
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Misc
+  nameWithType: TaleOfTiles.Misc
+  fullName: TaleOfTiles.Misc
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+- uid: TaleOfTiles.Misc.Singleton`1
+  commentId: T:TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: TaleOfTiles.Misc.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton`1.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<T>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.m_instance
+  nameWithType.vb: Singleton(Of T).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).m_instance
+- uid: TaleOfTiles.Misc.Singleton`1.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Instance
+- uid: TaleOfTiles.Misc.Singleton`1.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Arena.BoardManager
+  commentId: T:TaleOfTiles.Arena.BoardManager
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BoardManager.html
+  name: BoardManager
+  nameWithType: BoardManager
+  fullName: TaleOfTiles.Arena.BoardManager
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: TaleOfTiles.AI.AIBehaviour
+  commentId: T:TaleOfTiles.AI.AIBehaviour
+  parent: TaleOfTiles.AI
+  href: TaleOfTiles.AI.AIBehaviour.html
+  name: AIBehaviour
+  nameWithType: AIBehaviour
+  fullName: TaleOfTiles.AI.AIBehaviour
+- uid: TaleOfTiles.AI
+  commentId: N:TaleOfTiles.AI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.AI
+  nameWithType: TaleOfTiles.AI
+  fullName: TaleOfTiles.AI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.AI
+    name: AI
+    href: TaleOfTiles.AI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.AI
+    name: AI
+    href: TaleOfTiles.AI.html
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TaleOfTiles.Arena.CombatManager.GameState
+  commentId: T:TaleOfTiles.Arena.CombatManager.GameState
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.CombatManager.html
+  name: CombatManager.GameState
+  nameWithType: CombatManager.GameState
+  fullName: TaleOfTiles.Arena.CombatManager.GameState
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.CombatManager
+    name: CombatManager
+    href: TaleOfTiles.Arena.CombatManager.html
+  - name: .
+  - uid: TaleOfTiles.Arena.CombatManager.GameState
+    name: GameState
+    href: TaleOfTiles.Arena.CombatManager.GameState.html
+  spec.vb:
+  - uid: TaleOfTiles.Arena.CombatManager
+    name: CombatManager
+    href: TaleOfTiles.Arena.CombatManager.html
+  - name: .
+  - uid: TaleOfTiles.Arena.CombatManager.GameState
+    name: GameState
+    href: TaleOfTiles.Arena.CombatManager.GameState.html
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Prepare
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<CombatManager>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Arena.CombatManager>.Prepare()
+  nameWithType.vb: Singleton(Of CombatManager).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Arena.CombatManager).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Arena.CombatManager}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Arena.CombatManager.Prepare*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.Prepare
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_Prepare
+  name: Prepare
+  nameWithType: CombatManager.Prepare
+  fullName: TaleOfTiles.Arena.CombatManager.Prepare
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: TaleOfTiles.Misc.Singleton`1.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<T>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Prepare()
+  nameWithType.vb: Singleton(Of T).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TaleOfTiles.Arena.CombatManager.SetupCombatManagerCoroutine*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.SetupCombatManagerCoroutine
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_SetupCombatManagerCoroutine
+  name: SetupCombatManagerCoroutine
+  nameWithType: CombatManager.SetupCombatManagerCoroutine
+  fullName: TaleOfTiles.Arena.CombatManager.SetupCombatManagerCoroutine
+- uid: TaleOfTiles.Arena.CombatManager.EnableCombatManager*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.EnableCombatManager
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_EnableCombatManager
+  name: EnableCombatManager
+  nameWithType: CombatManager.EnableCombatManager
+  fullName: TaleOfTiles.Arena.CombatManager.EnableCombatManager
+- uid: TaleOfTiles.Arena.CombatManager.PlayerEndTurn*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.PlayerEndTurn
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_PlayerEndTurn_TaleOfTiles_Player_PlayerCharacter_
+  name: PlayerEndTurn
+  nameWithType: CombatManager.PlayerEndTurn
+  fullName: TaleOfTiles.Arena.CombatManager.PlayerEndTurn
+- uid: TaleOfTiles.Player.PlayerCharacter
+  commentId: T:TaleOfTiles.Player.PlayerCharacter
+  parent: TaleOfTiles.Player
+  href: TaleOfTiles.Player.PlayerCharacter.html
+  name: PlayerCharacter
+  nameWithType: PlayerCharacter
+  fullName: TaleOfTiles.Player.PlayerCharacter
+- uid: TaleOfTiles.Player
+  commentId: N:TaleOfTiles.Player
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Player
+  nameWithType: TaleOfTiles.Player
+  fullName: TaleOfTiles.Player
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Player
+    name: Player
+    href: TaleOfTiles.Player.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Player
+    name: Player
+    href: TaleOfTiles.Player.html
+- uid: TaleOfTiles.Arena.CombatManager.EnemyTurn*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.EnemyTurn
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_EnemyTurn
+  name: EnemyTurn
+  nameWithType: CombatManager.EnemyTurn
+  fullName: TaleOfTiles.Arena.CombatManager.EnemyTurn
+- uid: TaleOfTiles.Arena.CombatManager.ResizeBattleCards*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.ResizeBattleCards
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_ResizeBattleCards_System_Boolean_
+  name: ResizeBattleCards
+  nameWithType: CombatManager.ResizeBattleCards
+  fullName: TaleOfTiles.Arena.CombatManager.ResizeBattleCards
+- uid: TaleOfTiles.Arena.CombatManager.EnemyTurnCoroutine*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.EnemyTurnCoroutine
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_EnemyTurnCoroutine
+  name: EnemyTurnCoroutine
+  nameWithType: CombatManager.EnemyTurnCoroutine
+  fullName: TaleOfTiles.Arena.CombatManager.EnemyTurnCoroutine
+- uid: TaleOfTiles.Arena.CombatManager.SwapBoard*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.SwapBoard
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_SwapBoard
+  name: SwapBoard
+  nameWithType: CombatManager.SwapBoard
+  fullName: TaleOfTiles.Arena.CombatManager.SwapBoard
+- uid: TaleOfTiles.Arena.CombatManager.SwapBoardCoroutine*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.SwapBoardCoroutine
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_SwapBoardCoroutine
+  name: SwapBoardCoroutine
+  nameWithType: CombatManager.SwapBoardCoroutine
+  fullName: TaleOfTiles.Arena.CombatManager.SwapBoardCoroutine
+- uid: TaleOfTiles.Arena.CombatManager.HumanTurn*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.HumanTurn
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_HumanTurn
+  name: HumanTurn
+  nameWithType: CombatManager.HumanTurn
+  fullName: TaleOfTiles.Arena.CombatManager.HumanTurn
+- uid: TaleOfTiles.Arena.CombatManager.HumanTurnCoroutine*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.HumanTurnCoroutine
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_HumanTurnCoroutine
+  name: HumanTurnCoroutine
+  nameWithType: CombatManager.HumanTurnCoroutine
+  fullName: TaleOfTiles.Arena.CombatManager.HumanTurnCoroutine
+- uid: TaleOfTiles.Arena.CombatManager.ShowMessage*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.ShowMessage
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_ShowMessage_System_String_UnityEngine_Color_System_Single_
+  name: ShowMessage
+  nameWithType: CombatManager.ShowMessage
+  fullName: TaleOfTiles.Arena.CombatManager.ShowMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: TaleOfTiles.Arena.CombatManager.DealDamage*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.DealDamage
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_DealDamage_TaleOfTiles_Player_PlayerCharacter_TaleOfTiles_Player_PlayerCharacter_System_Single_TaleOfTiles_Card_Gems_GemEffectShieldType_System_Boolean_
+  name: DealDamage
+  nameWithType: CombatManager.DealDamage
+  fullName: TaleOfTiles.Arena.CombatManager.DealDamage
+- uid: TaleOfTiles.Card.Gems.GemEffectShieldType
+  commentId: T:TaleOfTiles.Card.Gems.GemEffectShieldType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemEffectShieldType.html
+  name: GemEffectShieldType
+  nameWithType: GemEffectShieldType
+  fullName: TaleOfTiles.Card.Gems.GemEffectShieldType
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: TaleOfTiles.Arena.CombatManager.ScoreGamePieces*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.ScoreGamePieces
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_ScoreGamePieces_TaleOfTiles_AI_Combination_TaleOfTiles_Arena_BoardManager_
+  name: ScoreGamePieces
+  nameWithType: CombatManager.ScoreGamePieces
+  fullName: TaleOfTiles.Arena.CombatManager.ScoreGamePieces
+- uid: TaleOfTiles.AI.Combination
+  commentId: T:TaleOfTiles.AI.Combination
+  parent: TaleOfTiles.AI
+  href: TaleOfTiles.AI.Combination.html
+  name: Combination
+  nameWithType: Combination
+  fullName: TaleOfTiles.AI.Combination
+- uid: TaleOfTiles.Arena.CombatManager.ApplyStatusToGems*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.ApplyStatusToGems
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_ApplyStatusToGems_TaleOfTiles_Arena_BoardManager_System_Single_TaleOfTiles_AI_Move_GemStatusEffectScore_
+  name: ApplyStatusToGems
+  nameWithType: CombatManager.ApplyStatusToGems
+  fullName: TaleOfTiles.Arena.CombatManager.ApplyStatusToGems
+- uid: TaleOfTiles.AI.Move.GemStatusEffectScore
+  commentId: T:TaleOfTiles.AI.Move.GemStatusEffectScore
+  parent: TaleOfTiles.AI
+  href: TaleOfTiles.AI.Move.html
+  name: Move.GemStatusEffectScore
+  nameWithType: Move.GemStatusEffectScore
+  fullName: TaleOfTiles.AI.Move.GemStatusEffectScore
+  spec.csharp:
+  - uid: TaleOfTiles.AI.Move
+    name: Move
+    href: TaleOfTiles.AI.Move.html
+  - name: .
+  - uid: TaleOfTiles.AI.Move.GemStatusEffectScore
+    name: GemStatusEffectScore
+    href: TaleOfTiles.AI.Move.GemStatusEffectScore.html
+  spec.vb:
+  - uid: TaleOfTiles.AI.Move
+    name: Move
+    href: TaleOfTiles.AI.Move.html
+  - name: .
+  - uid: TaleOfTiles.AI.Move.GemStatusEffectScore
+    name: GemStatusEffectScore
+    href: TaleOfTiles.AI.Move.GemStatusEffectScore.html
+- uid: TaleOfTiles.Arena.CombatManager.Defeat*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.Defeat
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_Defeat
+  name: Defeat
+  nameWithType: CombatManager.Defeat
+  fullName: TaleOfTiles.Arena.CombatManager.Defeat
+- uid: TaleOfTiles.Arena.CombatManager.Victory*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.Victory
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_Victory
+  name: Victory
+  nameWithType: CombatManager.Victory
+  fullName: TaleOfTiles.Arena.CombatManager.Victory
+- uid: TaleOfTiles.Arena.CombatManager.EndCoroutine*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.EndCoroutine
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_EndCoroutine_System_Boolean_
+  name: EndCoroutine
+  nameWithType: CombatManager.EndCoroutine
+  fullName: TaleOfTiles.Arena.CombatManager.EndCoroutine
+- uid: TaleOfTiles.Arena.CombatManager.PlayMonsterMakeHitSound*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.PlayMonsterMakeHitSound
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_PlayMonsterMakeHitSound
+  name: PlayMonsterMakeHitSound
+  nameWithType: CombatManager.PlayMonsterMakeHitSound
+  fullName: TaleOfTiles.Arena.CombatManager.PlayMonsterMakeHitSound
+- uid: TaleOfTiles.Arena.CombatManager.PlayPlayerMakeHitSound*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.PlayPlayerMakeHitSound
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_PlayPlayerMakeHitSound
+  name: PlayPlayerMakeHitSound
+  nameWithType: CombatManager.PlayPlayerMakeHitSound
+  fullName: TaleOfTiles.Arena.CombatManager.PlayPlayerMakeHitSound
+- uid: TaleOfTiles.Arena.CombatManager.PlayPlayerGetDamageSound*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.PlayPlayerGetDamageSound
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_PlayPlayerGetDamageSound
+  name: PlayPlayerGetDamageSound
+  nameWithType: CombatManager.PlayPlayerGetDamageSound
+  fullName: TaleOfTiles.Arena.CombatManager.PlayPlayerGetDamageSound
+- uid: TaleOfTiles.Arena.CombatManager.PlayMonsterGetDamageSound*
+  commentId: Overload:TaleOfTiles.Arena.CombatManager.PlayMonsterGetDamageSound
+  href: TaleOfTiles.Arena.CombatManager.html#TaleOfTiles_Arena_CombatManager_PlayMonsterGetDamageSound
+  name: PlayMonsterGetDamageSound
+  nameWithType: CombatManager.PlayMonsterGetDamageSound
+  fullName: TaleOfTiles.Arena.CombatManager.PlayMonsterGetDamageSound

@@ -1,0 +1,831 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.Collectible
+  commentId: T:TaleOfTiles.Arena.Collectible
+  id: Collectible
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.Collectible.Start
+  - TaleOfTiles.Arena.Collectible.clearedAtBottom
+  - TaleOfTiles.Arena.Collectible.clearedByBomb
+  langs:
+  - csharp
+  - vb
+  name: Collectible
+  nameWithType: Collectible
+  fullName: TaleOfTiles.Arena.Collectible
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Collectible.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Collectible
+    path: ../Assets/Scripts/Collectible.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: >-
+    Represents a collectible in the game. It is a type of GamePiece with no match value.
+
+    Collectibles can be cleared by a bomb or by reaching the bottom of the screen.
+  example: []
+  syntax:
+    content: 'public class Collectible : GamePiece'
+    content.vb: Public Class Collectible Inherits GamePiece
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - TaleOfTiles.Arena.GamePiece
+  inheritedMembers:
+  - TaleOfTiles.Arena.GamePiece.board
+  - TaleOfTiles.Arena.GamePiece.xIndex
+  - TaleOfTiles.Arena.GamePiece.yIndex
+  - TaleOfTiles.Arena.GamePiece.matchValue
+  - TaleOfTiles.Arena.GamePiece.brightnessBoost
+  - TaleOfTiles.Arena.GamePiece.saturationIncrease
+  - TaleOfTiles.Arena.GamePiece.frozen_effect
+  - TaleOfTiles.Arena.GamePiece.weakened_effect
+  - TaleOfTiles.Arena.GamePiece.burn_effect
+  - TaleOfTiles.Arena.GamePiece.hex_effect
+  - TaleOfTiles.Arena.GamePiece.touch_damage
+  - TaleOfTiles.Arena.GamePiece.effect_duration
+  - TaleOfTiles.Arena.GamePiece.tier
+  - TaleOfTiles.Arena.GamePiece._effect_status
+  - TaleOfTiles.Arena.GamePiece.effect_status
+  - TaleOfTiles.Arena.GamePiece.gem_effects
+  - TaleOfTiles.Arena.GamePiece.gem_status_effects
+  - TaleOfTiles.Arena.GamePiece.super_combos
+  - TaleOfTiles.Arena.GamePiece.gem_frame_image
+  - TaleOfTiles.Arena.GamePiece.gem_frame_image_mask
+  - TaleOfTiles.Arena.GamePiece.shadow
+  - TaleOfTiles.Arena.GamePiece.gem_ui_background_image
+  - TaleOfTiles.Arena.GamePiece._gem_sprite
+  - TaleOfTiles.Arena.GamePiece.gem_sprite
+  - TaleOfTiles.Arena.GamePiece._gem_frame_sprite
+  - TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+  - TaleOfTiles.Arena.GamePiece._frame_color
+  - TaleOfTiles.Arena.GamePiece.frame_color
+  - TaleOfTiles.Arena.GamePiece.gem_ui_image
+  - TaleOfTiles.Arena.GamePiece.gem_ui_frame
+  - TaleOfTiles.Arena.GamePiece.m_isMoving
+  - TaleOfTiles.Arena.GamePiece.interpolation
+  - TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+  - TaleOfTiles.Arena.GamePiece.SetCoord(System.Int32,System.Int32)
+  - TaleOfTiles.Arena.GamePiece.Move(System.Int32,System.Int32,System.Single)
+  - TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  - TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+  - TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+  - TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color,System.Single,System.Single)
+  - TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+  - TaleOfTiles.Arena.GamePiece.EndTurn
+- uid: TaleOfTiles.Arena.Collectible.clearedByBomb
+  commentId: F:TaleOfTiles.Arena.Collectible.clearedByBomb
+  id: clearedByBomb
+  parent: TaleOfTiles.Arena.Collectible
+  langs:
+  - csharp
+  - vb
+  name: clearedByBomb
+  nameWithType: Collectible.clearedByBomb
+  fullName: TaleOfTiles.Arena.Collectible.clearedByBomb
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Collectible.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: clearedByBomb
+    path: ../Assets/Scripts/Collectible.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Flag to indicate whether the collectible can be cleared by a bomb.
+  example: []
+  syntax:
+    content: public bool clearedByBomb
+    return:
+      type: System.Boolean
+    content.vb: Public clearedByBomb As Boolean
+- uid: TaleOfTiles.Arena.Collectible.clearedAtBottom
+  commentId: F:TaleOfTiles.Arena.Collectible.clearedAtBottom
+  id: clearedAtBottom
+  parent: TaleOfTiles.Arena.Collectible
+  langs:
+  - csharp
+  - vb
+  name: clearedAtBottom
+  nameWithType: Collectible.clearedAtBottom
+  fullName: TaleOfTiles.Arena.Collectible.clearedAtBottom
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Collectible.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: clearedAtBottom
+    path: ../Assets/Scripts/Collectible.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Flag to indicate whether the collectible can be cleared by reaching the bottom of the screen.
+  example: []
+  syntax:
+    content: public bool clearedAtBottom
+    return:
+      type: System.Boolean
+    content.vb: Public clearedAtBottom As Boolean
+- uid: TaleOfTiles.Arena.Collectible.Start
+  commentId: M:TaleOfTiles.Arena.Collectible.Start
+  id: Start
+  parent: TaleOfTiles.Arena.Collectible
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: Collectible.Start()
+  fullName: TaleOfTiles.Arena.Collectible.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Collectible.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/Collectible.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Initializes the collectible.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.Arena.Collectible.Start*
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Arena.GamePiece
+  commentId: T:TaleOfTiles.Arena.GamePiece
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.GamePiece.html
+  name: GamePiece
+  nameWithType: GamePiece
+  fullName: TaleOfTiles.Arena.GamePiece
+- uid: TaleOfTiles.Arena.GamePiece.board
+  commentId: F:TaleOfTiles.Arena.GamePiece.board
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_board
+  name: board
+  nameWithType: GamePiece.board
+  fullName: TaleOfTiles.Arena.GamePiece.board
+- uid: TaleOfTiles.Arena.GamePiece.xIndex
+  commentId: F:TaleOfTiles.Arena.GamePiece.xIndex
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_xIndex
+  name: xIndex
+  nameWithType: GamePiece.xIndex
+  fullName: TaleOfTiles.Arena.GamePiece.xIndex
+- uid: TaleOfTiles.Arena.GamePiece.yIndex
+  commentId: F:TaleOfTiles.Arena.GamePiece.yIndex
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_yIndex
+  name: yIndex
+  nameWithType: GamePiece.yIndex
+  fullName: TaleOfTiles.Arena.GamePiece.yIndex
+- uid: TaleOfTiles.Arena.GamePiece.matchValue
+  commentId: F:TaleOfTiles.Arena.GamePiece.matchValue
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_matchValue
+  name: matchValue
+  nameWithType: GamePiece.matchValue
+  fullName: TaleOfTiles.Arena.GamePiece.matchValue
+- uid: TaleOfTiles.Arena.GamePiece.brightnessBoost
+  commentId: F:TaleOfTiles.Arena.GamePiece.brightnessBoost
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_brightnessBoost
+  name: brightnessBoost
+  nameWithType: GamePiece.brightnessBoost
+  fullName: TaleOfTiles.Arena.GamePiece.brightnessBoost
+- uid: TaleOfTiles.Arena.GamePiece.saturationIncrease
+  commentId: F:TaleOfTiles.Arena.GamePiece.saturationIncrease
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_saturationIncrease
+  name: saturationIncrease
+  nameWithType: GamePiece.saturationIncrease
+  fullName: TaleOfTiles.Arena.GamePiece.saturationIncrease
+- uid: TaleOfTiles.Arena.GamePiece.frozen_effect
+  commentId: F:TaleOfTiles.Arena.GamePiece.frozen_effect
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_frozen_effect
+  name: frozen_effect
+  nameWithType: GamePiece.frozen_effect
+  fullName: TaleOfTiles.Arena.GamePiece.frozen_effect
+- uid: TaleOfTiles.Arena.GamePiece.weakened_effect
+  commentId: F:TaleOfTiles.Arena.GamePiece.weakened_effect
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_weakened_effect
+  name: weakened_effect
+  nameWithType: GamePiece.weakened_effect
+  fullName: TaleOfTiles.Arena.GamePiece.weakened_effect
+- uid: TaleOfTiles.Arena.GamePiece.burn_effect
+  commentId: F:TaleOfTiles.Arena.GamePiece.burn_effect
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_burn_effect
+  name: burn_effect
+  nameWithType: GamePiece.burn_effect
+  fullName: TaleOfTiles.Arena.GamePiece.burn_effect
+- uid: TaleOfTiles.Arena.GamePiece.hex_effect
+  commentId: F:TaleOfTiles.Arena.GamePiece.hex_effect
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_hex_effect
+  name: hex_effect
+  nameWithType: GamePiece.hex_effect
+  fullName: TaleOfTiles.Arena.GamePiece.hex_effect
+- uid: TaleOfTiles.Arena.GamePiece.touch_damage
+  commentId: F:TaleOfTiles.Arena.GamePiece.touch_damage
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_touch_damage
+  name: touch_damage
+  nameWithType: GamePiece.touch_damage
+  fullName: TaleOfTiles.Arena.GamePiece.touch_damage
+- uid: TaleOfTiles.Arena.GamePiece.effect_duration
+  commentId: F:TaleOfTiles.Arena.GamePiece.effect_duration
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_effect_duration
+  name: effect_duration
+  nameWithType: GamePiece.effect_duration
+  fullName: TaleOfTiles.Arena.GamePiece.effect_duration
+- uid: TaleOfTiles.Arena.GamePiece.tier
+  commentId: F:TaleOfTiles.Arena.GamePiece.tier
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_tier
+  name: tier
+  nameWithType: GamePiece.tier
+  fullName: TaleOfTiles.Arena.GamePiece.tier
+- uid: TaleOfTiles.Arena.GamePiece._effect_status
+  commentId: F:TaleOfTiles.Arena.GamePiece._effect_status
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece__effect_status
+  name: _effect_status
+  nameWithType: GamePiece._effect_status
+  fullName: TaleOfTiles.Arena.GamePiece._effect_status
+- uid: TaleOfTiles.Arena.GamePiece.effect_status
+  commentId: P:TaleOfTiles.Arena.GamePiece.effect_status
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_effect_status
+  name: effect_status
+  nameWithType: GamePiece.effect_status
+  fullName: TaleOfTiles.Arena.GamePiece.effect_status
+- uid: TaleOfTiles.Arena.GamePiece.gem_effects
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_effects
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_effects
+  name: gem_effects
+  nameWithType: GamePiece.gem_effects
+  fullName: TaleOfTiles.Arena.GamePiece.gem_effects
+- uid: TaleOfTiles.Arena.GamePiece.gem_status_effects
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_status_effects
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_status_effects
+  name: gem_status_effects
+  nameWithType: GamePiece.gem_status_effects
+  fullName: TaleOfTiles.Arena.GamePiece.gem_status_effects
+- uid: TaleOfTiles.Arena.GamePiece.super_combos
+  commentId: F:TaleOfTiles.Arena.GamePiece.super_combos
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_super_combos
+  name: super_combos
+  nameWithType: GamePiece.super_combos
+  fullName: TaleOfTiles.Arena.GamePiece.super_combos
+- uid: TaleOfTiles.Arena.GamePiece.gem_frame_image
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_frame_image
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_frame_image
+  name: gem_frame_image
+  nameWithType: GamePiece.gem_frame_image
+  fullName: TaleOfTiles.Arena.GamePiece.gem_frame_image
+- uid: TaleOfTiles.Arena.GamePiece.gem_frame_image_mask
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_frame_image_mask
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_frame_image_mask
+  name: gem_frame_image_mask
+  nameWithType: GamePiece.gem_frame_image_mask
+  fullName: TaleOfTiles.Arena.GamePiece.gem_frame_image_mask
+- uid: TaleOfTiles.Arena.GamePiece.shadow
+  commentId: F:TaleOfTiles.Arena.GamePiece.shadow
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_shadow
+  name: shadow
+  nameWithType: GamePiece.shadow
+  fullName: TaleOfTiles.Arena.GamePiece.shadow
+- uid: TaleOfTiles.Arena.GamePiece.gem_ui_background_image
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_ui_background_image
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_ui_background_image
+  name: gem_ui_background_image
+  nameWithType: GamePiece.gem_ui_background_image
+  fullName: TaleOfTiles.Arena.GamePiece.gem_ui_background_image
+- uid: TaleOfTiles.Arena.GamePiece._gem_sprite
+  commentId: F:TaleOfTiles.Arena.GamePiece._gem_sprite
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece__gem_sprite
+  name: _gem_sprite
+  nameWithType: GamePiece._gem_sprite
+  fullName: TaleOfTiles.Arena.GamePiece._gem_sprite
+- uid: TaleOfTiles.Arena.GamePiece.gem_sprite
+  commentId: P:TaleOfTiles.Arena.GamePiece.gem_sprite
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_sprite
+  name: gem_sprite
+  nameWithType: GamePiece.gem_sprite
+  fullName: TaleOfTiles.Arena.GamePiece.gem_sprite
+- uid: TaleOfTiles.Arena.GamePiece._gem_frame_sprite
+  commentId: F:TaleOfTiles.Arena.GamePiece._gem_frame_sprite
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece__gem_frame_sprite
+  name: _gem_frame_sprite
+  nameWithType: GamePiece._gem_frame_sprite
+  fullName: TaleOfTiles.Arena.GamePiece._gem_frame_sprite
+- uid: TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+  commentId: P:TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_frame_sprite
+  name: gem_frame_sprite
+  nameWithType: GamePiece.gem_frame_sprite
+  fullName: TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+- uid: TaleOfTiles.Arena.GamePiece._frame_color
+  commentId: F:TaleOfTiles.Arena.GamePiece._frame_color
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece__frame_color
+  name: _frame_color
+  nameWithType: GamePiece._frame_color
+  fullName: TaleOfTiles.Arena.GamePiece._frame_color
+- uid: TaleOfTiles.Arena.GamePiece.frame_color
+  commentId: P:TaleOfTiles.Arena.GamePiece.frame_color
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_frame_color
+  name: frame_color
+  nameWithType: GamePiece.frame_color
+  fullName: TaleOfTiles.Arena.GamePiece.frame_color
+- uid: TaleOfTiles.Arena.GamePiece.gem_ui_image
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_ui_image
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_ui_image
+  name: gem_ui_image
+  nameWithType: GamePiece.gem_ui_image
+  fullName: TaleOfTiles.Arena.GamePiece.gem_ui_image
+- uid: TaleOfTiles.Arena.GamePiece.gem_ui_frame
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_ui_frame
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_ui_frame
+  name: gem_ui_frame
+  nameWithType: GamePiece.gem_ui_frame
+  fullName: TaleOfTiles.Arena.GamePiece.gem_ui_frame
+- uid: TaleOfTiles.Arena.GamePiece.m_isMoving
+  commentId: F:TaleOfTiles.Arena.GamePiece.m_isMoving
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_m_isMoving
+  name: m_isMoving
+  nameWithType: GamePiece.m_isMoving
+  fullName: TaleOfTiles.Arena.GamePiece.m_isMoving
+- uid: TaleOfTiles.Arena.GamePiece.interpolation
+  commentId: F:TaleOfTiles.Arena.GamePiece.interpolation
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_interpolation
+  name: interpolation
+  nameWithType: GamePiece.interpolation
+  fullName: TaleOfTiles.Arena.GamePiece.interpolation
+- uid: TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+  commentId: M:TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_Init_TaleOfTiles_Arena_BoardManager_
+  name: Init(BoardManager)
+  nameWithType: GamePiece.Init(BoardManager)
+  fullName: TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+    name: Init
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_Init_TaleOfTiles_Arena_BoardManager_
+  - name: (
+  - uid: TaleOfTiles.Arena.BoardManager
+    name: BoardManager
+    href: TaleOfTiles.Arena.BoardManager.html
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+    name: Init
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_Init_TaleOfTiles_Arena_BoardManager_
+  - name: (
+  - uid: TaleOfTiles.Arena.BoardManager
+    name: BoardManager
+    href: TaleOfTiles.Arena.BoardManager.html
+  - name: )
+- uid: TaleOfTiles.Arena.GamePiece.SetCoord(System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.Arena.GamePiece.SetCoord(System.Int32,System.Int32)
+  parent: TaleOfTiles.Arena.GamePiece
+  isExternal: true
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_SetCoord_System_Int32_System_Int32_
+  name: SetCoord(int, int)
+  nameWithType: GamePiece.SetCoord(int, int)
+  fullName: TaleOfTiles.Arena.GamePiece.SetCoord(int, int)
+  nameWithType.vb: GamePiece.SetCoord(Integer, Integer)
+  fullName.vb: TaleOfTiles.Arena.GamePiece.SetCoord(Integer, Integer)
+  name.vb: SetCoord(Integer, Integer)
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece.SetCoord(System.Int32,System.Int32)
+    name: SetCoord
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_SetCoord_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece.SetCoord(System.Int32,System.Int32)
+    name: SetCoord
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_SetCoord_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TaleOfTiles.Arena.GamePiece.Move(System.Int32,System.Int32,System.Single)
+  commentId: M:TaleOfTiles.Arena.GamePiece.Move(System.Int32,System.Int32,System.Single)
+  parent: TaleOfTiles.Arena.GamePiece
+  isExternal: true
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_Move_System_Int32_System_Int32_System_Single_
+  name: Move(int, int, float)
+  nameWithType: GamePiece.Move(int, int, float)
+  fullName: TaleOfTiles.Arena.GamePiece.Move(int, int, float)
+  nameWithType.vb: GamePiece.Move(Integer, Integer, Single)
+  fullName.vb: TaleOfTiles.Arena.GamePiece.Move(Integer, Integer, Single)
+  name.vb: Move(Integer, Integer, Single)
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece.Move(System.Int32,System.Int32,System.Single)
+    name: Move
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_Move_System_Int32_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece.Move(System.Int32,System.Int32,System.Single)
+    name: Move
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_Move_System_Int32_System_Int32_System_Single_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  parent: TaleOfTiles.Arena.GamePiece
+  isExternal: true
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_MoveRoutine_UnityEngine_Vector3_System_Single_System_Int32_System_Int32_
+  name: MoveRoutine(Vector3, float, int, int)
+  nameWithType: GamePiece.MoveRoutine(Vector3, float, int, int)
+  fullName: TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3, float, int, int)
+  nameWithType.vb: GamePiece.MoveRoutine(Vector3, Single, Integer, Integer)
+  fullName.vb: TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3, Single, Integer, Integer)
+  name.vb: MoveRoutine(Vector3, Single, Integer, Integer)
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+    name: MoveRoutine
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_MoveRoutine_UnityEngine_Vector3_System_Single_System_Int32_System_Int32_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+    name: MoveRoutine
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_MoveRoutine_UnityEngine_Vector3_System_Single_System_Int32_System_Int32_
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+  commentId: M:TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_ChangeColor_TaleOfTiles_Arena_GamePiece_
+  name: ChangeColor(GamePiece)
+  nameWithType: GamePiece.ChangeColor(GamePiece)
+  fullName: TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+    name: ChangeColor
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_ChangeColor_TaleOfTiles_Arena_GamePiece_
+  - name: (
+  - uid: TaleOfTiles.Arena.GamePiece
+    name: GamePiece
+    href: TaleOfTiles.Arena.GamePiece.html
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+    name: ChangeColor
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_ChangeColor_TaleOfTiles_Arena_GamePiece_
+  - name: (
+  - uid: TaleOfTiles.Arena.GamePiece
+    name: GamePiece
+    href: TaleOfTiles.Arena.GamePiece.html
+  - name: )
+- uid: TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+  commentId: M:TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+  parent: TaleOfTiles.Arena.GamePiece
+  isExternal: true
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_GetAverageColor_UnityEngine_Sprite_
+  name: GetAverageColor(Sprite)
+  nameWithType: GamePiece.GetAverageColor(Sprite)
+  fullName: TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+    name: GetAverageColor
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_GetAverageColor_UnityEngine_Sprite_
+  - name: (
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+    name: GetAverageColor
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_GetAverageColor_UnityEngine_Sprite_
+  - name: (
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: )
+- uid: TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color,System.Single,System.Single)
+  commentId: M:TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color,System.Single,System.Single)
+  parent: TaleOfTiles.Arena.GamePiece
+  isExternal: true
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_LightenColor_UnityEngine_Color_System_Single_System_Single_
+  name: LightenColor(Color, float, float)
+  nameWithType: GamePiece.LightenColor(Color, float, float)
+  fullName: TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color, float, float)
+  nameWithType.vb: GamePiece.LightenColor(Color, Single, Single)
+  fullName.vb: TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color, Single, Single)
+  name.vb: LightenColor(Color, Single, Single)
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color,System.Single,System.Single)
+    name: LightenColor
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_LightenColor_UnityEngine_Color_System_Single_System_Single_
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color,System.Single,System.Single)
+    name: LightenColor
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_LightenColor_UnityEngine_Color_System_Single_System_Single_
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+  commentId: M:TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+  parent: TaleOfTiles.Arena.GamePiece
+  isExternal: true
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_GetComplementaryColor_UnityEngine_Color_
+  name: GetComplementaryColor(Color)
+  nameWithType: GamePiece.GetComplementaryColor(Color)
+  fullName: TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+    name: GetComplementaryColor
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_GetComplementaryColor_UnityEngine_Color_
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+    name: GetComplementaryColor
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_GetComplementaryColor_UnityEngine_Color_
+  - name: (
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: TaleOfTiles.Arena.GamePiece.EndTurn
+  commentId: M:TaleOfTiles.Arena.GamePiece.EndTurn
+  parent: TaleOfTiles.Arena.GamePiece
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_EndTurn
+  name: EndTurn()
+  nameWithType: GamePiece.EndTurn()
+  fullName: TaleOfTiles.Arena.GamePiece.EndTurn()
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece.EndTurn
+    name: EndTurn
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_EndTurn
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece.EndTurn
+    name: EndTurn
+    href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_EndTurn
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TaleOfTiles.Arena.Collectible.Start*
+  commentId: Overload:TaleOfTiles.Arena.Collectible.Start
+  href: TaleOfTiles.Arena.Collectible.html#TaleOfTiles_Arena_Collectible_Start
+  name: Start
+  nameWithType: Collectible.Start
+  fullName: TaleOfTiles.Arena.Collectible.Start

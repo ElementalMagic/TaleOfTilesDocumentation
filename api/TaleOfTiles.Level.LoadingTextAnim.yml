@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Level.LoadingTextAnim
+  commentId: T:TaleOfTiles.Level.LoadingTextAnim
+  id: LoadingTextAnim
+  parent: TaleOfTiles.Level
+  children:
+  - TaleOfTiles.Level.LoadingTextAnim.AnimateText
+  - TaleOfTiles.Level.LoadingTextAnim.OnDisable
+  - TaleOfTiles.Level.LoadingTextAnim.OnEnable
+  - TaleOfTiles.Level.LoadingTextAnim.Start
+  - TaleOfTiles.Level.LoadingTextAnim.anim_coroutine
+  - TaleOfTiles.Level.LoadingTextAnim.delay
+  - TaleOfTiles.Level.LoadingTextAnim.text
+  langs:
+  - csharp
+  - vb
+  name: LoadingTextAnim
+  nameWithType: LoadingTextAnim
+  fullName: TaleOfTiles.Level.LoadingTextAnim
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/LoadingTextAnim.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadingTextAnim
+    path: ../Assets/Scripts/LoadingTextAnim.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Controls the animation for a loading text, creating a simple "..." animation.
+  example: []
+  syntax:
+    content: 'public class LoadingTextAnim : MonoBehaviour'
+    content.vb: Public Class LoadingTextAnim Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Level.LoadingTextAnim.delay
+  commentId: F:TaleOfTiles.Level.LoadingTextAnim.delay
+  id: delay
+  parent: TaleOfTiles.Level.LoadingTextAnim
+  langs:
+  - csharp
+  - vb
+  name: delay
+  nameWithType: LoadingTextAnim.delay
+  fullName: TaleOfTiles.Level.LoadingTextAnim.delay
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LoadingTextAnim.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: delay
+    path: ../Assets/Scripts/LoadingTextAnim.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  syntax:
+    content: public float delay
+    return:
+      type: System.Single
+    content.vb: Public delay As Single
+- uid: TaleOfTiles.Level.LoadingTextAnim.text
+  commentId: F:TaleOfTiles.Level.LoadingTextAnim.text
+  id: text
+  parent: TaleOfTiles.Level.LoadingTextAnim
+  langs:
+  - csharp
+  - vb
+  name: text
+  nameWithType: LoadingTextAnim.text
+  fullName: TaleOfTiles.Level.LoadingTextAnim.text
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LoadingTextAnim.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: text
+    path: ../Assets/Scripts/LoadingTextAnim.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  syntax:
+    content: private Text text
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Private text As Text
+- uid: TaleOfTiles.Level.LoadingTextAnim.anim_coroutine
+  commentId: F:TaleOfTiles.Level.LoadingTextAnim.anim_coroutine
+  id: anim_coroutine
+  parent: TaleOfTiles.Level.LoadingTextAnim
+  langs:
+  - csharp
+  - vb
+  name: anim_coroutine
+  nameWithType: LoadingTextAnim.anim_coroutine
+  fullName: TaleOfTiles.Level.LoadingTextAnim.anim_coroutine
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LoadingTextAnim.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: anim_coroutine
+    path: ../Assets/Scripts/LoadingTextAnim.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  syntax:
+    content: private Coroutine anim_coroutine
+    return:
+      type: UnityEngine.Coroutine
+    content.vb: Private anim_coroutine As Coroutine
+- uid: TaleOfTiles.Level.LoadingTextAnim.Start
+  commentId: M:TaleOfTiles.Level.LoadingTextAnim.Start
+  id: Start
+  parent: TaleOfTiles.Level.LoadingTextAnim
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: LoadingTextAnim.Start()
+  fullName: TaleOfTiles.Level.LoadingTextAnim.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LoadingTextAnim.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/LoadingTextAnim.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Initializes the loading text animation.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.Level.LoadingTextAnim.Start*
+- uid: TaleOfTiles.Level.LoadingTextAnim.OnEnable
+  commentId: M:TaleOfTiles.Level.LoadingTextAnim.OnEnable
+  id: OnEnable
+  parent: TaleOfTiles.Level.LoadingTextAnim
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: LoadingTextAnim.OnEnable()
+  fullName: TaleOfTiles.Level.LoadingTextAnim.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LoadingTextAnim.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnEnable
+    path: ../Assets/Scripts/LoadingTextAnim.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Restarts the animation when the object becomes enabled.
+  example: []
+  syntax:
+    content: private void OnEnable()
+    content.vb: Private Sub OnEnable()
+  overload: TaleOfTiles.Level.LoadingTextAnim.OnEnable*
+- uid: TaleOfTiles.Level.LoadingTextAnim.OnDisable
+  commentId: M:TaleOfTiles.Level.LoadingTextAnim.OnDisable
+  id: OnDisable
+  parent: TaleOfTiles.Level.LoadingTextAnim
+  langs:
+  - csharp
+  - vb
+  name: OnDisable()
+  nameWithType: LoadingTextAnim.OnDisable()
+  fullName: TaleOfTiles.Level.LoadingTextAnim.OnDisable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LoadingTextAnim.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnDisable
+    path: ../Assets/Scripts/LoadingTextAnim.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Stops the animation when the object becomes disabled.
+  example: []
+  syntax:
+    content: private void OnDisable()
+    content.vb: Private Sub OnDisable()
+  overload: TaleOfTiles.Level.LoadingTextAnim.OnDisable*
+- uid: TaleOfTiles.Level.LoadingTextAnim.AnimateText
+  commentId: M:TaleOfTiles.Level.LoadingTextAnim.AnimateText
+  id: AnimateText
+  parent: TaleOfTiles.Level.LoadingTextAnim
+  langs:
+  - csharp
+  - vb
+  name: AnimateText()
+  nameWithType: LoadingTextAnim.AnimateText()
+  fullName: TaleOfTiles.Level.LoadingTextAnim.AnimateText()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LoadingTextAnim.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: AnimateText
+    path: ../Assets/Scripts/LoadingTextAnim.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Animates the text to simulate a loading indicator.
+  example: []
+  syntax:
+    content: private IEnumerator AnimateText()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function AnimateText() As IEnumerator
+  overload: TaleOfTiles.Level.LoadingTextAnim.AnimateText*
+references:
+- uid: TaleOfTiles.Level
+  commentId: N:TaleOfTiles.Level
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Level
+  nameWithType: TaleOfTiles.Level
+  fullName: TaleOfTiles.Level
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: UnityEngine.Coroutine
+  commentId: T:UnityEngine.Coroutine
+  parent: UnityEngine
+  isExternal: true
+  name: Coroutine
+  nameWithType: Coroutine
+  fullName: UnityEngine.Coroutine
+- uid: TaleOfTiles.Level.LoadingTextAnim.Start*
+  commentId: Overload:TaleOfTiles.Level.LoadingTextAnim.Start
+  href: TaleOfTiles.Level.LoadingTextAnim.html#TaleOfTiles_Level_LoadingTextAnim_Start
+  name: Start
+  nameWithType: LoadingTextAnim.Start
+  fullName: TaleOfTiles.Level.LoadingTextAnim.Start
+- uid: TaleOfTiles.Level.LoadingTextAnim.OnEnable*
+  commentId: Overload:TaleOfTiles.Level.LoadingTextAnim.OnEnable
+  href: TaleOfTiles.Level.LoadingTextAnim.html#TaleOfTiles_Level_LoadingTextAnim_OnEnable
+  name: OnEnable
+  nameWithType: LoadingTextAnim.OnEnable
+  fullName: TaleOfTiles.Level.LoadingTextAnim.OnEnable
+- uid: TaleOfTiles.Level.LoadingTextAnim.OnDisable*
+  commentId: Overload:TaleOfTiles.Level.LoadingTextAnim.OnDisable
+  href: TaleOfTiles.Level.LoadingTextAnim.html#TaleOfTiles_Level_LoadingTextAnim_OnDisable
+  name: OnDisable
+  nameWithType: LoadingTextAnim.OnDisable
+  fullName: TaleOfTiles.Level.LoadingTextAnim.OnDisable
+- uid: TaleOfTiles.Level.LoadingTextAnim.AnimateText*
+  commentId: Overload:TaleOfTiles.Level.LoadingTextAnim.AnimateText
+  href: TaleOfTiles.Level.LoadingTextAnim.html#TaleOfTiles_Level_LoadingTextAnim_AnimateText
+  name: AnimateText
+  nameWithType: LoadingTextAnim.AnimateText
+  fullName: TaleOfTiles.Level.LoadingTextAnim.AnimateText
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections

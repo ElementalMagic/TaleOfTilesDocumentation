@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.Gems.GemStatusEffect
+  commentId: T:TaleOfTiles.Card.Gems.GemStatusEffect
+  id: GemStatusEffect
+  parent: TaleOfTiles.Card.Gems
+  children:
+  - TaleOfTiles.Card.Gems.GemStatusEffect.ID
+  - TaleOfTiles.Card.Gems.GemStatusEffect.basic_duration
+  - TaleOfTiles.Card.Gems.GemStatusEffect.basic_touch_damage
+  - TaleOfTiles.Card.Gems.GemStatusEffect.effect_power
+  - TaleOfTiles.Card.Gems.GemStatusEffect.effects_per_matched_gem
+  - TaleOfTiles.Card.Gems.GemStatusEffect.status_effect
+  langs:
+  - csharp
+  - vb
+  name: GemStatusEffect
+  nameWithType: GemStatusEffect
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffect
+  type: Struct
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GemStatusEffect
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 295
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Represents a status effect associated with a gem.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct GemStatusEffect
+    content.vb: >-
+      <Serializable>
+
+      Public Structure GemStatusEffect
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: TaleOfTiles.Card.Gems.GemStatusEffect.status_effect
+  commentId: F:TaleOfTiles.Card.Gems.GemStatusEffect.status_effect
+  id: status_effect
+  parent: TaleOfTiles.Card.Gems.GemStatusEffect
+  langs:
+  - csharp
+  - vb
+  name: status_effect
+  nameWithType: GemStatusEffect.status_effect
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffect.status_effect
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: status_effect
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 301
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The type of status effect.
+  example: []
+  syntax:
+    content: public GemStatusEffectType status_effect
+    return:
+      type: TaleOfTiles.Card.Gems.GemStatusEffectType
+    content.vb: Public status_effect As GemStatusEffectType
+- uid: TaleOfTiles.Card.Gems.GemStatusEffect.basic_duration
+  commentId: F:TaleOfTiles.Card.Gems.GemStatusEffect.basic_duration
+  id: basic_duration
+  parent: TaleOfTiles.Card.Gems.GemStatusEffect
+  langs:
+  - csharp
+  - vb
+  name: basic_duration
+  nameWithType: GemStatusEffect.basic_duration
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffect.basic_duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: basic_duration
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 306
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The basic duration of the status effect.
+  example: []
+  syntax:
+    content: public int basic_duration
+    return:
+      type: System.Int32
+    content.vb: Public basic_duration As Integer
+- uid: TaleOfTiles.Card.Gems.GemStatusEffect.basic_touch_damage
+  commentId: F:TaleOfTiles.Card.Gems.GemStatusEffect.basic_touch_damage
+  id: basic_touch_damage
+  parent: TaleOfTiles.Card.Gems.GemStatusEffect
+  langs:
+  - csharp
+  - vb
+  name: basic_touch_damage
+  nameWithType: GemStatusEffect.basic_touch_damage
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffect.basic_touch_damage
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: basic_touch_damage
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 311
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The damage caused upon touch during the effect's duration.
+  example: []
+  syntax:
+    content: public int basic_touch_damage
+    return:
+      type: System.Int32
+    content.vb: Public basic_touch_damage As Integer
+- uid: TaleOfTiles.Card.Gems.GemStatusEffect.effects_per_matched_gem
+  commentId: F:TaleOfTiles.Card.Gems.GemStatusEffect.effects_per_matched_gem
+  id: effects_per_matched_gem
+  parent: TaleOfTiles.Card.Gems.GemStatusEffect
+  langs:
+  - csharp
+  - vb
+  name: effects_per_matched_gem
+  nameWithType: GemStatusEffect.effects_per_matched_gem
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffect.effects_per_matched_gem
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: effects_per_matched_gem
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 316
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Effects amplified per matched gem.
+  example: []
+  syntax:
+    content: public float effects_per_matched_gem
+    return:
+      type: System.Single
+    content.vb: Public effects_per_matched_gem As Single
+- uid: TaleOfTiles.Card.Gems.GemStatusEffect.effect_power
+  commentId: F:TaleOfTiles.Card.Gems.GemStatusEffect.effect_power
+  id: effect_power
+  parent: TaleOfTiles.Card.Gems.GemStatusEffect
+  langs:
+  - csharp
+  - vb
+  name: effect_power
+  nameWithType: GemStatusEffect.effect_power
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffect.effect_power
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: effect_power
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 322
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Power of the effect, ranging from 0.0 to 1.0.
+  example: []
+  syntax:
+    content: >-
+      [Range(0, 1)]
+
+      public float effect_power
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(0, 1)>
+
+      Public effect_power As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: TaleOfTiles.Card.Gems.GemStatusEffect.ID
+  commentId: P:TaleOfTiles.Card.Gems.GemStatusEffect.ID
+  id: ID
+  parent: TaleOfTiles.Card.Gems.GemStatusEffect
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: GemStatusEffect.ID
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffect.ID
+  type: Property
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ID
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 327
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Unique identifier for the status effect, combining various properties.
+  example: []
+  syntax:
+    content: public string ID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ID As String
+  overload: TaleOfTiles.Card.Gems.GemStatusEffect.ID*
+references:
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: TaleOfTiles.Card.Gems.GemStatusEffectType
+  commentId: T:TaleOfTiles.Card.Gems.GemStatusEffectType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemStatusEffectType.html
+  name: GemStatusEffectType
+  nameWithType: GemStatusEffectType
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffectType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TaleOfTiles.Card.Gems.GemStatusEffect.ID*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemStatusEffect.ID
+  href: TaleOfTiles.Card.Gems.GemStatusEffect.html#TaleOfTiles_Card_Gems_GemStatusEffect_ID
+  name: ID
+  nameWithType: GemStatusEffect.ID
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffect.ID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

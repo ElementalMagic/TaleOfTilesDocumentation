@@ -1,0 +1,400 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  id: GemSuperCombo.CopyEnemyDeck
+  parent: TaleOfTiles.Card.Gems
+  children:
+  - TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor
+  - TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor(System.Int32,System.Int32)
+  - TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.GetCount
+  - TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.MakeCopy
+  - TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.combo_count_activation
+  - TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.duration_in_turns
+  langs:
+  - csharp
+  - vb
+  name: GemSuperCombo.CopyEnemyDeck
+  nameWithType: GemSuperCombo.CopyEnemyDeck
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  type: Class
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CopyEnemyDeck
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 857
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: >-
+    Represents a 'Copy Enemy Deck' Combo in the Gem Super Combo system. 
+
+    This combo allows the player to copy the enemy's deck or abilities for a certain duration.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class GemSuperCombo.CopyEnemyDeck : ISuperCombo
+    content.vb: >-
+      <Serializable>
+
+      Public Class GemSuperCombo.CopyEnemyDeck Implements ISuperCombo
+  inheritance:
+  - System.Object
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.duration_in_turns
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.duration_in_turns
+  id: duration_in_turns
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  langs:
+  - csharp
+  - vb
+  name: duration_in_turns
+  nameWithType: GemSuperCombo.CopyEnemyDeck.duration_in_turns
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.duration_in_turns
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: duration_in_turns
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 864
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The duration, in turns, for which the enemy's deck or abilities are copied.
+  example: []
+  syntax:
+    content: >-
+      [Range(1, 10)]
+
+      public int duration_in_turns
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Range(1, 10)>
+
+      Public duration_in_turns As Integer
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 1
+    - type: System.Single
+      value: 10
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.combo_count_activation
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.combo_count_activation
+  id: combo_count_activation
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  langs:
+  - csharp
+  - vb
+  name: combo_count_activation
+  nameWithType: GemSuperCombo.CopyEnemyDeck.combo_count_activation
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.combo_count_activation
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: combo_count_activation
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 870
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The number of combo activations required to trigger the Copy Enemy Deck combo.
+  example: []
+  syntax:
+    content: >-
+      [Range(3, 12)]
+
+      public int combo_count_activation
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Range(3, 12)>
+
+      Public combo_count_activation As Integer
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 3
+    - type: System.Single
+      value: 12
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor
+  id: '#ctor'
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  langs:
+  - csharp
+  - vb
+  name: CopyEnemyDeck()
+  nameWithType: GemSuperCombo.CopyEnemyDeck.CopyEnemyDeck()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.CopyEnemyDeck()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 875
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Default constructor for the Copy Enemy Deck combo.
+  example: []
+  syntax:
+    content: public CopyEnemyDeck()
+    content.vb: Public Sub New()
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor*
+  nameWithType.vb: GemSuperCombo.CopyEnemyDeck.New()
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.New()
+  name.vb: New()
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor(System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  langs:
+  - csharp
+  - vb
+  name: CopyEnemyDeck(int, int)
+  nameWithType: GemSuperCombo.CopyEnemyDeck.CopyEnemyDeck(int, int)
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.CopyEnemyDeck(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 882
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Constructs a Copy Enemy Deck combo with specified parameters.
+  example: []
+  syntax:
+    content: public CopyEnemyDeck(int duration_in_turns, int combo_count_activation)
+    parameters:
+    - id: duration_in_turns
+      type: System.Int32
+      description: The duration in turns for the combo effect.
+    - id: combo_count_activation
+      type: System.Int32
+      description: Number of activations required for the combo.
+    content.vb: Public Sub New(duration_in_turns As Integer, combo_count_activation As Integer)
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor*
+  nameWithType.vb: GemSuperCombo.CopyEnemyDeck.New(Integer, Integer)
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.MakeCopy
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.MakeCopy
+  id: MakeCopy
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  langs:
+  - csharp
+  - vb
+  name: MakeCopy()
+  nameWithType: GemSuperCombo.CopyEnemyDeck.MakeCopy()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.MakeCopy()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MakeCopy
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 892
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Creates a copy of the current Copy Enemy Deck combo.
+  example: []
+  syntax:
+    content: public ISuperCombo MakeCopy()
+    return:
+      type: TaleOfTiles.Card.Gems.ISuperCombo
+      description: A new instance of CopyEnemyDeck with the same settings.
+    content.vb: Public Function MakeCopy() As ISuperCombo
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.MakeCopy*
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.GetCount
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.GetCount
+  id: GetCount
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: GemSuperCombo.CopyEnemyDeck.GetCount()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.GetCount()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetCount
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 901
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Retrieves the count of activations required for the combo.
+  example: []
+  syntax:
+    content: public int GetCount()
+    return:
+      type: System.Int32
+      description: The number of activations needed for the combo.
+    content.vb: Public Function GetCount() As Integer
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.GetCount*
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+references:
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TaleOfTiles.Card.Gems.ISuperCombo
+  commentId: T:TaleOfTiles.Card.Gems.ISuperCombo
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html
+  name: ISuperCombo
+  nameWithType: ISuperCombo
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.#ctor
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.html#TaleOfTiles_Card_Gems_GemSuperCombo_CopyEnemyDeck__ctor
+  name: CopyEnemyDeck
+  nameWithType: GemSuperCombo.CopyEnemyDeck.CopyEnemyDeck
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.CopyEnemyDeck
+  nameWithType.vb: GemSuperCombo.CopyEnemyDeck.New
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.New
+  name.vb: New
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.MakeCopy*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.MakeCopy
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.html#TaleOfTiles_Card_Gems_GemSuperCombo_CopyEnemyDeck_MakeCopy
+  name: MakeCopy
+  nameWithType: GemSuperCombo.CopyEnemyDeck.MakeCopy
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.MakeCopy
+- uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+  commentId: M:TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+  parent: TaleOfTiles.Card.Gems.ISuperCombo
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  name: MakeCopy()
+  nameWithType: ISuperCombo.MakeCopy()
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy()
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+    name: MakeCopy
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+    name: MakeCopy
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.GetCount*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.GetCount
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.html#TaleOfTiles_Card_Gems_GemSuperCombo_CopyEnemyDeck_GetCount
+  name: GetCount
+  nameWithType: GemSuperCombo.CopyEnemyDeck.GetCount
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.GetCount
+- uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+  commentId: M:TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+  parent: TaleOfTiles.Card.Gems.ISuperCombo
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  name: GetCount()
+  nameWithType: ISuperCombo.GetCount()
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo.GetCount()
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+    name: GetCount
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+    name: GetCount
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  - name: (
+  - name: )

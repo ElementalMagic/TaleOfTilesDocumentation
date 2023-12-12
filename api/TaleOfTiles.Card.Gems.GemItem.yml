@@ -1,0 +1,874 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.Gems.GemItem
+  commentId: T:TaleOfTiles.Card.Gems.GemItem
+  id: GemItem
+  parent: TaleOfTiles.Card.Gems
+  children:
+  - TaleOfTiles.Card.Gems.GemItem.CalculateMatchEffects
+  - TaleOfTiles.Card.Gems.GemItem.GenerateNewID
+  - TaleOfTiles.Card.Gems.GemItem.ID
+  - TaleOfTiles.Card.Gems.GemItem.OnEnable
+  - TaleOfTiles.Card.Gems.GemItem.OnValidate
+  - TaleOfTiles.Card.Gems.GemItem.gem_color
+  - TaleOfTiles.Card.Gems.GemItem.gem_description
+  - TaleOfTiles.Card.Gems.GemItem.gem_effects
+  - TaleOfTiles.Card.Gems.GemItem.gem_frame_sprite
+  - TaleOfTiles.Card.Gems.GemItem.gem_name
+  - TaleOfTiles.Card.Gems.GemItem.gem_sprite
+  - TaleOfTiles.Card.Gems.GemItem.gem_status_effects
+  - TaleOfTiles.Card.Gems.GemItem.item_tier
+  - TaleOfTiles.Card.Gems.GemItem.onGemItemChanged
+  - TaleOfTiles.Card.Gems.GemItem.previousSprite
+  - TaleOfTiles.Card.Gems.GemItem.super_combos
+  langs:
+  - csharp
+  - vb
+  name: GemItem
+  nameWithType: GemItem
+  fullName: TaleOfTiles.Card.Gems.GemItem
+  type: Class
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GemItem
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Represents a gem item in the game. This class is a ScriptableObject, allowing it to be used as a data asset in Unity.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "MyData", menuName = "Custom/Gem Item", order = 1)]
+
+      public class GemItem : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="MyData", menuName:="Custom/Gem Item", order:=1)>
+
+      Public Class GemItem Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: MyData
+    - name: menuName
+      type: System.String
+      value: Custom/Gem Item
+    - name: order
+      type: System.Int32
+      value: 1
+- uid: TaleOfTiles.Card.Gems.GemItem.onGemItemChanged
+  commentId: E:TaleOfTiles.Card.Gems.GemItem.onGemItemChanged
+  id: onGemItemChanged
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: onGemItemChanged
+  nameWithType: GemItem.onGemItemChanged
+  fullName: TaleOfTiles.Card.Gems.GemItem.onGemItemChanged
+  type: Event
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: onGemItemChanged
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Event triggered when the GemItem changes.
+  example: []
+  syntax:
+    content: public event GemItem.OnGemItemChanged onGemItemChanged
+    return:
+      type: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+    content.vb: Public Event onGemItemChanged As GemItem.OnGemItemChanged
+- uid: TaleOfTiles.Card.Gems.GemItem.ID
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.ID
+  id: ID
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: GemItem.ID
+  fullName: TaleOfTiles.Card.Gems.GemItem.ID
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ID
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Unique identifier for the gem item.
+  example: []
+  syntax:
+    content: public string ID
+    return:
+      type: System.String
+    content.vb: Public ID As String
+- uid: TaleOfTiles.Card.Gems.GemItem.gem_name
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.gem_name
+  id: gem_name
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: gem_name
+  nameWithType: GemItem.gem_name
+  fullName: TaleOfTiles.Card.Gems.GemItem.gem_name
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_name
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Name of the gem.
+  example: []
+  syntax:
+    content: public string gem_name
+    return:
+      type: System.String
+    content.vb: Public gem_name As String
+- uid: TaleOfTiles.Card.Gems.GemItem.gem_description
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.gem_description
+  id: gem_description
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: gem_description
+  nameWithType: GemItem.gem_description
+  fullName: TaleOfTiles.Card.Gems.GemItem.gem_description
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_description
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Description of the gem.
+  example: []
+  syntax:
+    content: >-
+      [TextArea]
+
+      public string gem_description
+    return:
+      type: System.String
+    content.vb: >-
+      <TextArea>
+
+      Public gem_description As String
+  attributes:
+  - type: UnityEngine.TextAreaAttribute
+    ctor: UnityEngine.TextAreaAttribute.#ctor
+    arguments: []
+- uid: TaleOfTiles.Card.Gems.GemItem.gem_sprite
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.gem_sprite
+  id: gem_sprite
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: gem_sprite
+  nameWithType: GemItem.gem_sprite
+  fullName: TaleOfTiles.Card.Gems.GemItem.gem_sprite
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_sprite
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The sprite representing the gem.
+  example: []
+  syntax:
+    content: public Sprite gem_sprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public gem_sprite As Sprite
+- uid: TaleOfTiles.Card.Gems.GemItem.gem_frame_sprite
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.gem_frame_sprite
+  id: gem_frame_sprite
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: gem_frame_sprite
+  nameWithType: GemItem.gem_frame_sprite
+  fullName: TaleOfTiles.Card.Gems.GemItem.gem_frame_sprite
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_frame_sprite
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The sprite representing the frame of the gem.
+  example: []
+  syntax:
+    content: public Sprite gem_frame_sprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public gem_frame_sprite As Sprite
+- uid: TaleOfTiles.Card.Gems.GemItem.gem_effects
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.gem_effects
+  id: gem_effects
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: gem_effects
+  nameWithType: GemItem.gem_effects
+  fullName: TaleOfTiles.Card.Gems.GemItem.gem_effects
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_effects
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: List of active effects associated with the gem.
+  example: []
+  syntax:
+    content: public List<GemActiveEffect> gem_effects
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemActiveEffect}
+    content.vb: Public gem_effects As List(Of GemActiveEffect)
+- uid: TaleOfTiles.Card.Gems.GemItem.gem_status_effects
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.gem_status_effects
+  id: gem_status_effects
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: gem_status_effects
+  nameWithType: GemItem.gem_status_effects
+  fullName: TaleOfTiles.Card.Gems.GemItem.gem_status_effects
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_status_effects
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: List of status effects associated with the gem.
+  example: []
+  syntax:
+    content: public List<GemStatusEffect> gem_status_effects
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemStatusEffect}
+    content.vb: Public gem_status_effects As List(Of GemStatusEffect)
+- uid: TaleOfTiles.Card.Gems.GemItem.item_tier
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.item_tier
+  id: item_tier
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: item_tier
+  nameWithType: GemItem.item_tier
+  fullName: TaleOfTiles.Card.Gems.GemItem.item_tier
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: item_tier
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The tier of the gem item.
+  example: []
+  syntax:
+    content: public GemItemTier item_tier
+    return:
+      type: TaleOfTiles.Card.Gems.GemItemTier
+    content.vb: Public item_tier As GemItemTier
+- uid: TaleOfTiles.Card.Gems.GemItem.gem_color
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.gem_color
+  id: gem_color
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: gem_color
+  nameWithType: GemItem.gem_color
+  fullName: TaleOfTiles.Card.Gems.GemItem.gem_color
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_color
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The color of the gem.
+  example: []
+  syntax:
+    content: public Color gem_color
+    return:
+      type: UnityEngine.Color
+    content.vb: Public gem_color As Color
+- uid: TaleOfTiles.Card.Gems.GemItem.previousSprite
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.previousSprite
+  id: previousSprite
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: previousSprite
+  nameWithType: GemItem.previousSprite
+  fullName: TaleOfTiles.Card.Gems.GemItem.previousSprite
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: previousSprite
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Stores the previous sprite before any changes.
+  example: []
+  syntax:
+    content: private Sprite previousSprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Private previousSprite As Sprite
+- uid: TaleOfTiles.Card.Gems.GemItem.super_combos
+  commentId: F:TaleOfTiles.Card.Gems.GemItem.super_combos
+  id: super_combos
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: super_combos
+  nameWithType: GemItem.super_combos
+  fullName: TaleOfTiles.Card.Gems.GemItem.super_combos
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: super_combos
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 84
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: List of super combos associated with the gem. Hidden in the Unity editor.
+  example: []
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public List<GemSuperCombo> super_combos
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemSuperCombo}
+    content.vb: >-
+      <HideInInspector>
+
+      Public super_combos As List(Of GemSuperCombo)
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+- uid: TaleOfTiles.Card.Gems.GemItem.OnEnable
+  commentId: M:TaleOfTiles.Card.Gems.GemItem.OnEnable
+  id: OnEnable
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: GemItem.OnEnable()
+  fullName: TaleOfTiles.Card.Gems.GemItem.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnEnable
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Initialization method called when the script is loaded. Generates a new ID if necessary and stores the current sprite.
+  example: []
+  syntax:
+    content: private void OnEnable()
+    content.vb: Private Sub OnEnable()
+  overload: TaleOfTiles.Card.Gems.GemItem.OnEnable*
+- uid: TaleOfTiles.Card.Gems.GemItem.GenerateNewID
+  commentId: M:TaleOfTiles.Card.Gems.GemItem.GenerateNewID
+  id: GenerateNewID
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: GenerateNewID()
+  nameWithType: GemItem.GenerateNewID()
+  fullName: TaleOfTiles.Card.Gems.GemItem.GenerateNewID()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GenerateNewID
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 101
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Generates a new unique ID for the gem item.
+  example: []
+  syntax:
+    content: >-
+      [ContextMenu("Generate New ID")]
+
+      public void GenerateNewID()
+    content.vb: >-
+      <ContextMenu("Generate New ID")>
+
+      Public Sub GenerateNewID()
+  overload: TaleOfTiles.Card.Gems.GemItem.GenerateNewID*
+  attributes:
+  - type: UnityEngine.ContextMenu
+    ctor: UnityEngine.ContextMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Generate New ID
+- uid: TaleOfTiles.Card.Gems.GemItem.OnValidate
+  commentId: M:TaleOfTiles.Card.Gems.GemItem.OnValidate
+  id: OnValidate
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: OnValidate()
+  nameWithType: GemItem.OnValidate()
+  fullName: TaleOfTiles.Card.Gems.GemItem.OnValidate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnValidate
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 110
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Method called when the script is loaded or a value is changed in the Inspector. Updates asset properties and triggers change events.
+  example: []
+  syntax:
+    content: private void OnValidate()
+    content.vb: Private Sub OnValidate()
+  overload: TaleOfTiles.Card.Gems.GemItem.OnValidate*
+- uid: TaleOfTiles.Card.Gems.GemItem.CalculateMatchEffects
+  commentId: M:TaleOfTiles.Card.Gems.GemItem.CalculateMatchEffects
+  id: CalculateMatchEffects
+  parent: TaleOfTiles.Card.Gems.GemItem
+  langs:
+  - csharp
+  - vb
+  name: CalculateMatchEffects()
+  nameWithType: GemItem.CalculateMatchEffects()
+  fullName: TaleOfTiles.Card.Gems.GemItem.CalculateMatchEffects()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CalculateMatchEffects
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 131
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Calculates and updates the match effects for the gem based on the number of matches.
+  example: []
+  syntax:
+    content: public void CalculateMatchEffects()
+    content.vb: Public Sub CalculateMatchEffects()
+  overload: TaleOfTiles.Card.Gems.GemItem.CalculateMatchEffects*
+references:
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+  commentId: T:TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemItem.html
+  name: GemItem.OnGemItemChanged
+  nameWithType: GemItem.OnGemItemChanged
+  fullName: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemItem
+    name: GemItem
+    href: TaleOfTiles.Card.Gems.GemItem.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+    name: OnGemItemChanged
+    href: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemItem
+    name: GemItem
+    href: TaleOfTiles.Card.Gems.GemItem.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+    name: OnGemItemChanged
+    href: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemActiveEffect}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemActiveEffect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GemActiveEffect>
+  nameWithType: List<GemActiveEffect>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Card.Gems.GemActiveEffect>
+  nameWithType.vb: List(Of GemActiveEffect)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Card.Gems.GemActiveEffect)
+  name.vb: List(Of GemActiveEffect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Card.Gems.GemActiveEffect
+    name: GemActiveEffect
+    href: TaleOfTiles.Card.Gems.GemActiveEffect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.Gems.GemActiveEffect
+    name: GemActiveEffect
+    href: TaleOfTiles.Card.Gems.GemActiveEffect.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemStatusEffect}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemStatusEffect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GemStatusEffect>
+  nameWithType: List<GemStatusEffect>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Card.Gems.GemStatusEffect>
+  nameWithType.vb: List(Of GemStatusEffect)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Card.Gems.GemStatusEffect)
+  name.vb: List(Of GemStatusEffect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Card.Gems.GemStatusEffect
+    name: GemStatusEffect
+    href: TaleOfTiles.Card.Gems.GemStatusEffect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.Gems.GemStatusEffect
+    name: GemStatusEffect
+    href: TaleOfTiles.Card.Gems.GemStatusEffect.html
+  - name: )
+- uid: TaleOfTiles.Card.Gems.GemItemTier
+  commentId: T:TaleOfTiles.Card.Gems.GemItemTier
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemItemTier.html
+  name: GemItemTier
+  nameWithType: GemItemTier
+  fullName: TaleOfTiles.Card.Gems.GemItemTier
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemSuperCombo}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemSuperCombo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GemSuperCombo>
+  nameWithType: List<GemSuperCombo>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Card.Gems.GemSuperCombo>
+  nameWithType.vb: List(Of GemSuperCombo)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Card.Gems.GemSuperCombo)
+  name.vb: List(Of GemSuperCombo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: )
+- uid: TaleOfTiles.Card.Gems.GemItem.OnEnable*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemItem.OnEnable
+  href: TaleOfTiles.Card.Gems.GemItem.html#TaleOfTiles_Card_Gems_GemItem_OnEnable
+  name: OnEnable
+  nameWithType: GemItem.OnEnable
+  fullName: TaleOfTiles.Card.Gems.GemItem.OnEnable
+- uid: TaleOfTiles.Card.Gems.GemItem.GenerateNewID*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemItem.GenerateNewID
+  href: TaleOfTiles.Card.Gems.GemItem.html#TaleOfTiles_Card_Gems_GemItem_GenerateNewID
+  name: GenerateNewID
+  nameWithType: GemItem.GenerateNewID
+  fullName: TaleOfTiles.Card.Gems.GemItem.GenerateNewID
+- uid: TaleOfTiles.Card.Gems.GemItem.OnValidate*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemItem.OnValidate
+  href: TaleOfTiles.Card.Gems.GemItem.html#TaleOfTiles_Card_Gems_GemItem_OnValidate
+  name: OnValidate
+  nameWithType: GemItem.OnValidate
+  fullName: TaleOfTiles.Card.Gems.GemItem.OnValidate
+- uid: TaleOfTiles.Card.Gems.GemItem.CalculateMatchEffects*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemItem.CalculateMatchEffects
+  href: TaleOfTiles.Card.Gems.GemItem.html#TaleOfTiles_Card_Gems_GemItem_CalculateMatchEffects
+  name: CalculateMatchEffects
+  nameWithType: GemItem.CalculateMatchEffects
+  fullName: TaleOfTiles.Card.Gems.GemItem.CalculateMatchEffects

@@ -1,0 +1,1405 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DataManager
+ | Tale of Tiles Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DataManager
+ | Tale of Tiles Documentation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ElementalMagic/Match-3-Mobile-Game/new/dev/apiSpec/new?filename=TaleOfTiles_Data_DataManager.md&amp;value=---%0Auid%3A%20TaleOfTiles.Data.DataManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Tale of Tiles Documentation">
+            Tale of Tiles Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleOfTiles.Data.DataManager">
+
+
+
+  <h1 id="TaleOfTiles_Data_DataManager" data-uid="TaleOfTiles.Data.DataManager" class="text-break">
+    Class DataManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleOfTiles.html">TaleOfTiles</a>.<a class="xref" href="TaleOfTiles.Data.html">Data</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Manages game data, including player inventory, experience, gold, and configurations for levels, enemies, and journey maps.
+Utilizes Singleton pattern to ensure a single instance.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataManager : Singleton&lt;DataManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="TaleOfTiles.Misc.SingletonBase.html">SingletonBase</a></div>
+      <div><a class="xref" href="TaleOfTiles.Misc.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="TaleOfTiles.Data.DataManager.html">DataManager</a>&gt;</div>
+      <div><span class="xref">DataManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance">Singleton&lt;DataManager&gt;.m_instance</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance">Singleton&lt;DataManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake">Singleton&lt;DataManager&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons">SingletonBase.AllSingletons</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleOfTiles_Data_DataManager_cashed_enemies" data-uid="TaleOfTiles.Data.DataManager.cashed_enemies">
+  cashed_enemies
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads a specific enemy object by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;EnemyObject&gt; cashed_enemies</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EnemyObject.html">EnemyObject</a>&gt;</dt>
+    <dd><p>Returns the EnemyObject if found; otherwise, null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Data_DataManager_cashed_journey_maps" data-uid="TaleOfTiles.Data.DataManager.cashed_journey_maps">
+  cashed_journey_maps
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L639"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private List&lt;JourneyMap&gt; cashed_journey_maps</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Journey.JourneyMap.html">JourneyMap</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Data_DataManager_cashed_levels" data-uid="TaleOfTiles.Data.DataManager.cashed_levels">
+  cashed_levels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads a specific level object by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;LevelObject&gt; cashed_levels</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="TaleOfTiles.Level.LevelObject.html">LevelObject</a>&gt;</dt>
+    <dd><p>Returns the LevelObject if found; otherwise, null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Data_DataManager_configFolderPath" data-uid="TaleOfTiles.Data.DataManager.configFolderPath">
+  configFolderPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private const string configFolderPath = &quot;ScriptableObjects/Maps/Configs/&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Data_DataManager_enemy_object_manager" data-uid="TaleOfTiles.Data.DataManager.enemy_object_manager">
+  enemy_object_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnemyObjectManager enemy_object_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Data.EnemyObjectManager.html">EnemyObjectManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Data_DataManager_journey_object_manager" data-uid="TaleOfTiles.Data.DataManager.journey_object_manager">
+  journey_object_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L635"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JourneyObjectManager journey_object_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Data.JourneyObjectManager.html">JourneyObjectManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_Data_DataManager_level_object_manager" data-uid="TaleOfTiles.Data.DataManager.level_object_manager">
+  level_object_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LevelObjectManager level_object_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Data.LevelObjectManager.html">LevelObjectManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleOfTiles_Data_DataManager_AddNewPlayerCard_" data-uid="TaleOfTiles.Data.DataManager.AddNewPlayerCard*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_AddNewPlayerCard_System_String_" data-uid="TaleOfTiles.Data.DataManager.AddNewPlayerCard(System.String)">
+  AddNewPlayerCard(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new card to the player's card collection if it doesn't already exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNewPlayerCard(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the card.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_AddNewPlayerItem_" data-uid="TaleOfTiles.Data.DataManager.AddNewPlayerItem*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_AddNewPlayerItem_System_String_" data-uid="TaleOfTiles.Data.DataManager.AddNewPlayerItem(System.String)">
+  AddNewPlayerItem(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new item to the player's inventory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNewPlayerItem(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The ID of the item to be added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_DeleteConfig_" data-uid="TaleOfTiles.Data.DataManager.DeleteConfig*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_DeleteConfig_System_String_" data-uid="TaleOfTiles.Data.DataManager.DeleteConfig(System.String)">
+  DeleteConfig(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes a configuration file based on the provided config ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteConfig(string configID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the config to be deleted.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_DownloadAllCardsCollection_" data-uid="TaleOfTiles.Data.DataManager.DownloadAllCardsCollection*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_DownloadAllCardsCollection" data-uid="TaleOfTiles.Data.DataManager.DownloadAllCardsCollection">
+  DownloadAllCardsCollection()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Downloads the entire collection of cards from resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CardObject&gt; DownloadAllCardsCollection()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="CardObject.html">CardObject</a>&gt;</dt>
+    <dd><p>A list of all card objects.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_DownloadAllEquipmentInGame_" data-uid="TaleOfTiles.Data.DataManager.DownloadAllEquipmentInGame*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_DownloadAllEquipmentInGame" data-uid="TaleOfTiles.Data.DataManager.DownloadAllEquipmentInGame">
+  DownloadAllEquipmentInGame()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads all equipment items from resources and stores them in a list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;EquipmentItem&gt; DownloadAllEquipmentInGame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="EquipmentItem.html">EquipmentItem</a>&gt;</dt>
+    <dd><p>A list of all equipment items available in the game.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_GetPlayerDeck_" data-uid="TaleOfTiles.Data.DataManager.GetPlayerDeck*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_GetPlayerDeck" data-uid="TaleOfTiles.Data.DataManager.GetPlayerDeck">
+  GetPlayerDeck()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the player's deck.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPlayerDeck()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_GetPlayerDeckFilePath_" data-uid="TaleOfTiles.Data.DataManager.GetPlayerDeckFilePath*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_GetPlayerDeckFilePath" data-uid="TaleOfTiles.Data.DataManager.GetPlayerDeckFilePath">
+  GetPlayerDeckFilePath()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the file path for the player's deck. Creates the file if it doesn't exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPlayerDeckFilePath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_GetPlayerExp_" data-uid="TaleOfTiles.Data.DataManager.GetPlayerExp*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_GetPlayerExp" data-uid="TaleOfTiles.Data.DataManager.GetPlayerExp">
+  GetPlayerExp()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the player's experience points from PlayerPrefs.
+If not set, initializes to a default value of 100.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPlayerExp()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Current experience points of the player.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_GetPlayerGold_" data-uid="TaleOfTiles.Data.DataManager.GetPlayerGold*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_GetPlayerGold" data-uid="TaleOfTiles.Data.DataManager.GetPlayerGold">
+  GetPlayerGold()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the player's current gold amount, initializing it if not set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPlayerGold()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Current gold amount of the player.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_GetPlayerInventoryFilePath_" data-uid="TaleOfTiles.Data.DataManager.GetPlayerInventoryFilePath*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_GetPlayerInventoryFilePath" data-uid="TaleOfTiles.Data.DataManager.GetPlayerInventoryFilePath">
+  GetPlayerInventoryFilePath()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the file path for the player's inventory file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPlayerInventoryFilePath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The file path for the player's inventory.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadActivePlayerItems_" data-uid="TaleOfTiles.Data.DataManager.LoadActivePlayerItems*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadActivePlayerItems" data-uid="TaleOfTiles.Data.DataManager.LoadActivePlayerItems">
+  LoadActivePlayerItems()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the player's active items from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;ItemPlace, string&gt; LoadActivePlayerItems()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="ItemPlace.html">ItemPlace</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>A dictionary mapping item places to their IDs.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadAllEnemyObjects_" data-uid="TaleOfTiles.Data.DataManager.LoadAllEnemyObjects*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadAllEnemyObjects" data-uid="TaleOfTiles.Data.DataManager.LoadAllEnemyObjects">
+  LoadAllEnemyObjects()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnemyObject[] LoadAllEnemyObjects()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EnemyObject.html">EnemyObject</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadAllJourneyMaps_" data-uid="TaleOfTiles.Data.DataManager.LoadAllJourneyMaps*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadAllJourneyMaps" data-uid="TaleOfTiles.Data.DataManager.LoadAllJourneyMaps">
+  LoadAllJourneyMaps()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads all JourneyMap objects. If not previously loaded, retrieves them from resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JourneyMap[] LoadAllJourneyMaps()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Journey.JourneyMap.html">JourneyMap</a>[]</dt>
+    <dd><p>An array of all loaded JourneyMap objects.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadAllLevelObjects_" data-uid="TaleOfTiles.Data.DataManager.LoadAllLevelObjects*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadAllLevelObjects" data-uid="TaleOfTiles.Data.DataManager.LoadAllLevelObjects">
+  LoadAllLevelObjects()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads all level objects stored in resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LevelObject[] LoadAllLevelObjects()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Level.LevelObject.html">LevelObject</a>[]</dt>
+    <dd><p>An array of all loaded LevelObject instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadAllPlayerItems_" data-uid="TaleOfTiles.Data.DataManager.LoadAllPlayerItems*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadAllPlayerItems" data-uid="TaleOfTiles.Data.DataManager.LoadAllPlayerItems">
+  LoadAllPlayerItems()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the player's item inventory from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] LoadAllPlayerItems()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>An array of item IDs representing the player's items.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadConfig_" data-uid="TaleOfTiles.Data.DataManager.LoadConfig*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadConfig_System_String_" data-uid="TaleOfTiles.Data.DataManager.LoadConfig(System.String)">
+  LoadConfig(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L587"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads a JourneyMapConfig from a JSON file based on the provided config ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JourneyMapConfig LoadConfig(string configID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the config to load.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Journey.JourneyMapConfig.html">JourneyMapConfig</a></dt>
+    <dd><p>Returns the loaded JourneyMapConfig if found; otherwise, null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadEnemyObject_" data-uid="TaleOfTiles.Data.DataManager.LoadEnemyObject*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadEnemyObject_System_String_" data-uid="TaleOfTiles.Data.DataManager.LoadEnemyObject(System.String)">
+  LoadEnemyObject(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnemyObject LoadEnemyObject(string ID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="EnemyObject.html">EnemyObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadJourneyMap_" data-uid="TaleOfTiles.Data.DataManager.LoadJourneyMap*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadJourneyMap_System_String_" data-uid="TaleOfTiles.Data.DataManager.LoadJourneyMap(System.String)">
+  LoadJourneyMap(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads a specific journey map by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JourneyMap LoadJourneyMap(string map_id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>map_id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the journey map.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Journey.JourneyMap.html">JourneyMap</a></dt>
+    <dd><p>Returns the JourneyMap if found; otherwise, null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadLevelObject_" data-uid="TaleOfTiles.Data.DataManager.LoadLevelObject*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadLevelObject_System_String_" data-uid="TaleOfTiles.Data.DataManager.LoadLevelObject(System.String)">
+  LoadLevelObject(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LevelObject LoadLevelObject(string ID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Level.LevelObject.html">LevelObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_LoadPlayerCardsCollection_" data-uid="TaleOfTiles.Data.DataManager.LoadPlayerCardsCollection*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_LoadPlayerCardsCollection" data-uid="TaleOfTiles.Data.DataManager.LoadPlayerCardsCollection">
+  LoadPlayerCardsCollection()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the player's card collection from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, bool&gt; LoadPlayerCardsCollection()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>A dictionary of card IDs and their activation statuses.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_Prepare_" data-uid="TaleOfTiles.Data.DataManager.Prepare*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_Prepare" data-uid="TaleOfTiles.Data.DataManager.Prepare">
+  Prepare()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the DataManager, loading various game objects and configurations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerator Prepare()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>Coroutine for asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_RemovePlayerCard_" data-uid="TaleOfTiles.Data.DataManager.RemovePlayerCard*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_RemovePlayerCard_System_String_" data-uid="TaleOfTiles.Data.DataManager.RemovePlayerCard(System.String)">
+  RemovePlayerCard(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes a specific card from the player's collection by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePlayerCard(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the card to be removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_RemovePlayerItem_" data-uid="TaleOfTiles.Data.DataManager.RemovePlayerItem*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_RemovePlayerItem_System_String_" data-uid="TaleOfTiles.Data.DataManager.RemovePlayerItem(System.String)">
+  RemovePlayerItem(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes an item from the player's inventory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePlayerItem(string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The ID of the item to be removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_SaveConfig_" data-uid="TaleOfTiles.Data.DataManager.SaveConfig*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_SaveConfig_TaleOfTiles_Journey_JourneyMapConfig_" data-uid="TaleOfTiles.Data.DataManager.SaveConfig(TaleOfTiles.Journey.JourneyMapConfig)">
+  SaveConfig(JourneyMapConfig)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L569"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves a JourneyMapConfig object as a JSON file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveConfig(JourneyMapConfig config)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="TaleOfTiles.Journey.JourneyMapConfig.html">JourneyMapConfig</a></dt>
+    <dd><p>The JourneyMapConfig object to be saved.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_SavePlayerCard_" data-uid="TaleOfTiles.Data.DataManager.SavePlayerCard*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_SavePlayerCard_System_Collections_Generic_Dictionary_System_String_System_Boolean__" data-uid="TaleOfTiles.Data.DataManager.SavePlayerCard(System.Collections.Generic.Dictionary{System.String,System.Boolean})">
+  SavePlayerCard(Dictionary&lt;string, bool&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Saves the player's card collection to a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void SavePlayerCard(Dictionary&lt;string, bool&gt; data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>The card data to save.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_SetActiveItem_" data-uid="TaleOfTiles.Data.DataManager.SetActiveItem*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_SetActiveItem_System_String_ItemPlace_" data-uid="TaleOfTiles.Data.DataManager.SetActiveItem(System.String,ItemPlace)">
+  SetActiveItem(string, ItemPlace)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets an item as active in the player's inventory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetActiveItem(string id, ItemPlace itemPlace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The ID of the item to set as active.</p>
+</dd>
+    <dt><code>itemPlace</code> <a class="xref" href="ItemPlace.html">ItemPlace</a></dt>
+    <dd><p>The place to set the item active in.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_SetPlayerCardStatus_" data-uid="TaleOfTiles.Data.DataManager.SetPlayerCardStatus*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_SetPlayerCardStatus_System_String_System_Boolean_" data-uid="TaleOfTiles.Data.DataManager.SetPlayerCardStatus(System.String,System.Boolean)">
+  SetPlayerCardStatus(string, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the status of a specific card in the player's collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlayerCardStatus(string id, bool status)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the card.</p>
+</dd>
+    <dt><code>status</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The new status to be set for the card.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_UpdateConfig_" data-uid="TaleOfTiles.Data.DataManager.UpdateConfig*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_UpdateConfig_TaleOfTiles_Journey_JourneyMapConfig_" data-uid="TaleOfTiles.Data.DataManager.UpdateConfig(TaleOfTiles.Journey.JourneyMapConfig)">
+  UpdateConfig(JourneyMapConfig)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L627"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates a JourneyMapConfig by saving the modified version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateConfig(JourneyMapConfig config)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>config</code> <a class="xref" href="TaleOfTiles.Journey.JourneyMapConfig.html">JourneyMapConfig</a></dt>
+    <dd><p>The JourneyMapConfig object to be updated.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_UpdatePlayerExp_" data-uid="TaleOfTiles.Data.DataManager.UpdatePlayerExp*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_UpdatePlayerExp_System_Int32_" data-uid="TaleOfTiles.Data.DataManager.UpdatePlayerExp(System.Int32)">
+  UpdatePlayerExp(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the player's experience points in PlayerPrefs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePlayerExp(int xp_change)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xp_change</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The amount by which to change the experience points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Data_DataManager_UpdatePlayerGold_" data-uid="TaleOfTiles.Data.DataManager.UpdatePlayerGold*"></a>
+
+  <h3 id="TaleOfTiles_Data_DataManager_UpdatePlayerGold_System_Int32_" data-uid="TaleOfTiles.Data.DataManager.UpdatePlayerGold(System.Int32)">
+  UpdatePlayerGold(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the player's gold amount in PlayerPrefs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePlayerGold(int gold_change)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gold_change</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The amount by which to change the gold.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Data Management/DataManager.cs/#L18" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,442 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.BigCardUI
+  commentId: T:TaleOfTiles.Card.BigCardUI
+  id: BigCardUI
+  parent: TaleOfTiles.Card
+  children:
+  - TaleOfTiles.Card.BigCardUI.ActivateCard
+  - TaleOfTiles.Card.BigCardUI.DeactivateCard
+  - TaleOfTiles.Card.BigCardUI.SetCard(CardObject)
+  - TaleOfTiles.Card.BigCardUI.ShowCard
+  - TaleOfTiles.Card.BigCardUI.card_id
+  - TaleOfTiles.Card.BigCardUI.card_image
+  - TaleOfTiles.Card.BigCardUI.card_label
+  - TaleOfTiles.Card.BigCardUI.equip_button
+  langs:
+  - csharp
+  - vb
+  name: BigCardUI
+  nameWithType: BigCardUI
+  fullName: TaleOfTiles.Card.BigCardUI
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/BigCardUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BigCardUI
+    path: ../Assets/Scripts/BigCardUI.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: A class that represents a big card in the UI.
+  example: []
+  syntax:
+    content: 'public class BigCardUI : MonoBehaviour'
+    content.vb: Public Class BigCardUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Card.BigCardUI.card_label
+  commentId: F:TaleOfTiles.Card.BigCardUI.card_label
+  id: card_label
+  parent: TaleOfTiles.Card.BigCardUI
+  langs:
+  - csharp
+  - vb
+  name: card_label
+  nameWithType: BigCardUI.card_label
+  fullName: TaleOfTiles.Card.BigCardUI.card_label
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BigCardUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: card_label
+    path: ../Assets/Scripts/BigCardUI.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The label of the card.
+  example: []
+  syntax:
+    content: public TextMeshProUGUI card_label
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public card_label As TextMeshProUGUI
+- uid: TaleOfTiles.Card.BigCardUI.card_image
+  commentId: F:TaleOfTiles.Card.BigCardUI.card_image
+  id: card_image
+  parent: TaleOfTiles.Card.BigCardUI
+  langs:
+  - csharp
+  - vb
+  name: card_image
+  nameWithType: BigCardUI.card_image
+  fullName: TaleOfTiles.Card.BigCardUI.card_image
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BigCardUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: card_image
+    path: ../Assets/Scripts/BigCardUI.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The image of the card.
+  example: []
+  syntax:
+    content: public Image card_image
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public card_image As Image
+- uid: TaleOfTiles.Card.BigCardUI.card_id
+  commentId: F:TaleOfTiles.Card.BigCardUI.card_id
+  id: card_id
+  parent: TaleOfTiles.Card.BigCardUI
+  langs:
+  - csharp
+  - vb
+  name: card_id
+  nameWithType: BigCardUI.card_id
+  fullName: TaleOfTiles.Card.BigCardUI.card_id
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BigCardUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: card_id
+    path: ../Assets/Scripts/BigCardUI.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The ID of the card.
+  example: []
+  syntax:
+    content: public string card_id
+    return:
+      type: System.String
+    content.vb: Public card_id As String
+- uid: TaleOfTiles.Card.BigCardUI.equip_button
+  commentId: F:TaleOfTiles.Card.BigCardUI.equip_button
+  id: equip_button
+  parent: TaleOfTiles.Card.BigCardUI
+  langs:
+  - csharp
+  - vb
+  name: equip_button
+  nameWithType: BigCardUI.equip_button
+  fullName: TaleOfTiles.Card.BigCardUI.equip_button
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BigCardUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: equip_button
+    path: ../Assets/Scripts/BigCardUI.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: The button to equip or unequip the card.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Button equip_button
+    return:
+      type: UnityEngine.UI.Button
+    content.vb: >-
+      <SerializeField>
+
+      Private equip_button As Button
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.Card.BigCardUI.SetCard(CardObject)
+  commentId: M:TaleOfTiles.Card.BigCardUI.SetCard(CardObject)
+  id: SetCard(CardObject)
+  parent: TaleOfTiles.Card.BigCardUI
+  langs:
+  - csharp
+  - vb
+  name: SetCard(CardObject)
+  nameWithType: BigCardUI.SetCard(CardObject)
+  fullName: TaleOfTiles.Card.BigCardUI.SetCard(CardObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BigCardUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetCard
+    path: ../Assets/Scripts/BigCardUI.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Sets the card data for the UI element.
+  example: []
+  syntax:
+    content: public void SetCard(CardObject card)
+    parameters:
+    - id: card
+      type: CardObject
+      description: The card object to set.
+    content.vb: Public Sub SetCard(card As CardObject)
+  overload: TaleOfTiles.Card.BigCardUI.SetCard*
+- uid: TaleOfTiles.Card.BigCardUI.ActivateCard
+  commentId: M:TaleOfTiles.Card.BigCardUI.ActivateCard
+  id: ActivateCard
+  parent: TaleOfTiles.Card.BigCardUI
+  langs:
+  - csharp
+  - vb
+  name: ActivateCard()
+  nameWithType: BigCardUI.ActivateCard()
+  fullName: TaleOfTiles.Card.BigCardUI.ActivateCard()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BigCardUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ActivateCard
+    path: ../Assets/Scripts/BigCardUI.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Activates the card.
+  example: []
+  syntax:
+    content: private void ActivateCard()
+    content.vb: Private Sub ActivateCard()
+  overload: TaleOfTiles.Card.BigCardUI.ActivateCard*
+- uid: TaleOfTiles.Card.BigCardUI.DeactivateCard
+  commentId: M:TaleOfTiles.Card.BigCardUI.DeactivateCard
+  id: DeactivateCard
+  parent: TaleOfTiles.Card.BigCardUI
+  langs:
+  - csharp
+  - vb
+  name: DeactivateCard()
+  nameWithType: BigCardUI.DeactivateCard()
+  fullName: TaleOfTiles.Card.BigCardUI.DeactivateCard()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BigCardUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DeactivateCard
+    path: ../Assets/Scripts/BigCardUI.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Deactivates the card.
+  example: []
+  syntax:
+    content: private void DeactivateCard()
+    content.vb: Private Sub DeactivateCard()
+  overload: TaleOfTiles.Card.BigCardUI.DeactivateCard*
+- uid: TaleOfTiles.Card.BigCardUI.ShowCard
+  commentId: M:TaleOfTiles.Card.BigCardUI.ShowCard
+  id: ShowCard
+  parent: TaleOfTiles.Card.BigCardUI
+  langs:
+  - csharp
+  - vb
+  name: ShowCard()
+  nameWithType: BigCardUI.ShowCard()
+  fullName: TaleOfTiles.Card.BigCardUI.ShowCard()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BigCardUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowCard
+    path: ../Assets/Scripts/BigCardUI.cs
+    startLine: 92
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card
+  summary: Shows the card in the UI.
+  example: []
+  syntax:
+    content: public void ShowCard()
+    content.vb: Public Sub ShowCard()
+  overload: TaleOfTiles.Card.BigCardUI.ShowCard*
+references:
+- uid: TaleOfTiles.Card
+  commentId: N:TaleOfTiles.Card
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card
+  nameWithType: TaleOfTiles.Card
+  fullName: TaleOfTiles.Card
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TMPro.TextMeshProUGUI
+  commentId: T:TMPro.TextMeshProUGUI
+  parent: TMPro
+  name: TextMeshProUGUI
+  nameWithType: TextMeshProUGUI
+  fullName: TMPro.TextMeshProUGUI
+- uid: TMPro
+  commentId: N:TMPro
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.UI.Button
+  commentId: T:UnityEngine.UI.Button
+  parent: UnityEngine.UI
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UI.Button
+- uid: TaleOfTiles.Card.BigCardUI.SetCard*
+  commentId: Overload:TaleOfTiles.Card.BigCardUI.SetCard
+  href: TaleOfTiles.Card.BigCardUI.html#TaleOfTiles_Card_BigCardUI_SetCard_CardObject_
+  name: SetCard
+  nameWithType: BigCardUI.SetCard
+  fullName: TaleOfTiles.Card.BigCardUI.SetCard
+- uid: CardObject
+  commentId: T:CardObject
+  href: CardObject.html
+  name: CardObject
+  nameWithType: CardObject
+  fullName: CardObject
+- uid: TaleOfTiles.Card.BigCardUI.ActivateCard*
+  commentId: Overload:TaleOfTiles.Card.BigCardUI.ActivateCard
+  href: TaleOfTiles.Card.BigCardUI.html#TaleOfTiles_Card_BigCardUI_ActivateCard
+  name: ActivateCard
+  nameWithType: BigCardUI.ActivateCard
+  fullName: TaleOfTiles.Card.BigCardUI.ActivateCard
+- uid: TaleOfTiles.Card.BigCardUI.DeactivateCard*
+  commentId: Overload:TaleOfTiles.Card.BigCardUI.DeactivateCard
+  href: TaleOfTiles.Card.BigCardUI.html#TaleOfTiles_Card_BigCardUI_DeactivateCard
+  name: DeactivateCard
+  nameWithType: BigCardUI.DeactivateCard
+  fullName: TaleOfTiles.Card.BigCardUI.DeactivateCard
+- uid: TaleOfTiles.Card.BigCardUI.ShowCard*
+  commentId: Overload:TaleOfTiles.Card.BigCardUI.ShowCard
+  href: TaleOfTiles.Card.BigCardUI.html#TaleOfTiles_Card_BigCardUI_ShowCard
+  name: ShowCard
+  nameWithType: BigCardUI.ShowCard
+  fullName: TaleOfTiles.Card.BigCardUI.ShowCard

@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.BattleArenaTopButtons
+  commentId: T:TaleOfTiles.Arena.BattleArenaTopButtons
+  id: BattleArenaTopButtons
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.BattleArenaTopButtons.Start
+  - TaleOfTiles.Arena.BattleArenaTopButtons.surrender_button
+  langs:
+  - csharp
+  - vb
+  name: BattleArenaTopButtons
+  nameWithType: BattleArenaTopButtons
+  fullName: TaleOfTiles.Arena.BattleArenaTopButtons
+  type: Class
+  source:
+    remote:
+      path: Assets/BattleArenaTopButtons.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BattleArenaTopButtons
+    path: ../Assets/BattleArenaTopButtons.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The BattleArenaTopButtons class manages the top buttons in the battle arena.
+  example: []
+  syntax:
+    content: 'public class BattleArenaTopButtons : MonoBehaviour'
+    content.vb: Public Class BattleArenaTopButtons Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Arena.BattleArenaTopButtons.surrender_button
+  commentId: F:TaleOfTiles.Arena.BattleArenaTopButtons.surrender_button
+  id: surrender_button
+  parent: TaleOfTiles.Arena.BattleArenaTopButtons
+  langs:
+  - csharp
+  - vb
+  name: surrender_button
+  nameWithType: BattleArenaTopButtons.surrender_button
+  fullName: TaleOfTiles.Arena.BattleArenaTopButtons.surrender_button
+  type: Field
+  source:
+    remote:
+      path: Assets/BattleArenaTopButtons.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: surrender_button
+    path: ../Assets/BattleArenaTopButtons.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  example: []
+  syntax:
+    content: public Button surrender_button
+    return:
+      type: UnityEngine.UI.Button
+      description: Gets or sets the surrender button.
+    content.vb: Public surrender_button As Button
+- uid: TaleOfTiles.Arena.BattleArenaTopButtons.Start
+  commentId: M:TaleOfTiles.Arena.BattleArenaTopButtons.Start
+  id: Start
+  parent: TaleOfTiles.Arena.BattleArenaTopButtons
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: BattleArenaTopButtons.Start()
+  fullName: TaleOfTiles.Arena.BattleArenaTopButtons.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/BattleArenaTopButtons.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/BattleArenaTopButtons.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: >-
+    Start is called before the first frame update.
+
+    It removes all existing listeners from the surrender button and adds a new one which triggers defeat in the CombatManager when clicked.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.Arena.BattleArenaTopButtons.Start*
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Button
+  commentId: T:UnityEngine.UI.Button
+  parent: UnityEngine.UI
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UI.Button
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: TaleOfTiles.Arena.BattleArenaTopButtons.Start*
+  commentId: Overload:TaleOfTiles.Arena.BattleArenaTopButtons.Start
+  href: TaleOfTiles.Arena.BattleArenaTopButtons.html#TaleOfTiles_Arena_BattleArenaTopButtons_Start
+  name: Start
+  nameWithType: BattleArenaTopButtons.Start
+  fullName: TaleOfTiles.Arena.BattleArenaTopButtons.Start

@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  commentId: T:TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  id: JourneyObject.JourneyHardness
+  parent: TaleOfTiles.Journey
+  children:
+  - TaleOfTiles.Journey.JourneyObject.JourneyHardness.Easy
+  - TaleOfTiles.Journey.JourneyObject.JourneyHardness.Hard
+  - TaleOfTiles.Journey.JourneyObject.JourneyHardness.Tough
+  langs:
+  - csharp
+  - vb
+  name: JourneyObject.JourneyHardness
+  nameWithType: JourneyObject.JourneyHardness
+  fullName: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  type: Enum
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Journeys/JourneyObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: JourneyHardness
+    path: ../Assets/Resources/ScriptableObjects/Journeys/JourneyObject.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public enum JourneyObject.JourneyHardness
+    content.vb: Public Enum JourneyObject.JourneyHardness
+- uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness.Easy
+  commentId: F:TaleOfTiles.Journey.JourneyObject.JourneyHardness.Easy
+  id: Easy
+  parent: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  langs:
+  - csharp
+  - vb
+  name: Easy
+  nameWithType: JourneyObject.JourneyHardness.Easy
+  fullName: TaleOfTiles.Journey.JourneyObject.JourneyHardness.Easy
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Journeys/JourneyObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Easy
+    path: ../Assets/Resources/ScriptableObjects/Journeys/JourneyObject.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: Easy = 0
+    return:
+      type: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+- uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness.Tough
+  commentId: F:TaleOfTiles.Journey.JourneyObject.JourneyHardness.Tough
+  id: Tough
+  parent: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  langs:
+  - csharp
+  - vb
+  name: Tough
+  nameWithType: JourneyObject.JourneyHardness.Tough
+  fullName: TaleOfTiles.Journey.JourneyObject.JourneyHardness.Tough
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Journeys/JourneyObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Tough
+    path: ../Assets/Resources/ScriptableObjects/Journeys/JourneyObject.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: Tough = 1
+    return:
+      type: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+- uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness.Hard
+  commentId: F:TaleOfTiles.Journey.JourneyObject.JourneyHardness.Hard
+  id: Hard
+  parent: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  langs:
+  - csharp
+  - vb
+  name: Hard
+  nameWithType: JourneyObject.JourneyHardness.Hard
+  fullName: TaleOfTiles.Journey.JourneyObject.JourneyHardness.Hard
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Journeys/JourneyObject.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Hard
+    path: ../Assets/Resources/ScriptableObjects/Journeys/JourneyObject.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: Hard = 2
+    return:
+      type: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+references:
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  commentId: T:TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyObject.html
+  name: JourneyObject.JourneyHardness
+  nameWithType: JourneyObject.JourneyHardness
+  fullName: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyObject
+    name: JourneyObject
+    href: TaleOfTiles.Journey.JourneyObject.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+    name: JourneyHardness
+    href: TaleOfTiles.Journey.JourneyObject.JourneyHardness.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyObject
+    name: JourneyObject
+    href: TaleOfTiles.Journey.JourneyObject.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyObject.JourneyHardness
+    name: JourneyHardness
+    href: TaleOfTiles.Journey.JourneyObject.JourneyHardness.html

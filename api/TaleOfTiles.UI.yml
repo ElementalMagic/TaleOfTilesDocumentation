@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.UI
+  commentId: N:TaleOfTiles.UI
+  id: TaleOfTiles.UI
+  children:
+  - TaleOfTiles.UI.AdditionalScreens
+  - TaleOfTiles.UI.CollapseUIScript
+  - TaleOfTiles.UI.DeckCanvasUI
+  - TaleOfTiles.UI.DefeatScreenUI
+  - TaleOfTiles.UI.LoadingScreenManager
+  - TaleOfTiles.UI.NavigationButtons
+  - TaleOfTiles.UI.ParticleManager
+  - TaleOfTiles.UI.ParticlePlayer
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  - TaleOfTiles.UI.TopBarMenu
+  - TaleOfTiles.UI.UIManager
+  - TaleOfTiles.UI.VictoryScreenUI
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles.UI
+  nameWithType: TaleOfTiles.UI
+  fullName: TaleOfTiles.UI
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  commentId: T:TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  href: TaleOfTiles.UI.ParticleSystemSizeAdaptation.html
+  name: ParticleSystemSizeAdaptation
+  nameWithType: ParticleSystemSizeAdaptation
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+- uid: TaleOfTiles.UI.TopBarMenu
+  commentId: T:TaleOfTiles.UI.TopBarMenu
+  href: TaleOfTiles.UI.TopBarMenu.html
+  name: TopBarMenu
+  nameWithType: TopBarMenu
+  fullName: TaleOfTiles.UI.TopBarMenu
+- uid: TaleOfTiles.UI.AdditionalScreens
+  commentId: T:TaleOfTiles.UI.AdditionalScreens
+  href: TaleOfTiles.UI.AdditionalScreens.html
+  name: AdditionalScreens
+  nameWithType: AdditionalScreens
+  fullName: TaleOfTiles.UI.AdditionalScreens
+- uid: TaleOfTiles.UI.LoadingScreenManager
+  commentId: T:TaleOfTiles.UI.LoadingScreenManager
+  parent: TaleOfTiles.UI
+  href: TaleOfTiles.UI.LoadingScreenManager.html
+  name: LoadingScreenManager
+  nameWithType: LoadingScreenManager
+  fullName: TaleOfTiles.UI.LoadingScreenManager
+- uid: TaleOfTiles.UI.NavigationButtons
+  commentId: T:TaleOfTiles.UI.NavigationButtons
+  href: TaleOfTiles.UI.NavigationButtons.html
+  name: NavigationButtons
+  nameWithType: NavigationButtons
+  fullName: TaleOfTiles.UI.NavigationButtons
+- uid: TaleOfTiles.UI.DefeatScreenUI
+  commentId: T:TaleOfTiles.UI.DefeatScreenUI
+  href: TaleOfTiles.UI.DefeatScreenUI.html
+  name: DefeatScreenUI
+  nameWithType: DefeatScreenUI
+  fullName: TaleOfTiles.UI.DefeatScreenUI
+- uid: TaleOfTiles.UI.CollapseUIScript
+  commentId: T:TaleOfTiles.UI.CollapseUIScript
+  href: TaleOfTiles.UI.CollapseUIScript.html
+  name: CollapseUIScript
+  nameWithType: CollapseUIScript
+  fullName: TaleOfTiles.UI.CollapseUIScript
+- uid: TaleOfTiles.UI.DeckCanvasUI
+  commentId: T:TaleOfTiles.UI.DeckCanvasUI
+  href: TaleOfTiles.UI.DeckCanvasUI.html
+  name: DeckCanvasUI
+  nameWithType: DeckCanvasUI
+  fullName: TaleOfTiles.UI.DeckCanvasUI
+- uid: TaleOfTiles.UI.UIManager
+  commentId: T:TaleOfTiles.UI.UIManager
+  parent: TaleOfTiles.UI
+  href: TaleOfTiles.UI.UIManager.html
+  name: UIManager
+  nameWithType: UIManager
+  fullName: TaleOfTiles.UI.UIManager
+- uid: TaleOfTiles.UI.VictoryScreenUI
+  commentId: T:TaleOfTiles.UI.VictoryScreenUI
+  href: TaleOfTiles.UI.VictoryScreenUI.html
+  name: VictoryScreenUI
+  nameWithType: VictoryScreenUI
+  fullName: TaleOfTiles.UI.VictoryScreenUI
+- uid: TaleOfTiles.UI.ParticlePlayer
+  commentId: T:TaleOfTiles.UI.ParticlePlayer
+  href: TaleOfTiles.UI.ParticlePlayer.html
+  name: ParticlePlayer
+  nameWithType: ParticlePlayer
+  fullName: TaleOfTiles.UI.ParticlePlayer
+- uid: TaleOfTiles.UI.ParticleManager
+  commentId: T:TaleOfTiles.UI.ParticleManager
+  parent: TaleOfTiles.UI
+  href: TaleOfTiles.UI.ParticleManager.html
+  name: ParticleManager
+  nameWithType: ParticleManager
+  fullName: TaleOfTiles.UI.ParticleManager
+- uid: TaleOfTiles.UI
+  commentId: N:TaleOfTiles.UI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.UI
+  nameWithType: TaleOfTiles.UI
+  fullName: TaleOfTiles.UI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html

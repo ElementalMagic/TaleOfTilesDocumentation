@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Journey.JourneyMapAssetBundle
+  commentId: T:TaleOfTiles.Journey.JourneyMapAssetBundle
+  id: JourneyMapAssetBundle
+  parent: TaleOfTiles.Journey
+  children:
+  - TaleOfTiles.Journey.JourneyMapAssetBundle.asset_name
+  - TaleOfTiles.Journey.JourneyMapAssetBundle.block_list
+  langs:
+  - csharp
+  - vb
+  name: JourneyMapAssetBundle
+  nameWithType: JourneyMapAssetBundle
+  fullName: TaleOfTiles.Journey.JourneyMapAssetBundle
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapAssetBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: JourneyMapAssetBundle
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapAssetBundle.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: >-
+    Represents a Journey Map Asset Bundle in the game, which includes a collection of journey map blocks.
+
+    This class is a ScriptableObject that can be created via the Unity Editor.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Journey Map Bundle", menuName = "Journey Map/new asset Bundle", order = 1)]
+
+      public class JourneyMapAssetBundle : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Journey Map Bundle", menuName:="Journey Map/new asset Bundle", order:=1)>
+
+      Public Class JourneyMapAssetBundle Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Journey Map Bundle
+    - name: menuName
+      type: System.String
+      value: Journey Map/new asset Bundle
+    - name: order
+      type: System.Int32
+      value: 1
+- uid: TaleOfTiles.Journey.JourneyMapAssetBundle.asset_name
+  commentId: F:TaleOfTiles.Journey.JourneyMapAssetBundle.asset_name
+  id: asset_name
+  parent: TaleOfTiles.Journey.JourneyMapAssetBundle
+  langs:
+  - csharp
+  - vb
+  name: asset_name
+  nameWithType: JourneyMapAssetBundle.asset_name
+  fullName: TaleOfTiles.Journey.JourneyMapAssetBundle.asset_name
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapAssetBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: asset_name
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapAssetBundle.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: The name of the asset bundle.
+  example: []
+  syntax:
+    content: public string asset_name
+    return:
+      type: System.String
+    content.vb: Public asset_name As String
+- uid: TaleOfTiles.Journey.JourneyMapAssetBundle.block_list
+  commentId: F:TaleOfTiles.Journey.JourneyMapAssetBundle.block_list
+  id: block_list
+  parent: TaleOfTiles.Journey.JourneyMapAssetBundle
+  langs:
+  - csharp
+  - vb
+  name: block_list
+  nameWithType: JourneyMapAssetBundle.block_list
+  fullName: TaleOfTiles.Journey.JourneyMapAssetBundle.block_list
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapAssetBundle.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: block_list
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapAssetBundle.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: A list of journey map blocks included in this asset bundle.
+  example: []
+  syntax:
+    content: public List<JourneyMapBlock> block_list
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Journey.JourneyMapBlock}
+    content.vb: Public block_list As List(Of JourneyMapBlock)
+references:
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{TaleOfTiles.Journey.JourneyMapBlock}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Journey.JourneyMapBlock}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<JourneyMapBlock>
+  nameWithType: List<JourneyMapBlock>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Journey.JourneyMapBlock>
+  nameWithType.vb: List(Of JourneyMapBlock)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Journey.JourneyMapBlock)
+  name.vb: List(Of JourneyMapBlock)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

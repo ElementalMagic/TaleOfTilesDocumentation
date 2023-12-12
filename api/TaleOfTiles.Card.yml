@@ -1,0 +1,121 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card
+  commentId: N:TaleOfTiles.Card
+  id: TaleOfTiles.Card
+  children:
+  - TaleOfTiles.Card.BigCardUI
+  - TaleOfTiles.Card.CardGemUI
+  - TaleOfTiles.Card.CardUI
+  - TaleOfTiles.Card.CardUI.CardBuildEvent
+  - TaleOfTiles.Card.CardsHolderManager
+  - TaleOfTiles.Card.GemEffectAttribute
+  - TaleOfTiles.Card.GemEffectAttributeUI
+  - TaleOfTiles.Card.GemEffectUI
+  - TaleOfTiles.Card.SingleCardPageUI
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles.Card
+  nameWithType: TaleOfTiles.Card
+  fullName: TaleOfTiles.Card
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.Card.SingleCardPageUI
+  commentId: T:TaleOfTiles.Card.SingleCardPageUI
+  href: TaleOfTiles.Card.SingleCardPageUI.html
+  name: SingleCardPageUI
+  nameWithType: SingleCardPageUI
+  fullName: TaleOfTiles.Card.SingleCardPageUI
+- uid: TaleOfTiles.Card.GemEffectAttribute
+  commentId: T:TaleOfTiles.Card.GemEffectAttribute
+  parent: TaleOfTiles.Card
+  href: TaleOfTiles.Card.GemEffectAttribute.html
+  name: GemEffectAttribute
+  nameWithType: GemEffectAttribute
+  fullName: TaleOfTiles.Card.GemEffectAttribute
+- uid: TaleOfTiles.Card.GemEffectUI
+  commentId: T:TaleOfTiles.Card.GemEffectUI
+  href: TaleOfTiles.Card.GemEffectUI.html
+  name: GemEffectUI
+  nameWithType: GemEffectUI
+  fullName: TaleOfTiles.Card.GemEffectUI
+- uid: TaleOfTiles.Card.CardUI
+  commentId: T:TaleOfTiles.Card.CardUI
+  parent: TaleOfTiles.Card
+  href: TaleOfTiles.Card.CardUI.html
+  name: CardUI
+  nameWithType: CardUI
+  fullName: TaleOfTiles.Card.CardUI
+- uid: TaleOfTiles.Card.CardUI.CardBuildEvent
+  commentId: T:TaleOfTiles.Card.CardUI.CardBuildEvent
+  parent: TaleOfTiles.Card
+  href: TaleOfTiles.Card.CardUI.html
+  name: CardUI.CardBuildEvent
+  nameWithType: CardUI.CardBuildEvent
+  fullName: TaleOfTiles.Card.CardUI.CardBuildEvent
+  spec.csharp:
+  - uid: TaleOfTiles.Card.CardUI
+    name: CardUI
+    href: TaleOfTiles.Card.CardUI.html
+  - name: .
+  - uid: TaleOfTiles.Card.CardUI.CardBuildEvent
+    name: CardBuildEvent
+    href: TaleOfTiles.Card.CardUI.CardBuildEvent.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.CardUI
+    name: CardUI
+    href: TaleOfTiles.Card.CardUI.html
+  - name: .
+  - uid: TaleOfTiles.Card.CardUI.CardBuildEvent
+    name: CardBuildEvent
+    href: TaleOfTiles.Card.CardUI.CardBuildEvent.html
+- uid: TaleOfTiles.Card.GemEffectAttributeUI
+  commentId: T:TaleOfTiles.Card.GemEffectAttributeUI
+  href: TaleOfTiles.Card.GemEffectAttributeUI.html
+  name: GemEffectAttributeUI
+  nameWithType: GemEffectAttributeUI
+  fullName: TaleOfTiles.Card.GemEffectAttributeUI
+- uid: TaleOfTiles.Card.CardGemUI
+  commentId: T:TaleOfTiles.Card.CardGemUI
+  href: TaleOfTiles.Card.CardGemUI.html
+  name: CardGemUI
+  nameWithType: CardGemUI
+  fullName: TaleOfTiles.Card.CardGemUI
+- uid: TaleOfTiles.Card.BigCardUI
+  commentId: T:TaleOfTiles.Card.BigCardUI
+  href: TaleOfTiles.Card.BigCardUI.html
+  name: BigCardUI
+  nameWithType: BigCardUI
+  fullName: TaleOfTiles.Card.BigCardUI
+- uid: TaleOfTiles.Card.CardsHolderManager
+  commentId: T:TaleOfTiles.Card.CardsHolderManager
+  parent: TaleOfTiles.Card
+  href: TaleOfTiles.Card.CardsHolderManager.html
+  name: CardsHolderManager
+  nameWithType: CardsHolderManager
+  fullName: TaleOfTiles.Card.CardsHolderManager
+- uid: TaleOfTiles.Card
+  commentId: N:TaleOfTiles.Card
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card
+  nameWithType: TaleOfTiles.Card
+  fullName: TaleOfTiles.Card
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html

@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles
+  commentId: N:TaleOfTiles
+  id: TaleOfTiles
+  children:
+  - TaleOfTiles.MainGameManager
+  - TaleOfTiles.PlayerLevel
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles
+  nameWithType: TaleOfTiles
+  fullName: TaleOfTiles
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.MainGameManager
+  commentId: T:TaleOfTiles.MainGameManager
+  href: TaleOfTiles.MainGameManager.html
+  name: MainGameManager
+  nameWithType: MainGameManager
+  fullName: TaleOfTiles.MainGameManager
+- uid: TaleOfTiles.PlayerLevel
+  commentId: T:TaleOfTiles.PlayerLevel
+  parent: TaleOfTiles
+  href: TaleOfTiles.PlayerLevel.html
+  name: PlayerLevel
+  nameWithType: PlayerLevel
+  fullName: TaleOfTiles.PlayerLevel
+- uid: TaleOfTiles
+  commentId: N:TaleOfTiles
+  href: TaleOfTiles.html
+  name: TaleOfTiles
+  nameWithType: TaleOfTiles
+  fullName: TaleOfTiles

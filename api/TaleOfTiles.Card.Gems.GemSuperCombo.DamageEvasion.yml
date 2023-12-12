@@ -1,0 +1,400 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  id: GemSuperCombo.DamageEvasion
+  parent: TaleOfTiles.Card.Gems
+  children:
+  - TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor
+  - TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor(System.Int32,System.Int32)
+  - TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.GetCount
+  - TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.MakeCopy
+  - TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.combo_count_activation
+  - TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.count_of_attacks_to_evade
+  langs:
+  - csharp
+  - vb
+  name: GemSuperCombo.DamageEvasion
+  nameWithType: GemSuperCombo.DamageEvasion
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  type: Class
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DamageEvasion
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 803
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: >-
+    Represents a 'Damage Evasion' Combo in the Gem Super Combo system. 
+
+    This combo allows the player to evade a certain number of attacks.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class GemSuperCombo.DamageEvasion : ISuperCombo
+    content.vb: >-
+      <Serializable>
+
+      Public Class GemSuperCombo.DamageEvasion Implements ISuperCombo
+  inheritance:
+  - System.Object
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.count_of_attacks_to_evade
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.count_of_attacks_to_evade
+  id: count_of_attacks_to_evade
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  langs:
+  - csharp
+  - vb
+  name: count_of_attacks_to_evade
+  nameWithType: GemSuperCombo.DamageEvasion.count_of_attacks_to_evade
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.count_of_attacks_to_evade
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: count_of_attacks_to_evade
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 810
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The number of attacks that can be evaded with this combo.
+  example: []
+  syntax:
+    content: >-
+      [Range(1, 10)]
+
+      public int count_of_attacks_to_evade
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Range(1, 10)>
+
+      Public count_of_attacks_to_evade As Integer
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 1
+    - type: System.Single
+      value: 10
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.combo_count_activation
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.combo_count_activation
+  id: combo_count_activation
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  langs:
+  - csharp
+  - vb
+  name: combo_count_activation
+  nameWithType: GemSuperCombo.DamageEvasion.combo_count_activation
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.combo_count_activation
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: combo_count_activation
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 816
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The number of combo activations required to trigger the Damage Evasion combo.
+  example: []
+  syntax:
+    content: >-
+      [Range(3, 12)]
+
+      public int combo_count_activation
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Range(3, 12)>
+
+      Public combo_count_activation As Integer
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 3
+    - type: System.Single
+      value: 12
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor
+  id: '#ctor'
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  langs:
+  - csharp
+  - vb
+  name: DamageEvasion()
+  nameWithType: GemSuperCombo.DamageEvasion.DamageEvasion()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.DamageEvasion()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 821
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Default constructor for the Damage Evasion combo.
+  example: []
+  syntax:
+    content: public DamageEvasion()
+    content.vb: Public Sub New()
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor*
+  nameWithType.vb: GemSuperCombo.DamageEvasion.New()
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.New()
+  name.vb: New()
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor(System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  langs:
+  - csharp
+  - vb
+  name: DamageEvasion(int, int)
+  nameWithType: GemSuperCombo.DamageEvasion.DamageEvasion(int, int)
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.DamageEvasion(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 828
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Constructs a Damage Evasion combo with specified parameters.
+  example: []
+  syntax:
+    content: public DamageEvasion(int count_of_attacks_to_evade, int combo_count_activation)
+    parameters:
+    - id: count_of_attacks_to_evade
+      type: System.Int32
+      description: The number of attacks that can be evaded.
+    - id: combo_count_activation
+      type: System.Int32
+      description: Number of activations required for the combo.
+    content.vb: Public Sub New(count_of_attacks_to_evade As Integer, combo_count_activation As Integer)
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor*
+  nameWithType.vb: GemSuperCombo.DamageEvasion.New(Integer, Integer)
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.MakeCopy
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.MakeCopy
+  id: MakeCopy
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  langs:
+  - csharp
+  - vb
+  name: MakeCopy()
+  nameWithType: GemSuperCombo.DamageEvasion.MakeCopy()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.MakeCopy()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MakeCopy
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 838
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Creates a copy of the current Damage Evasion combo.
+  example: []
+  syntax:
+    content: public ISuperCombo MakeCopy()
+    return:
+      type: TaleOfTiles.Card.Gems.ISuperCombo
+      description: A new instance of DamageEvasion with the same settings.
+    content.vb: Public Function MakeCopy() As ISuperCombo
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.MakeCopy*
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.GetCount
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.GetCount
+  id: GetCount
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: GemSuperCombo.DamageEvasion.GetCount()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.GetCount()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetCount
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 847
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Retrieves the count of activations required for the combo.
+  example: []
+  syntax:
+    content: public int GetCount()
+    return:
+      type: System.Int32
+      description: The number of activations needed for the combo.
+    content.vb: Public Function GetCount() As Integer
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.GetCount*
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+references:
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TaleOfTiles.Card.Gems.ISuperCombo
+  commentId: T:TaleOfTiles.Card.Gems.ISuperCombo
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html
+  name: ISuperCombo
+  nameWithType: ISuperCombo
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.#ctor
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.html#TaleOfTiles_Card_Gems_GemSuperCombo_DamageEvasion__ctor
+  name: DamageEvasion
+  nameWithType: GemSuperCombo.DamageEvasion.DamageEvasion
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.DamageEvasion
+  nameWithType.vb: GemSuperCombo.DamageEvasion.New
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.New
+  name.vb: New
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.MakeCopy*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.MakeCopy
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.html#TaleOfTiles_Card_Gems_GemSuperCombo_DamageEvasion_MakeCopy
+  name: MakeCopy
+  nameWithType: GemSuperCombo.DamageEvasion.MakeCopy
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.MakeCopy
+- uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+  commentId: M:TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+  parent: TaleOfTiles.Card.Gems.ISuperCombo
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  name: MakeCopy()
+  nameWithType: ISuperCombo.MakeCopy()
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy()
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+    name: MakeCopy
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+    name: MakeCopy
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.GetCount*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.GetCount
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.html#TaleOfTiles_Card_Gems_GemSuperCombo_DamageEvasion_GetCount
+  name: GetCount
+  nameWithType: GemSuperCombo.DamageEvasion.GetCount
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.GetCount
+- uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+  commentId: M:TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+  parent: TaleOfTiles.Card.Gems.ISuperCombo
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  name: GetCount()
+  nameWithType: ISuperCombo.GetCount()
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo.GetCount()
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+    name: GetCount
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+    name: GetCount
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  - name: (
+  - name: )

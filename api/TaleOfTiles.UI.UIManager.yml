@@ -1,0 +1,1707 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.UI.UIManager
+  commentId: T:TaleOfTiles.UI.UIManager
+  id: UIManager
+  parent: TaleOfTiles.UI
+  children:
+  - TaleOfTiles.UI.UIManager.BuildAllSingleCards
+  - TaleOfTiles.UI.UIManager.BuildDeck
+  - TaleOfTiles.UI.UIManager.DisableCanvasGroup(UnityEngine.CanvasGroup)
+  - TaleOfTiles.UI.UIManager.DisableLoadingScreen
+  - TaleOfTiles.UI.UIManager.DisableLoadingScreenCoroutine
+  - TaleOfTiles.UI.UIManager.EnableCanvasGroup(UnityEngine.CanvasGroup)
+  - TaleOfTiles.UI.UIManager.HideCard
+  - TaleOfTiles.UI.UIManager.HideDeckPanel
+  - TaleOfTiles.UI.UIManager.HideDefeatScreen
+  - TaleOfTiles.UI.UIManager.HideInventory
+  - TaleOfTiles.UI.UIManager.HideVictoryScreen
+  - TaleOfTiles.UI.UIManager.Prepare
+  - TaleOfTiles.UI.UIManager.PrepareForBattleArena
+  - TaleOfTiles.UI.UIManager.SetLevelBackgroundImage(UnityEngine.Sprite)
+  - TaleOfTiles.UI.UIManager.SetLoadingScreenBackgroundImage(UnityEngine.Sprite)
+  - TaleOfTiles.UI.UIManager.ShowCard(System.String)
+  - TaleOfTiles.UI.UIManager.ShowDeckPanel
+  - TaleOfTiles.UI.UIManager.ShowDefeatScreen
+  - TaleOfTiles.UI.UIManager.ShowInventory
+  - TaleOfTiles.UI.UIManager.ShowLoadingScreen
+  - TaleOfTiles.UI.UIManager.ShowLoadingScreenCoroutine
+  - TaleOfTiles.UI.UIManager.ShowMessage(System.String,UnityEngine.Color,System.Single)
+  - TaleOfTiles.UI.UIManager.ShowVictoryScreen
+  - TaleOfTiles.UI.UIManager.bubble_text_prefab
+  - TaleOfTiles.UI.UIManager.bubble_text_spawn_point
+  - TaleOfTiles.UI.UIManager.common_canvas
+  - TaleOfTiles.UI.UIManager.deck_canvas
+  - TaleOfTiles.UI.UIManager.defeat_screen_canvas
+  - TaleOfTiles.UI.UIManager.inventory_canvas
+  - TaleOfTiles.UI.UIManager.level_background_image
+  - TaleOfTiles.UI.UIManager.loading_screen
+  - TaleOfTiles.UI.UIManager.single_card_canvas
+  - TaleOfTiles.UI.UIManager.ui_deck_card_prefab
+  - TaleOfTiles.UI.UIManager.ui_single_card_prefab
+  - TaleOfTiles.UI.UIManager.victory_screen_canvas
+  langs:
+  - csharp
+  - vb
+  name: UIManager
+  nameWithType: UIManager
+  fullName: TaleOfTiles.UI.UIManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: UIManager
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The UIManager class is a singleton that manages the UI of the game.
+  example: []
+  syntax:
+    content: 'public class UIManager : Singleton<UIManager>'
+    content.vb: Public Class UIManager Inherits Singleton(Of UIManager)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - TaleOfTiles.Misc.SingletonBase
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}
+  inheritedMembers:
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.m_instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Awake
+  - TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: TaleOfTiles.UI.UIManager.deck_canvas
+  commentId: F:TaleOfTiles.UI.UIManager.deck_canvas
+  id: deck_canvas
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: deck_canvas
+  nameWithType: UIManager.deck_canvas
+  fullName: TaleOfTiles.UI.UIManager.deck_canvas
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: deck_canvas
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: >-
+      [Header("Canvases")]
+
+      public RectTransform deck_canvas
+    return:
+      type: UnityEngine.RectTransform
+      description: Gets or sets the RectTransform of the deck canvas.
+    content.vb: >-
+      <Header("Canvases")>
+
+      Public deck_canvas As RectTransform
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Canvases
+- uid: TaleOfTiles.UI.UIManager.common_canvas
+  commentId: F:TaleOfTiles.UI.UIManager.common_canvas
+  id: common_canvas
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: common_canvas
+  nameWithType: UIManager.common_canvas
+  fullName: TaleOfTiles.UI.UIManager.common_canvas
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: common_canvas
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: public RectTransform common_canvas
+    return:
+      type: UnityEngine.RectTransform
+      description: Gets or sets the RectTransform of the common canvas.
+    content.vb: Public common_canvas As RectTransform
+- uid: TaleOfTiles.UI.UIManager.single_card_canvas
+  commentId: F:TaleOfTiles.UI.UIManager.single_card_canvas
+  id: single_card_canvas
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: single_card_canvas
+  nameWithType: UIManager.single_card_canvas
+  fullName: TaleOfTiles.UI.UIManager.single_card_canvas
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: single_card_canvas
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: public RectTransform single_card_canvas
+    return:
+      type: UnityEngine.RectTransform
+      description: Gets or sets the RectTransform of the single card canvas.
+    content.vb: Public single_card_canvas As RectTransform
+- uid: TaleOfTiles.UI.UIManager.inventory_canvas
+  commentId: F:TaleOfTiles.UI.UIManager.inventory_canvas
+  id: inventory_canvas
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: inventory_canvas
+  nameWithType: UIManager.inventory_canvas
+  fullName: TaleOfTiles.UI.UIManager.inventory_canvas
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: inventory_canvas
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: public RectTransform inventory_canvas
+    return:
+      type: UnityEngine.RectTransform
+      description: Gets or sets the RectTransform of the inventory canvas.
+    content.vb: Public inventory_canvas As RectTransform
+- uid: TaleOfTiles.UI.UIManager.victory_screen_canvas
+  commentId: F:TaleOfTiles.UI.UIManager.victory_screen_canvas
+  id: victory_screen_canvas
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: victory_screen_canvas
+  nameWithType: UIManager.victory_screen_canvas
+  fullName: TaleOfTiles.UI.UIManager.victory_screen_canvas
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: victory_screen_canvas
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: public RectTransform victory_screen_canvas
+    return:
+      type: UnityEngine.RectTransform
+      description: Gets or sets the RectTransform of the victory screen canvas.
+    content.vb: Public victory_screen_canvas As RectTransform
+- uid: TaleOfTiles.UI.UIManager.defeat_screen_canvas
+  commentId: F:TaleOfTiles.UI.UIManager.defeat_screen_canvas
+  id: defeat_screen_canvas
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: defeat_screen_canvas
+  nameWithType: UIManager.defeat_screen_canvas
+  fullName: TaleOfTiles.UI.UIManager.defeat_screen_canvas
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: defeat_screen_canvas
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: public RectTransform defeat_screen_canvas
+    return:
+      type: UnityEngine.RectTransform
+      description: Gets or sets the RectTransform of the defeat screen canvas.
+    content.vb: Public defeat_screen_canvas As RectTransform
+- uid: TaleOfTiles.UI.UIManager.loading_screen
+  commentId: F:TaleOfTiles.UI.UIManager.loading_screen
+  id: loading_screen
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: loading_screen
+  nameWithType: UIManager.loading_screen
+  fullName: TaleOfTiles.UI.UIManager.loading_screen
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: loading_screen
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: public RectTransform loading_screen
+    return:
+      type: UnityEngine.RectTransform
+      description: Gets or sets the RectTransform of the loading screen.
+    content.vb: Public loading_screen As RectTransform
+- uid: TaleOfTiles.UI.UIManager.ui_single_card_prefab
+  commentId: F:TaleOfTiles.UI.UIManager.ui_single_card_prefab
+  id: ui_single_card_prefab
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ui_single_card_prefab
+  nameWithType: UIManager.ui_single_card_prefab
+  fullName: TaleOfTiles.UI.UIManager.ui_single_card_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ui_single_card_prefab
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: >-
+      [Header("Prefabs")]
+
+      public GameObject ui_single_card_prefab
+    return:
+      type: UnityEngine.GameObject
+      description: Gets or sets the GameObject of the UI single card prefab.
+    content.vb: >-
+      <Header("Prefabs")>
+
+      Public ui_single_card_prefab As GameObject
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Prefabs
+- uid: TaleOfTiles.UI.UIManager.ui_deck_card_prefab
+  commentId: F:TaleOfTiles.UI.UIManager.ui_deck_card_prefab
+  id: ui_deck_card_prefab
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ui_deck_card_prefab
+  nameWithType: UIManager.ui_deck_card_prefab
+  fullName: TaleOfTiles.UI.UIManager.ui_deck_card_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ui_deck_card_prefab
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: public GameObject ui_deck_card_prefab
+    return:
+      type: UnityEngine.GameObject
+      description: Gets or sets the GameObject of the UI deck card prefab.
+    content.vb: Public ui_deck_card_prefab As GameObject
+- uid: TaleOfTiles.UI.UIManager.bubble_text_prefab
+  commentId: F:TaleOfTiles.UI.UIManager.bubble_text_prefab
+  id: bubble_text_prefab
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: bubble_text_prefab
+  nameWithType: UIManager.bubble_text_prefab
+  fullName: TaleOfTiles.UI.UIManager.bubble_text_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: bubble_text_prefab
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: public GameObject bubble_text_prefab
+    return:
+      type: UnityEngine.GameObject
+      description: Gets or sets the GameObject of the bubble text prefab.
+    content.vb: Public bubble_text_prefab As GameObject
+- uid: TaleOfTiles.UI.UIManager.bubble_text_spawn_point
+  commentId: F:TaleOfTiles.UI.UIManager.bubble_text_spawn_point
+  id: bubble_text_spawn_point
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: bubble_text_spawn_point
+  nameWithType: UIManager.bubble_text_spawn_point
+  fullName: TaleOfTiles.UI.UIManager.bubble_text_spawn_point
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: bubble_text_spawn_point
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: public RectTransform bubble_text_spawn_point
+    return:
+      type: UnityEngine.RectTransform
+      description: Gets or sets the RectTransform of the bubble text spawn point.
+    content.vb: Public bubble_text_spawn_point As RectTransform
+- uid: TaleOfTiles.UI.UIManager.level_background_image
+  commentId: F:TaleOfTiles.UI.UIManager.level_background_image
+  id: level_background_image
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: level_background_image
+  nameWithType: UIManager.level_background_image
+  fullName: TaleOfTiles.UI.UIManager.level_background_image
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: level_background_image
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  example: []
+  syntax:
+    content: private Image level_background_image
+    return:
+      type: UnityEngine.UI.Image
+      description: Gets or sets the Image of the level background.
+    content.vb: Private level_background_image As Image
+- uid: TaleOfTiles.UI.UIManager.Prepare
+  commentId: M:TaleOfTiles.UI.UIManager.Prepare
+  id: Prepare
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: Prepare()
+  nameWithType: UIManager.Prepare()
+  fullName: TaleOfTiles.UI.UIManager.Prepare()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Prepare
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Prepares the UIManager.
+  example: []
+  syntax:
+    content: public override IEnumerator Prepare()
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine sequencing.
+    content.vb: Public Overrides Function Prepare() As IEnumerator
+  overridden: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Prepare
+  overload: TaleOfTiles.UI.UIManager.Prepare*
+- uid: TaleOfTiles.UI.UIManager.PrepareForBattleArena
+  commentId: M:TaleOfTiles.UI.UIManager.PrepareForBattleArena
+  id: PrepareForBattleArena
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: PrepareForBattleArena()
+  nameWithType: UIManager.PrepareForBattleArena()
+  fullName: TaleOfTiles.UI.UIManager.PrepareForBattleArena()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: PrepareForBattleArena
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Prepares the UIManager for the Battle Arena.
+  example: []
+  syntax:
+    content: public IEnumerator PrepareForBattleArena()
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine sequencing.
+    content.vb: Public Function PrepareForBattleArena() As IEnumerator
+  overload: TaleOfTiles.UI.UIManager.PrepareForBattleArena*
+- uid: TaleOfTiles.UI.UIManager.ShowDeckPanel
+  commentId: M:TaleOfTiles.UI.UIManager.ShowDeckPanel
+  id: ShowDeckPanel
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ShowDeckPanel()
+  nameWithType: UIManager.ShowDeckPanel()
+  fullName: TaleOfTiles.UI.UIManager.ShowDeckPanel()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowDeckPanel
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 135
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Shows the deck panel.
+  example: []
+  syntax:
+    content: public void ShowDeckPanel()
+    content.vb: Public Sub ShowDeckPanel()
+  overload: TaleOfTiles.UI.UIManager.ShowDeckPanel*
+- uid: TaleOfTiles.UI.UIManager.HideDeckPanel
+  commentId: M:TaleOfTiles.UI.UIManager.HideDeckPanel
+  id: HideDeckPanel
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: HideDeckPanel()
+  nameWithType: UIManager.HideDeckPanel()
+  fullName: TaleOfTiles.UI.UIManager.HideDeckPanel()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HideDeckPanel
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 145
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Hides the deck panel.
+  example: []
+  syntax:
+    content: public void HideDeckPanel()
+    content.vb: Public Sub HideDeckPanel()
+  overload: TaleOfTiles.UI.UIManager.HideDeckPanel*
+- uid: TaleOfTiles.UI.UIManager.EnableCanvasGroup(UnityEngine.CanvasGroup)
+  commentId: M:TaleOfTiles.UI.UIManager.EnableCanvasGroup(UnityEngine.CanvasGroup)
+  id: EnableCanvasGroup(UnityEngine.CanvasGroup)
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: EnableCanvasGroup(CanvasGroup)
+  nameWithType: UIManager.EnableCanvasGroup(CanvasGroup)
+  fullName: TaleOfTiles.UI.UIManager.EnableCanvasGroup(UnityEngine.CanvasGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EnableCanvasGroup
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 155
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Enables a CanvasGroup.
+  example: []
+  syntax:
+    content: public void EnableCanvasGroup(CanvasGroup canvas_group)
+    parameters:
+    - id: canvas_group
+      type: UnityEngine.CanvasGroup
+      description: The CanvasGroup to be enabled.
+    content.vb: Public Sub EnableCanvasGroup(canvas_group As CanvasGroup)
+  overload: TaleOfTiles.UI.UIManager.EnableCanvasGroup*
+- uid: TaleOfTiles.UI.UIManager.DisableCanvasGroup(UnityEngine.CanvasGroup)
+  commentId: M:TaleOfTiles.UI.UIManager.DisableCanvasGroup(UnityEngine.CanvasGroup)
+  id: DisableCanvasGroup(UnityEngine.CanvasGroup)
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: DisableCanvasGroup(CanvasGroup)
+  nameWithType: UIManager.DisableCanvasGroup(CanvasGroup)
+  fullName: TaleOfTiles.UI.UIManager.DisableCanvasGroup(UnityEngine.CanvasGroup)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DisableCanvasGroup
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 166
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Disables a CanvasGroup.
+  example: []
+  syntax:
+    content: public void DisableCanvasGroup(CanvasGroup canvas_group)
+    parameters:
+    - id: canvas_group
+      type: UnityEngine.CanvasGroup
+      description: The CanvasGroup to be disabled.
+    content.vb: Public Sub DisableCanvasGroup(canvas_group As CanvasGroup)
+  overload: TaleOfTiles.UI.UIManager.DisableCanvasGroup*
+- uid: TaleOfTiles.UI.UIManager.HideCard
+  commentId: M:TaleOfTiles.UI.UIManager.HideCard
+  id: HideCard
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: HideCard()
+  nameWithType: UIManager.HideCard()
+  fullName: TaleOfTiles.UI.UIManager.HideCard()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HideCard
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 176
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Hides a card.
+  example: []
+  syntax:
+    content: public void HideCard()
+    content.vb: Public Sub HideCard()
+  overload: TaleOfTiles.UI.UIManager.HideCard*
+- uid: TaleOfTiles.UI.UIManager.BuildAllSingleCards
+  commentId: M:TaleOfTiles.UI.UIManager.BuildAllSingleCards
+  id: BuildAllSingleCards
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: BuildAllSingleCards()
+  nameWithType: UIManager.BuildAllSingleCards()
+  fullName: TaleOfTiles.UI.UIManager.BuildAllSingleCards()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BuildAllSingleCards
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 185
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Builds all single cards.
+  example: []
+  syntax:
+    content: public void BuildAllSingleCards()
+    content.vb: Public Sub BuildAllSingleCards()
+  overload: TaleOfTiles.UI.UIManager.BuildAllSingleCards*
+- uid: TaleOfTiles.UI.UIManager.ShowCard(System.String)
+  commentId: M:TaleOfTiles.UI.UIManager.ShowCard(System.String)
+  id: ShowCard(System.String)
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ShowCard(string)
+  nameWithType: UIManager.ShowCard(string)
+  fullName: TaleOfTiles.UI.UIManager.ShowCard(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowCard
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 194
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Shows a card by its ID.
+  example: []
+  syntax:
+    content: public void ShowCard(string ID)
+    parameters:
+    - id: ID
+      type: System.String
+      description: The ID of the card to be shown.
+    content.vb: Public Sub ShowCard(ID As String)
+  overload: TaleOfTiles.UI.UIManager.ShowCard*
+  nameWithType.vb: UIManager.ShowCard(String)
+  fullName.vb: TaleOfTiles.UI.UIManager.ShowCard(String)
+  name.vb: ShowCard(String)
+- uid: TaleOfTiles.UI.UIManager.BuildDeck
+  commentId: M:TaleOfTiles.UI.UIManager.BuildDeck
+  id: BuildDeck
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: BuildDeck()
+  nameWithType: UIManager.BuildDeck()
+  fullName: TaleOfTiles.UI.UIManager.BuildDeck()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BuildDeck
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 205
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Builds the deck.
+  example: []
+  syntax:
+    content: public void BuildDeck()
+    content.vb: Public Sub BuildDeck()
+  overload: TaleOfTiles.UI.UIManager.BuildDeck*
+- uid: TaleOfTiles.UI.UIManager.ShowMessage(System.String,UnityEngine.Color,System.Single)
+  commentId: M:TaleOfTiles.UI.UIManager.ShowMessage(System.String,UnityEngine.Color,System.Single)
+  id: ShowMessage(System.String,UnityEngine.Color,System.Single)
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ShowMessage(string, Color, float)
+  nameWithType: UIManager.ShowMessage(string, Color, float)
+  fullName: TaleOfTiles.UI.UIManager.ShowMessage(string, UnityEngine.Color, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowMessage
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 216
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Shows a message with a bubble text effect.
+  example: []
+  syntax:
+    content: public void ShowMessage(string message, Color color, float size = 1.5)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to be shown.
+    - id: color
+      type: UnityEngine.Color
+      description: The color of the text.
+    - id: size
+      type: System.Single
+      description: The size of the text.
+    content.vb: Public Sub ShowMessage(message As String, color As Color, size As Single = 1.5)
+  overload: TaleOfTiles.UI.UIManager.ShowMessage*
+  nameWithType.vb: UIManager.ShowMessage(String, Color, Single)
+  fullName.vb: TaleOfTiles.UI.UIManager.ShowMessage(String, UnityEngine.Color, Single)
+  name.vb: ShowMessage(String, Color, Single)
+- uid: TaleOfTiles.UI.UIManager.ShowInventory
+  commentId: M:TaleOfTiles.UI.UIManager.ShowInventory
+  id: ShowInventory
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ShowInventory()
+  nameWithType: UIManager.ShowInventory()
+  fullName: TaleOfTiles.UI.UIManager.ShowInventory()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowInventory
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 240
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Shows the inventory.
+  example: []
+  syntax:
+    content: public void ShowInventory()
+    content.vb: Public Sub ShowInventory()
+  overload: TaleOfTiles.UI.UIManager.ShowInventory*
+- uid: TaleOfTiles.UI.UIManager.HideInventory
+  commentId: M:TaleOfTiles.UI.UIManager.HideInventory
+  id: HideInventory
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: HideInventory()
+  nameWithType: UIManager.HideInventory()
+  fullName: TaleOfTiles.UI.UIManager.HideInventory()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HideInventory
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 249
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Hides the inventory.
+  example: []
+  syntax:
+    content: public void HideInventory()
+    content.vb: Public Sub HideInventory()
+  overload: TaleOfTiles.UI.UIManager.HideInventory*
+- uid: TaleOfTiles.UI.UIManager.ShowVictoryScreen
+  commentId: M:TaleOfTiles.UI.UIManager.ShowVictoryScreen
+  id: ShowVictoryScreen
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ShowVictoryScreen()
+  nameWithType: UIManager.ShowVictoryScreen()
+  fullName: TaleOfTiles.UI.UIManager.ShowVictoryScreen()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowVictoryScreen
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 257
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Shows the victory screen.
+  example: []
+  syntax:
+    content: public void ShowVictoryScreen()
+    content.vb: Public Sub ShowVictoryScreen()
+  overload: TaleOfTiles.UI.UIManager.ShowVictoryScreen*
+- uid: TaleOfTiles.UI.UIManager.ShowDefeatScreen
+  commentId: M:TaleOfTiles.UI.UIManager.ShowDefeatScreen
+  id: ShowDefeatScreen
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ShowDefeatScreen()
+  nameWithType: UIManager.ShowDefeatScreen()
+  fullName: TaleOfTiles.UI.UIManager.ShowDefeatScreen()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowDefeatScreen
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 267
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Shows the defeat screen.
+  example: []
+  syntax:
+    content: public void ShowDefeatScreen()
+    content.vb: Public Sub ShowDefeatScreen()
+  overload: TaleOfTiles.UI.UIManager.ShowDefeatScreen*
+- uid: TaleOfTiles.UI.UIManager.HideDefeatScreen
+  commentId: M:TaleOfTiles.UI.UIManager.HideDefeatScreen
+  id: HideDefeatScreen
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: HideDefeatScreen()
+  nameWithType: UIManager.HideDefeatScreen()
+  fullName: TaleOfTiles.UI.UIManager.HideDefeatScreen()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HideDefeatScreen
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 277
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Hides the defeat screen.
+  example: []
+  syntax:
+    content: public void HideDefeatScreen()
+    content.vb: Public Sub HideDefeatScreen()
+  overload: TaleOfTiles.UI.UIManager.HideDefeatScreen*
+- uid: TaleOfTiles.UI.UIManager.HideVictoryScreen
+  commentId: M:TaleOfTiles.UI.UIManager.HideVictoryScreen
+  id: HideVictoryScreen
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: HideVictoryScreen()
+  nameWithType: UIManager.HideVictoryScreen()
+  fullName: TaleOfTiles.UI.UIManager.HideVictoryScreen()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HideVictoryScreen
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 285
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Hides the victory screen.
+  example: []
+  syntax:
+    content: public void HideVictoryScreen()
+    content.vb: Public Sub HideVictoryScreen()
+  overload: TaleOfTiles.UI.UIManager.HideVictoryScreen*
+- uid: TaleOfTiles.UI.UIManager.ShowLoadingScreen
+  commentId: M:TaleOfTiles.UI.UIManager.ShowLoadingScreen
+  id: ShowLoadingScreen
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ShowLoadingScreen()
+  nameWithType: UIManager.ShowLoadingScreen()
+  fullName: TaleOfTiles.UI.UIManager.ShowLoadingScreen()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowLoadingScreen
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 293
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Shows the loading screen.
+  example: []
+  syntax:
+    content: >-
+      [ContextMenu("Show Loading Screen")]
+
+      public void ShowLoadingScreen()
+    content.vb: >-
+      <ContextMenu("Show Loading Screen")>
+
+      Public Sub ShowLoadingScreen()
+  overload: TaleOfTiles.UI.UIManager.ShowLoadingScreen*
+  attributes:
+  - type: UnityEngine.ContextMenu
+    ctor: UnityEngine.ContextMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Show Loading Screen
+- uid: TaleOfTiles.UI.UIManager.ShowLoadingScreenCoroutine
+  commentId: M:TaleOfTiles.UI.UIManager.ShowLoadingScreenCoroutine
+  id: ShowLoadingScreenCoroutine
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: ShowLoadingScreenCoroutine()
+  nameWithType: UIManager.ShowLoadingScreenCoroutine()
+  fullName: TaleOfTiles.UI.UIManager.ShowLoadingScreenCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowLoadingScreenCoroutine
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 303
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: A coroutine to show the loading screen.
+  example: []
+  syntax:
+    content: public IEnumerator ShowLoadingScreenCoroutine()
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine sequencing.
+    content.vb: Public Function ShowLoadingScreenCoroutine() As IEnumerator
+  overload: TaleOfTiles.UI.UIManager.ShowLoadingScreenCoroutine*
+- uid: TaleOfTiles.UI.UIManager.DisableLoadingScreen
+  commentId: M:TaleOfTiles.UI.UIManager.DisableLoadingScreen
+  id: DisableLoadingScreen
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: DisableLoadingScreen()
+  nameWithType: UIManager.DisableLoadingScreen()
+  fullName: TaleOfTiles.UI.UIManager.DisableLoadingScreen()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DisableLoadingScreen
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 319
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Disables the loading screen.
+  example: []
+  syntax:
+    content: >-
+      [ContextMenu("Hide Loading Screen")]
+
+      public void DisableLoadingScreen()
+    content.vb: >-
+      <ContextMenu("Hide Loading Screen")>
+
+      Public Sub DisableLoadingScreen()
+  overload: TaleOfTiles.UI.UIManager.DisableLoadingScreen*
+  attributes:
+  - type: UnityEngine.ContextMenu
+    ctor: UnityEngine.ContextMenu.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Hide Loading Screen
+- uid: TaleOfTiles.UI.UIManager.DisableLoadingScreenCoroutine
+  commentId: M:TaleOfTiles.UI.UIManager.DisableLoadingScreenCoroutine
+  id: DisableLoadingScreenCoroutine
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: DisableLoadingScreenCoroutine()
+  nameWithType: UIManager.DisableLoadingScreenCoroutine()
+  fullName: TaleOfTiles.UI.UIManager.DisableLoadingScreenCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DisableLoadingScreenCoroutine
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 329
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: A coroutine to disable the loading screen.
+  example: []
+  syntax:
+    content: private IEnumerator DisableLoadingScreenCoroutine()
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine sequencing.
+    content.vb: Private Function DisableLoadingScreenCoroutine() As IEnumerator
+  overload: TaleOfTiles.UI.UIManager.DisableLoadingScreenCoroutine*
+- uid: TaleOfTiles.UI.UIManager.SetLevelBackgroundImage(UnityEngine.Sprite)
+  commentId: M:TaleOfTiles.UI.UIManager.SetLevelBackgroundImage(UnityEngine.Sprite)
+  id: SetLevelBackgroundImage(UnityEngine.Sprite)
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: SetLevelBackgroundImage(Sprite)
+  nameWithType: UIManager.SetLevelBackgroundImage(Sprite)
+  fullName: TaleOfTiles.UI.UIManager.SetLevelBackgroundImage(UnityEngine.Sprite)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetLevelBackgroundImage
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 343
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Sets the background image of the level.
+  example: []
+  syntax:
+    content: public void SetLevelBackgroundImage(Sprite image)
+    parameters:
+    - id: image
+      type: UnityEngine.Sprite
+      description: The Sprite to set as the background image.
+    content.vb: Public Sub SetLevelBackgroundImage(image As Sprite)
+  overload: TaleOfTiles.UI.UIManager.SetLevelBackgroundImage*
+- uid: TaleOfTiles.UI.UIManager.SetLoadingScreenBackgroundImage(UnityEngine.Sprite)
+  commentId: M:TaleOfTiles.UI.UIManager.SetLoadingScreenBackgroundImage(UnityEngine.Sprite)
+  id: SetLoadingScreenBackgroundImage(UnityEngine.Sprite)
+  parent: TaleOfTiles.UI.UIManager
+  langs:
+  - csharp
+  - vb
+  name: SetLoadingScreenBackgroundImage(Sprite)
+  nameWithType: UIManager.SetLoadingScreenBackgroundImage(Sprite)
+  fullName: TaleOfTiles.UI.UIManager.SetLoadingScreenBackgroundImage(UnityEngine.Sprite)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/UIManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetLoadingScreenBackgroundImage
+    path: ../Assets/Scripts/Managers/UIManager.cs
+    startLine: 352
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Sets the background image of the loading screen.
+  example: []
+  syntax:
+    content: public void SetLoadingScreenBackgroundImage(Sprite image)
+    parameters:
+    - id: image
+      type: UnityEngine.Sprite
+      description: The Sprite to set as the background image.
+    content.vb: Public Sub SetLoadingScreenBackgroundImage(image As Sprite)
+  overload: TaleOfTiles.UI.UIManager.SetLoadingScreenBackgroundImage*
+references:
+- uid: TaleOfTiles.UI
+  commentId: N:TaleOfTiles.UI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.UI
+  nameWithType: TaleOfTiles.UI
+  fullName: TaleOfTiles.UI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Misc.SingletonBase
+  commentId: T:TaleOfTiles.Misc.SingletonBase
+  parent: TaleOfTiles.Misc
+  href: TaleOfTiles.Misc.SingletonBase.html
+  name: SingletonBase
+  nameWithType: SingletonBase
+  fullName: TaleOfTiles.Misc.SingletonBase
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}
+  commentId: T:TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}
+  parent: TaleOfTiles.Misc
+  definition: TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<UIManager>
+  nameWithType: Singleton<UIManager>
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.UI.UIManager>
+  nameWithType.vb: Singleton(Of UIManager)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.UI.UIManager)
+  name.vb: Singleton(Of UIManager)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - uid: TaleOfTiles.UI.UIManager
+    name: UIManager
+    href: TaleOfTiles.UI.UIManager.html
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.UI.UIManager
+    name: UIManager
+    href: TaleOfTiles.UI.UIManager.html
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.m_instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}
+  definition: TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<UIManager>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.UI.UIManager>.m_instance
+  nameWithType.vb: Singleton(Of UIManager).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.UI.UIManager).m_instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<UIManager>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.UI.UIManager>.Instance
+  nameWithType.vb: Singleton(Of UIManager).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.UI.UIManager).Instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Awake
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<UIManager>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.UI.UIManager>.Awake()
+  nameWithType.vb: Singleton(Of UIManager).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.UI.UIManager).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.SingletonBase.AllSingletons
+  commentId: F:TaleOfTiles.Misc.SingletonBase.AllSingletons
+  parent: TaleOfTiles.Misc.SingletonBase
+  href: TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons
+  name: AllSingletons
+  nameWithType: SingletonBase.AllSingletons
+  fullName: TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Misc
+  commentId: N:TaleOfTiles.Misc
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Misc
+  nameWithType: TaleOfTiles.Misc
+  fullName: TaleOfTiles.Misc
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+- uid: TaleOfTiles.Misc.Singleton`1
+  commentId: T:TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: TaleOfTiles.Misc.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton`1.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<T>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.m_instance
+  nameWithType.vb: Singleton(Of T).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).m_instance
+- uid: TaleOfTiles.Misc.Singleton`1.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Instance
+- uid: TaleOfTiles.Misc.Singleton`1.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Prepare
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}
+  definition: TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<UIManager>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.UI.UIManager>.Prepare()
+  nameWithType.vb: Singleton(Of UIManager).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.UI.UIManager).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.UI.UIManager}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: TaleOfTiles.UI.UIManager.Prepare*
+  commentId: Overload:TaleOfTiles.UI.UIManager.Prepare
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_Prepare
+  name: Prepare
+  nameWithType: UIManager.Prepare
+  fullName: TaleOfTiles.UI.UIManager.Prepare
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: TaleOfTiles.Misc.Singleton`1.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<T>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Prepare()
+  nameWithType.vb: Singleton(Of T).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TaleOfTiles.UI.UIManager.PrepareForBattleArena*
+  commentId: Overload:TaleOfTiles.UI.UIManager.PrepareForBattleArena
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_PrepareForBattleArena
+  name: PrepareForBattleArena
+  nameWithType: UIManager.PrepareForBattleArena
+  fullName: TaleOfTiles.UI.UIManager.PrepareForBattleArena
+- uid: TaleOfTiles.UI.UIManager.ShowDeckPanel*
+  commentId: Overload:TaleOfTiles.UI.UIManager.ShowDeckPanel
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_ShowDeckPanel
+  name: ShowDeckPanel
+  nameWithType: UIManager.ShowDeckPanel
+  fullName: TaleOfTiles.UI.UIManager.ShowDeckPanel
+- uid: TaleOfTiles.UI.UIManager.HideDeckPanel*
+  commentId: Overload:TaleOfTiles.UI.UIManager.HideDeckPanel
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_HideDeckPanel
+  name: HideDeckPanel
+  nameWithType: UIManager.HideDeckPanel
+  fullName: TaleOfTiles.UI.UIManager.HideDeckPanel
+- uid: TaleOfTiles.UI.UIManager.EnableCanvasGroup*
+  commentId: Overload:TaleOfTiles.UI.UIManager.EnableCanvasGroup
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_EnableCanvasGroup_UnityEngine_CanvasGroup_
+  name: EnableCanvasGroup
+  nameWithType: UIManager.EnableCanvasGroup
+  fullName: TaleOfTiles.UI.UIManager.EnableCanvasGroup
+- uid: UnityEngine.CanvasGroup
+  commentId: T:UnityEngine.CanvasGroup
+  parent: UnityEngine
+  isExternal: true
+  name: CanvasGroup
+  nameWithType: CanvasGroup
+  fullName: UnityEngine.CanvasGroup
+- uid: TaleOfTiles.UI.UIManager.DisableCanvasGroup*
+  commentId: Overload:TaleOfTiles.UI.UIManager.DisableCanvasGroup
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_DisableCanvasGroup_UnityEngine_CanvasGroup_
+  name: DisableCanvasGroup
+  nameWithType: UIManager.DisableCanvasGroup
+  fullName: TaleOfTiles.UI.UIManager.DisableCanvasGroup
+- uid: TaleOfTiles.UI.UIManager.HideCard*
+  commentId: Overload:TaleOfTiles.UI.UIManager.HideCard
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_HideCard
+  name: HideCard
+  nameWithType: UIManager.HideCard
+  fullName: TaleOfTiles.UI.UIManager.HideCard
+- uid: TaleOfTiles.UI.UIManager.BuildAllSingleCards*
+  commentId: Overload:TaleOfTiles.UI.UIManager.BuildAllSingleCards
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_BuildAllSingleCards
+  name: BuildAllSingleCards
+  nameWithType: UIManager.BuildAllSingleCards
+  fullName: TaleOfTiles.UI.UIManager.BuildAllSingleCards
+- uid: TaleOfTiles.UI.UIManager.ShowCard*
+  commentId: Overload:TaleOfTiles.UI.UIManager.ShowCard
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_ShowCard_System_String_
+  name: ShowCard
+  nameWithType: UIManager.ShowCard
+  fullName: TaleOfTiles.UI.UIManager.ShowCard
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TaleOfTiles.UI.UIManager.BuildDeck*
+  commentId: Overload:TaleOfTiles.UI.UIManager.BuildDeck
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_BuildDeck
+  name: BuildDeck
+  nameWithType: UIManager.BuildDeck
+  fullName: TaleOfTiles.UI.UIManager.BuildDeck
+- uid: TaleOfTiles.UI.UIManager.ShowMessage*
+  commentId: Overload:TaleOfTiles.UI.UIManager.ShowMessage
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_ShowMessage_System_String_UnityEngine_Color_System_Single_
+  name: ShowMessage
+  nameWithType: UIManager.ShowMessage
+  fullName: TaleOfTiles.UI.UIManager.ShowMessage
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TaleOfTiles.UI.UIManager.ShowInventory*
+  commentId: Overload:TaleOfTiles.UI.UIManager.ShowInventory
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_ShowInventory
+  name: ShowInventory
+  nameWithType: UIManager.ShowInventory
+  fullName: TaleOfTiles.UI.UIManager.ShowInventory
+- uid: TaleOfTiles.UI.UIManager.HideInventory*
+  commentId: Overload:TaleOfTiles.UI.UIManager.HideInventory
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_HideInventory
+  name: HideInventory
+  nameWithType: UIManager.HideInventory
+  fullName: TaleOfTiles.UI.UIManager.HideInventory
+- uid: TaleOfTiles.UI.UIManager.ShowVictoryScreen*
+  commentId: Overload:TaleOfTiles.UI.UIManager.ShowVictoryScreen
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_ShowVictoryScreen
+  name: ShowVictoryScreen
+  nameWithType: UIManager.ShowVictoryScreen
+  fullName: TaleOfTiles.UI.UIManager.ShowVictoryScreen
+- uid: TaleOfTiles.UI.UIManager.ShowDefeatScreen*
+  commentId: Overload:TaleOfTiles.UI.UIManager.ShowDefeatScreen
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_ShowDefeatScreen
+  name: ShowDefeatScreen
+  nameWithType: UIManager.ShowDefeatScreen
+  fullName: TaleOfTiles.UI.UIManager.ShowDefeatScreen
+- uid: TaleOfTiles.UI.UIManager.HideDefeatScreen*
+  commentId: Overload:TaleOfTiles.UI.UIManager.HideDefeatScreen
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_HideDefeatScreen
+  name: HideDefeatScreen
+  nameWithType: UIManager.HideDefeatScreen
+  fullName: TaleOfTiles.UI.UIManager.HideDefeatScreen
+- uid: TaleOfTiles.UI.UIManager.HideVictoryScreen*
+  commentId: Overload:TaleOfTiles.UI.UIManager.HideVictoryScreen
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_HideVictoryScreen
+  name: HideVictoryScreen
+  nameWithType: UIManager.HideVictoryScreen
+  fullName: TaleOfTiles.UI.UIManager.HideVictoryScreen
+- uid: TaleOfTiles.UI.UIManager.ShowLoadingScreen*
+  commentId: Overload:TaleOfTiles.UI.UIManager.ShowLoadingScreen
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_ShowLoadingScreen
+  name: ShowLoadingScreen
+  nameWithType: UIManager.ShowLoadingScreen
+  fullName: TaleOfTiles.UI.UIManager.ShowLoadingScreen
+- uid: TaleOfTiles.UI.UIManager.ShowLoadingScreenCoroutine*
+  commentId: Overload:TaleOfTiles.UI.UIManager.ShowLoadingScreenCoroutine
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_ShowLoadingScreenCoroutine
+  name: ShowLoadingScreenCoroutine
+  nameWithType: UIManager.ShowLoadingScreenCoroutine
+  fullName: TaleOfTiles.UI.UIManager.ShowLoadingScreenCoroutine
+- uid: TaleOfTiles.UI.UIManager.DisableLoadingScreen*
+  commentId: Overload:TaleOfTiles.UI.UIManager.DisableLoadingScreen
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_DisableLoadingScreen
+  name: DisableLoadingScreen
+  nameWithType: UIManager.DisableLoadingScreen
+  fullName: TaleOfTiles.UI.UIManager.DisableLoadingScreen
+- uid: TaleOfTiles.UI.UIManager.DisableLoadingScreenCoroutine*
+  commentId: Overload:TaleOfTiles.UI.UIManager.DisableLoadingScreenCoroutine
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_DisableLoadingScreenCoroutine
+  name: DisableLoadingScreenCoroutine
+  nameWithType: UIManager.DisableLoadingScreenCoroutine
+  fullName: TaleOfTiles.UI.UIManager.DisableLoadingScreenCoroutine
+- uid: TaleOfTiles.UI.UIManager.SetLevelBackgroundImage*
+  commentId: Overload:TaleOfTiles.UI.UIManager.SetLevelBackgroundImage
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_SetLevelBackgroundImage_UnityEngine_Sprite_
+  name: SetLevelBackgroundImage
+  nameWithType: UIManager.SetLevelBackgroundImage
+  fullName: TaleOfTiles.UI.UIManager.SetLevelBackgroundImage
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: TaleOfTiles.UI.UIManager.SetLoadingScreenBackgroundImage*
+  commentId: Overload:TaleOfTiles.UI.UIManager.SetLoadingScreenBackgroundImage
+  href: TaleOfTiles.UI.UIManager.html#TaleOfTiles_UI_UIManager_SetLoadingScreenBackgroundImage_UnityEngine_Sprite_
+  name: SetLoadingScreenBackgroundImage
+  nameWithType: UIManager.SetLoadingScreenBackgroundImage
+  fullName: TaleOfTiles.UI.UIManager.SetLoadingScreenBackgroundImage

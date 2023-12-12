@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Level
+  commentId: N:TaleOfTiles.Level
+  id: TaleOfTiles.Level
+  children:
+  - TaleOfTiles.Level.LevelHolderManager
+  - TaleOfTiles.Level.LevelObject
+  - TaleOfTiles.Level.LevelObjectsBundle
+  - TaleOfTiles.Level.LevelSelectionScreen
+  - TaleOfTiles.Level.LoadingTextAnim
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles.Level
+  nameWithType: TaleOfTiles.Level
+  fullName: TaleOfTiles.Level
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.Level.LevelObjectsBundle
+  commentId: T:TaleOfTiles.Level.LevelObjectsBundle
+  parent: TaleOfTiles.Level
+  href: TaleOfTiles.Level.LevelObjectsBundle.html
+  name: LevelObjectsBundle
+  nameWithType: LevelObjectsBundle
+  fullName: TaleOfTiles.Level.LevelObjectsBundle
+- uid: TaleOfTiles.Level.LevelObject
+  commentId: T:TaleOfTiles.Level.LevelObject
+  parent: TaleOfTiles.Level
+  href: TaleOfTiles.Level.LevelObject.html
+  name: LevelObject
+  nameWithType: LevelObject
+  fullName: TaleOfTiles.Level.LevelObject
+- uid: TaleOfTiles.Level.LoadingTextAnim
+  commentId: T:TaleOfTiles.Level.LoadingTextAnim
+  href: TaleOfTiles.Level.LoadingTextAnim.html
+  name: LoadingTextAnim
+  nameWithType: LoadingTextAnim
+  fullName: TaleOfTiles.Level.LoadingTextAnim
+- uid: TaleOfTiles.Level.LevelHolderManager
+  commentId: T:TaleOfTiles.Level.LevelHolderManager
+  href: TaleOfTiles.Level.LevelHolderManager.html
+  name: LevelHolderManager
+  nameWithType: LevelHolderManager
+  fullName: TaleOfTiles.Level.LevelHolderManager
+- uid: TaleOfTiles.Level.LevelSelectionScreen
+  commentId: T:TaleOfTiles.Level.LevelSelectionScreen
+  href: TaleOfTiles.Level.LevelSelectionScreen.html
+  name: LevelSelectionScreen
+  nameWithType: LevelSelectionScreen
+  fullName: TaleOfTiles.Level.LevelSelectionScreen
+- uid: TaleOfTiles.Level
+  commentId: N:TaleOfTiles.Level
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Level
+  nameWithType: TaleOfTiles.Level
+  fullName: TaleOfTiles.Level
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html

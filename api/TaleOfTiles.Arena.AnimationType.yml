@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.AnimationType
+  commentId: T:TaleOfTiles.Arena.AnimationType
+  id: AnimationType
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.AnimationType.Bubble
+  - TaleOfTiles.Arena.AnimationType.Resize
+  langs:
+  - csharp
+  - vb
+  name: AnimationType
+  nameWithType: AnimationType
+  fullName: TaleOfTiles.Arena.AnimationType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/BubbleText.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: AnimationType
+    path: ../Assets/Scripts/BubbleText.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Enum for the types of animations that can be performed.
+  example: []
+  syntax:
+    content: public enum AnimationType
+    content.vb: Public Enum AnimationType
+- uid: TaleOfTiles.Arena.AnimationType.Bubble
+  commentId: F:TaleOfTiles.Arena.AnimationType.Bubble
+  id: Bubble
+  parent: TaleOfTiles.Arena.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: Bubble
+  nameWithType: AnimationType.Bubble
+  fullName: TaleOfTiles.Arena.AnimationType.Bubble
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BubbleText.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Bubble
+    path: ../Assets/Scripts/BubbleText.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Bubble = 0
+    return:
+      type: TaleOfTiles.Arena.AnimationType
+- uid: TaleOfTiles.Arena.AnimationType.Resize
+  commentId: F:TaleOfTiles.Arena.AnimationType.Resize
+  id: Resize
+  parent: TaleOfTiles.Arena.AnimationType
+  langs:
+  - csharp
+  - vb
+  name: Resize
+  nameWithType: AnimationType.Resize
+  fullName: TaleOfTiles.Arena.AnimationType.Resize
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/BubbleText.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Resize
+    path: ../Assets/Scripts/BubbleText.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  syntax:
+    content: Resize = 1
+    return:
+      type: TaleOfTiles.Arena.AnimationType
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: TaleOfTiles.Arena.AnimationType
+  commentId: T:TaleOfTiles.Arena.AnimationType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.AnimationType.html
+  name: AnimationType
+  nameWithType: AnimationType
+  fullName: TaleOfTiles.Arena.AnimationType

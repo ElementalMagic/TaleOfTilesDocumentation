@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Level.LevelSelectionScreen
+  commentId: T:TaleOfTiles.Level.LevelSelectionScreen
+  id: LevelSelectionScreen
+  parent: TaleOfTiles.Level
+  children:
+  - TaleOfTiles.Level.LevelSelectionScreen.ClearButtonsContainer
+  - TaleOfTiles.Level.LevelSelectionScreen.LoadLevels
+  - TaleOfTiles.Level.LevelSelectionScreen.Start
+  - TaleOfTiles.Level.LevelSelectionScreen.buttonLevelPrefab
+  - TaleOfTiles.Level.LevelSelectionScreen.buttonsContainer
+  langs:
+  - csharp
+  - vb
+  name: LevelSelectionScreen
+  nameWithType: LevelSelectionScreen
+  fullName: TaleOfTiles.Level.LevelSelectionScreen
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/LevelSelectionScreen.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LevelSelectionScreen
+    path: ../Assets/Scripts/LevelSelectionScreen.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Manages the level selection screen, dynamically creating buttons for each available level.
+  example: []
+  syntax:
+    content: 'public class LevelSelectionScreen : MonoBehaviour'
+    content.vb: Public Class LevelSelectionScreen Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Level.LevelSelectionScreen.buttonLevelPrefab
+  commentId: F:TaleOfTiles.Level.LevelSelectionScreen.buttonLevelPrefab
+  id: buttonLevelPrefab
+  parent: TaleOfTiles.Level.LevelSelectionScreen
+  langs:
+  - csharp
+  - vb
+  name: buttonLevelPrefab
+  nameWithType: LevelSelectionScreen.buttonLevelPrefab
+  fullName: TaleOfTiles.Level.LevelSelectionScreen.buttonLevelPrefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelSelectionScreen.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: buttonLevelPrefab
+    path: ../Assets/Scripts/LevelSelectionScreen.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  syntax:
+    content: public GameObject buttonLevelPrefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public buttonLevelPrefab As GameObject
+- uid: TaleOfTiles.Level.LevelSelectionScreen.buttonsContainer
+  commentId: F:TaleOfTiles.Level.LevelSelectionScreen.buttonsContainer
+  id: buttonsContainer
+  parent: TaleOfTiles.Level.LevelSelectionScreen
+  langs:
+  - csharp
+  - vb
+  name: buttonsContainer
+  nameWithType: LevelSelectionScreen.buttonsContainer
+  fullName: TaleOfTiles.Level.LevelSelectionScreen.buttonsContainer
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelSelectionScreen.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: buttonsContainer
+    path: ../Assets/Scripts/LevelSelectionScreen.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  syntax:
+    content: public Transform buttonsContainer
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public buttonsContainer As Transform
+- uid: TaleOfTiles.Level.LevelSelectionScreen.Start
+  commentId: M:TaleOfTiles.Level.LevelSelectionScreen.Start
+  id: Start
+  parent: TaleOfTiles.Level.LevelSelectionScreen
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: LevelSelectionScreen.Start()
+  fullName: TaleOfTiles.Level.LevelSelectionScreen.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelSelectionScreen.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/LevelSelectionScreen.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Initializes the level selection screen by loading level buttons.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.Level.LevelSelectionScreen.Start*
+- uid: TaleOfTiles.Level.LevelSelectionScreen.LoadLevels
+  commentId: M:TaleOfTiles.Level.LevelSelectionScreen.LoadLevels
+  id: LoadLevels
+  parent: TaleOfTiles.Level.LevelSelectionScreen
+  langs:
+  - csharp
+  - vb
+  name: LoadLevels()
+  nameWithType: LevelSelectionScreen.LoadLevels()
+  fullName: TaleOfTiles.Level.LevelSelectionScreen.LoadLevels()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelSelectionScreen.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadLevels
+    path: ../Assets/Scripts/LevelSelectionScreen.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Loads and displays level buttons for each available level.
+  example: []
+  syntax:
+    content: private IEnumerator LoadLevels()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function LoadLevels() As IEnumerator
+  overload: TaleOfTiles.Level.LevelSelectionScreen.LoadLevels*
+- uid: TaleOfTiles.Level.LevelSelectionScreen.ClearButtonsContainer
+  commentId: M:TaleOfTiles.Level.LevelSelectionScreen.ClearButtonsContainer
+  id: ClearButtonsContainer
+  parent: TaleOfTiles.Level.LevelSelectionScreen
+  langs:
+  - csharp
+  - vb
+  name: ClearButtonsContainer()
+  nameWithType: LevelSelectionScreen.ClearButtonsContainer()
+  fullName: TaleOfTiles.Level.LevelSelectionScreen.ClearButtonsContainer()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelSelectionScreen.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ClearButtonsContainer
+    path: ../Assets/Scripts/LevelSelectionScreen.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Level
+  summary: Clears all existing level buttons from the container.
+  example: []
+  syntax:
+    content: private void ClearButtonsContainer()
+    content.vb: Private Sub ClearButtonsContainer()
+  overload: TaleOfTiles.Level.LevelSelectionScreen.ClearButtonsContainer*
+references:
+- uid: TaleOfTiles.Level
+  commentId: N:TaleOfTiles.Level
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Level
+  nameWithType: TaleOfTiles.Level
+  fullName: TaleOfTiles.Level
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Level
+    name: Level
+    href: TaleOfTiles.Level.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: TaleOfTiles.Level.LevelSelectionScreen.Start*
+  commentId: Overload:TaleOfTiles.Level.LevelSelectionScreen.Start
+  href: TaleOfTiles.Level.LevelSelectionScreen.html#TaleOfTiles_Level_LevelSelectionScreen_Start
+  name: Start
+  nameWithType: LevelSelectionScreen.Start
+  fullName: TaleOfTiles.Level.LevelSelectionScreen.Start
+- uid: TaleOfTiles.Level.LevelSelectionScreen.LoadLevels*
+  commentId: Overload:TaleOfTiles.Level.LevelSelectionScreen.LoadLevels
+  href: TaleOfTiles.Level.LevelSelectionScreen.html#TaleOfTiles_Level_LevelSelectionScreen_LoadLevels
+  name: LoadLevels
+  nameWithType: LevelSelectionScreen.LoadLevels
+  fullName: TaleOfTiles.Level.LevelSelectionScreen.LoadLevels
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TaleOfTiles.Level.LevelSelectionScreen.ClearButtonsContainer*
+  commentId: Overload:TaleOfTiles.Level.LevelSelectionScreen.ClearButtonsContainer
+  href: TaleOfTiles.Level.LevelSelectionScreen.html#TaleOfTiles_Level_LevelSelectionScreen_ClearButtonsContainer
+  name: ClearButtonsContainer
+  nameWithType: LevelSelectionScreen.ClearButtonsContainer
+  fullName: TaleOfTiles.Level.LevelSelectionScreen.ClearButtonsContainer

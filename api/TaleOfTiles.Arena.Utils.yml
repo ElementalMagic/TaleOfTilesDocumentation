@@ -1,0 +1,788 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.Utils
+  commentId: T:TaleOfTiles.Arena.Utils
+  id: Utils
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.Utils.ChangeColorSmooth(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)
+  - TaleOfTiles.Arena.Utils.FlashColor(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)
+  - TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha(UnityEngine.CanvasGroup,System.Single,System.Single,System.Single)
+  - TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
+  - TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject[],UnityEngine.Vector3,System.Single)
+  - TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame(UnityEngine.RectTransform,System.Action,System.Single)
+  - TaleOfTiles.Arena.Utils.RemoveChilds(UnityEngine.Transform)
+  - TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)
+  - TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform[],UnityEngine.Vector2,System.Single)
+  - TaleOfTiles.Arena.Utils.ResizeObjectsScale(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)
+  - TaleOfTiles.Arena.Utils.Shuffle(System.Int32[])
+  langs:
+  - csharp
+  - vb
+  name: Utils
+  nameWithType: Utils
+  fullName: TaleOfTiles.Arena.Utils
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Utils
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1028
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Utility class providing various helper methods.
+  example: []
+  syntax:
+    content: public static class Utils
+    content.vb: Public Module Utils
+  inheritance:
+  - System.Object
+- uid: TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha(UnityEngine.CanvasGroup,System.Single,System.Single,System.Single)
+  commentId: M:TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha(UnityEngine.CanvasGroup,System.Single,System.Single,System.Single)
+  id: InterpolateCanvasGroupAlpha(UnityEngine.CanvasGroup,System.Single,System.Single,System.Single)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: InterpolateCanvasGroupAlpha(CanvasGroup, float, float, float)
+  nameWithType: Utils.InterpolateCanvasGroupAlpha(CanvasGroup, float, float, float)
+  fullName: TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha(UnityEngine.CanvasGroup, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: InterpolateCanvasGroupAlpha
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1037
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to interpolate the alpha value of a CanvasGroup over time.
+  example: []
+  syntax:
+    content: public static IEnumerator InterpolateCanvasGroupAlpha(CanvasGroup canvas_group, float start_value, float target_value, float delay)
+    parameters:
+    - id: canvas_group
+      type: UnityEngine.CanvasGroup
+    - id: start_value
+      type: System.Single
+    - id: target_value
+      type: System.Single
+    - id: delay
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function InterpolateCanvasGroupAlpha(canvas_group As CanvasGroup, start_value As Single, target_value As Single, delay As Single) As IEnumerator
+  overload: TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha*
+  nameWithType.vb: Utils.InterpolateCanvasGroupAlpha(CanvasGroup, Single, Single, Single)
+  fullName.vb: TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha(UnityEngine.CanvasGroup, Single, Single, Single)
+  name.vb: InterpolateCanvasGroupAlpha(CanvasGroup, Single, Single, Single)
+- uid: TaleOfTiles.Arena.Utils.FlashColor(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)
+  commentId: M:TaleOfTiles.Arena.Utils.FlashColor(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)
+  id: FlashColor(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: FlashColor(GetColorDelegate, SetColorDelegate, Color, float)
+  nameWithType: Utils.FlashColor(Utils.GetColorDelegate, Utils.SetColorDelegate, Color, float)
+  fullName: TaleOfTiles.Arena.Utils.FlashColor(TaleOfTiles.Arena.Utils.GetColorDelegate, TaleOfTiles.Arena.Utils.SetColorDelegate, UnityEngine.Color, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: FlashColor
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1056
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to flash a color on a UI element over time.
+  example: []
+  syntax:
+    content: public static IEnumerator FlashColor(Utils.GetColorDelegate getColor, Utils.SetColorDelegate setColor, Color target_color, float delay)
+    parameters:
+    - id: getColor
+      type: TaleOfTiles.Arena.Utils.GetColorDelegate
+    - id: setColor
+      type: TaleOfTiles.Arena.Utils.SetColorDelegate
+    - id: target_color
+      type: UnityEngine.Color
+    - id: delay
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function FlashColor(getColor As Utils.GetColorDelegate, setColor As Utils.SetColorDelegate, target_color As Color, delay As Single) As IEnumerator
+  overload: TaleOfTiles.Arena.Utils.FlashColor*
+  nameWithType.vb: Utils.FlashColor(Utils.GetColorDelegate, Utils.SetColorDelegate, Color, Single)
+  fullName.vb: TaleOfTiles.Arena.Utils.FlashColor(TaleOfTiles.Arena.Utils.GetColorDelegate, TaleOfTiles.Arena.Utils.SetColorDelegate, UnityEngine.Color, Single)
+  name.vb: FlashColor(GetColorDelegate, SetColorDelegate, Color, Single)
+- uid: TaleOfTiles.Arena.Utils.ChangeColorSmooth(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)
+  commentId: M:TaleOfTiles.Arena.Utils.ChangeColorSmooth(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)
+  id: ChangeColorSmooth(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: ChangeColorSmooth(GetColorDelegate, SetColorDelegate, Color, float)
+  nameWithType: Utils.ChangeColorSmooth(Utils.GetColorDelegate, Utils.SetColorDelegate, Color, float)
+  fullName: TaleOfTiles.Arena.Utils.ChangeColorSmooth(TaleOfTiles.Arena.Utils.GetColorDelegate, TaleOfTiles.Arena.Utils.SetColorDelegate, UnityEngine.Color, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ChangeColorSmooth
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1094
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to change the color on a UI element smoothly over time.
+  example: []
+  syntax:
+    content: public static IEnumerator ChangeColorSmooth(Utils.GetColorDelegate getColor, Utils.SetColorDelegate setColor, Color target_color, float delay)
+    parameters:
+    - id: getColor
+      type: TaleOfTiles.Arena.Utils.GetColorDelegate
+    - id: setColor
+      type: TaleOfTiles.Arena.Utils.SetColorDelegate
+    - id: target_color
+      type: UnityEngine.Color
+    - id: delay
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function ChangeColorSmooth(getColor As Utils.GetColorDelegate, setColor As Utils.SetColorDelegate, target_color As Color, delay As Single) As IEnumerator
+  overload: TaleOfTiles.Arena.Utils.ChangeColorSmooth*
+  nameWithType.vb: Utils.ChangeColorSmooth(Utils.GetColorDelegate, Utils.SetColorDelegate, Color, Single)
+  fullName.vb: TaleOfTiles.Arena.Utils.ChangeColorSmooth(TaleOfTiles.Arena.Utils.GetColorDelegate, TaleOfTiles.Arena.Utils.SetColorDelegate, UnityEngine.Color, Single)
+  name.vb: ChangeColorSmooth(GetColorDelegate, SetColorDelegate, Color, Single)
+- uid: TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject[],UnityEngine.Vector3,System.Single)
+  commentId: M:TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject[],UnityEngine.Vector3,System.Single)
+  id: MoveObjects(UnityEngine.GameObject[],UnityEngine.Vector3,System.Single)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: MoveObjects(GameObject[], Vector3, float)
+  nameWithType: Utils.MoveObjects(GameObject[], Vector3, float)
+  fullName: TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject[], UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MoveObjects
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1116
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to move multiple GameObjects by a certain offset over time.
+  example: []
+  syntax:
+    content: public static IEnumerator MoveObjects(GameObject[] objects, Vector3 offset, float delay)
+    parameters:
+    - id: objects
+      type: UnityEngine.GameObject[]
+    - id: offset
+      type: UnityEngine.Vector3
+    - id: delay
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function MoveObjects(objects As GameObject(), offset As Vector3, delay As Single) As IEnumerator
+  overload: TaleOfTiles.Arena.Utils.MoveObjects*
+  nameWithType.vb: Utils.MoveObjects(GameObject(), Vector3, Single)
+  fullName.vb: TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject(), UnityEngine.Vector3, Single)
+  name.vb: MoveObjects(GameObject(), Vector3, Single)
+- uid: TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
+  commentId: M:TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
+  id: MoveObjects(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: MoveObjects(GameObject, Vector3, float)
+  nameWithType: Utils.MoveObjects(GameObject, Vector3, float)
+  fullName: TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject, UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MoveObjects
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1156
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to move a GameObject by a certain offset over time.
+  example: []
+  syntax:
+    content: public static IEnumerator MoveObjects(GameObject obj, Vector3 offset, float delay)
+    parameters:
+    - id: obj
+      type: UnityEngine.GameObject
+    - id: offset
+      type: UnityEngine.Vector3
+    - id: delay
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function MoveObjects(obj As GameObject, offset As Vector3, delay As Single) As IEnumerator
+  overload: TaleOfTiles.Arena.Utils.MoveObjects*
+  nameWithType.vb: Utils.MoveObjects(GameObject, Vector3, Single)
+  fullName.vb: TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject, UnityEngine.Vector3, Single)
+  name.vb: MoveObjects(GameObject, Vector3, Single)
+- uid: TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform[],UnityEngine.Vector2,System.Single)
+  commentId: M:TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform[],UnityEngine.Vector2,System.Single)
+  id: ResizeObjects(UnityEngine.RectTransform[],UnityEngine.Vector2,System.Single)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: ResizeObjects(RectTransform[], Vector2, float)
+  nameWithType: Utils.ResizeObjects(RectTransform[], Vector2, float)
+  fullName: TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform[], UnityEngine.Vector2, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ResizeObjects
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1185
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to resize multiple RectTransforms to a target size over time.
+  example: []
+  syntax:
+    content: public static IEnumerator ResizeObjects(RectTransform[] objects, Vector2 targetSize, float delay)
+    parameters:
+    - id: objects
+      type: UnityEngine.RectTransform[]
+    - id: targetSize
+      type: UnityEngine.Vector2
+    - id: delay
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function ResizeObjects(objects As RectTransform(), targetSize As Vector2, delay As Single) As IEnumerator
+  overload: TaleOfTiles.Arena.Utils.ResizeObjects*
+  nameWithType.vb: Utils.ResizeObjects(RectTransform(), Vector2, Single)
+  fullName.vb: TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform(), UnityEngine.Vector2, Single)
+  name.vb: ResizeObjects(RectTransform(), Vector2, Single)
+- uid: TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)
+  commentId: M:TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)
+  id: ResizeObjects(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: ResizeObjects(RectTransform, Vector2, float)
+  nameWithType: Utils.ResizeObjects(RectTransform, Vector2, float)
+  fullName: TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform, UnityEngine.Vector2, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ResizeObjects
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1225
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to resize a RectTransform to a target size over time.
+  example: []
+  syntax:
+    content: public static IEnumerator ResizeObjects(RectTransform obj, Vector2 targetSize, float delay)
+    parameters:
+    - id: obj
+      type: UnityEngine.RectTransform
+    - id: targetSize
+      type: UnityEngine.Vector2
+    - id: delay
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function ResizeObjects(obj As RectTransform, targetSize As Vector2, delay As Single) As IEnumerator
+  overload: TaleOfTiles.Arena.Utils.ResizeObjects*
+  nameWithType.vb: Utils.ResizeObjects(RectTransform, Vector2, Single)
+  fullName.vb: TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform, UnityEngine.Vector2, Single)
+  name.vb: ResizeObjects(RectTransform, Vector2, Single)
+- uid: TaleOfTiles.Arena.Utils.ResizeObjectsScale(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)
+  commentId: M:TaleOfTiles.Arena.Utils.ResizeObjectsScale(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)
+  id: ResizeObjectsScale(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: ResizeObjectsScale(RectTransform, Vector2, float)
+  nameWithType: Utils.ResizeObjectsScale(RectTransform, Vector2, float)
+  fullName: TaleOfTiles.Arena.Utils.ResizeObjectsScale(UnityEngine.RectTransform, UnityEngine.Vector2, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ResizeObjectsScale
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1254
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to resize a RectTransform's scale to a target size over time.
+  example: []
+  syntax:
+    content: public static IEnumerator ResizeObjectsScale(RectTransform obj, Vector2 targetSize, float delay)
+    parameters:
+    - id: obj
+      type: UnityEngine.RectTransform
+    - id: targetSize
+      type: UnityEngine.Vector2
+    - id: delay
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function ResizeObjectsScale(obj As RectTransform, targetSize As Vector2, delay As Single) As IEnumerator
+  overload: TaleOfTiles.Arena.Utils.ResizeObjectsScale*
+  nameWithType.vb: Utils.ResizeObjectsScale(RectTransform, Vector2, Single)
+  fullName.vb: TaleOfTiles.Arena.Utils.ResizeObjectsScale(UnityEngine.RectTransform, UnityEngine.Vector2, Single)
+  name.vb: ResizeObjectsScale(RectTransform, Vector2, Single)
+- uid: TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame(UnityEngine.RectTransform,System.Action,System.Single)
+  commentId: M:TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame(UnityEngine.RectTransform,System.Action,System.Single)
+  id: RebuildLayoutNextFrame(UnityEngine.RectTransform,System.Action,System.Single)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: RebuildLayoutNextFrame(RectTransform, Action, float)
+  nameWithType: Utils.RebuildLayoutNextFrame(RectTransform, Action, float)
+  fullName: TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame(UnityEngine.RectTransform, System.Action, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: RebuildLayoutNextFrame
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1283
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to rebuild a RectTransform's layout at the end of the next frame.
+  example: []
+  syntax:
+    content: public static IEnumerator RebuildLayoutNextFrame(RectTransform rect, Action callback = null, float callback_delay = 0.5)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+    - id: callback
+      type: System.Action
+    - id: callback_delay
+      type: System.Single
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function RebuildLayoutNextFrame(rect As RectTransform, callback As Action = Nothing, callback_delay As Single = 0.5) As IEnumerator
+  overload: TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame*
+  nameWithType.vb: Utils.RebuildLayoutNextFrame(RectTransform, Action, Single)
+  fullName.vb: TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame(UnityEngine.RectTransform, System.Action, Single)
+  name.vb: RebuildLayoutNextFrame(RectTransform, Action, Single)
+- uid: TaleOfTiles.Arena.Utils.RemoveChilds(UnityEngine.Transform)
+  commentId: M:TaleOfTiles.Arena.Utils.RemoveChilds(UnityEngine.Transform)
+  id: RemoveChilds(UnityEngine.Transform)
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: RemoveChilds(Transform)
+  nameWithType: Utils.RemoveChilds(Transform)
+  fullName: TaleOfTiles.Arena.Utils.RemoveChilds(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: RemoveChilds
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1304
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Removes all child GameObjects from a parent Transform.
+  example: []
+  syntax:
+    content: public static void RemoveChilds(Transform parent)
+    parameters:
+    - id: parent
+      type: UnityEngine.Transform
+    content.vb: Public Shared Sub RemoveChilds(parent As Transform)
+  overload: TaleOfTiles.Arena.Utils.RemoveChilds*
+- uid: TaleOfTiles.Arena.Utils.Shuffle(System.Int32[])
+  commentId: M:TaleOfTiles.Arena.Utils.Shuffle(System.Int32[])
+  id: Shuffle(System.Int32[])
+  parent: TaleOfTiles.Arena.Utils
+  langs:
+  - csharp
+  - vb
+  name: Shuffle(int[])
+  nameWithType: Utils.Shuffle(int[])
+  fullName: TaleOfTiles.Arena.Utils.Shuffle(int[])
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/CombatManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Shuffle
+    path: ../Assets/Scripts/Managers/CombatManager.cs
+    startLine: 1321
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Shuffles an array of integers in-place using the Fisher-Yates algorithm.
+  example: []
+  syntax:
+    content: public static void Shuffle(int[] array)
+    parameters:
+    - id: array
+      type: System.Int32[]
+      description: The array to shuffle.
+    content.vb: Public Shared Sub Shuffle(array As Integer())
+  overload: TaleOfTiles.Arena.Utils.Shuffle*
+  nameWithType.vb: Utils.Shuffle(Integer())
+  fullName.vb: TaleOfTiles.Arena.Utils.Shuffle(Integer())
+  name.vb: Shuffle(Integer())
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha*
+  commentId: Overload:TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha
+  href: TaleOfTiles.Arena.Utils.html#TaleOfTiles_Arena_Utils_InterpolateCanvasGroupAlpha_UnityEngine_CanvasGroup_System_Single_System_Single_System_Single_
+  name: InterpolateCanvasGroupAlpha
+  nameWithType: Utils.InterpolateCanvasGroupAlpha
+  fullName: TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha
+- uid: UnityEngine.CanvasGroup
+  commentId: T:UnityEngine.CanvasGroup
+  parent: UnityEngine
+  isExternal: true
+  name: CanvasGroup
+  nameWithType: CanvasGroup
+  fullName: UnityEngine.CanvasGroup
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TaleOfTiles.Arena.Utils.FlashColor*
+  commentId: Overload:TaleOfTiles.Arena.Utils.FlashColor
+  href: TaleOfTiles.Arena.Utils.html#TaleOfTiles_Arena_Utils_FlashColor_TaleOfTiles_Arena_Utils_GetColorDelegate_TaleOfTiles_Arena_Utils_SetColorDelegate_UnityEngine_Color_System_Single_
+  name: FlashColor
+  nameWithType: Utils.FlashColor
+  fullName: TaleOfTiles.Arena.Utils.FlashColor
+- uid: TaleOfTiles.Arena.Utils.GetColorDelegate
+  commentId: T:TaleOfTiles.Arena.Utils.GetColorDelegate
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.Utils.html
+  name: Utils.GetColorDelegate
+  nameWithType: Utils.GetColorDelegate
+  fullName: TaleOfTiles.Arena.Utils.GetColorDelegate
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.GetColorDelegate
+    name: GetColorDelegate
+    href: TaleOfTiles.Arena.Utils.GetColorDelegate.html
+  spec.vb:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.GetColorDelegate
+    name: GetColorDelegate
+    href: TaleOfTiles.Arena.Utils.GetColorDelegate.html
+- uid: TaleOfTiles.Arena.Utils.SetColorDelegate
+  commentId: T:TaleOfTiles.Arena.Utils.SetColorDelegate
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.Utils.html
+  name: Utils.SetColorDelegate
+  nameWithType: Utils.SetColorDelegate
+  fullName: TaleOfTiles.Arena.Utils.SetColorDelegate
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.SetColorDelegate
+    name: SetColorDelegate
+    href: TaleOfTiles.Arena.Utils.SetColorDelegate.html
+  spec.vb:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.SetColorDelegate
+    name: SetColorDelegate
+    href: TaleOfTiles.Arena.Utils.SetColorDelegate.html
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: TaleOfTiles.Arena.Utils.ChangeColorSmooth*
+  commentId: Overload:TaleOfTiles.Arena.Utils.ChangeColorSmooth
+  href: TaleOfTiles.Arena.Utils.html#TaleOfTiles_Arena_Utils_ChangeColorSmooth_TaleOfTiles_Arena_Utils_GetColorDelegate_TaleOfTiles_Arena_Utils_SetColorDelegate_UnityEngine_Color_System_Single_
+  name: ChangeColorSmooth
+  nameWithType: Utils.ChangeColorSmooth
+  fullName: TaleOfTiles.Arena.Utils.ChangeColorSmooth
+- uid: TaleOfTiles.Arena.Utils.MoveObjects*
+  commentId: Overload:TaleOfTiles.Arena.Utils.MoveObjects
+  href: TaleOfTiles.Arena.Utils.html#TaleOfTiles_Arena_Utils_MoveObjects_UnityEngine_GameObject___UnityEngine_Vector3_System_Single_
+  name: MoveObjects
+  nameWithType: Utils.MoveObjects
+  fullName: TaleOfTiles.Arena.Utils.MoveObjects
+- uid: UnityEngine.GameObject[]
+  isExternal: true
+  name: GameObject[]
+  nameWithType: GameObject[]
+  fullName: UnityEngine.GameObject[]
+  nameWithType.vb: GameObject()
+  fullName.vb: UnityEngine.GameObject()
+  name.vb: GameObject()
+  spec.csharp:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: TaleOfTiles.Arena.Utils.ResizeObjects*
+  commentId: Overload:TaleOfTiles.Arena.Utils.ResizeObjects
+  href: TaleOfTiles.Arena.Utils.html#TaleOfTiles_Arena_Utils_ResizeObjects_UnityEngine_RectTransform___UnityEngine_Vector2_System_Single_
+  name: ResizeObjects
+  nameWithType: Utils.ResizeObjects
+  fullName: TaleOfTiles.Arena.Utils.ResizeObjects
+- uid: UnityEngine.RectTransform[]
+  isExternal: true
+  name: RectTransform[]
+  nameWithType: RectTransform[]
+  fullName: UnityEngine.RectTransform[]
+  nameWithType.vb: RectTransform()
+  fullName.vb: UnityEngine.RectTransform()
+  name.vb: RectTransform()
+  spec.csharp:
+  - uid: UnityEngine.RectTransform
+    name: RectTransform
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.RectTransform
+    name: RectTransform
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: TaleOfTiles.Arena.Utils.ResizeObjectsScale*
+  commentId: Overload:TaleOfTiles.Arena.Utils.ResizeObjectsScale
+  href: TaleOfTiles.Arena.Utils.html#TaleOfTiles_Arena_Utils_ResizeObjectsScale_UnityEngine_RectTransform_UnityEngine_Vector2_System_Single_
+  name: ResizeObjectsScale
+  nameWithType: Utils.ResizeObjectsScale
+  fullName: TaleOfTiles.Arena.Utils.ResizeObjectsScale
+- uid: TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame*
+  commentId: Overload:TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame
+  href: TaleOfTiles.Arena.Utils.html#TaleOfTiles_Arena_Utils_RebuildLayoutNextFrame_UnityEngine_RectTransform_System_Action_System_Single_
+  name: RebuildLayoutNextFrame
+  nameWithType: Utils.RebuildLayoutNextFrame
+  fullName: TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: TaleOfTiles.Arena.Utils.RemoveChilds*
+  commentId: Overload:TaleOfTiles.Arena.Utils.RemoveChilds
+  href: TaleOfTiles.Arena.Utils.html#TaleOfTiles_Arena_Utils_RemoveChilds_UnityEngine_Transform_
+  name: RemoveChilds
+  nameWithType: Utils.RemoveChilds
+  fullName: TaleOfTiles.Arena.Utils.RemoveChilds
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: TaleOfTiles.Arena.Utils.Shuffle*
+  commentId: Overload:TaleOfTiles.Arena.Utils.Shuffle
+  href: TaleOfTiles.Arena.Utils.html#TaleOfTiles_Arena_Utils_Shuffle_System_Int32___
+  name: Shuffle
+  nameWithType: Utils.Shuffle
+  fullName: TaleOfTiles.Arena.Utils.Shuffle
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )

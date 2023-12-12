@@ -1,0 +1,397 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  id: GemSuperCombo.ExtraMoves
+  parent: TaleOfTiles.Card.Gems
+  children:
+  - TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor
+  - TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor(System.Int32,System.Int32)
+  - TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.GetCount
+  - TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.MakeCopy
+  - TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.combo_count_activation
+  - TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.moves_count
+  langs:
+  - csharp
+  - vb
+  name: GemSuperCombo.ExtraMoves
+  nameWithType: GemSuperCombo.ExtraMoves
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  type: Class
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ExtraMoves
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 695
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Represents an 'Extra Moves' Combo in the Gem Super Combo system, which grants additional moves to the player.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class GemSuperCombo.ExtraMoves : ISuperCombo
+    content.vb: >-
+      <Serializable>
+
+      Public Class GemSuperCombo.ExtraMoves Implements ISuperCombo
+  inheritance:
+  - System.Object
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.moves_count
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.moves_count
+  id: moves_count
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  langs:
+  - csharp
+  - vb
+  name: moves_count
+  nameWithType: GemSuperCombo.ExtraMoves.moves_count
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.moves_count
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: moves_count
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 702
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The number of extra moves granted by this combo.
+  example: []
+  syntax:
+    content: >-
+      [Range(1, 5)]
+
+      public int moves_count
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Range(1, 5)>
+
+      Public moves_count As Integer
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 1
+    - type: System.Single
+      value: 5
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.combo_count_activation
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.combo_count_activation
+  id: combo_count_activation
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  langs:
+  - csharp
+  - vb
+  name: combo_count_activation
+  nameWithType: GemSuperCombo.ExtraMoves.combo_count_activation
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.combo_count_activation
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: combo_count_activation
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 708
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: The number of combo activations required to trigger the Extra Moves combo.
+  example: []
+  syntax:
+    content: >-
+      [Range(3, 12)]
+
+      public int combo_count_activation
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Range(3, 12)>
+
+      Public combo_count_activation As Integer
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 3
+    - type: System.Single
+      value: 12
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor
+  id: '#ctor'
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  langs:
+  - csharp
+  - vb
+  name: ExtraMoves()
+  nameWithType: GemSuperCombo.ExtraMoves.ExtraMoves()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.ExtraMoves()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 713
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Default constructor for the Extra Moves combo.
+  example: []
+  syntax:
+    content: public ExtraMoves()
+    content.vb: Public Sub New()
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor*
+  nameWithType.vb: GemSuperCombo.ExtraMoves.New()
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.New()
+  name.vb: New()
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor(System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  langs:
+  - csharp
+  - vb
+  name: ExtraMoves(int, int)
+  nameWithType: GemSuperCombo.ExtraMoves.ExtraMoves(int, int)
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.ExtraMoves(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 720
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Constructs an Extra Moves combo with specified parameters.
+  example: []
+  syntax:
+    content: public ExtraMoves(int moves_count, int combo_count_activation)
+    parameters:
+    - id: moves_count
+      type: System.Int32
+      description: The number of extra moves granted by the combo.
+    - id: combo_count_activation
+      type: System.Int32
+      description: Number of activations required for the combo.
+    content.vb: Public Sub New(moves_count As Integer, combo_count_activation As Integer)
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor*
+  nameWithType.vb: GemSuperCombo.ExtraMoves.New(Integer, Integer)
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.MakeCopy
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.MakeCopy
+  id: MakeCopy
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  langs:
+  - csharp
+  - vb
+  name: MakeCopy()
+  nameWithType: GemSuperCombo.ExtraMoves.MakeCopy()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.MakeCopy()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MakeCopy
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 730
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Creates a copy of the current Extra Moves combo.
+  example: []
+  syntax:
+    content: public ISuperCombo MakeCopy()
+    return:
+      type: TaleOfTiles.Card.Gems.ISuperCombo
+      description: A new instance of ExtraMoves with the same settings.
+    content.vb: Public Function MakeCopy() As ISuperCombo
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.MakeCopy*
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.GetCount
+  commentId: M:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.GetCount
+  id: GetCount
+  parent: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  langs:
+  - csharp
+  - vb
+  name: GetCount()
+  nameWithType: GemSuperCombo.ExtraMoves.GetCount()
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.GetCount()
+  type: Method
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetCount
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 739
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Retrieves the count of activations required for the combo.
+  example: []
+  syntax:
+    content: public int GetCount()
+    return:
+      type: System.Int32
+      description: The number of activations needed for the combo.
+    content.vb: Public Function GetCount() As Integer
+  overload: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.GetCount*
+  implements:
+  - TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+references:
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: TaleOfTiles.Card.Gems.ISuperCombo
+  commentId: T:TaleOfTiles.Card.Gems.ISuperCombo
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html
+  name: ISuperCombo
+  nameWithType: ISuperCombo
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.#ctor
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.html#TaleOfTiles_Card_Gems_GemSuperCombo_ExtraMoves__ctor
+  name: ExtraMoves
+  nameWithType: GemSuperCombo.ExtraMoves.ExtraMoves
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.ExtraMoves
+  nameWithType.vb: GemSuperCombo.ExtraMoves.New
+  fullName.vb: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.New
+  name.vb: New
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.MakeCopy*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.MakeCopy
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.html#TaleOfTiles_Card_Gems_GemSuperCombo_ExtraMoves_MakeCopy
+  name: MakeCopy
+  nameWithType: GemSuperCombo.ExtraMoves.MakeCopy
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.MakeCopy
+- uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+  commentId: M:TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+  parent: TaleOfTiles.Card.Gems.ISuperCombo
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  name: MakeCopy()
+  nameWithType: ISuperCombo.MakeCopy()
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy()
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+    name: MakeCopy
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.MakeCopy
+    name: MakeCopy
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_MakeCopy
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.GetCount*
+  commentId: Overload:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.GetCount
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.html#TaleOfTiles_Card_Gems_GemSuperCombo_ExtraMoves_GetCount
+  name: GetCount
+  nameWithType: GemSuperCombo.ExtraMoves.GetCount
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.GetCount
+- uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+  commentId: M:TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+  parent: TaleOfTiles.Card.Gems.ISuperCombo
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  name: GetCount()
+  nameWithType: ISuperCombo.GetCount()
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo.GetCount()
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+    name: GetCount
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.ISuperCombo.GetCount
+    name: GetCount
+    href: TaleOfTiles.Card.Gems.ISuperCombo.html#TaleOfTiles_Card_Gems_ISuperCombo_GetCount
+  - name: (
+  - name: )

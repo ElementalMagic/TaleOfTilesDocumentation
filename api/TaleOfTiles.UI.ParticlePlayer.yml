@@ -1,0 +1,268 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.UI.ParticlePlayer
+  commentId: T:TaleOfTiles.UI.ParticlePlayer
+  id: ParticlePlayer
+  parent: TaleOfTiles.UI
+  children:
+  - TaleOfTiles.UI.ParticlePlayer.Play
+  - TaleOfTiles.UI.ParticlePlayer.Start
+  - TaleOfTiles.UI.ParticlePlayer.allParticles
+  - TaleOfTiles.UI.ParticlePlayer.lifetime
+  langs:
+  - csharp
+  - vb
+  name: ParticlePlayer
+  nameWithType: ParticlePlayer
+  fullName: TaleOfTiles.UI.ParticlePlayer
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/ParticlePlayer.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ParticlePlayer
+    path: ../Assets/Scripts/ParticlePlayer.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Manages the playback of particle systems attached to the game object.
+  example: []
+  syntax:
+    content: 'public class ParticlePlayer : MonoBehaviour'
+    content.vb: Public Class ParticlePlayer Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.UI.ParticlePlayer.allParticles
+  commentId: F:TaleOfTiles.UI.ParticlePlayer.allParticles
+  id: allParticles
+  parent: TaleOfTiles.UI.ParticlePlayer
+  langs:
+  - csharp
+  - vb
+  name: allParticles
+  nameWithType: ParticlePlayer.allParticles
+  fullName: TaleOfTiles.UI.ParticlePlayer.allParticles
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticlePlayer.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: allParticles
+    path: ../Assets/Scripts/ParticlePlayer.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: public ParticleSystem[] allParticles
+    return:
+      type: UnityEngine.ParticleSystem[]
+    content.vb: Public allParticles As ParticleSystem()
+- uid: TaleOfTiles.UI.ParticlePlayer.lifetime
+  commentId: F:TaleOfTiles.UI.ParticlePlayer.lifetime
+  id: lifetime
+  parent: TaleOfTiles.UI.ParticlePlayer
+  langs:
+  - csharp
+  - vb
+  name: lifetime
+  nameWithType: ParticlePlayer.lifetime
+  fullName: TaleOfTiles.UI.ParticlePlayer.lifetime
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticlePlayer.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: lifetime
+    path: ../Assets/Scripts/ParticlePlayer.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: public float lifetime
+    return:
+      type: System.Single
+    content.vb: Public lifetime As Single
+- uid: TaleOfTiles.UI.ParticlePlayer.Start
+  commentId: M:TaleOfTiles.UI.ParticlePlayer.Start
+  id: Start
+  parent: TaleOfTiles.UI.ParticlePlayer
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ParticlePlayer.Start()
+  fullName: TaleOfTiles.UI.ParticlePlayer.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticlePlayer.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/ParticlePlayer.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Initializes the particle player, gathering all child particle systems and setting up destruction.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.UI.ParticlePlayer.Start*
+- uid: TaleOfTiles.UI.ParticlePlayer.Play
+  commentId: M:TaleOfTiles.UI.ParticlePlayer.Play
+  id: Play
+  parent: TaleOfTiles.UI.ParticlePlayer
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: ParticlePlayer.Play()
+  fullName: TaleOfTiles.UI.ParticlePlayer.Play()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticlePlayer.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Play
+    path: ../Assets/Scripts/ParticlePlayer.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Plays all attached particle systems.
+  example: []
+  syntax:
+    content: public void Play()
+    content.vb: Public Sub Play()
+  overload: TaleOfTiles.UI.ParticlePlayer.Play*
+references:
+- uid: TaleOfTiles.UI
+  commentId: N:TaleOfTiles.UI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.UI
+  nameWithType: TaleOfTiles.UI
+  fullName: TaleOfTiles.UI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.ParticleSystem[]
+  isExternal: true
+  name: ParticleSystem[]
+  nameWithType: ParticleSystem[]
+  fullName: UnityEngine.ParticleSystem[]
+  nameWithType.vb: ParticleSystem()
+  fullName.vb: UnityEngine.ParticleSystem()
+  name.vb: ParticleSystem()
+  spec.csharp:
+  - uid: UnityEngine.ParticleSystem
+    name: ParticleSystem
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.ParticleSystem
+    name: ParticleSystem
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TaleOfTiles.UI.ParticlePlayer.Start*
+  commentId: Overload:TaleOfTiles.UI.ParticlePlayer.Start
+  href: TaleOfTiles.UI.ParticlePlayer.html#TaleOfTiles_UI_ParticlePlayer_Start
+  name: Start
+  nameWithType: ParticlePlayer.Start
+  fullName: TaleOfTiles.UI.ParticlePlayer.Start
+- uid: TaleOfTiles.UI.ParticlePlayer.Play*
+  commentId: Overload:TaleOfTiles.UI.ParticlePlayer.Play
+  href: TaleOfTiles.UI.ParticlePlayer.html#TaleOfTiles_UI_ParticlePlayer_Play
+  name: Play
+  nameWithType: ParticlePlayer.Play
+  fullName: TaleOfTiles.UI.ParticlePlayer.Play

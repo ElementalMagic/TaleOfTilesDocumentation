@@ -1,0 +1,680 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Misc.EventBus
+  commentId: T:TaleOfTiles.Misc.EventBus
+  id: EventBus
+  parent: TaleOfTiles.Misc
+  children:
+  - TaleOfTiles.Misc.EventBus.Publish(System.String,System.Object)
+  - TaleOfTiles.Misc.EventBus.Subscribe(System.String,System.Action{System.Object})
+  - TaleOfTiles.Misc.EventBus.Unsubscribe(System.String,System.Action{System.Object})
+  - TaleOfTiles.Misc.EventBus.eventDictionary
+  langs:
+  - csharp
+  - vb
+  name: EventBus
+  nameWithType: EventBus
+  fullName: TaleOfTiles.Misc.EventBus
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Managers/EventBus.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EventBus
+    path: ../Assets/Scripts/Managers/EventBus.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Misc
+  summary: Singleton class for event bus, used to manage and dispatch events.
+  example: []
+  syntax:
+    content: 'public class EventBus : Singleton<EventBus>'
+    content.vb: Public Class EventBus Inherits Singleton(Of EventBus)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - TaleOfTiles.Misc.SingletonBase
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}
+  inheritedMembers:
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.m_instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Instance
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Awake
+  - TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Prepare
+  - TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: TaleOfTiles.Misc.EventBus.eventDictionary
+  commentId: F:TaleOfTiles.Misc.EventBus.eventDictionary
+  id: eventDictionary
+  parent: TaleOfTiles.Misc.EventBus
+  langs:
+  - csharp
+  - vb
+  name: eventDictionary
+  nameWithType: EventBus.eventDictionary
+  fullName: TaleOfTiles.Misc.EventBus.eventDictionary
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Managers/EventBus.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: eventDictionary
+    path: ../Assets/Scripts/Managers/EventBus.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Misc
+  summary: Dictionary storing the event listeners for each event name.
+  example: []
+  syntax:
+    content: private Dictionary<string, Action<object>> eventDictionary
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Action{System.Object}}
+    content.vb: Private eventDictionary As Dictionary(Of String, Action(Of Object))
+- uid: TaleOfTiles.Misc.EventBus.Subscribe(System.String,System.Action{System.Object})
+  commentId: M:TaleOfTiles.Misc.EventBus.Subscribe(System.String,System.Action{System.Object})
+  id: Subscribe(System.String,System.Action{System.Object})
+  parent: TaleOfTiles.Misc.EventBus
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(string, Action<object>)
+  nameWithType: EventBus.Subscribe(string, Action<object>)
+  fullName: TaleOfTiles.Misc.EventBus.Subscribe(string, System.Action<object>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/EventBus.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Subscribe
+    path: ../Assets/Scripts/Managers/EventBus.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Misc
+  summary: Subscribes a listener to a specific event.
+  example: []
+  syntax:
+    content: public void Subscribe(string eventName, Action<object> listener)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: The name of the event to subscribe to.
+    - id: listener
+      type: System.Action{System.Object}
+      description: The listener to subscribe.
+    content.vb: Public Sub Subscribe(eventName As String, listener As Action(Of Object))
+  overload: TaleOfTiles.Misc.EventBus.Subscribe*
+  nameWithType.vb: EventBus.Subscribe(String, Action(Of Object))
+  fullName.vb: TaleOfTiles.Misc.EventBus.Subscribe(String, System.Action(Of Object))
+  name.vb: Subscribe(String, Action(Of Object))
+- uid: TaleOfTiles.Misc.EventBus.Unsubscribe(System.String,System.Action{System.Object})
+  commentId: M:TaleOfTiles.Misc.EventBus.Unsubscribe(System.String,System.Action{System.Object})
+  id: Unsubscribe(System.String,System.Action{System.Object})
+  parent: TaleOfTiles.Misc.EventBus
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe(string, Action<object>)
+  nameWithType: EventBus.Unsubscribe(string, Action<object>)
+  fullName: TaleOfTiles.Misc.EventBus.Unsubscribe(string, System.Action<object>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/EventBus.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Unsubscribe
+    path: ../Assets/Scripts/Managers/EventBus.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Misc
+  summary: Unsubscribes a listener from a specific event.
+  example: []
+  syntax:
+    content: public void Unsubscribe(string eventName, Action<object> listener)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: The name of the event to unsubscribe from.
+    - id: listener
+      type: System.Action{System.Object}
+      description: The listener to unsubscribe.
+    content.vb: Public Sub Unsubscribe(eventName As String, listener As Action(Of Object))
+  overload: TaleOfTiles.Misc.EventBus.Unsubscribe*
+  nameWithType.vb: EventBus.Unsubscribe(String, Action(Of Object))
+  fullName.vb: TaleOfTiles.Misc.EventBus.Unsubscribe(String, System.Action(Of Object))
+  name.vb: Unsubscribe(String, Action(Of Object))
+- uid: TaleOfTiles.Misc.EventBus.Publish(System.String,System.Object)
+  commentId: M:TaleOfTiles.Misc.EventBus.Publish(System.String,System.Object)
+  id: Publish(System.String,System.Object)
+  parent: TaleOfTiles.Misc.EventBus
+  langs:
+  - csharp
+  - vb
+  name: Publish(string, object)
+  nameWithType: EventBus.Publish(string, object)
+  fullName: TaleOfTiles.Misc.EventBus.Publish(string, object)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Managers/EventBus.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Publish
+    path: ../Assets/Scripts/Managers/EventBus.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Misc
+  summary: Publishes an event, invoking all subscribed listeners.
+  example: []
+  syntax:
+    content: public void Publish(string eventName, object eventArg = null)
+    parameters:
+    - id: eventName
+      type: System.String
+      description: The name of the event to publish.
+    - id: eventArg
+      type: System.Object
+      description: The argument to pass to the event listeners.
+    content.vb: Public Sub Publish(eventName As String, eventArg As Object = Nothing)
+  overload: TaleOfTiles.Misc.EventBus.Publish*
+  nameWithType.vb: EventBus.Publish(String, Object)
+  fullName.vb: TaleOfTiles.Misc.EventBus.Publish(String, Object)
+  name.vb: Publish(String, Object)
+references:
+- uid: TaleOfTiles.Misc
+  commentId: N:TaleOfTiles.Misc
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Misc
+  nameWithType: TaleOfTiles.Misc
+  fullName: TaleOfTiles.Misc
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Misc
+    name: Misc
+    href: TaleOfTiles.Misc.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Misc.SingletonBase
+  commentId: T:TaleOfTiles.Misc.SingletonBase
+  parent: TaleOfTiles.Misc
+  href: TaleOfTiles.Misc.SingletonBase.html
+  name: SingletonBase
+  nameWithType: SingletonBase
+  fullName: TaleOfTiles.Misc.SingletonBase
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}
+  commentId: T:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}
+  parent: TaleOfTiles.Misc
+  definition: TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<EventBus>
+  nameWithType: Singleton<EventBus>
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.EventBus>
+  nameWithType.vb: Singleton(Of EventBus)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.EventBus)
+  name.vb: Singleton(Of EventBus)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - uid: TaleOfTiles.Misc.EventBus
+    name: EventBus
+    href: TaleOfTiles.Misc.EventBus.html
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Misc.EventBus
+    name: EventBus
+    href: TaleOfTiles.Misc.EventBus.html
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.m_instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}
+  definition: TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<EventBus>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.EventBus>.m_instance
+  nameWithType.vb: Singleton(Of EventBus).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.EventBus).m_instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Instance
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}
+  definition: TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<EventBus>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.EventBus>.Instance
+  nameWithType.vb: Singleton(Of EventBus).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.EventBus).Instance
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Awake
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}
+  definition: TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<EventBus>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.EventBus>.Awake()
+  nameWithType.vb: Singleton(Of EventBus).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.EventBus).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Prepare
+  parent: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}
+  definition: TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<EventBus>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<TaleOfTiles.Misc.EventBus>.Prepare()
+  nameWithType.vb: Singleton(Of EventBus).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of TaleOfTiles.Misc.EventBus).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton{TaleOfTiles.Misc.EventBus}.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.SingletonBase.AllSingletons
+  commentId: F:TaleOfTiles.Misc.SingletonBase.AllSingletons
+  parent: TaleOfTiles.Misc.SingletonBase
+  href: TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons
+  name: AllSingletons
+  nameWithType: SingletonBase.AllSingletons
+  fullName: TaleOfTiles.Misc.SingletonBase.AllSingletons
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Misc.Singleton`1
+  commentId: T:TaleOfTiles.Misc.Singleton`1
+  href: TaleOfTiles.Misc.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: TaleOfTiles.Misc.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1
+    name: Singleton
+    href: TaleOfTiles.Misc.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton`1.m_instance
+  commentId: F:TaleOfTiles.Misc.Singleton`1.m_instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance
+  name: m_instance
+  nameWithType: Singleton<T>.m_instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.m_instance
+  nameWithType.vb: Singleton(Of T).m_instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).m_instance
+- uid: TaleOfTiles.Misc.Singleton`1.Instance
+  commentId: P:TaleOfTiles.Misc.Singleton`1.Instance
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: TaleOfTiles.Misc.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Instance
+- uid: TaleOfTiles.Misc.Singleton`1.Awake
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Awake
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Awake
+    name: Awake
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Misc.Singleton`1.Prepare
+  commentId: M:TaleOfTiles.Misc.Singleton`1.Prepare
+  href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  name: Prepare()
+  nameWithType: Singleton<T>.Prepare()
+  fullName: TaleOfTiles.Misc.Singleton<T>.Prepare()
+  nameWithType.vb: Singleton(Of T).Prepare()
+  fullName.vb: TaleOfTiles.Misc.Singleton(Of T).Prepare()
+  spec.csharp:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: TaleOfTiles.Misc.Singleton`1.Prepare
+    name: Prepare
+    href: TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,System.Action{System.Object}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Action{System.Object}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, Action<object>>
+  nameWithType: Dictionary<string, Action<object>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Action<object>>
+  nameWithType.vb: Dictionary(Of String, Action(Of Object))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Action(Of Object))
+  name.vb: Dictionary(Of String, Action(Of Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TaleOfTiles.Misc.EventBus.Subscribe*
+  commentId: Overload:TaleOfTiles.Misc.EventBus.Subscribe
+  href: TaleOfTiles.Misc.EventBus.html#TaleOfTiles_Misc_EventBus_Subscribe_System_String_System_Action_System_Object__
+  name: Subscribe
+  nameWithType: EventBus.Subscribe
+  fullName: TaleOfTiles.Misc.EventBus.Subscribe
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Action{System.Object}
+  commentId: T:System.Action{System.Object}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<object>
+  nameWithType: Action<object>
+  fullName: System.Action<object>
+  nameWithType.vb: Action(Of Object)
+  fullName.vb: System.Action(Of Object)
+  name.vb: Action(Of Object)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: TaleOfTiles.Misc.EventBus.Unsubscribe*
+  commentId: Overload:TaleOfTiles.Misc.EventBus.Unsubscribe
+  href: TaleOfTiles.Misc.EventBus.html#TaleOfTiles_Misc_EventBus_Unsubscribe_System_String_System_Action_System_Object__
+  name: Unsubscribe
+  nameWithType: EventBus.Unsubscribe
+  fullName: TaleOfTiles.Misc.EventBus.Unsubscribe
+- uid: TaleOfTiles.Misc.EventBus.Publish*
+  commentId: Overload:TaleOfTiles.Misc.EventBus.Publish
+  href: TaleOfTiles.Misc.EventBus.html#TaleOfTiles_Misc_EventBus_Publish_System_String_System_Object_
+  name: Publish
+  nameWithType: EventBus.Publish
+  fullName: TaleOfTiles.Misc.EventBus.Publish

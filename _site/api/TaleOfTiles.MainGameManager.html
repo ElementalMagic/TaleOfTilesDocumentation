@@ -1,0 +1,1151 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MainGameManager
+ | Tale of Tiles Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MainGameManager
+ | Tale of Tiles Documentation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ElementalMagic/Match-3-Mobile-Game/new/dev/apiSpec/new?filename=TaleOfTiles_MainGameManager.md&amp;value=---%0Auid%3A%20TaleOfTiles.MainGameManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Tale of Tiles Documentation">
+            Tale of Tiles Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleOfTiles.MainGameManager">
+
+
+
+  <h1 id="TaleOfTiles_MainGameManager" data-uid="TaleOfTiles.MainGameManager" class="text-break">
+    Class MainGameManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleOfTiles.html">TaleOfTiles</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The MainGameManager class is a singleton that manages various aspects of the game.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MainGameManager : Singleton&lt;MainGameManager&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="TaleOfTiles.Misc.SingletonBase.html">SingletonBase</a></div>
+      <div><a class="xref" href="TaleOfTiles.Misc.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="TaleOfTiles.MainGameManager.html">MainGameManager</a>&gt;</div>
+      <div><span class="xref">MainGameManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_m_instance">Singleton&lt;MainGameManager&gt;.m_instance</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Instance">Singleton&lt;MainGameManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Awake">Singleton&lt;MainGameManager&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.Singleton-1.html#TaleOfTiles_Misc_Singleton_1_Prepare">Singleton&lt;MainGameManager&gt;.Prepare()</a>
+    </div>
+    <div>
+      <a class="xref" href="TaleOfTiles.Misc.SingletonBase.html#TaleOfTiles_Misc_SingletonBase_AllSingletons">SingletonBase.AllSingletons</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="TaleOfTiles_MainGameManager_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class handles the initialization and coordination of different managers
+like AudioManager, UIManager, etc. It is responsible for setting up the game environment,
+managing the game state, and transitioning between different scenes and states.</p>
+</div>
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_additional_screens_prefab" data-uid="TaleOfTiles.MainGameManager.additional_screens_prefab">
+  additional_screens_prefab
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject additional_screens_prefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>Prefab for additional screens in the game.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_audio_manager" data-uid="TaleOfTiles.MainGameManager.audio_manager">
+  audio_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioManager audio_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Audio.AudioManager.html">AudioManager</a></dt>
+    <dd><p>Manager for handling audio-related functionalities.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_battle_arena_manager" data-uid="TaleOfTiles.MainGameManager.battle_arena_manager">
+  battle_arena_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BattleArenaManager battle_arena_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.BattleArenaManager.html">BattleArenaManager</a></dt>
+    <dd><p>Manager for the battle arena mechanics.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_cards_holder_manager" data-uid="TaleOfTiles.MainGameManager.cards_holder_manager">
+  cards_holder_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardsHolderManager cards_holder_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Card.CardsHolderManager.html">CardsHolderManager</a></dt>
+    <dd><p>Manager for the player's card collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_combbat_manager" data-uid="TaleOfTiles.MainGameManager.combbat_manager">
+  combbat_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CombatManager combbat_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Arena.CombatManager.html">CombatManager</a></dt>
+    <dd><p>Manager for handling combat and game logic.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_data_manager" data-uid="TaleOfTiles.MainGameManager.data_manager">
+  data_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataManager data_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Data.DataManager.html">DataManager</a></dt>
+    <dd><p>Manager for handling data storage and retrieval.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_general_audio_group_prefab" data-uid="TaleOfTiles.MainGameManager.general_audio_group_prefab">
+  general_audio_group_prefab
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject general_audio_group_prefab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>Prefab for general audio in the game.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_journey_manager" data-uid="TaleOfTiles.MainGameManager.journey_manager">
+  journey_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JourneyManager journey_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Journey.JourneyManager.html">JourneyManager</a></dt>
+    <dd><p>Manager for handling the game's journey or campaign mode.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_loading_screen_manager" data-uid="TaleOfTiles.MainGameManager.loading_screen_manager">
+  loading_screen_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LoadingScreenManager loading_screen_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.UI.LoadingScreenManager.html">LoadingScreenManager</a></dt>
+    <dd><p>Manager for handling loading screens.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_player" data-uid="TaleOfTiles.MainGameManager.player">
+  player
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private PlayerCharacter player</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Player.PlayerCharacter.html">PlayerCharacter</a></dt>
+    <dd><p>Represents the player character in the game.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_player_level" data-uid="TaleOfTiles.MainGameManager.player_level">
+  player_level
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerLevel player_level</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.PlayerLevel.html">PlayerLevel</a></dt>
+    <dd><p>Represents the player's level in the game.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_scene_switcher_manager" data-uid="TaleOfTiles.MainGameManager.scene_switcher_manager">
+  scene_switcher_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneSwitcherManager scene_switcher_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Misc.SceneSwitcherManager.html">SceneSwitcherManager</a></dt>
+    <dd><p>Manager for scene transitions.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_tosave" data-uid="TaleOfTiles.MainGameManager.tosave">
+  tosave
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JourneyObject tosave</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Journey.JourneyObject.html">JourneyObject</a></dt>
+    <dd><p>Object to store the current state of the journey.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="TaleOfTiles_MainGameManager_ui_manager" data-uid="TaleOfTiles.MainGameManager.ui_manager">
+  ui_manager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIManager ui_manager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.UI.UIManager.html">UIManager</a></dt>
+    <dd><p>Manager for user interface elements and interactions.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleOfTiles_MainGameManager_CreatePlayerCharacter_" data-uid="TaleOfTiles.MainGameManager.CreatePlayerCharacter*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_CreatePlayerCharacter" data-uid="TaleOfTiles.MainGameManager.CreatePlayerCharacter">
+  CreatePlayerCharacter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new player character and initializes its properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreatePlayerCharacter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_GetPlayer_" data-uid="TaleOfTiles.MainGameManager.GetPlayer*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_GetPlayer" data-uid="TaleOfTiles.MainGameManager.GetPlayer">
+  GetPlayer()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the current player character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerCharacter GetPlayer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="TaleOfTiles.Player.PlayerCharacter.html">PlayerCharacter</a></dt>
+    <dd><p>The current player character.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_HomeButtonClick_" data-uid="TaleOfTiles.MainGameManager.HomeButtonClick*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_HomeButtonClick_UnityEngine_GameObject_" data-uid="TaleOfTiles.MainGameManager.HomeButtonClick(UnityEngine.GameObject)">
+  HomeButtonClick(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the home button click event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HomeButtonClick(GameObject go = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>go</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject that calls this method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_LoadBattleArena_" data-uid="TaleOfTiles.MainGameManager.LoadBattleArena*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_LoadBattleArena" data-uid="TaleOfTiles.MainGameManager.LoadBattleArena">
+  LoadBattleArena()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the battle arena.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadBattleArena()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_LoadBattleArenaCoroutine_" data-uid="TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_LoadBattleArenaCoroutine" data-uid="TaleOfTiles.MainGameManager.LoadBattleArenaCoroutine">
+  LoadBattleArenaCoroutine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A coroutine to load the battle arena.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator LoadBattleArenaCoroutine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>An IEnumerator for coroutine sequencing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_LoadJourneyMap_" data-uid="TaleOfTiles.MainGameManager.LoadJourneyMap*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_LoadJourneyMap_System_String_UnityEngine_GameObject_" data-uid="TaleOfTiles.MainGameManager.LoadJourneyMap(System.String,UnityEngine.GameObject)">
+  LoadJourneyMap(string, GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the journey map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadJourneyMap(string journey_id = &quot;&quot;, GameObject caller = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>journey_id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ID of the journey to be loaded.</p>
+</dd>
+    <dt><code>caller</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject that calls this method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_LoadJourneyMapCoroutine_" data-uid="TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_LoadJourneyMapCoroutine_UnityEngine_GameObject_" data-uid="TaleOfTiles.MainGameManager.LoadJourneyMapCoroutine(UnityEngine.GameObject)">
+  LoadJourneyMapCoroutine(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A coroutine to load the journey map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator LoadJourneyMapCoroutine(GameObject caller = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>caller</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject that calls this method.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>An IEnumerator for coroutine sequencing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_LoadJourneySelectionScene_" data-uid="TaleOfTiles.MainGameManager.LoadJourneySelectionScene*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_LoadJourneySelectionScene_UnityEngine_GameObject_" data-uid="TaleOfTiles.MainGameManager.LoadJourneySelectionScene(UnityEngine.GameObject)">
+  LoadJourneySelectionScene(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the journey selection scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadJourneySelectionScene(GameObject caller = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>caller</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject that calls this method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_LoadJourneySelectionSceneCoroutine_" data-uid="TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_LoadJourneySelectionSceneCoroutine_UnityEngine_GameObject_" data-uid="TaleOfTiles.MainGameManager.LoadJourneySelectionSceneCoroutine(UnityEngine.GameObject)">
+  LoadJourneySelectionSceneCoroutine(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L347"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A coroutine to load the journey selection scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator LoadJourneySelectionSceneCoroutine(GameObject caller = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>caller</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject that calls this method.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>An IEnumerator for coroutine sequencing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_LoadLevelSelectionScreen_" data-uid="TaleOfTiles.MainGameManager.LoadLevelSelectionScreen*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_LoadLevelSelectionScreen_UnityEngine_GameObject_" data-uid="TaleOfTiles.MainGameManager.LoadLevelSelectionScreen(UnityEngine.GameObject)">
+  LoadLevelSelectionScreen(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads the level selection screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadLevelSelectionScreen(GameObject caller = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>caller</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject that calls this method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_LoadLevelSelectionScreenCoroutine_" data-uid="TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_LoadLevelSelectionScreenCoroutine_UnityEngine_GameObject_" data-uid="TaleOfTiles.MainGameManager.LoadLevelSelectionScreenCoroutine(UnityEngine.GameObject)">
+  LoadLevelSelectionScreenCoroutine(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A coroutine to load the level selection screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator LoadLevelSelectionScreenCoroutine(GameObject caller = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>caller</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The GameObject that calls this method.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>An IEnumerator for coroutine sequencing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_PrepareManagers_" data-uid="TaleOfTiles.MainGameManager.PrepareManagers*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_PrepareManagers" data-uid="TaleOfTiles.MainGameManager.PrepareManagers">
+  PrepareManagers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A coroutine to prepare all the managers sequentially.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private IEnumerator PrepareManagers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd><p>An IEnumerator for coroutine sequencing.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_SelectLevel_" data-uid="TaleOfTiles.MainGameManager.SelectLevel*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_SelectLevel_System_String_" data-uid="TaleOfTiles.MainGameManager.SelectLevel(System.String)">
+  SelectLevel(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects a level by its ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectLevel(string level_id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>level_id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ID of the level to be selected.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_SelectLevel_" data-uid="TaleOfTiles.MainGameManager.SelectLevel*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_SelectLevel_TaleOfTiles_Level_LevelObject_" data-uid="TaleOfTiles.MainGameManager.SelectLevel(TaleOfTiles.Level.LevelObject)">
+  SelectLevel(LevelObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects a level by its LevelObject instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectLevel(LevelObject level)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>level</code> <a class="xref" href="TaleOfTiles.Level.LevelObject.html">LevelObject</a></dt>
+    <dd><p>LevelObject instance of the level to be selected.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_SetMainCameraToAllCanvases_" data-uid="TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_SetMainCameraToAllCanvases" data-uid="TaleOfTiles.MainGameManager.SetMainCameraToAllCanvases">
+  SetMainCameraToAllCanvases()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the main camera to all canvases.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void SetMainCameraToAllCanvases()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_MainGameManager_Start_" data-uid="TaleOfTiles.MainGameManager.Start*"></a>
+
+  <h3 id="TaleOfTiles_MainGameManager_Start" data-uid="TaleOfTiles.MainGameManager.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the game manager by initializing all the managers and preparing the game environment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">private void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/MainGameManager.cs/#L25" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

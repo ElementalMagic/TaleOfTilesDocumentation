@@ -1,0 +1,598 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Utils
+ | Tale of Tiles Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Utils
+ | Tale of Tiles Documentation ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ElementalMagic/Match-3-Mobile-Game/new/dev/apiSpec/new?filename=TaleOfTiles_Arena_Utils.md&amp;value=---%0Auid%3A%20TaleOfTiles.Arena.Utils%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Tale of Tiles Documentation">
+            Tale of Tiles Documentation
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="TaleOfTiles.Arena.Utils">
+
+
+
+  <h1 id="TaleOfTiles_Arena_Utils" data-uid="TaleOfTiles.Arena.Utils" class="text-break">
+    Class Utils
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1029"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="TaleOfTiles.html">TaleOfTiles</a>.<a class="xref" href="TaleOfTiles.Arena.html">Arena</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Assembly-CSharp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Utility class providing various helper methods.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Utils</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Utils</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="TaleOfTiles_Arena_Utils_ChangeColorSmooth_" data-uid="TaleOfTiles.Arena.Utils.ChangeColorSmooth*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_ChangeColorSmooth_TaleOfTiles_Arena_Utils_GetColorDelegate_TaleOfTiles_Arena_Utils_SetColorDelegate_UnityEngine_Color_System_Single_" data-uid="TaleOfTiles.Arena.Utils.ChangeColorSmooth(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)">
+  ChangeColorSmooth(GetColorDelegate, SetColorDelegate, Color, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1095"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to change the color on a UI element smoothly over time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ChangeColorSmooth(Utils.GetColorDelegate getColor, Utils.SetColorDelegate setColor, Color target_color, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>getColor</code> <a class="xref" href="TaleOfTiles.Arena.Utils.html">Utils</a>.<a class="xref" href="TaleOfTiles.Arena.Utils.GetColorDelegate.html">GetColorDelegate</a></dt>
+    <dd></dd>
+    <dt><code>setColor</code> <a class="xref" href="TaleOfTiles.Arena.Utils.html">Utils</a>.<a class="xref" href="TaleOfTiles.Arena.Utils.SetColorDelegate.html">SetColorDelegate</a></dt>
+    <dd></dd>
+    <dt><code>target_color</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_FlashColor_" data-uid="TaleOfTiles.Arena.Utils.FlashColor*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_FlashColor_TaleOfTiles_Arena_Utils_GetColorDelegate_TaleOfTiles_Arena_Utils_SetColorDelegate_UnityEngine_Color_System_Single_" data-uid="TaleOfTiles.Arena.Utils.FlashColor(TaleOfTiles.Arena.Utils.GetColorDelegate,TaleOfTiles.Arena.Utils.SetColorDelegate,UnityEngine.Color,System.Single)">
+  FlashColor(GetColorDelegate, SetColorDelegate, Color, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1057"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to flash a color on a UI element over time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator FlashColor(Utils.GetColorDelegate getColor, Utils.SetColorDelegate setColor, Color target_color, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>getColor</code> <a class="xref" href="TaleOfTiles.Arena.Utils.html">Utils</a>.<a class="xref" href="TaleOfTiles.Arena.Utils.GetColorDelegate.html">GetColorDelegate</a></dt>
+    <dd></dd>
+    <dt><code>setColor</code> <a class="xref" href="TaleOfTiles.Arena.Utils.html">Utils</a>.<a class="xref" href="TaleOfTiles.Arena.Utils.SetColorDelegate.html">SetColorDelegate</a></dt>
+    <dd></dd>
+    <dt><code>target_color</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_InterpolateCanvasGroupAlpha_" data-uid="TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_InterpolateCanvasGroupAlpha_UnityEngine_CanvasGroup_System_Single_System_Single_System_Single_" data-uid="TaleOfTiles.Arena.Utils.InterpolateCanvasGroupAlpha(UnityEngine.CanvasGroup,System.Single,System.Single,System.Single)">
+  InterpolateCanvasGroupAlpha(CanvasGroup, float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1038"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to interpolate the alpha value of a CanvasGroup over time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator InterpolateCanvasGroupAlpha(CanvasGroup canvas_group, float start_value, float target_value, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas_group</code> <span class="xref">CanvasGroup</span></dt>
+    <dd></dd>
+    <dt><code>start_value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>target_value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_MoveObjects_" data-uid="TaleOfTiles.Arena.Utils.MoveObjects*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_MoveObjects_UnityEngine_GameObject_UnityEngine_Vector3_System_Single_" data-uid="TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject,UnityEngine.Vector3,System.Single)">
+  MoveObjects(GameObject, Vector3, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to move a GameObject by a certain offset over time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveObjects(GameObject obj, Vector3 offset, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+    <dt><code>offset</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_MoveObjects_" data-uid="TaleOfTiles.Arena.Utils.MoveObjects*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_MoveObjects_UnityEngine_GameObject___UnityEngine_Vector3_System_Single_" data-uid="TaleOfTiles.Arena.Utils.MoveObjects(UnityEngine.GameObject[],UnityEngine.Vector3,System.Single)">
+  MoveObjects(GameObject[], Vector3, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to move multiple GameObjects by a certain offset over time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveObjects(GameObject[] objects, Vector3 offset, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objects</code> <span class="xref">GameObject</span>[]</dt>
+    <dd></dd>
+    <dt><code>offset</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_RebuildLayoutNextFrame_" data-uid="TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_RebuildLayoutNextFrame_UnityEngine_RectTransform_System_Action_System_Single_" data-uid="TaleOfTiles.Arena.Utils.RebuildLayoutNextFrame(UnityEngine.RectTransform,System.Action,System.Single)">
+  RebuildLayoutNextFrame(RectTransform, Action, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to rebuild a RectTransform's layout at the end of the next frame.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator RebuildLayoutNextFrame(RectTransform rect, Action callback = null, float callback_delay = 0.5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+    <dt><code>callback_delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_RemoveChilds_" data-uid="TaleOfTiles.Arena.Utils.RemoveChilds*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_RemoveChilds_UnityEngine_Transform_" data-uid="TaleOfTiles.Arena.Utils.RemoveChilds(UnityEngine.Transform)">
+  RemoveChilds(Transform)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all child GameObjects from a parent Transform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveChilds(Transform parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_ResizeObjects_" data-uid="TaleOfTiles.Arena.Utils.ResizeObjects*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_ResizeObjects_UnityEngine_RectTransform_UnityEngine_Vector2_System_Single_" data-uid="TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)">
+  ResizeObjects(RectTransform, Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to resize a RectTransform to a target size over time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ResizeObjects(RectTransform obj, Vector2 targetSize, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>targetSize</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_ResizeObjects_" data-uid="TaleOfTiles.Arena.Utils.ResizeObjects*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_ResizeObjects_UnityEngine_RectTransform___UnityEngine_Vector2_System_Single_" data-uid="TaleOfTiles.Arena.Utils.ResizeObjects(UnityEngine.RectTransform[],UnityEngine.Vector2,System.Single)">
+  ResizeObjects(RectTransform[], Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to resize multiple RectTransforms to a target size over time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ResizeObjects(RectTransform[] objects, Vector2 targetSize, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objects</code> <span class="xref">RectTransform</span>[]</dt>
+    <dd></dd>
+    <dt><code>targetSize</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_ResizeObjectsScale_" data-uid="TaleOfTiles.Arena.Utils.ResizeObjectsScale*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_ResizeObjectsScale_UnityEngine_RectTransform_UnityEngine_Vector2_System_Single_" data-uid="TaleOfTiles.Arena.Utils.ResizeObjectsScale(UnityEngine.RectTransform,UnityEngine.Vector2,System.Single)">
+  ResizeObjectsScale(RectTransform, Vector2, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coroutine to resize a RectTransform's scale to a target size over time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ResizeObjectsScale(RectTransform obj, Vector2 targetSize, float delay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">RectTransform</span></dt>
+    <dd></dd>
+    <dt><code>targetSize</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>delay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="TaleOfTiles_Arena_Utils_Shuffle_" data-uid="TaleOfTiles.Arena.Utils.Shuffle*"></a>
+
+  <h3 id="TaleOfTiles_Arena_Utils_Shuffle_System_Int32___" data-uid="TaleOfTiles.Arena.Utils.Shuffle(System.Int32[])">
+  Shuffle(int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shuffles an array of integers in-place using the Fisher-Yates algorithm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Shuffle(int[] array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>array</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p>The array to shuffle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ElementalMagic/Match-3-Mobile-Game/blob/dev/Assets/Scripts/Managers/CombatManager.cs/#L1029" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

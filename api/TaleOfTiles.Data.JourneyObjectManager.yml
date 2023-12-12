@@ -1,0 +1,418 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Data.JourneyObjectManager
+  commentId: T:TaleOfTiles.Data.JourneyObjectManager
+  id: JourneyObjectManager
+  parent: TaleOfTiles.Data
+  children:
+  - TaleOfTiles.Data.JourneyObjectManager.DeleteJourneyObject(System.String)
+  - TaleOfTiles.Data.JourneyObjectManager.GetPathFromSprite(UnityEngine.Sprite)
+  - TaleOfTiles.Data.JourneyObjectManager.LoadAllJourneyObjects
+  - TaleOfTiles.Data.JourneyObjectManager.LoadJourneyObject(System.String)
+  - TaleOfTiles.Data.JourneyObjectManager.LoadSpriteFromPath(System.String)
+  - TaleOfTiles.Data.JourneyObjectManager.SaveJourneyObject(TaleOfTiles.Journey.JourneyObject)
+  - TaleOfTiles.Data.JourneyObjectManager.resourcePath
+  langs:
+  - csharp
+  - vb
+  name: JourneyObjectManager
+  nameWithType: JourneyObjectManager
+  fullName: TaleOfTiles.Data.JourneyObjectManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: JourneyObjectManager
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 691
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  summary: Manages operations related to JourneyObjects, including loading, saving, and deleting.
+  example: []
+  syntax:
+    content: public class JourneyObjectManager
+    content.vb: Public Class JourneyObjectManager
+  inheritance:
+  - System.Object
+- uid: TaleOfTiles.Data.JourneyObjectManager.resourcePath
+  commentId: F:TaleOfTiles.Data.JourneyObjectManager.resourcePath
+  id: resourcePath
+  parent: TaleOfTiles.Data.JourneyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: resourcePath
+  nameWithType: JourneyObjectManager.resourcePath
+  fullName: TaleOfTiles.Data.JourneyObjectManager.resourcePath
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: resourcePath
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 693
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: private const string resourcePath = "ScriptableObjects/Journeys/Configs/"
+    return:
+      type: System.String
+    content.vb: Private Const resourcePath As String = "ScriptableObjects/Journeys/Configs/"
+- uid: TaleOfTiles.Data.JourneyObjectManager.LoadAllJourneyObjects
+  commentId: M:TaleOfTiles.Data.JourneyObjectManager.LoadAllJourneyObjects
+  id: LoadAllJourneyObjects
+  parent: TaleOfTiles.Data.JourneyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: LoadAllJourneyObjects()
+  nameWithType: JourneyObjectManager.LoadAllJourneyObjects()
+  fullName: TaleOfTiles.Data.JourneyObjectManager.LoadAllJourneyObjects()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadAllJourneyObjects
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 698
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  summary: Loads all JourneyObject configurations from the persistent data path.
+  example: []
+  syntax:
+    content: public JourneyObject[] LoadAllJourneyObjects()
+    return:
+      type: TaleOfTiles.Journey.JourneyObject[]
+      description: An array of all JourneyObjects loaded.
+    content.vb: Public Function LoadAllJourneyObjects() As JourneyObject()
+  overload: TaleOfTiles.Data.JourneyObjectManager.LoadAllJourneyObjects*
+- uid: TaleOfTiles.Data.JourneyObjectManager.SaveJourneyObject(TaleOfTiles.Journey.JourneyObject)
+  commentId: M:TaleOfTiles.Data.JourneyObjectManager.SaveJourneyObject(TaleOfTiles.Journey.JourneyObject)
+  id: SaveJourneyObject(TaleOfTiles.Journey.JourneyObject)
+  parent: TaleOfTiles.Data.JourneyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: SaveJourneyObject(JourneyObject)
+  nameWithType: JourneyObjectManager.SaveJourneyObject(JourneyObject)
+  fullName: TaleOfTiles.Data.JourneyObjectManager.SaveJourneyObject(TaleOfTiles.Journey.JourneyObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SaveJourneyObject
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 735
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  summary: Saves a given JourneyObject as a JSON file in the persistent data path.
+  example: []
+  syntax:
+    content: public void SaveJourneyObject(JourneyObject journeyObject)
+    parameters:
+    - id: journeyObject
+      type: TaleOfTiles.Journey.JourneyObject
+      description: The JourneyObject to save.
+    content.vb: Public Sub SaveJourneyObject(journeyObject As JourneyObject)
+  overload: TaleOfTiles.Data.JourneyObjectManager.SaveJourneyObject*
+- uid: TaleOfTiles.Data.JourneyObjectManager.LoadJourneyObject(System.String)
+  commentId: M:TaleOfTiles.Data.JourneyObjectManager.LoadJourneyObject(System.String)
+  id: LoadJourneyObject(System.String)
+  parent: TaleOfTiles.Data.JourneyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: LoadJourneyObject(string)
+  nameWithType: JourneyObjectManager.LoadJourneyObject(string)
+  fullName: TaleOfTiles.Data.JourneyObjectManager.LoadJourneyObject(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadJourneyObject
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 778
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  summary: Loads a specific JourneyObject based on the given ID.
+  example: []
+  syntax:
+    content: public JourneyObject LoadJourneyObject(string journeyID)
+    parameters:
+    - id: journeyID
+      type: System.String
+      description: The ID of the JourneyObject to load.
+    return:
+      type: TaleOfTiles.Journey.JourneyObject
+      description: The loaded JourneyObject, or null if not found.
+    content.vb: Public Function LoadJourneyObject(journeyID As String) As JourneyObject
+  overload: TaleOfTiles.Data.JourneyObjectManager.LoadJourneyObject*
+  nameWithType.vb: JourneyObjectManager.LoadJourneyObject(String)
+  fullName.vb: TaleOfTiles.Data.JourneyObjectManager.LoadJourneyObject(String)
+  name.vb: LoadJourneyObject(String)
+- uid: TaleOfTiles.Data.JourneyObjectManager.DeleteJourneyObject(System.String)
+  commentId: M:TaleOfTiles.Data.JourneyObjectManager.DeleteJourneyObject(System.String)
+  id: DeleteJourneyObject(System.String)
+  parent: TaleOfTiles.Data.JourneyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteJourneyObject(string)
+  nameWithType: JourneyObjectManager.DeleteJourneyObject(string)
+  fullName: TaleOfTiles.Data.JourneyObjectManager.DeleteJourneyObject(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DeleteJourneyObject
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 822
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  summary: Deletes a JourneyObject configuration file based on the given ID.
+  example: []
+  syntax:
+    content: public void DeleteJourneyObject(string journeyID)
+    parameters:
+    - id: journeyID
+      type: System.String
+      description: The ID of the JourneyObject to delete.
+    content.vb: Public Sub DeleteJourneyObject(journeyID As String)
+  overload: TaleOfTiles.Data.JourneyObjectManager.DeleteJourneyObject*
+  nameWithType.vb: JourneyObjectManager.DeleteJourneyObject(String)
+  fullName.vb: TaleOfTiles.Data.JourneyObjectManager.DeleteJourneyObject(String)
+  name.vb: DeleteJourneyObject(String)
+- uid: TaleOfTiles.Data.JourneyObjectManager.GetPathFromSprite(UnityEngine.Sprite)
+  commentId: M:TaleOfTiles.Data.JourneyObjectManager.GetPathFromSprite(UnityEngine.Sprite)
+  id: GetPathFromSprite(UnityEngine.Sprite)
+  parent: TaleOfTiles.Data.JourneyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: GetPathFromSprite(Sprite)
+  nameWithType: JourneyObjectManager.GetPathFromSprite(Sprite)
+  fullName: TaleOfTiles.Data.JourneyObjectManager.GetPathFromSprite(UnityEngine.Sprite)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetPathFromSprite
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 836
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: private string GetPathFromSprite(Sprite sprite)
+    parameters:
+    - id: sprite
+      type: UnityEngine.Sprite
+    return:
+      type: System.String
+    content.vb: Private Function GetPathFromSprite(sprite As Sprite) As String
+  overload: TaleOfTiles.Data.JourneyObjectManager.GetPathFromSprite*
+- uid: TaleOfTiles.Data.JourneyObjectManager.LoadSpriteFromPath(System.String)
+  commentId: M:TaleOfTiles.Data.JourneyObjectManager.LoadSpriteFromPath(System.String)
+  id: LoadSpriteFromPath(System.String)
+  parent: TaleOfTiles.Data.JourneyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: LoadSpriteFromPath(string)
+  nameWithType: JourneyObjectManager.LoadSpriteFromPath(string)
+  fullName: TaleOfTiles.Data.JourneyObjectManager.LoadSpriteFromPath(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadSpriteFromPath
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 842
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: private Sprite LoadSpriteFromPath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Private Function LoadSpriteFromPath(path As String) As Sprite
+  overload: TaleOfTiles.Data.JourneyObjectManager.LoadSpriteFromPath*
+  nameWithType.vb: JourneyObjectManager.LoadSpriteFromPath(String)
+  fullName.vb: TaleOfTiles.Data.JourneyObjectManager.LoadSpriteFromPath(String)
+  name.vb: LoadSpriteFromPath(String)
+references:
+- uid: TaleOfTiles.Data
+  commentId: N:TaleOfTiles.Data
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Data
+  nameWithType: TaleOfTiles.Data
+  fullName: TaleOfTiles.Data
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: TaleOfTiles.Data.JourneyObjectManager.LoadAllJourneyObjects*
+  commentId: Overload:TaleOfTiles.Data.JourneyObjectManager.LoadAllJourneyObjects
+  href: TaleOfTiles.Data.JourneyObjectManager.html#TaleOfTiles_Data_JourneyObjectManager_LoadAllJourneyObjects
+  name: LoadAllJourneyObjects
+  nameWithType: JourneyObjectManager.LoadAllJourneyObjects
+  fullName: TaleOfTiles.Data.JourneyObjectManager.LoadAllJourneyObjects
+- uid: TaleOfTiles.Journey.JourneyObject[]
+  isExternal: true
+  href: TaleOfTiles.Journey.JourneyObject.html
+  name: JourneyObject[]
+  nameWithType: JourneyObject[]
+  fullName: TaleOfTiles.Journey.JourneyObject[]
+  nameWithType.vb: JourneyObject()
+  fullName.vb: TaleOfTiles.Journey.JourneyObject()
+  name.vb: JourneyObject()
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyObject
+    name: JourneyObject
+    href: TaleOfTiles.Journey.JourneyObject.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyObject
+    name: JourneyObject
+    href: TaleOfTiles.Journey.JourneyObject.html
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Data.JourneyObjectManager.SaveJourneyObject*
+  commentId: Overload:TaleOfTiles.Data.JourneyObjectManager.SaveJourneyObject
+  href: TaleOfTiles.Data.JourneyObjectManager.html#TaleOfTiles_Data_JourneyObjectManager_SaveJourneyObject_TaleOfTiles_Journey_JourneyObject_
+  name: SaveJourneyObject
+  nameWithType: JourneyObjectManager.SaveJourneyObject
+  fullName: TaleOfTiles.Data.JourneyObjectManager.SaveJourneyObject
+- uid: TaleOfTiles.Journey.JourneyObject
+  commentId: T:TaleOfTiles.Journey.JourneyObject
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyObject.html
+  name: JourneyObject
+  nameWithType: JourneyObject
+  fullName: TaleOfTiles.Journey.JourneyObject
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: TaleOfTiles.Data.JourneyObjectManager.LoadJourneyObject*
+  commentId: Overload:TaleOfTiles.Data.JourneyObjectManager.LoadJourneyObject
+  href: TaleOfTiles.Data.JourneyObjectManager.html#TaleOfTiles_Data_JourneyObjectManager_LoadJourneyObject_System_String_
+  name: LoadJourneyObject
+  nameWithType: JourneyObjectManager.LoadJourneyObject
+  fullName: TaleOfTiles.Data.JourneyObjectManager.LoadJourneyObject
+- uid: TaleOfTiles.Data.JourneyObjectManager.DeleteJourneyObject*
+  commentId: Overload:TaleOfTiles.Data.JourneyObjectManager.DeleteJourneyObject
+  href: TaleOfTiles.Data.JourneyObjectManager.html#TaleOfTiles_Data_JourneyObjectManager_DeleteJourneyObject_System_String_
+  name: DeleteJourneyObject
+  nameWithType: JourneyObjectManager.DeleteJourneyObject
+  fullName: TaleOfTiles.Data.JourneyObjectManager.DeleteJourneyObject
+- uid: TaleOfTiles.Data.JourneyObjectManager.GetPathFromSprite*
+  commentId: Overload:TaleOfTiles.Data.JourneyObjectManager.GetPathFromSprite
+  href: TaleOfTiles.Data.JourneyObjectManager.html#TaleOfTiles_Data_JourneyObjectManager_GetPathFromSprite_UnityEngine_Sprite_
+  name: GetPathFromSprite
+  nameWithType: JourneyObjectManager.GetPathFromSprite
+  fullName: TaleOfTiles.Data.JourneyObjectManager.GetPathFromSprite
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Data.JourneyObjectManager.LoadSpriteFromPath*
+  commentId: Overload:TaleOfTiles.Data.JourneyObjectManager.LoadSpriteFromPath
+  href: TaleOfTiles.Data.JourneyObjectManager.html#TaleOfTiles_Data_JourneyObjectManager_LoadSpriteFromPath_System_String_
+  name: LoadSpriteFromPath
+  nameWithType: JourneyObjectManager.LoadSpriteFromPath
+  fullName: TaleOfTiles.Data.JourneyObjectManager.LoadSpriteFromPath

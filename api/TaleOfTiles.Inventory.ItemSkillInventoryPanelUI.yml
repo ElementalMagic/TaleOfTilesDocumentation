@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI
+  commentId: T:TaleOfTiles.Inventory.ItemSkillInventoryPanelUI
+  id: ItemSkillInventoryPanelUI
+  parent: TaleOfTiles.Inventory
+  children:
+  - TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.skill_type
+  - TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.skill_value
+  langs:
+  - csharp
+  - vb
+  name: ItemSkillInventoryPanelUI
+  nameWithType: ItemSkillInventoryPanelUI
+  fullName: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/ItemSkillInventoryPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ItemSkillInventoryPanelUI
+    path: ../Assets/Scripts/ItemSkillInventoryPanelUI.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Manages the display of a skill in the item skill inventory panel.
+  example: []
+  syntax:
+    content: 'public class ItemSkillInventoryPanelUI : MonoBehaviour'
+    content.vb: Public Class ItemSkillInventoryPanelUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.skill_type
+  commentId: F:TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.skill_type
+  id: skill_type
+  parent: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI
+  langs:
+  - csharp
+  - vb
+  name: skill_type
+  nameWithType: ItemSkillInventoryPanelUI.skill_type
+  fullName: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.skill_type
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemSkillInventoryPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: skill_type
+    path: ../Assets/Scripts/ItemSkillInventoryPanelUI.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Text field displaying the type of the skill.
+  example: []
+  syntax:
+    content: public Text skill_type
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public skill_type As Text
+- uid: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.skill_value
+  commentId: F:TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.skill_value
+  id: skill_value
+  parent: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI
+  langs:
+  - csharp
+  - vb
+  name: skill_value
+  nameWithType: ItemSkillInventoryPanelUI.skill_value
+  fullName: TaleOfTiles.Inventory.ItemSkillInventoryPanelUI.skill_value
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemSkillInventoryPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: skill_value
+    path: ../Assets/Scripts/ItemSkillInventoryPanelUI.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Text field displaying the value of the skill.
+  example: []
+  syntax:
+    content: public Text skill_value
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public skill_value As Text
+references:
+- uid: TaleOfTiles.Inventory
+  commentId: N:TaleOfTiles.Inventory
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Inventory
+  nameWithType: TaleOfTiles.Inventory
+  fullName: TaleOfTiles.Inventory
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Inventory
+    name: Inventory
+    href: TaleOfTiles.Inventory.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Inventory
+    name: Inventory
+    href: TaleOfTiles.Inventory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI

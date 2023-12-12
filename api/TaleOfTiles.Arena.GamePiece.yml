@@ -1,0 +1,1944 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.GamePiece
+  commentId: T:TaleOfTiles.Arena.GamePiece
+  id: GamePiece
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+  - TaleOfTiles.Arena.GamePiece.EndTurn
+  - TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+  - TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+  - TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+  - TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color,System.Single,System.Single)
+  - TaleOfTiles.Arena.GamePiece.Move(System.Int32,System.Int32,System.Single)
+  - TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  - TaleOfTiles.Arena.GamePiece.SetCoord(System.Int32,System.Int32)
+  - TaleOfTiles.Arena.GamePiece.Start
+  - TaleOfTiles.Arena.GamePiece._effect_status
+  - TaleOfTiles.Arena.GamePiece._frame_color
+  - TaleOfTiles.Arena.GamePiece._gem_frame_sprite
+  - TaleOfTiles.Arena.GamePiece._gem_sprite
+  - TaleOfTiles.Arena.GamePiece.board
+  - TaleOfTiles.Arena.GamePiece.brightnessBoost
+  - TaleOfTiles.Arena.GamePiece.burn_effect
+  - TaleOfTiles.Arena.GamePiece.effect_duration
+  - TaleOfTiles.Arena.GamePiece.effect_status
+  - TaleOfTiles.Arena.GamePiece.frame_color
+  - TaleOfTiles.Arena.GamePiece.frozen_effect
+  - TaleOfTiles.Arena.GamePiece.gem_effects
+  - TaleOfTiles.Arena.GamePiece.gem_frame_image
+  - TaleOfTiles.Arena.GamePiece.gem_frame_image_mask
+  - TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+  - TaleOfTiles.Arena.GamePiece.gem_sprite
+  - TaleOfTiles.Arena.GamePiece.gem_status_effects
+  - TaleOfTiles.Arena.GamePiece.gem_ui_background_image
+  - TaleOfTiles.Arena.GamePiece.gem_ui_frame
+  - TaleOfTiles.Arena.GamePiece.gem_ui_image
+  - TaleOfTiles.Arena.GamePiece.hex_effect
+  - TaleOfTiles.Arena.GamePiece.interpolation
+  - TaleOfTiles.Arena.GamePiece.m_isMoving
+  - TaleOfTiles.Arena.GamePiece.matchValue
+  - TaleOfTiles.Arena.GamePiece.saturationIncrease
+  - TaleOfTiles.Arena.GamePiece.shadow
+  - TaleOfTiles.Arena.GamePiece.super_combos
+  - TaleOfTiles.Arena.GamePiece.tier
+  - TaleOfTiles.Arena.GamePiece.touch_damage
+  - TaleOfTiles.Arena.GamePiece.weakened_effect
+  - TaleOfTiles.Arena.GamePiece.xIndex
+  - TaleOfTiles.Arena.GamePiece.yIndex
+  langs:
+  - csharp
+  - vb
+  name: GamePiece
+  nameWithType: GamePiece
+  fullName: TaleOfTiles.Arena.GamePiece
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GamePiece
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Script to handle the functionality and display of a game piece.
+  example: []
+  syntax:
+    content: 'public class GamePiece : MonoBehaviour'
+    content.vb: Public Class GamePiece Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - TaleOfTiles.Arena.Bomb
+  - TaleOfTiles.Arena.Collectible
+- uid: TaleOfTiles.Arena.GamePiece.board
+  commentId: F:TaleOfTiles.Arena.GamePiece.board
+  id: board
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: board
+  nameWithType: GamePiece.board
+  fullName: TaleOfTiles.Arena.GamePiece.board
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: board
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The board manager.
+  example: []
+  syntax:
+    content: public BoardManager board
+    return:
+      type: TaleOfTiles.Arena.BoardManager
+    content.vb: Public board As BoardManager
+- uid: TaleOfTiles.Arena.GamePiece.xIndex
+  commentId: F:TaleOfTiles.Arena.GamePiece.xIndex
+  id: xIndex
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: xIndex
+  nameWithType: GamePiece.xIndex
+  fullName: TaleOfTiles.Arena.GamePiece.xIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: xIndex
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The x index of the game piece in the board.
+  example: []
+  syntax:
+    content: public int xIndex
+    return:
+      type: System.Int32
+    content.vb: Public xIndex As Integer
+- uid: TaleOfTiles.Arena.GamePiece.yIndex
+  commentId: F:TaleOfTiles.Arena.GamePiece.yIndex
+  id: yIndex
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: yIndex
+  nameWithType: GamePiece.yIndex
+  fullName: TaleOfTiles.Arena.GamePiece.yIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: yIndex
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The y index of the game piece in the board.
+  example: []
+  syntax:
+    content: public int yIndex
+    return:
+      type: System.Int32
+    content.vb: Public yIndex As Integer
+- uid: TaleOfTiles.Arena.GamePiece.matchValue
+  commentId: F:TaleOfTiles.Arena.GamePiece.matchValue
+  id: matchValue
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: matchValue
+  nameWithType: GamePiece.matchValue
+  fullName: TaleOfTiles.Arena.GamePiece.matchValue
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: matchValue
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The match value of the game piece.
+  example: []
+  syntax:
+    content: public string matchValue
+    return:
+      type: System.String
+    content.vb: Public matchValue As String
+- uid: TaleOfTiles.Arena.GamePiece.brightnessBoost
+  commentId: F:TaleOfTiles.Arena.GamePiece.brightnessBoost
+  id: brightnessBoost
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: brightnessBoost
+  nameWithType: GamePiece.brightnessBoost
+  fullName: TaleOfTiles.Arena.GamePiece.brightnessBoost
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: brightnessBoost
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The brightness boost of the game piece.
+  example: []
+  syntax:
+    content: public float brightnessBoost
+    return:
+      type: System.Single
+    content.vb: Public brightnessBoost As Single
+- uid: TaleOfTiles.Arena.GamePiece.saturationIncrease
+  commentId: F:TaleOfTiles.Arena.GamePiece.saturationIncrease
+  id: saturationIncrease
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: saturationIncrease
+  nameWithType: GamePiece.saturationIncrease
+  fullName: TaleOfTiles.Arena.GamePiece.saturationIncrease
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: saturationIncrease
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The saturation increase of the game piece.
+  example: []
+  syntax:
+    content: public float saturationIncrease
+    return:
+      type: System.Single
+    content.vb: Public saturationIncrease As Single
+- uid: TaleOfTiles.Arena.GamePiece.frozen_effect
+  commentId: F:TaleOfTiles.Arena.GamePiece.frozen_effect
+  id: frozen_effect
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: frozen_effect
+  nameWithType: GamePiece.frozen_effect
+  fullName: TaleOfTiles.Arena.GamePiece.frozen_effect
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: frozen_effect
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The frozen effect of the game piece.
+  example: []
+  syntax:
+    content: public GameObject frozen_effect
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public frozen_effect As GameObject
+- uid: TaleOfTiles.Arena.GamePiece.weakened_effect
+  commentId: F:TaleOfTiles.Arena.GamePiece.weakened_effect
+  id: weakened_effect
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: weakened_effect
+  nameWithType: GamePiece.weakened_effect
+  fullName: TaleOfTiles.Arena.GamePiece.weakened_effect
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: weakened_effect
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 82
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The weakened effect of the game piece.
+  example: []
+  syntax:
+    content: public GameObject weakened_effect
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public weakened_effect As GameObject
+- uid: TaleOfTiles.Arena.GamePiece.burn_effect
+  commentId: F:TaleOfTiles.Arena.GamePiece.burn_effect
+  id: burn_effect
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: burn_effect
+  nameWithType: GamePiece.burn_effect
+  fullName: TaleOfTiles.Arena.GamePiece.burn_effect
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: burn_effect
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The burn effect of the game piece.
+  example: []
+  syntax:
+    content: public GameObject burn_effect
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public burn_effect As GameObject
+- uid: TaleOfTiles.Arena.GamePiece.hex_effect
+  commentId: F:TaleOfTiles.Arena.GamePiece.hex_effect
+  id: hex_effect
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: hex_effect
+  nameWithType: GamePiece.hex_effect
+  fullName: TaleOfTiles.Arena.GamePiece.hex_effect
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: hex_effect
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 92
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The hex effect of the game piece.
+  example: []
+  syntax:
+    content: public GameObject hex_effect
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public hex_effect As GameObject
+- uid: TaleOfTiles.Arena.GamePiece.touch_damage
+  commentId: F:TaleOfTiles.Arena.GamePiece.touch_damage
+  id: touch_damage
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: touch_damage
+  nameWithType: GamePiece.touch_damage
+  fullName: TaleOfTiles.Arena.GamePiece.touch_damage
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: touch_damage
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The touch damage of the game piece.
+  example: []
+  syntax:
+    content: public float touch_damage
+    return:
+      type: System.Single
+    content.vb: Public touch_damage As Single
+- uid: TaleOfTiles.Arena.GamePiece.effect_duration
+  commentId: F:TaleOfTiles.Arena.GamePiece.effect_duration
+  id: effect_duration
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: effect_duration
+  nameWithType: GamePiece.effect_duration
+  fullName: TaleOfTiles.Arena.GamePiece.effect_duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: effect_duration
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 102
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The effect duration of the game piece.
+  example: []
+  syntax:
+    content: public int effect_duration
+    return:
+      type: System.Int32
+    content.vb: Public effect_duration As Integer
+- uid: TaleOfTiles.Arena.GamePiece.tier
+  commentId: F:TaleOfTiles.Arena.GamePiece.tier
+  id: tier
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: tier
+  nameWithType: GamePiece.tier
+  fullName: TaleOfTiles.Arena.GamePiece.tier
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: tier
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The tier of the game piece.
+  example: []
+  syntax:
+    content: public GemItemTier tier
+    return:
+      type: TaleOfTiles.Card.Gems.GemItemTier
+    content.vb: Public tier As GemItemTier
+- uid: TaleOfTiles.Arena.GamePiece._effect_status
+  commentId: F:TaleOfTiles.Arena.GamePiece._effect_status
+  id: _effect_status
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: _effect_status
+  nameWithType: GamePiece._effect_status
+  fullName: TaleOfTiles.Arena.GamePiece._effect_status
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: _effect_status
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The status effect of the game piece.
+  example: []
+  syntax:
+    content: public GemStatusEffectType _effect_status
+    return:
+      type: TaleOfTiles.Card.Gems.GemStatusEffectType
+    content.vb: Public _effect_status As GemStatusEffectType
+- uid: TaleOfTiles.Arena.GamePiece.effect_status
+  commentId: P:TaleOfTiles.Arena.GamePiece.effect_status
+  id: effect_status
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: effect_status
+  nameWithType: GamePiece.effect_status
+  fullName: TaleOfTiles.Arena.GamePiece.effect_status
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: effect_status
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  example: []
+  syntax:
+    content: public GemStatusEffectType effect_status { get; set; }
+    parameters: []
+    return:
+      type: TaleOfTiles.Card.Gems.GemStatusEffectType
+      description: Gets or sets the status effect of the gem.
+    content.vb: Public Property effect_status As GemStatusEffectType
+  overload: TaleOfTiles.Arena.GamePiece.effect_status*
+- uid: TaleOfTiles.Arena.GamePiece.gem_effects
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_effects
+  id: gem_effects
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_effects
+  nameWithType: GamePiece.gem_effects
+  fullName: TaleOfTiles.Arena.GamePiece.gem_effects
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_effects
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 167
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The list of active effects of the game piece.
+  example: []
+  syntax:
+    content: public List<GemActiveEffect> gem_effects
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemActiveEffect}
+    content.vb: Public gem_effects As List(Of GemActiveEffect)
+- uid: TaleOfTiles.Arena.GamePiece.gem_status_effects
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_status_effects
+  id: gem_status_effects
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_status_effects
+  nameWithType: GamePiece.gem_status_effects
+  fullName: TaleOfTiles.Arena.GamePiece.gem_status_effects
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_status_effects
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 172
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The list of status effects of the game piece.
+  example: []
+  syntax:
+    content: public List<GemStatusEffect> gem_status_effects
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemStatusEffect}
+    content.vb: Public gem_status_effects As List(Of GemStatusEffect)
+- uid: TaleOfTiles.Arena.GamePiece.super_combos
+  commentId: F:TaleOfTiles.Arena.GamePiece.super_combos
+  id: super_combos
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: super_combos
+  nameWithType: GamePiece.super_combos
+  fullName: TaleOfTiles.Arena.GamePiece.super_combos
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: super_combos
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 177
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The list of super combos of the game piece.
+  example: []
+  syntax:
+    content: public List<GemSuperCombo> super_combos
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemSuperCombo}
+    content.vb: Public super_combos As List(Of GemSuperCombo)
+- uid: TaleOfTiles.Arena.GamePiece.gem_frame_image
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_frame_image
+  id: gem_frame_image
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_frame_image
+  nameWithType: GamePiece.gem_frame_image
+  fullName: TaleOfTiles.Arena.GamePiece.gem_frame_image
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_frame_image
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 183
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The UI image component for the game piece's frame.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Image gem_frame_image
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: >-
+      <SerializeField>
+
+      Private gem_frame_image As Image
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.Arena.GamePiece.gem_frame_image_mask
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_frame_image_mask
+  id: gem_frame_image_mask
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_frame_image_mask
+  nameWithType: GamePiece.gem_frame_image_mask
+  fullName: TaleOfTiles.Arena.GamePiece.gem_frame_image_mask
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_frame_image_mask
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 189
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The UI image component for the game piece's frame mask.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Image gem_frame_image_mask
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: >-
+      <SerializeField>
+
+      Private gem_frame_image_mask As Image
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.Arena.GamePiece.shadow
+  commentId: F:TaleOfTiles.Arena.GamePiece.shadow
+  id: shadow
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: shadow
+  nameWithType: GamePiece.shadow
+  fullName: TaleOfTiles.Arena.GamePiece.shadow
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: shadow
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 195
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The UI image component for the game piece's shadow.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Image shadow
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: >-
+      <SerializeField>
+
+      Private shadow As Image
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.Arena.GamePiece.gem_ui_background_image
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_ui_background_image
+  id: gem_ui_background_image
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_ui_background_image
+  nameWithType: GamePiece.gem_ui_background_image
+  fullName: TaleOfTiles.Arena.GamePiece.gem_ui_background_image
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_ui_background_image
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 201
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The UI image component for the game piece's background.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Image gem_ui_background_image
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: >-
+      <SerializeField>
+
+      Private gem_ui_background_image As Image
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.Arena.GamePiece._gem_sprite
+  commentId: F:TaleOfTiles.Arena.GamePiece._gem_sprite
+  id: _gem_sprite
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: _gem_sprite
+  nameWithType: GamePiece._gem_sprite
+  fullName: TaleOfTiles.Arena.GamePiece._gem_sprite
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: _gem_sprite
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 206
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The sprite of the game piece.
+  example: []
+  syntax:
+    content: private Sprite _gem_sprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Private _gem_sprite As Sprite
+- uid: TaleOfTiles.Arena.GamePiece.gem_sprite
+  commentId: P:TaleOfTiles.Arena.GamePiece.gem_sprite
+  id: gem_sprite
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_sprite
+  nameWithType: GamePiece.gem_sprite
+  fullName: TaleOfTiles.Arena.GamePiece.gem_sprite
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_sprite
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 211
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  example: []
+  syntax:
+    content: public Sprite gem_sprite { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+      description: Gets or sets the sprite of the gem.
+    content.vb: Public Property gem_sprite As Sprite
+  overload: TaleOfTiles.Arena.GamePiece.gem_sprite*
+- uid: TaleOfTiles.Arena.GamePiece._gem_frame_sprite
+  commentId: F:TaleOfTiles.Arena.GamePiece._gem_frame_sprite
+  id: _gem_frame_sprite
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: _gem_frame_sprite
+  nameWithType: GamePiece._gem_frame_sprite
+  fullName: TaleOfTiles.Arena.GamePiece._gem_frame_sprite
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: _gem_frame_sprite
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 241
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The sprite of the game piece's frame.
+  example: []
+  syntax:
+    content: private Sprite _gem_frame_sprite
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Private _gem_frame_sprite As Sprite
+- uid: TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+  commentId: P:TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+  id: gem_frame_sprite
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_frame_sprite
+  nameWithType: GamePiece.gem_frame_sprite
+  fullName: TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_frame_sprite
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 247
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  example: []
+  syntax:
+    content: public Sprite gem_frame_sprite { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+      description: >-
+        Gets or sets the sprite of the gem.
+
+        If set, this also updates the UI image of the gem, sets the color of the UI frame, and updates the UI background image.
+    content.vb: Public Property gem_frame_sprite As Sprite
+  overload: TaleOfTiles.Arena.GamePiece.gem_frame_sprite*
+- uid: TaleOfTiles.Arena.GamePiece._frame_color
+  commentId: F:TaleOfTiles.Arena.GamePiece._frame_color
+  id: _frame_color
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: _frame_color
+  nameWithType: GamePiece._frame_color
+  fullName: TaleOfTiles.Arena.GamePiece._frame_color
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: _frame_color
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 275
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The color of the game piece's frame.
+  example: []
+  syntax:
+    content: private Color _frame_color
+    return:
+      type: UnityEngine.Color
+    content.vb: Private _frame_color As Color
+- uid: TaleOfTiles.Arena.GamePiece.frame_color
+  commentId: P:TaleOfTiles.Arena.GamePiece.frame_color
+  id: frame_color
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: frame_color
+  nameWithType: GamePiece.frame_color
+  fullName: TaleOfTiles.Arena.GamePiece.frame_color
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: frame_color
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 281
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  example: []
+  syntax:
+    content: public Color frame_color { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+      description: >-
+        Gets or sets the color of the frame.
+
+        If set, this also updates the color of the UI frame.
+    content.vb: Public Property frame_color As Color
+  overload: TaleOfTiles.Arena.GamePiece.frame_color*
+- uid: TaleOfTiles.Arena.GamePiece.gem_ui_image
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_ui_image
+  id: gem_ui_image
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_ui_image
+  nameWithType: GamePiece.gem_ui_image
+  fullName: TaleOfTiles.Arena.GamePiece.gem_ui_image
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_ui_image
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 299
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The UI image component for the game piece.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Image gem_ui_image
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: >-
+      <SerializeField>
+
+      Private gem_ui_image As Image
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.Arena.GamePiece.gem_ui_frame
+  commentId: F:TaleOfTiles.Arena.GamePiece.gem_ui_frame
+  id: gem_ui_frame
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_ui_frame
+  nameWithType: GamePiece.gem_ui_frame
+  fullName: TaleOfTiles.Arena.GamePiece.gem_ui_frame
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_ui_frame
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 305
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The UI frame component for the game piece.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Image gem_ui_frame
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: >-
+      <SerializeField>
+
+      Private gem_ui_frame As Image
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.Arena.GamePiece.m_isMoving
+  commentId: F:TaleOfTiles.Arena.GamePiece.m_isMoving
+  id: m_isMoving
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: m_isMoving
+  nameWithType: GamePiece.m_isMoving
+  fullName: TaleOfTiles.Arena.GamePiece.m_isMoving
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: m_isMoving
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 311
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Flag to check if the game piece is moving.
+  example: []
+  syntax:
+    content: public bool m_isMoving
+    return:
+      type: System.Boolean
+    content.vb: Public m_isMoving As Boolean
+- uid: TaleOfTiles.Arena.GamePiece.interpolation
+  commentId: F:TaleOfTiles.Arena.GamePiece.interpolation
+  id: interpolation
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: interpolation
+  nameWithType: GamePiece.interpolation
+  fullName: TaleOfTiles.Arena.GamePiece.interpolation
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: interpolation
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 317
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: The type of interpolation when the game piece moves from one position to another.
+  example: []
+  syntax:
+    content: public InterpType interpolation
+    return:
+      type: TaleOfTiles.Arena.InterpType
+    content.vb: Public interpolation As InterpType
+- uid: TaleOfTiles.Arena.GamePiece.Start
+  commentId: M:TaleOfTiles.Arena.GamePiece.Start
+  id: Start
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: GamePiece.Start()
+  fullName: TaleOfTiles.Arena.GamePiece.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 323
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Initializes the game piece.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.Arena.GamePiece.Start*
+- uid: TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+  commentId: M:TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+  id: Init(TaleOfTiles.Arena.BoardManager)
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: Init(BoardManager)
+  nameWithType: GamePiece.Init(BoardManager)
+  fullName: TaleOfTiles.Arena.GamePiece.Init(TaleOfTiles.Arena.BoardManager)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Init
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 332
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Initializes this instance with the given BoardManager.
+  example: []
+  syntax:
+    content: public void Init(BoardManager board)
+    parameters:
+    - id: board
+      type: TaleOfTiles.Arena.BoardManager
+      description: The BoardManager to use for initialization.
+    content.vb: Public Sub Init(board As BoardManager)
+  overload: TaleOfTiles.Arena.GamePiece.Init*
+- uid: TaleOfTiles.Arena.GamePiece.SetCoord(System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.Arena.GamePiece.SetCoord(System.Int32,System.Int32)
+  id: SetCoord(System.Int32,System.Int32)
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: SetCoord(int, int)
+  nameWithType: GamePiece.SetCoord(int, int)
+  fullName: TaleOfTiles.Arena.GamePiece.SetCoord(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetCoord
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 342
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Sets the coordinates of the game piece in the board.
+  example: []
+  syntax:
+    content: public void SetCoord(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The x index of the game piece in the board.
+    - id: y
+      type: System.Int32
+      description: The y index of the game piece in the board.
+    content.vb: Public Sub SetCoord(x As Integer, y As Integer)
+  overload: TaleOfTiles.Arena.GamePiece.SetCoord*
+  nameWithType.vb: GamePiece.SetCoord(Integer, Integer)
+  fullName.vb: TaleOfTiles.Arena.GamePiece.SetCoord(Integer, Integer)
+  name.vb: SetCoord(Integer, Integer)
+- uid: TaleOfTiles.Arena.GamePiece.Move(System.Int32,System.Int32,System.Single)
+  commentId: M:TaleOfTiles.Arena.GamePiece.Move(System.Int32,System.Int32,System.Single)
+  id: Move(System.Int32,System.Int32,System.Single)
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: Move(int, int, float)
+  nameWithType: GamePiece.Move(int, int, float)
+  fullName: TaleOfTiles.Arena.GamePiece.Move(int, int, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Move
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 356
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Move the game piece to a specific location.
+  example: []
+  syntax:
+    content: public void Move(int destX, int destY, float timeToMove)
+    parameters:
+    - id: destX
+      type: System.Int32
+    - id: destY
+      type: System.Int32
+    - id: timeToMove
+      type: System.Single
+    content.vb: Public Sub Move(destX As Integer, destY As Integer, timeToMove As Single)
+  overload: TaleOfTiles.Arena.GamePiece.Move*
+  nameWithType.vb: GamePiece.Move(Integer, Integer, Single)
+  fullName.vb: TaleOfTiles.Arena.GamePiece.Move(Integer, Integer, Single)
+  name.vb: Move(Integer, Integer, Single)
+- uid: TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  id: MoveRoutine(UnityEngine.Vector3,System.Single,System.Int32,System.Int32)
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: MoveRoutine(Vector3, float, int, int)
+  nameWithType: GamePiece.MoveRoutine(Vector3, float, int, int)
+  fullName: TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3, float, int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MoveRoutine
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 370
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Coroutine to handle movement of the game piece.
+  example: []
+  syntax:
+    content: private IEnumerator MoveRoutine(Vector3 destination, float timeToMove, int xIndex, int yIndex)
+    parameters:
+    - id: destination
+      type: UnityEngine.Vector3
+    - id: timeToMove
+      type: System.Single
+    - id: xIndex
+      type: System.Int32
+    - id: yIndex
+      type: System.Int32
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function MoveRoutine(destination As Vector3, timeToMove As Single, xIndex As Integer, yIndex As Integer) As IEnumerator
+  overload: TaleOfTiles.Arena.GamePiece.MoveRoutine*
+  nameWithType.vb: GamePiece.MoveRoutine(Vector3, Single, Integer, Integer)
+  fullName.vb: TaleOfTiles.Arena.GamePiece.MoveRoutine(UnityEngine.Vector3, Single, Integer, Integer)
+  name.vb: MoveRoutine(Vector3, Single, Integer, Integer)
+- uid: TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+  commentId: M:TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+  id: ChangeColor(TaleOfTiles.Arena.GamePiece)
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: ChangeColor(GamePiece)
+  nameWithType: GamePiece.ChangeColor(GamePiece)
+  fullName: TaleOfTiles.Arena.GamePiece.ChangeColor(TaleOfTiles.Arena.GamePiece)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ChangeColor
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 444
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Change the color of this game piece to match another game piece.
+  example: []
+  syntax:
+    content: public void ChangeColor(GamePiece pieceToMatch)
+    parameters:
+    - id: pieceToMatch
+      type: TaleOfTiles.Arena.GamePiece
+    content.vb: Public Sub ChangeColor(pieceToMatch As GamePiece)
+  overload: TaleOfTiles.Arena.GamePiece.ChangeColor*
+- uid: TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+  commentId: M:TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+  id: GetAverageColor(UnityEngine.Sprite)
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: GetAverageColor(Sprite)
+  nameWithType: GamePiece.GetAverageColor(Sprite)
+  fullName: TaleOfTiles.Arena.GamePiece.GetAverageColor(UnityEngine.Sprite)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetAverageColor
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 465
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Get the average color of a sprite.
+  example: []
+  syntax:
+    content: private Color GetAverageColor(Sprite sprite)
+    parameters:
+    - id: sprite
+      type: UnityEngine.Sprite
+    return:
+      type: UnityEngine.Color
+    content.vb: Private Function GetAverageColor(sprite As Sprite) As Color
+  overload: TaleOfTiles.Arena.GamePiece.GetAverageColor*
+- uid: TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color,System.Single,System.Single)
+  commentId: M:TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color,System.Single,System.Single)
+  id: LightenColor(UnityEngine.Color,System.Single,System.Single)
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: LightenColor(Color, float, float)
+  nameWithType: GamePiece.LightenColor(Color, float, float)
+  fullName: TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LightenColor
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 479
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Lighten the color of a sprite.
+  example: []
+  syntax:
+    content: private Color LightenColor(Color color, float brightnessBoost, float saturationDecrease)
+    parameters:
+    - id: color
+      type: UnityEngine.Color
+    - id: brightnessBoost
+      type: System.Single
+    - id: saturationDecrease
+      type: System.Single
+    return:
+      type: UnityEngine.Color
+    content.vb: Private Function LightenColor(color As Color, brightnessBoost As Single, saturationDecrease As Single) As Color
+  overload: TaleOfTiles.Arena.GamePiece.LightenColor*
+  nameWithType.vb: GamePiece.LightenColor(Color, Single, Single)
+  fullName.vb: TaleOfTiles.Arena.GamePiece.LightenColor(UnityEngine.Color, Single, Single)
+  name.vb: LightenColor(Color, Single, Single)
+- uid: TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+  commentId: M:TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+  id: GetComplementaryColor(UnityEngine.Color)
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: GetComplementaryColor(Color)
+  nameWithType: GamePiece.GetComplementaryColor(Color)
+  fullName: TaleOfTiles.Arena.GamePiece.GetComplementaryColor(UnityEngine.Color)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetComplementaryColor
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 492
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Get the complementary color of a color.
+  example: []
+  syntax:
+    content: private Color GetComplementaryColor(Color color)
+    parameters:
+    - id: color
+      type: UnityEngine.Color
+    return:
+      type: UnityEngine.Color
+    content.vb: Private Function GetComplementaryColor(color As Color) As Color
+  overload: TaleOfTiles.Arena.GamePiece.GetComplementaryColor*
+- uid: TaleOfTiles.Arena.GamePiece.EndTurn
+  commentId: M:TaleOfTiles.Arena.GamePiece.EndTurn
+  id: EndTurn
+  parent: TaleOfTiles.Arena.GamePiece
+  langs:
+  - csharp
+  - vb
+  name: EndTurn()
+  nameWithType: GamePiece.EndTurn()
+  fullName: TaleOfTiles.Arena.GamePiece.EndTurn()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/GamePiece.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EndTurn
+    path: ../Assets/Scripts/GamePiece.cs
+    startLine: 503
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Ends the turn of the game piece.
+  example: []
+  syntax:
+    content: public void EndTurn()
+    content.vb: Public Sub EndTurn()
+  overload: TaleOfTiles.Arena.GamePiece.EndTurn*
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Arena.BoardManager
+  commentId: T:TaleOfTiles.Arena.BoardManager
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BoardManager.html
+  name: BoardManager
+  nameWithType: BoardManager
+  fullName: TaleOfTiles.Arena.BoardManager
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: TaleOfTiles.Card.Gems.GemItemTier
+  commentId: T:TaleOfTiles.Card.Gems.GemItemTier
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemItemTier.html
+  name: GemItemTier
+  nameWithType: GemItemTier
+  fullName: TaleOfTiles.Card.Gems.GemItemTier
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: TaleOfTiles.Card.Gems.GemStatusEffectType
+  commentId: T:TaleOfTiles.Card.Gems.GemStatusEffectType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemStatusEffectType.html
+  name: GemStatusEffectType
+  nameWithType: GemStatusEffectType
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffectType
+- uid: TaleOfTiles.Arena.GamePiece.effect_status*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.effect_status
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_effect_status
+  name: effect_status
+  nameWithType: GamePiece.effect_status
+  fullName: TaleOfTiles.Arena.GamePiece.effect_status
+- uid: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemActiveEffect}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemActiveEffect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GemActiveEffect>
+  nameWithType: List<GemActiveEffect>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Card.Gems.GemActiveEffect>
+  nameWithType.vb: List(Of GemActiveEffect)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Card.Gems.GemActiveEffect)
+  name.vb: List(Of GemActiveEffect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Card.Gems.GemActiveEffect
+    name: GemActiveEffect
+    href: TaleOfTiles.Card.Gems.GemActiveEffect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.Gems.GemActiveEffect
+    name: GemActiveEffect
+    href: TaleOfTiles.Card.Gems.GemActiveEffect.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemStatusEffect}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemStatusEffect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GemStatusEffect>
+  nameWithType: List<GemStatusEffect>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Card.Gems.GemStatusEffect>
+  nameWithType.vb: List(Of GemStatusEffect)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Card.Gems.GemStatusEffect)
+  name.vb: List(Of GemStatusEffect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Card.Gems.GemStatusEffect
+    name: GemStatusEffect
+    href: TaleOfTiles.Card.Gems.GemStatusEffect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.Gems.GemStatusEffect
+    name: GemStatusEffect
+    href: TaleOfTiles.Card.Gems.GemStatusEffect.html
+  - name: )
+- uid: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemSuperCombo}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemSuperCombo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GemSuperCombo>
+  nameWithType: List<GemSuperCombo>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Card.Gems.GemSuperCombo>
+  nameWithType.vb: List(Of GemSuperCombo)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Card.Gems.GemSuperCombo)
+  name.vb: List(Of GemSuperCombo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: )
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: TaleOfTiles.Arena.GamePiece.gem_sprite*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.gem_sprite
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_sprite
+  name: gem_sprite
+  nameWithType: GamePiece.gem_sprite
+  fullName: TaleOfTiles.Arena.GamePiece.gem_sprite
+- uid: TaleOfTiles.Arena.GamePiece.gem_frame_sprite*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_gem_frame_sprite
+  name: gem_frame_sprite
+  nameWithType: GamePiece.gem_frame_sprite
+  fullName: TaleOfTiles.Arena.GamePiece.gem_frame_sprite
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: TaleOfTiles.Arena.GamePiece.frame_color*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.frame_color
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_frame_color
+  name: frame_color
+  nameWithType: GamePiece.frame_color
+  fullName: TaleOfTiles.Arena.GamePiece.frame_color
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: TaleOfTiles.Arena.InterpType
+  commentId: T:TaleOfTiles.Arena.InterpType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.InterpType.html
+  name: InterpType
+  nameWithType: InterpType
+  fullName: TaleOfTiles.Arena.InterpType
+- uid: TaleOfTiles.Arena.GamePiece.Start*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.Start
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_Start
+  name: Start
+  nameWithType: GamePiece.Start
+  fullName: TaleOfTiles.Arena.GamePiece.Start
+- uid: TaleOfTiles.Arena.GamePiece.Init*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.Init
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_Init_TaleOfTiles_Arena_BoardManager_
+  name: Init
+  nameWithType: GamePiece.Init
+  fullName: TaleOfTiles.Arena.GamePiece.Init
+- uid: TaleOfTiles.Arena.GamePiece.SetCoord*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.SetCoord
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_SetCoord_System_Int32_System_Int32_
+  name: SetCoord
+  nameWithType: GamePiece.SetCoord
+  fullName: TaleOfTiles.Arena.GamePiece.SetCoord
+- uid: TaleOfTiles.Arena.GamePiece.Move*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.Move
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_Move_System_Int32_System_Int32_System_Single_
+  name: Move
+  nameWithType: GamePiece.Move
+  fullName: TaleOfTiles.Arena.GamePiece.Move
+- uid: TaleOfTiles.Arena.GamePiece.MoveRoutine*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.MoveRoutine
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_MoveRoutine_UnityEngine_Vector3_System_Single_System_Int32_System_Int32_
+  name: MoveRoutine
+  nameWithType: GamePiece.MoveRoutine
+  fullName: TaleOfTiles.Arena.GamePiece.MoveRoutine
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: TaleOfTiles.Arena.GamePiece.ChangeColor*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.ChangeColor
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_ChangeColor_TaleOfTiles_Arena_GamePiece_
+  name: ChangeColor
+  nameWithType: GamePiece.ChangeColor
+  fullName: TaleOfTiles.Arena.GamePiece.ChangeColor
+- uid: TaleOfTiles.Arena.GamePiece
+  commentId: T:TaleOfTiles.Arena.GamePiece
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.GamePiece.html
+  name: GamePiece
+  nameWithType: GamePiece
+  fullName: TaleOfTiles.Arena.GamePiece
+- uid: TaleOfTiles.Arena.GamePiece.GetAverageColor*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.GetAverageColor
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_GetAverageColor_UnityEngine_Sprite_
+  name: GetAverageColor
+  nameWithType: GamePiece.GetAverageColor
+  fullName: TaleOfTiles.Arena.GamePiece.GetAverageColor
+- uid: TaleOfTiles.Arena.GamePiece.LightenColor*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.LightenColor
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_LightenColor_UnityEngine_Color_System_Single_System_Single_
+  name: LightenColor
+  nameWithType: GamePiece.LightenColor
+  fullName: TaleOfTiles.Arena.GamePiece.LightenColor
+- uid: TaleOfTiles.Arena.GamePiece.GetComplementaryColor*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.GetComplementaryColor
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_GetComplementaryColor_UnityEngine_Color_
+  name: GetComplementaryColor
+  nameWithType: GamePiece.GetComplementaryColor
+  fullName: TaleOfTiles.Arena.GamePiece.GetComplementaryColor
+- uid: TaleOfTiles.Arena.GamePiece.EndTurn*
+  commentId: Overload:TaleOfTiles.Arena.GamePiece.EndTurn
+  href: TaleOfTiles.Arena.GamePiece.html#TaleOfTiles_Arena_GamePiece_EndTurn
+  name: EndTurn
+  nameWithType: GamePiece.EndTurn
+  fullName: TaleOfTiles.Arena.GamePiece.EndTurn

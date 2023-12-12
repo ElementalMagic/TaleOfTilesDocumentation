@@ -1,0 +1,331 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  id: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.AnimationType
+  - TaleOfTiles.Arena.BattleArenaBackgroundImage
+  - TaleOfTiles.Arena.BattleArenaManager
+  - TaleOfTiles.Arena.BattleArenaTopButtons
+  - TaleOfTiles.Arena.BattleButtonsController
+  - TaleOfTiles.Arena.BoardDeadlock
+  - TaleOfTiles.Arena.BoardManager
+  - TaleOfTiles.Arena.BoardShuffler
+  - TaleOfTiles.Arena.Bomb
+  - TaleOfTiles.Arena.BombType
+  - TaleOfTiles.Arena.BubbleText
+  - TaleOfTiles.Arena.Collectible
+  - TaleOfTiles.Arena.CombatManager
+  - TaleOfTiles.Arena.CombatManager.GameState
+  - TaleOfTiles.Arena.CombinationScoreManager
+  - TaleOfTiles.Arena.GamePiece
+  - TaleOfTiles.Arena.HealthBar
+  - TaleOfTiles.Arena.InterpType
+  - TaleOfTiles.Arena.MatchValue
+  - TaleOfTiles.Arena.PlayerBattleCardUI
+  - TaleOfTiles.Arena.Probability
+  - TaleOfTiles.Arena.StatusBarElement
+  - TaleOfTiles.Arena.StatusBarElementType
+  - TaleOfTiles.Arena.SwitchBoardButton
+  - TaleOfTiles.Arena.Tile
+  - TaleOfTiles.Arena.TileType
+  - TaleOfTiles.Arena.Utils
+  - TaleOfTiles.Arena.Utils.GetColorDelegate
+  - TaleOfTiles.Arena.Utils.SetColorDelegate
+  - TaleOfTiles.Arena.Utils.todo
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.Arena.PlayerBattleCardUI
+  commentId: T:TaleOfTiles.Arena.PlayerBattleCardUI
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.PlayerBattleCardUI.html
+  name: PlayerBattleCardUI
+  nameWithType: PlayerBattleCardUI
+  fullName: TaleOfTiles.Arena.PlayerBattleCardUI
+- uid: TaleOfTiles.Arena.BoardDeadlock
+  commentId: T:TaleOfTiles.Arena.BoardDeadlock
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BoardDeadlock.html
+  name: BoardDeadlock
+  nameWithType: BoardDeadlock
+  fullName: TaleOfTiles.Arena.BoardDeadlock
+- uid: TaleOfTiles.Arena.HealthBar
+  commentId: T:TaleOfTiles.Arena.HealthBar
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.HealthBar.html
+  name: HealthBar
+  nameWithType: HealthBar
+  fullName: TaleOfTiles.Arena.HealthBar
+- uid: TaleOfTiles.Arena.Collectible
+  commentId: T:TaleOfTiles.Arena.Collectible
+  href: TaleOfTiles.Arena.Collectible.html
+  name: Collectible
+  nameWithType: Collectible
+  fullName: TaleOfTiles.Arena.Collectible
+- uid: TaleOfTiles.Arena.BattleArenaManager
+  commentId: T:TaleOfTiles.Arena.BattleArenaManager
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BattleArenaManager.html
+  name: BattleArenaManager
+  nameWithType: BattleArenaManager
+  fullName: TaleOfTiles.Arena.BattleArenaManager
+- uid: TaleOfTiles.Arena.AnimationType
+  commentId: T:TaleOfTiles.Arena.AnimationType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.AnimationType.html
+  name: AnimationType
+  nameWithType: AnimationType
+  fullName: TaleOfTiles.Arena.AnimationType
+- uid: TaleOfTiles.Arena.BubbleText
+  commentId: T:TaleOfTiles.Arena.BubbleText
+  href: TaleOfTiles.Arena.BubbleText.html
+  name: BubbleText
+  nameWithType: BubbleText
+  fullName: TaleOfTiles.Arena.BubbleText
+- uid: TaleOfTiles.Arena.BombType
+  commentId: T:TaleOfTiles.Arena.BombType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BombType.html
+  name: BombType
+  nameWithType: BombType
+  fullName: TaleOfTiles.Arena.BombType
+- uid: TaleOfTiles.Arena.Bomb
+  commentId: T:TaleOfTiles.Arena.Bomb
+  href: TaleOfTiles.Arena.Bomb.html
+  name: Bomb
+  nameWithType: Bomb
+  fullName: TaleOfTiles.Arena.Bomb
+- uid: TaleOfTiles.Arena.BattleArenaTopButtons
+  commentId: T:TaleOfTiles.Arena.BattleArenaTopButtons
+  href: TaleOfTiles.Arena.BattleArenaTopButtons.html
+  name: BattleArenaTopButtons
+  nameWithType: BattleArenaTopButtons
+  fullName: TaleOfTiles.Arena.BattleArenaTopButtons
+- uid: TaleOfTiles.Arena.SwitchBoardButton
+  commentId: T:TaleOfTiles.Arena.SwitchBoardButton
+  href: TaleOfTiles.Arena.SwitchBoardButton.html
+  name: SwitchBoardButton
+  nameWithType: SwitchBoardButton
+  fullName: TaleOfTiles.Arena.SwitchBoardButton
+- uid: TaleOfTiles.Arena.BoardManager
+  commentId: T:TaleOfTiles.Arena.BoardManager
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BoardManager.html
+  name: BoardManager
+  nameWithType: BoardManager
+  fullName: TaleOfTiles.Arena.BoardManager
+- uid: TaleOfTiles.Arena.BattleButtonsController
+  commentId: T:TaleOfTiles.Arena.BattleButtonsController
+  href: TaleOfTiles.Arena.BattleButtonsController.html
+  name: BattleButtonsController
+  nameWithType: BattleButtonsController
+  fullName: TaleOfTiles.Arena.BattleButtonsController
+- uid: TaleOfTiles.Arena.CombatManager
+  commentId: T:TaleOfTiles.Arena.CombatManager
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.CombatManager.html
+  name: CombatManager
+  nameWithType: CombatManager
+  fullName: TaleOfTiles.Arena.CombatManager
+- uid: TaleOfTiles.Arena.CombatManager.GameState
+  commentId: T:TaleOfTiles.Arena.CombatManager.GameState
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.CombatManager.html
+  name: CombatManager.GameState
+  nameWithType: CombatManager.GameState
+  fullName: TaleOfTiles.Arena.CombatManager.GameState
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.CombatManager
+    name: CombatManager
+    href: TaleOfTiles.Arena.CombatManager.html
+  - name: .
+  - uid: TaleOfTiles.Arena.CombatManager.GameState
+    name: GameState
+    href: TaleOfTiles.Arena.CombatManager.GameState.html
+  spec.vb:
+  - uid: TaleOfTiles.Arena.CombatManager
+    name: CombatManager
+    href: TaleOfTiles.Arena.CombatManager.html
+  - name: .
+  - uid: TaleOfTiles.Arena.CombatManager.GameState
+    name: GameState
+    href: TaleOfTiles.Arena.CombatManager.GameState.html
+- uid: TaleOfTiles.Arena.Utils
+  commentId: T:TaleOfTiles.Arena.Utils
+  href: TaleOfTiles.Arena.Utils.html
+  name: Utils
+  nameWithType: Utils
+  fullName: TaleOfTiles.Arena.Utils
+- uid: TaleOfTiles.Arena.Utils.GetColorDelegate
+  commentId: T:TaleOfTiles.Arena.Utils.GetColorDelegate
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.Utils.html
+  name: Utils.GetColorDelegate
+  nameWithType: Utils.GetColorDelegate
+  fullName: TaleOfTiles.Arena.Utils.GetColorDelegate
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.GetColorDelegate
+    name: GetColorDelegate
+    href: TaleOfTiles.Arena.Utils.GetColorDelegate.html
+  spec.vb:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.GetColorDelegate
+    name: GetColorDelegate
+    href: TaleOfTiles.Arena.Utils.GetColorDelegate.html
+- uid: TaleOfTiles.Arena.Utils.todo
+  commentId: T:TaleOfTiles.Arena.Utils.todo
+  href: TaleOfTiles.Arena.Utils.html
+  name: Utils.todo
+  nameWithType: Utils.todo
+  fullName: TaleOfTiles.Arena.Utils.todo
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.todo
+    name: todo
+    href: TaleOfTiles.Arena.Utils.todo.html
+  spec.vb:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.todo
+    name: todo
+    href: TaleOfTiles.Arena.Utils.todo.html
+- uid: TaleOfTiles.Arena.Utils.SetColorDelegate
+  commentId: T:TaleOfTiles.Arena.Utils.SetColorDelegate
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.Utils.html
+  name: Utils.SetColorDelegate
+  nameWithType: Utils.SetColorDelegate
+  fullName: TaleOfTiles.Arena.Utils.SetColorDelegate
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.SetColorDelegate
+    name: SetColorDelegate
+    href: TaleOfTiles.Arena.Utils.SetColorDelegate.html
+  spec.vb:
+  - uid: TaleOfTiles.Arena.Utils
+    name: Utils
+    href: TaleOfTiles.Arena.Utils.html
+  - name: .
+  - uid: TaleOfTiles.Arena.Utils.SetColorDelegate
+    name: SetColorDelegate
+    href: TaleOfTiles.Arena.Utils.SetColorDelegate.html
+- uid: TaleOfTiles.Arena.Probability
+  commentId: T:TaleOfTiles.Arena.Probability
+  href: TaleOfTiles.Arena.Probability.html
+  name: Probability
+  nameWithType: Probability
+  fullName: TaleOfTiles.Arena.Probability
+- uid: TaleOfTiles.Arena.BattleArenaBackgroundImage
+  commentId: T:TaleOfTiles.Arena.BattleArenaBackgroundImage
+  href: TaleOfTiles.Arena.BattleArenaBackgroundImage.html
+  name: BattleArenaBackgroundImage
+  nameWithType: BattleArenaBackgroundImage
+  fullName: TaleOfTiles.Arena.BattleArenaBackgroundImage
+- uid: TaleOfTiles.Arena.TileType
+  commentId: T:TaleOfTiles.Arena.TileType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.TileType.html
+  name: TileType
+  nameWithType: TileType
+  fullName: TaleOfTiles.Arena.TileType
+- uid: TaleOfTiles.Arena.Tile
+  commentId: T:TaleOfTiles.Arena.Tile
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.Tile.html
+  name: Tile
+  nameWithType: Tile
+  fullName: TaleOfTiles.Arena.Tile
+- uid: TaleOfTiles.Arena.MatchValue
+  commentId: T:TaleOfTiles.Arena.MatchValue
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.MatchValue.html
+  name: MatchValue
+  nameWithType: MatchValue
+  fullName: TaleOfTiles.Arena.MatchValue
+- uid: TaleOfTiles.Arena.InterpType
+  commentId: T:TaleOfTiles.Arena.InterpType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.InterpType.html
+  name: InterpType
+  nameWithType: InterpType
+  fullName: TaleOfTiles.Arena.InterpType
+- uid: TaleOfTiles.Arena.GamePiece
+  commentId: T:TaleOfTiles.Arena.GamePiece
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.GamePiece.html
+  name: GamePiece
+  nameWithType: GamePiece
+  fullName: TaleOfTiles.Arena.GamePiece
+- uid: TaleOfTiles.Arena.StatusBarElement
+  commentId: T:TaleOfTiles.Arena.StatusBarElement
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.StatusBarElement.html
+  name: StatusBarElement
+  nameWithType: StatusBarElement
+  fullName: TaleOfTiles.Arena.StatusBarElement
+- uid: TaleOfTiles.Arena.StatusBarElementType
+  commentId: T:TaleOfTiles.Arena.StatusBarElementType
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.StatusBarElementType.html
+  name: StatusBarElementType
+  nameWithType: StatusBarElementType
+  fullName: TaleOfTiles.Arena.StatusBarElementType
+- uid: TaleOfTiles.Arena.BoardShuffler
+  commentId: T:TaleOfTiles.Arena.BoardShuffler
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.BoardShuffler.html
+  name: BoardShuffler
+  nameWithType: BoardShuffler
+  fullName: TaleOfTiles.Arena.BoardShuffler
+- uid: TaleOfTiles.Arena.CombinationScoreManager
+  commentId: T:TaleOfTiles.Arena.CombinationScoreManager
+  href: TaleOfTiles.Arena.CombinationScoreManager.html
+  name: CombinationScoreManager
+  nameWithType: CombinationScoreManager
+  fullName: TaleOfTiles.Arena.CombinationScoreManager
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html

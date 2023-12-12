@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperComboType
+  id: GemSuperComboType
+  parent: TaleOfTiles.Card.Gems
+  children:
+  - TaleOfTiles.Card.Gems.GemSuperComboType.ActivateGemsOnBoard
+  - TaleOfTiles.Card.Gems.GemSuperComboType.BurnCombo
+  - TaleOfTiles.Card.Gems.GemSuperComboType.CopyEnemyDeck
+  - TaleOfTiles.Card.Gems.GemSuperComboType.CriticalDamage
+  - TaleOfTiles.Card.Gems.GemSuperComboType.DamageEvasion
+  - TaleOfTiles.Card.Gems.GemSuperComboType.DestroyEnemyGems
+  - TaleOfTiles.Card.Gems.GemSuperComboType.ExtraMoves
+  - TaleOfTiles.Card.Gems.GemSuperComboType.FrostCombo
+  - TaleOfTiles.Card.Gems.GemSuperComboType.HexCombo
+  - TaleOfTiles.Card.Gems.GemSuperComboType.None
+  - TaleOfTiles.Card.Gems.GemSuperComboType.Poison
+  - TaleOfTiles.Card.Gems.GemSuperComboType.Regeneration
+  - TaleOfTiles.Card.Gems.GemSuperComboType.SuddenDeathProtection
+  langs:
+  - csharp
+  - vb
+  name: GemSuperComboType
+  nameWithType: GemSuperComboType
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GemSuperComboType
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 339
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Defines the types of super combos available for gems.
+  example: []
+  syntax:
+    content: public enum GemSuperComboType
+    content.vb: Public Enum GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.None
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.None
+  id: None
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: GemSuperComboType.None
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.None
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: None
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 344
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: Represents the absence of a super combo.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.FrostCombo
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.FrostCombo
+  id: FrostCombo
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: FrostCombo
+  nameWithType: GemSuperComboType.FrostCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.FrostCombo
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: FrostCombo
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 349
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Frost Combo: Freezes a portion of the board or certain elements for a specified duration.'
+  example: []
+  syntax:
+    content: FrostCombo = 1
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.BurnCombo
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.BurnCombo
+  id: BurnCombo
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: BurnCombo
+  nameWithType: GemSuperComboType.BurnCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.BurnCombo
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BurnCombo
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 354
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Burn Combo: Sets a part of the board on fire, causing damage if player touches burned gem.'
+  example: []
+  syntax:
+    content: BurnCombo = 2
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.HexCombo
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.HexCombo
+  id: HexCombo
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: HexCombo
+  nameWithType: GemSuperComboType.HexCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.HexCombo
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HexCombo
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 359
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Hex Combo: Transforms certain elements on the board into other elements or has a debilitating effect on the opponent.'
+  example: []
+  syntax:
+    content: HexCombo = 3
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.ExtraMoves
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.ExtraMoves
+  id: ExtraMoves
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: ExtraMoves
+  nameWithType: GemSuperComboType.ExtraMoves
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.ExtraMoves
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ExtraMoves
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 364
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Extra Moves: Grants additional moves or turns to the player.'
+  example: []
+  syntax:
+    content: ExtraMoves = 4
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.SuddenDeathProtection
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.SuddenDeathProtection
+  id: SuddenDeathProtection
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: SuddenDeathProtection
+  nameWithType: GemSuperComboType.SuddenDeathProtection
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.SuddenDeathProtection
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SuddenDeathProtection
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 369
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Sudden Death Protection: Provides a shield or protection against fatal damage for a limited number of turns.'
+  example: []
+  syntax:
+    content: SuddenDeathProtection = 5
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.DamageEvasion
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.DamageEvasion
+  id: DamageEvasion
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: DamageEvasion
+  nameWithType: GemSuperComboType.DamageEvasion
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.DamageEvasion
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DamageEvasion
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 374
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Damage Evasion: Allows the player to evade a certain number of attacks or damage instances.'
+  example: []
+  syntax:
+    content: DamageEvasion = 6
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.CopyEnemyDeck
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.CopyEnemyDeck
+  id: CopyEnemyDeck
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: CopyEnemyDeck
+  nameWithType: GemSuperComboType.CopyEnemyDeck
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.CopyEnemyDeck
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CopyEnemyDeck
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 379
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: "Copy Enemy Deck: Temporarily copies the opponent's deck."
+  example: []
+  syntax:
+    content: CopyEnemyDeck = 7
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.ActivateGemsOnBoard
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.ActivateGemsOnBoard
+  id: ActivateGemsOnBoard
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: ActivateGemsOnBoard
+  nameWithType: GemSuperComboType.ActivateGemsOnBoard
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.ActivateGemsOnBoard
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ActivateGemsOnBoard
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 384
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Activate Gems On Board: Automatically activates or triggers certain gem effects without the need for matching.'
+  example: []
+  syntax:
+    content: ActivateGemsOnBoard = 8
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.CriticalDamage
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.CriticalDamage
+  id: CriticalDamage
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: CriticalDamage
+  nameWithType: GemSuperComboType.CriticalDamage
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.CriticalDamage
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: CriticalDamage
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 389
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Critical Damage: Increases the damage of attacks for a certain number of strikes.'
+  example: []
+  syntax:
+    content: CriticalDamage = 9
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.DestroyEnemyGems
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.DestroyEnemyGems
+  id: DestroyEnemyGems
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: DestroyEnemyGems
+  nameWithType: GemSuperComboType.DestroyEnemyGems
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.DestroyEnemyGems
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DestroyEnemyGems
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 394
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Destroy Enemy Gems: Targets and destroys specific gems or elements controlled by the opponent.'
+  example: []
+  syntax:
+    content: DestroyEnemyGems = 10
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.Regeneration
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.Regeneration
+  id: Regeneration
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: Regeneration
+  nameWithType: GemSuperComboType.Regeneration
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.Regeneration
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Regeneration
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 399
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Regeneration: Gradually restores health or resources over a number of turns.'
+  example: []
+  syntax:
+    content: Regeneration = 11
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType.Poison
+  commentId: F:TaleOfTiles.Card.Gems.GemSuperComboType.Poison
+  id: Poison
+  parent: TaleOfTiles.Card.Gems.GemSuperComboType
+  langs:
+  - csharp
+  - vb
+  name: Poison
+  nameWithType: GemSuperComboType.Poison
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType.Poison
+  type: Field
+  source:
+    remote:
+      path: Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Poison
+    path: ../Assets/Resources/ScriptableObjects/Cards/GemItem.cs
+    startLine: 404
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Card.Gems
+  summary: 'Poison: Inflicts a poison effect on the opponent, causing damage over a number of turns.'
+  example: []
+  syntax:
+    content: Poison = 12
+    return:
+      type: TaleOfTiles.Card.Gems.GemSuperComboType
+references:
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperComboType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperComboType.html
+  name: GemSuperComboType
+  nameWithType: GemSuperComboType
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType

@@ -1,0 +1,842 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Journey.JourneyMapBlock
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock
+  id: JourneyMapBlock
+  parent: TaleOfTiles.Journey
+  children:
+  - TaleOfTiles.Journey.JourneyMapBlock.ActivateActivity(System.String)
+  - TaleOfTiles.Journey.JourneyMapBlock.GetConfig
+  - TaleOfTiles.Journey.JourneyMapBlock.ID
+  - TaleOfTiles.Journey.JourneyMapBlock.OnValidate
+  - TaleOfTiles.Journey.JourneyMapBlock.SetSprite(System.Int32)
+  - TaleOfTiles.Journey.JourneyMapBlock.Start
+  - TaleOfTiles.Journey.JourneyMapBlock.acitivities_ui_position
+  - TaleOfTiles.Journey.JourneyMapBlock.activities
+  - TaleOfTiles.Journey.JourneyMapBlock.block_image
+  - TaleOfTiles.Journey.JourneyMapBlock.roads_in
+  - TaleOfTiles.Journey.JourneyMapBlock.roads_out
+  - TaleOfTiles.Journey.JourneyMapBlock.sprite_index
+  - TaleOfTiles.Journey.JourneyMapBlock.sprite_variants
+  - TaleOfTiles.Journey.JourneyMapBlock.type
+  langs:
+  - csharp
+  - vb
+  name: JourneyMapBlock
+  nameWithType: JourneyMapBlock
+  fullName: TaleOfTiles.Journey.JourneyMapBlock
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: JourneyMapBlock
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: Represents a block within a journey map in the game. This class includes configurations for different block types and activities.
+  example: []
+  syntax:
+    content: >-
+      [ExecuteAlways]
+
+      public class JourneyMapBlock : MonoBehaviour
+    content.vb: >-
+      <ExecuteAlways>
+
+      Public Class JourneyMapBlock Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  attributes:
+  - type: UnityEngine.ExecuteAlways
+    ctor: UnityEngine.ExecuteAlways.#ctor
+    arguments: []
+- uid: TaleOfTiles.Journey.JourneyMapBlock.sprite_variants
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.sprite_variants
+  id: sprite_variants
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: sprite_variants
+  nameWithType: JourneyMapBlock.sprite_variants
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.sprite_variants
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: sprite_variants
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public List<Sprite> sprite_variants
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Sprite}
+    content.vb: Public sprite_variants As List(Of Sprite)
+- uid: TaleOfTiles.Journey.JourneyMapBlock.block_image
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.block_image
+  id: block_image
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: block_image
+  nameWithType: JourneyMapBlock.block_image
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.block_image
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: block_image
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public Image block_image
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public block_image As Image
+- uid: TaleOfTiles.Journey.JourneyMapBlock.roads_in
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.roads_in
+  id: roads_in
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: roads_in
+  nameWithType: JourneyMapBlock.roads_in
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.roads_in
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: roads_in
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public JourneyMapBlock.RoadNumber roads_in
+    return:
+      type: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+    content.vb: Public roads_in As JourneyMapBlock.RoadNumber
+- uid: TaleOfTiles.Journey.JourneyMapBlock.roads_out
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.roads_out
+  id: roads_out
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: roads_out
+  nameWithType: JourneyMapBlock.roads_out
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.roads_out
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: roads_out
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public JourneyMapBlock.RoadNumber roads_out
+    return:
+      type: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+    content.vb: Public roads_out As JourneyMapBlock.RoadNumber
+- uid: TaleOfTiles.Journey.JourneyMapBlock.type
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.type
+  id: type
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: type
+  nameWithType: JourneyMapBlock.type
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.type
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: type
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public JourneyMapBlock.BlockType type
+    return:
+      type: TaleOfTiles.Journey.JourneyMapBlock.BlockType
+    content.vb: Public type As JourneyMapBlock.BlockType
+- uid: TaleOfTiles.Journey.JourneyMapBlock.acitivities_ui_position
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.acitivities_ui_position
+  id: acitivities_ui_position
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: acitivities_ui_position
+  nameWithType: JourneyMapBlock.acitivities_ui_position
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.acitivities_ui_position
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: acitivities_ui_position
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public List<GameObject> acitivities_ui_position
+    return:
+      type: System.Collections.Generic.List{UnityEngine.GameObject}
+    content.vb: Public acitivities_ui_position As List(Of GameObject)
+- uid: TaleOfTiles.Journey.JourneyMapBlock.activities
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.activities
+  id: activities
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: activities
+  nameWithType: JourneyMapBlock.activities
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.activities
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: activities
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public List<JourneyMapBlockActivity> activities
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Journey.JourneyMapBlockActivity}
+    content.vb: Public activities As List(Of JourneyMapBlockActivity)
+- uid: TaleOfTiles.Journey.JourneyMapBlock.ID
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.ID
+  id: ID
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: JourneyMapBlock.ID
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.ID
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ID
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: public string ID
+    return:
+      type: System.String
+    content.vb: Public ID As String
+- uid: TaleOfTiles.Journey.JourneyMapBlock.sprite_index
+  commentId: F:TaleOfTiles.Journey.JourneyMapBlock.sprite_index
+  id: sprite_index
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: sprite_index
+  nameWithType: JourneyMapBlock.sprite_index
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.sprite_index
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: sprite_index
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  syntax:
+    content: private int sprite_index
+    return:
+      type: System.Int32
+    content.vb: Private sprite_index As Integer
+- uid: TaleOfTiles.Journey.JourneyMapBlock.OnValidate
+  commentId: M:TaleOfTiles.Journey.JourneyMapBlock.OnValidate
+  id: OnValidate
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: OnValidate()
+  nameWithType: JourneyMapBlock.OnValidate()
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.OnValidate()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnValidate
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: Method to validate and set the ID of the block.
+  example: []
+  syntax:
+    content: public void OnValidate()
+    content.vb: Public Sub OnValidate()
+  overload: TaleOfTiles.Journey.JourneyMapBlock.OnValidate*
+- uid: TaleOfTiles.Journey.JourneyMapBlock.GetConfig
+  commentId: M:TaleOfTiles.Journey.JourneyMapBlock.GetConfig
+  id: GetConfig
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: GetConfig()
+  nameWithType: JourneyMapBlock.GetConfig()
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.GetConfig()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetConfig
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 82
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: Creates and returns the configuration of the current JourneyMapBlock.
+  example: []
+  syntax:
+    content: public JourneyMapBlock.JourneyMapBlockConfig GetConfig()
+    return:
+      type: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+    content.vb: Public Function GetConfig() As JourneyMapBlock.JourneyMapBlockConfig
+  overload: TaleOfTiles.Journey.JourneyMapBlock.GetConfig*
+- uid: TaleOfTiles.Journey.JourneyMapBlock.Start
+  commentId: M:TaleOfTiles.Journey.JourneyMapBlock.Start
+  id: Start
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: JourneyMapBlock.Start()
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 99
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: Initializes the JourneyMapBlock on startup. Validates if the block image and sprite variants are properly set.
+  example: []
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: TaleOfTiles.Journey.JourneyMapBlock.Start*
+- uid: TaleOfTiles.Journey.JourneyMapBlock.SetSprite(System.Int32)
+  commentId: M:TaleOfTiles.Journey.JourneyMapBlock.SetSprite(System.Int32)
+  id: SetSprite(System.Int32)
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: SetSprite(int)
+  nameWithType: JourneyMapBlock.SetSprite(int)
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.SetSprite(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetSprite
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: Sets the sprite for the map block based on the specified index.
+  example: []
+  syntax:
+    content: public void SetSprite(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: Index of the sprite variant to be set.
+    content.vb: Public Sub SetSprite(index As Integer)
+  overload: TaleOfTiles.Journey.JourneyMapBlock.SetSprite*
+  nameWithType.vb: JourneyMapBlock.SetSprite(Integer)
+  fullName.vb: TaleOfTiles.Journey.JourneyMapBlock.SetSprite(Integer)
+  name.vb: SetSprite(Integer)
+- uid: TaleOfTiles.Journey.JourneyMapBlock.ActivateActivity(System.String)
+  commentId: M:TaleOfTiles.Journey.JourneyMapBlock.ActivateActivity(System.String)
+  id: ActivateActivity(System.String)
+  parent: TaleOfTiles.Journey.JourneyMapBlock
+  langs:
+  - csharp
+  - vb
+  name: ActivateActivity(string)
+  nameWithType: JourneyMapBlock.ActivateActivity(string)
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.ActivateActivity(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ActivateActivity
+    path: ../Assets/Scripts/LevelGenerator/JourneyMapBlock.cs
+    startLine: 144
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: Activates a specific activity within the map block based on its ID. Handles enemy encounter logic.
+  example: []
+  syntax:
+    content: public void ActivateActivity(string activity_id)
+    parameters:
+    - id: activity_id
+      type: System.String
+      description: ID of the activity to activate.
+    content.vb: Public Sub ActivateActivity(activity_id As String)
+  overload: TaleOfTiles.Journey.JourneyMapBlock.ActivateActivity*
+  nameWithType.vb: JourneyMapBlock.ActivateActivity(String)
+  fullName.vb: TaleOfTiles.Journey.JourneyMapBlock.ActivateActivity(String)
+  name.vb: ActivateActivity(String)
+references:
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Collections.Generic.List{UnityEngine.Sprite}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Sprite}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Sprite>
+  nameWithType: List<Sprite>
+  fullName: System.Collections.Generic.List<UnityEngine.Sprite>
+  nameWithType.vb: List(Of Sprite)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Sprite)
+  name.vb: List(Of Sprite)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Sprite
+    name: Sprite
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlock.html
+  name: JourneyMapBlock.RoadNumber
+  nameWithType: JourneyMapBlock.RoadNumber
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+    name: RoadNumber
+    href: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber
+    name: RoadNumber
+    href: TaleOfTiles.Journey.JourneyMapBlock.RoadNumber.html
+- uid: TaleOfTiles.Journey.JourneyMapBlock.BlockType
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock.BlockType
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlock.html
+  name: JourneyMapBlock.BlockType
+  nameWithType: JourneyMapBlock.BlockType
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.BlockType
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.BlockType
+    name: BlockType
+    href: TaleOfTiles.Journey.JourneyMapBlock.BlockType.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.BlockType
+    name: BlockType
+    href: TaleOfTiles.Journey.JourneyMapBlock.BlockType.html
+- uid: System.Collections.Generic.List{UnityEngine.GameObject}
+  commentId: T:System.Collections.Generic.List{UnityEngine.GameObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GameObject>
+  nameWithType: List<GameObject>
+  fullName: System.Collections.Generic.List<UnityEngine.GameObject>
+  nameWithType.vb: List(Of GameObject)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.GameObject)
+  name.vb: List(Of GameObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List{TaleOfTiles.Journey.JourneyMapBlockActivity}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Journey.JourneyMapBlockActivity}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<JourneyMapBlockActivity>
+  nameWithType: List<JourneyMapBlockActivity>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Journey.JourneyMapBlockActivity>
+  nameWithType.vb: List(Of JourneyMapBlockActivity)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Journey.JourneyMapBlockActivity)
+  name.vb: List(Of JourneyMapBlockActivity)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity
+    name: JourneyMapBlockActivity
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Journey.JourneyMapBlockActivity
+    name: JourneyMapBlockActivity
+    href: TaleOfTiles.Journey.JourneyMapBlockActivity.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TaleOfTiles.Journey.JourneyMapBlock.OnValidate*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMapBlock.OnValidate
+  href: TaleOfTiles.Journey.JourneyMapBlock.html#TaleOfTiles_Journey_JourneyMapBlock_OnValidate
+  name: OnValidate
+  nameWithType: JourneyMapBlock.OnValidate
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.OnValidate
+- uid: TaleOfTiles.Journey.JourneyMapBlock.GetConfig*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMapBlock.GetConfig
+  href: TaleOfTiles.Journey.JourneyMapBlock.html#TaleOfTiles_Journey_JourneyMapBlock_GetConfig
+  name: GetConfig
+  nameWithType: JourneyMapBlock.GetConfig
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.GetConfig
+- uid: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+  commentId: T:TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.JourneyMapBlock.html
+  name: JourneyMapBlock.JourneyMapBlockConfig
+  nameWithType: JourneyMapBlock.JourneyMapBlockConfig
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+    name: JourneyMapBlockConfig
+    href: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig.html
+  spec.vb:
+  - uid: TaleOfTiles.Journey.JourneyMapBlock
+    name: JourneyMapBlock
+    href: TaleOfTiles.Journey.JourneyMapBlock.html
+  - name: .
+  - uid: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig
+    name: JourneyMapBlockConfig
+    href: TaleOfTiles.Journey.JourneyMapBlock.JourneyMapBlockConfig.html
+- uid: TaleOfTiles.Journey.JourneyMapBlock.Start*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMapBlock.Start
+  href: TaleOfTiles.Journey.JourneyMapBlock.html#TaleOfTiles_Journey_JourneyMapBlock_Start
+  name: Start
+  nameWithType: JourneyMapBlock.Start
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.Start
+- uid: TaleOfTiles.Journey.JourneyMapBlock.SetSprite*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMapBlock.SetSprite
+  href: TaleOfTiles.Journey.JourneyMapBlock.html#TaleOfTiles_Journey_JourneyMapBlock_SetSprite_System_Int32_
+  name: SetSprite
+  nameWithType: JourneyMapBlock.SetSprite
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.SetSprite
+- uid: TaleOfTiles.Journey.JourneyMapBlock.ActivateActivity*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMapBlock.ActivateActivity
+  href: TaleOfTiles.Journey.JourneyMapBlock.html#TaleOfTiles_Journey_JourneyMapBlock_ActivateActivity_System_String_
+  name: ActivateActivity
+  nameWithType: JourneyMapBlock.ActivateActivity
+  fullName: TaleOfTiles.Journey.JourneyMapBlock.ActivateActivity

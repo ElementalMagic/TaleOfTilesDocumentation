@@ -1,0 +1,991 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.AI.VirtualGamePiece
+  commentId: T:TaleOfTiles.AI.VirtualGamePiece
+  id: VirtualGamePiece
+  parent: TaleOfTiles.AI
+  children:
+  - TaleOfTiles.AI.VirtualGamePiece.#ctor
+  - TaleOfTiles.AI.VirtualGamePiece.#ctor(TaleOfTiles.AI.VirtualGamePiece)
+  - TaleOfTiles.AI.VirtualGamePiece.#ctor(TaleOfTiles.Arena.GamePiece)
+  - TaleOfTiles.AI.VirtualGamePiece.Equals(System.Object)
+  - TaleOfTiles.AI.VirtualGamePiece.GetHashCode
+  - TaleOfTiles.AI.VirtualGamePiece.SetCoord(System.Int32,System.Int32)
+  - TaleOfTiles.AI.VirtualGamePiece._effect_status
+  - TaleOfTiles.AI.VirtualGamePiece.assosiated_game_piece
+  - TaleOfTiles.AI.VirtualGamePiece.effect_duration
+  - TaleOfTiles.AI.VirtualGamePiece.gem_effects
+  - TaleOfTiles.AI.VirtualGamePiece.gem_status_effects
+  - TaleOfTiles.AI.VirtualGamePiece.matchValue
+  - TaleOfTiles.AI.VirtualGamePiece.super_combos
+  - TaleOfTiles.AI.VirtualGamePiece.tier
+  - TaleOfTiles.AI.VirtualGamePiece.touch_damage
+  - TaleOfTiles.AI.VirtualGamePiece.xIndex
+  - TaleOfTiles.AI.VirtualGamePiece.yIndex
+  langs:
+  - csharp
+  - vb
+  name: VirtualGamePiece
+  nameWithType: VirtualGamePiece
+  fullName: TaleOfTiles.AI.VirtualGamePiece
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: VirtualGamePiece
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 562
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Represents a virtual representation of a game piece.
+  example: []
+  syntax:
+    content: public class VirtualGamePiece
+    content.vb: Public Class VirtualGamePiece
+  inheritance:
+  - System.Object
+- uid: TaleOfTiles.AI.VirtualGamePiece.xIndex
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.xIndex
+  id: xIndex
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: xIndex
+  nameWithType: VirtualGamePiece.xIndex
+  fullName: TaleOfTiles.AI.VirtualGamePiece.xIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: xIndex
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 567
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: X index of the game piece on the board.
+  example: []
+  syntax:
+    content: public int xIndex
+    return:
+      type: System.Int32
+    content.vb: Public xIndex As Integer
+- uid: TaleOfTiles.AI.VirtualGamePiece.yIndex
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.yIndex
+  id: yIndex
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: yIndex
+  nameWithType: VirtualGamePiece.yIndex
+  fullName: TaleOfTiles.AI.VirtualGamePiece.yIndex
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: yIndex
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 567
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: X index of the game piece on the board.
+  example: []
+  syntax:
+    content: public int yIndex
+    return:
+      type: System.Int32
+    content.vb: Public yIndex As Integer
+- uid: TaleOfTiles.AI.VirtualGamePiece.matchValue
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.matchValue
+  id: matchValue
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: matchValue
+  nameWithType: VirtualGamePiece.matchValue
+  fullName: TaleOfTiles.AI.VirtualGamePiece.matchValue
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: matchValue
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 572
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Match value of the game piece, determining its type or category.
+  example: []
+  syntax:
+    content: public string matchValue
+    return:
+      type: System.String
+    content.vb: Public matchValue As String
+- uid: TaleOfTiles.AI.VirtualGamePiece.touch_damage
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.touch_damage
+  id: touch_damage
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: touch_damage
+  nameWithType: VirtualGamePiece.touch_damage
+  fullName: TaleOfTiles.AI.VirtualGamePiece.touch_damage
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: touch_damage
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 577
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Damage caused by touching this game piece.
+  example: []
+  syntax:
+    content: public float touch_damage
+    return:
+      type: System.Single
+    content.vb: Public touch_damage As Single
+- uid: TaleOfTiles.AI.VirtualGamePiece.effect_duration
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.effect_duration
+  id: effect_duration
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: effect_duration
+  nameWithType: VirtualGamePiece.effect_duration
+  fullName: TaleOfTiles.AI.VirtualGamePiece.effect_duration
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: effect_duration
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 582
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Duration of the effect applied by this game piece.
+  example: []
+  syntax:
+    content: public int effect_duration
+    return:
+      type: System.Int32
+    content.vb: Public effect_duration As Integer
+- uid: TaleOfTiles.AI.VirtualGamePiece.tier
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.tier
+  id: tier
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: tier
+  nameWithType: VirtualGamePiece.tier
+  fullName: TaleOfTiles.AI.VirtualGamePiece.tier
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: tier
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 587
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Tier of the gem item associated with this game piece.
+  example: []
+  syntax:
+    content: public GemItemTier tier
+    return:
+      type: TaleOfTiles.Card.Gems.GemItemTier
+    content.vb: Public tier As GemItemTier
+- uid: TaleOfTiles.AI.VirtualGamePiece._effect_status
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece._effect_status
+  id: _effect_status
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: _effect_status
+  nameWithType: VirtualGamePiece._effect_status
+  fullName: TaleOfTiles.AI.VirtualGamePiece._effect_status
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: _effect_status
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 592
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Status effect type of this game piece.
+  example: []
+  syntax:
+    content: public GemStatusEffectType _effect_status
+    return:
+      type: TaleOfTiles.Card.Gems.GemStatusEffectType
+    content.vb: Public _effect_status As GemStatusEffectType
+- uid: TaleOfTiles.AI.VirtualGamePiece.gem_effects
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.gem_effects
+  id: gem_effects
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_effects
+  nameWithType: VirtualGamePiece.gem_effects
+  fullName: TaleOfTiles.AI.VirtualGamePiece.gem_effects
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_effects
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 597
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: List of active gem effects associated with this game piece.
+  example: []
+  syntax:
+    content: public List<GemActiveEffect> gem_effects
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemActiveEffect}
+    content.vb: Public gem_effects As List(Of GemActiveEffect)
+- uid: TaleOfTiles.AI.VirtualGamePiece.gem_status_effects
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.gem_status_effects
+  id: gem_status_effects
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: gem_status_effects
+  nameWithType: VirtualGamePiece.gem_status_effects
+  fullName: TaleOfTiles.AI.VirtualGamePiece.gem_status_effects
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gem_status_effects
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 602
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: List of status effects associated with this game piece.
+  example: []
+  syntax:
+    content: public List<GemStatusEffect> gem_status_effects
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemStatusEffect}
+    content.vb: Public gem_status_effects As List(Of GemStatusEffect)
+- uid: TaleOfTiles.AI.VirtualGamePiece.super_combos
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.super_combos
+  id: super_combos
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: super_combos
+  nameWithType: VirtualGamePiece.super_combos
+  fullName: TaleOfTiles.AI.VirtualGamePiece.super_combos
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: super_combos
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 607
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: List of super combos associated with this game piece.
+  example: []
+  syntax:
+    content: public List<GemSuperCombo> super_combos
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemSuperCombo}
+    content.vb: Public super_combos As List(Of GemSuperCombo)
+- uid: TaleOfTiles.AI.VirtualGamePiece.assosiated_game_piece
+  commentId: F:TaleOfTiles.AI.VirtualGamePiece.assosiated_game_piece
+  id: assosiated_game_piece
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: assosiated_game_piece
+  nameWithType: VirtualGamePiece.assosiated_game_piece
+  fullName: TaleOfTiles.AI.VirtualGamePiece.assosiated_game_piece
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: assosiated_game_piece
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 612
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: The actual game piece associated with this virtual representation.
+  example: []
+  syntax:
+    content: public GamePiece assosiated_game_piece
+    return:
+      type: TaleOfTiles.Arena.GamePiece
+    content.vb: Public assosiated_game_piece As GamePiece
+- uid: TaleOfTiles.AI.VirtualGamePiece.#ctor
+  commentId: M:TaleOfTiles.AI.VirtualGamePiece.#ctor
+  id: '#ctor'
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: VirtualGamePiece()
+  nameWithType: VirtualGamePiece.VirtualGamePiece()
+  fullName: TaleOfTiles.AI.VirtualGamePiece.VirtualGamePiece()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 618
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Initializes a new instance of the VirtualGamePiece class.
+  example: []
+  syntax:
+    content: public VirtualGamePiece()
+    content.vb: Public Sub New()
+  overload: TaleOfTiles.AI.VirtualGamePiece.#ctor*
+  nameWithType.vb: VirtualGamePiece.New()
+  fullName.vb: TaleOfTiles.AI.VirtualGamePiece.New()
+  name.vb: New()
+- uid: TaleOfTiles.AI.VirtualGamePiece.#ctor(TaleOfTiles.Arena.GamePiece)
+  commentId: M:TaleOfTiles.AI.VirtualGamePiece.#ctor(TaleOfTiles.Arena.GamePiece)
+  id: '#ctor(TaleOfTiles.Arena.GamePiece)'
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: VirtualGamePiece(GamePiece)
+  nameWithType: VirtualGamePiece.VirtualGamePiece(GamePiece)
+  fullName: TaleOfTiles.AI.VirtualGamePiece.VirtualGamePiece(TaleOfTiles.Arena.GamePiece)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 628
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Initializes a new instance of the VirtualGamePiece class using a real game piece.
+  example: []
+  syntax:
+    content: public VirtualGamePiece(GamePiece game_piece)
+    parameters:
+    - id: game_piece
+      type: TaleOfTiles.Arena.GamePiece
+      description: The real game piece to copy data from.
+    content.vb: Public Sub New(game_piece As GamePiece)
+  overload: TaleOfTiles.AI.VirtualGamePiece.#ctor*
+  nameWithType.vb: VirtualGamePiece.New(GamePiece)
+  fullName.vb: TaleOfTiles.AI.VirtualGamePiece.New(TaleOfTiles.Arena.GamePiece)
+  name.vb: New(GamePiece)
+- uid: TaleOfTiles.AI.VirtualGamePiece.#ctor(TaleOfTiles.AI.VirtualGamePiece)
+  commentId: M:TaleOfTiles.AI.VirtualGamePiece.#ctor(TaleOfTiles.AI.VirtualGamePiece)
+  id: '#ctor(TaleOfTiles.AI.VirtualGamePiece)'
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: VirtualGamePiece(VirtualGamePiece)
+  nameWithType: VirtualGamePiece.VirtualGamePiece(VirtualGamePiece)
+  fullName: TaleOfTiles.AI.VirtualGamePiece.VirtualGamePiece(TaleOfTiles.AI.VirtualGamePiece)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 647
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Initializes a new instance of the VirtualGamePiece class as a copy of another virtual game piece.
+  example: []
+  syntax:
+    content: public VirtualGamePiece(VirtualGamePiece other)
+    parameters:
+    - id: other
+      type: TaleOfTiles.AI.VirtualGamePiece
+      description: The other VirtualGamePiece to copy data from.
+    content.vb: Public Sub New(other As VirtualGamePiece)
+  overload: TaleOfTiles.AI.VirtualGamePiece.#ctor*
+  nameWithType.vb: VirtualGamePiece.New(VirtualGamePiece)
+  fullName.vb: TaleOfTiles.AI.VirtualGamePiece.New(TaleOfTiles.AI.VirtualGamePiece)
+  name.vb: New(VirtualGamePiece)
+- uid: TaleOfTiles.AI.VirtualGamePiece.Equals(System.Object)
+  commentId: M:TaleOfTiles.AI.VirtualGamePiece.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: VirtualGamePiece.Equals(object)
+  fullName: TaleOfTiles.AI.VirtualGamePiece.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Equals
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 666
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current object.
+    return:
+      type: System.Boolean
+      description: true if the specified object is equal to the current object; otherwise, false.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: TaleOfTiles.AI.VirtualGamePiece.Equals*
+  nameWithType.vb: VirtualGamePiece.Equals(Object)
+  fullName.vb: TaleOfTiles.AI.VirtualGamePiece.Equals(Object)
+  name.vb: Equals(Object)
+- uid: TaleOfTiles.AI.VirtualGamePiece.GetHashCode
+  commentId: M:TaleOfTiles.AI.VirtualGamePiece.GetHashCode
+  id: GetHashCode
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: VirtualGamePiece.GetHashCode()
+  fullName: TaleOfTiles.AI.VirtualGamePiece.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GetHashCode
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 683
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Serves as the default hash function.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: TaleOfTiles.AI.VirtualGamePiece.GetHashCode*
+- uid: TaleOfTiles.AI.VirtualGamePiece.SetCoord(System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.AI.VirtualGamePiece.SetCoord(System.Int32,System.Int32)
+  id: SetCoord(System.Int32,System.Int32)
+  parent: TaleOfTiles.AI.VirtualGamePiece
+  langs:
+  - csharp
+  - vb
+  name: SetCoord(int, int)
+  nameWithType: VirtualGamePiece.SetCoord(int, int)
+  fullName: TaleOfTiles.AI.VirtualGamePiece.SetCoord(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SetCoord
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 697
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Sets the coordinates of the game piece.
+  example: []
+  syntax:
+    content: public void SetCoord(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The x-coordinate to set.
+    - id: y
+      type: System.Int32
+      description: The y-coordinate to set.
+    content.vb: Public Sub SetCoord(x As Integer, y As Integer)
+  overload: TaleOfTiles.AI.VirtualGamePiece.SetCoord*
+  nameWithType.vb: VirtualGamePiece.SetCoord(Integer, Integer)
+  fullName.vb: TaleOfTiles.AI.VirtualGamePiece.SetCoord(Integer, Integer)
+  name.vb: SetCoord(Integer, Integer)
+references:
+- uid: TaleOfTiles.AI
+  commentId: N:TaleOfTiles.AI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.AI
+  nameWithType: TaleOfTiles.AI
+  fullName: TaleOfTiles.AI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.AI
+    name: AI
+    href: TaleOfTiles.AI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.AI
+    name: AI
+    href: TaleOfTiles.AI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: TaleOfTiles.Card.Gems.GemItemTier
+  commentId: T:TaleOfTiles.Card.Gems.GemItemTier
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemItemTier.html
+  name: GemItemTier
+  nameWithType: GemItemTier
+  fullName: TaleOfTiles.Card.Gems.GemItemTier
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+- uid: TaleOfTiles.Card.Gems.GemStatusEffectType
+  commentId: T:TaleOfTiles.Card.Gems.GemStatusEffectType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemStatusEffectType.html
+  name: GemStatusEffectType
+  nameWithType: GemStatusEffectType
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffectType
+- uid: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemActiveEffect}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemActiveEffect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GemActiveEffect>
+  nameWithType: List<GemActiveEffect>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Card.Gems.GemActiveEffect>
+  nameWithType.vb: List(Of GemActiveEffect)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Card.Gems.GemActiveEffect)
+  name.vb: List(Of GemActiveEffect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Card.Gems.GemActiveEffect
+    name: GemActiveEffect
+    href: TaleOfTiles.Card.Gems.GemActiveEffect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.Gems.GemActiveEffect
+    name: GemActiveEffect
+    href: TaleOfTiles.Card.Gems.GemActiveEffect.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemStatusEffect}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemStatusEffect}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GemStatusEffect>
+  nameWithType: List<GemStatusEffect>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Card.Gems.GemStatusEffect>
+  nameWithType.vb: List(Of GemStatusEffect)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Card.Gems.GemStatusEffect)
+  name.vb: List(Of GemStatusEffect)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Card.Gems.GemStatusEffect
+    name: GemStatusEffect
+    href: TaleOfTiles.Card.Gems.GemStatusEffect.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.Gems.GemStatusEffect
+    name: GemStatusEffect
+    href: TaleOfTiles.Card.Gems.GemStatusEffect.html
+  - name: )
+- uid: System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemSuperCombo}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Card.Gems.GemSuperCombo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GemSuperCombo>
+  nameWithType: List<GemSuperCombo>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Card.Gems.GemSuperCombo>
+  nameWithType.vb: List(Of GemSuperCombo)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Card.Gems.GemSuperCombo)
+  name.vb: List(Of GemSuperCombo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: )
+- uid: TaleOfTiles.Arena.GamePiece
+  commentId: T:TaleOfTiles.Arena.GamePiece
+  parent: TaleOfTiles.Arena
+  href: TaleOfTiles.Arena.GamePiece.html
+  name: GamePiece
+  nameWithType: GamePiece
+  fullName: TaleOfTiles.Arena.GamePiece
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: TaleOfTiles.AI.VirtualGamePiece.#ctor*
+  commentId: Overload:TaleOfTiles.AI.VirtualGamePiece.#ctor
+  href: TaleOfTiles.AI.VirtualGamePiece.html#TaleOfTiles_AI_VirtualGamePiece__ctor
+  name: VirtualGamePiece
+  nameWithType: VirtualGamePiece.VirtualGamePiece
+  fullName: TaleOfTiles.AI.VirtualGamePiece.VirtualGamePiece
+  nameWithType.vb: VirtualGamePiece.New
+  fullName.vb: TaleOfTiles.AI.VirtualGamePiece.New
+  name.vb: New
+- uid: TaleOfTiles.AI.VirtualGamePiece
+  commentId: T:TaleOfTiles.AI.VirtualGamePiece
+  parent: TaleOfTiles.AI
+  href: TaleOfTiles.AI.VirtualGamePiece.html
+  name: VirtualGamePiece
+  nameWithType: VirtualGamePiece
+  fullName: TaleOfTiles.AI.VirtualGamePiece
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: TaleOfTiles.AI.VirtualGamePiece.Equals*
+  commentId: Overload:TaleOfTiles.AI.VirtualGamePiece.Equals
+  href: TaleOfTiles.AI.VirtualGamePiece.html#TaleOfTiles_AI_VirtualGamePiece_Equals_System_Object_
+  name: Equals
+  nameWithType: VirtualGamePiece.Equals
+  fullName: TaleOfTiles.AI.VirtualGamePiece.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: TaleOfTiles.AI.VirtualGamePiece.GetHashCode*
+  commentId: Overload:TaleOfTiles.AI.VirtualGamePiece.GetHashCode
+  href: TaleOfTiles.AI.VirtualGamePiece.html#TaleOfTiles_AI_VirtualGamePiece_GetHashCode
+  name: GetHashCode
+  nameWithType: VirtualGamePiece.GetHashCode
+  fullName: TaleOfTiles.AI.VirtualGamePiece.GetHashCode
+- uid: TaleOfTiles.AI.VirtualGamePiece.SetCoord*
+  commentId: Overload:TaleOfTiles.AI.VirtualGamePiece.SetCoord
+  href: TaleOfTiles.AI.VirtualGamePiece.html#TaleOfTiles_AI_VirtualGamePiece_SetCoord_System_Int32_System_Int32_
+  name: SetCoord
+  nameWithType: VirtualGamePiece.SetCoord
+  fullName: TaleOfTiles.AI.VirtualGamePiece.SetCoord

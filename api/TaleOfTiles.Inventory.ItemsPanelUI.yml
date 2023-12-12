@@ -1,0 +1,817 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Inventory.ItemsPanelUI
+  commentId: T:TaleOfTiles.Inventory.ItemsPanelUI
+  id: ItemsPanelUI
+  parent: TaleOfTiles.Inventory
+  children:
+  - TaleOfTiles.Inventory.ItemsPanelUI.ApplySelected
+  - TaleOfTiles.Inventory.ItemsPanelUI.HideItemSpecsLoader
+  - TaleOfTiles.Inventory.ItemsPanelUI.HidePanel
+  - TaleOfTiles.Inventory.ItemsPanelUI.LoadItems(TaleOfTiles.Inventory.EquipSlotUI)
+  - TaleOfTiles.Inventory.ItemsPanelUI.SelectSlot(TaleOfTiles.Inventory.EquipSlotUI)
+  - TaleOfTiles.Inventory.ItemsPanelUI.ShowItemSpecsLoader
+  - TaleOfTiles.Inventory.ItemsPanelUI.ShowPanel
+  - TaleOfTiles.Inventory.ItemsPanelUI.caller_slot
+  - TaleOfTiles.Inventory.ItemsPanelUI.current_displayed_items
+  - TaleOfTiles.Inventory.ItemsPanelUI.item_list_container
+  - TaleOfTiles.Inventory.ItemsPanelUI.item_prefab
+  - TaleOfTiles.Inventory.ItemsPanelUI.item_specs_loader
+  - TaleOfTiles.Inventory.ItemsPanelUI.selected_item_description_text
+  - TaleOfTiles.Inventory.ItemsPanelUI.selected_item_name_text
+  - TaleOfTiles.Inventory.ItemsPanelUI.selected_item_rank_text
+  - TaleOfTiles.Inventory.ItemsPanelUI.selected_slot
+  - TaleOfTiles.Inventory.ItemsPanelUI.skill_prefab
+  - TaleOfTiles.Inventory.ItemsPanelUI.skills_container
+  langs:
+  - csharp
+  - vb
+  name: ItemsPanelUI
+  nameWithType: ItemsPanelUI
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ItemsPanelUI
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Manages the items panel in the game UI, displaying information about items and skills.
+  example: []
+  syntax:
+    content: 'public class ItemsPanelUI : MonoBehaviour'
+    content.vb: Public Class ItemsPanelUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.item_list_container
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.item_list_container
+  id: item_list_container
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: item_list_container
+  nameWithType: ItemsPanelUI.item_list_container
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.item_list_container
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: item_list_container
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: public GameObject item_list_container
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public item_list_container As GameObject
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.skills_container
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.skills_container
+  id: skills_container
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: skills_container
+  nameWithType: ItemsPanelUI.skills_container
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.skills_container
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: skills_container
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: public GameObject skills_container
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public skills_container As GameObject
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.skill_prefab
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.skill_prefab
+  id: skill_prefab
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: skill_prefab
+  nameWithType: ItemsPanelUI.skill_prefab
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.skill_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: skill_prefab
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: public GameObject skill_prefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public skill_prefab As GameObject
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.item_prefab
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.item_prefab
+  id: item_prefab
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: item_prefab
+  nameWithType: ItemsPanelUI.item_prefab
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.item_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: item_prefab
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: public GameObject item_prefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public item_prefab As GameObject
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.item_specs_loader
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.item_specs_loader
+  id: item_specs_loader
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: item_specs_loader
+  nameWithType: ItemsPanelUI.item_specs_loader
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.item_specs_loader
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: item_specs_loader
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: public GameObject item_specs_loader
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public item_specs_loader As GameObject
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.selected_item_name_text
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.selected_item_name_text
+  id: selected_item_name_text
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: selected_item_name_text
+  nameWithType: ItemsPanelUI.selected_item_name_text
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.selected_item_name_text
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: selected_item_name_text
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: public Text selected_item_name_text
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public selected_item_name_text As Text
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.selected_item_description_text
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.selected_item_description_text
+  id: selected_item_description_text
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: selected_item_description_text
+  nameWithType: ItemsPanelUI.selected_item_description_text
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.selected_item_description_text
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: selected_item_description_text
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: public Text selected_item_description_text
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public selected_item_description_text As Text
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.selected_item_rank_text
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.selected_item_rank_text
+  id: selected_item_rank_text
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: selected_item_rank_text
+  nameWithType: ItemsPanelUI.selected_item_rank_text
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.selected_item_rank_text
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: selected_item_rank_text
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: public Text selected_item_rank_text
+    return:
+      type: UnityEngine.UI.Text
+    content.vb: Public selected_item_rank_text As Text
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.current_displayed_items
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.current_displayed_items
+  id: current_displayed_items
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: current_displayed_items
+  nameWithType: ItemsPanelUI.current_displayed_items
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.current_displayed_items
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: current_displayed_items
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: private List<GameObject> current_displayed_items
+    return:
+      type: System.Collections.Generic.List{UnityEngine.GameObject}
+    content.vb: Private current_displayed_items As List(Of GameObject)
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.selected_slot
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.selected_slot
+  id: selected_slot
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: selected_slot
+  nameWithType: ItemsPanelUI.selected_slot
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.selected_slot
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: selected_slot
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private EquipSlotUI selected_slot
+    return:
+      type: TaleOfTiles.Inventory.EquipSlotUI
+    content.vb: >-
+      <SerializeField>
+
+      Private selected_slot As EquipSlotUI
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.caller_slot
+  commentId: F:TaleOfTiles.Inventory.ItemsPanelUI.caller_slot
+  id: caller_slot
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: caller_slot
+  nameWithType: ItemsPanelUI.caller_slot
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.caller_slot
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: caller_slot
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  syntax:
+    content: private EquipSlotUI caller_slot
+    return:
+      type: TaleOfTiles.Inventory.EquipSlotUI
+    content.vb: Private caller_slot As EquipSlotUI
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.ApplySelected
+  commentId: M:TaleOfTiles.Inventory.ItemsPanelUI.ApplySelected
+  id: ApplySelected
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: ApplySelected()
+  nameWithType: ItemsPanelUI.ApplySelected()
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.ApplySelected()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ApplySelected
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Applies the selected item to the corresponding slot.
+  example: []
+  syntax:
+    content: public void ApplySelected()
+    content.vb: Public Sub ApplySelected()
+  overload: TaleOfTiles.Inventory.ItemsPanelUI.ApplySelected*
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.SelectSlot(TaleOfTiles.Inventory.EquipSlotUI)
+  commentId: M:TaleOfTiles.Inventory.ItemsPanelUI.SelectSlot(TaleOfTiles.Inventory.EquipSlotUI)
+  id: SelectSlot(TaleOfTiles.Inventory.EquipSlotUI)
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: SelectSlot(EquipSlotUI)
+  nameWithType: ItemsPanelUI.SelectSlot(EquipSlotUI)
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.SelectSlot(TaleOfTiles.Inventory.EquipSlotUI)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SelectSlot
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Selects an item slot and updates the UI to show its details.
+  example: []
+  syntax:
+    content: public void SelectSlot(EquipSlotUI slot)
+    parameters:
+    - id: slot
+      type: TaleOfTiles.Inventory.EquipSlotUI
+      description: The selected item slot.
+    content.vb: Public Sub SelectSlot(slot As EquipSlotUI)
+  overload: TaleOfTiles.Inventory.ItemsPanelUI.SelectSlot*
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.LoadItems(TaleOfTiles.Inventory.EquipSlotUI)
+  commentId: M:TaleOfTiles.Inventory.ItemsPanelUI.LoadItems(TaleOfTiles.Inventory.EquipSlotUI)
+  id: LoadItems(TaleOfTiles.Inventory.EquipSlotUI)
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: LoadItems(EquipSlotUI)
+  nameWithType: ItemsPanelUI.LoadItems(EquipSlotUI)
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.LoadItems(TaleOfTiles.Inventory.EquipSlotUI)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadItems
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 91
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Loads and displays items relevant to the selected slot.
+  example: []
+  syntax:
+    content: public void LoadItems(EquipSlotUI slot)
+    parameters:
+    - id: slot
+      type: TaleOfTiles.Inventory.EquipSlotUI
+      description: The slot for which items are to be loaded.
+    content.vb: Public Sub LoadItems(slot As EquipSlotUI)
+  overload: TaleOfTiles.Inventory.ItemsPanelUI.LoadItems*
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.ShowPanel
+  commentId: M:TaleOfTiles.Inventory.ItemsPanelUI.ShowPanel
+  id: ShowPanel
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: ShowPanel()
+  nameWithType: ItemsPanelUI.ShowPanel()
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.ShowPanel()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowPanel
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 130
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Makes the panel visible and interactive.
+  example: []
+  syntax:
+    content: public void ShowPanel()
+    content.vb: Public Sub ShowPanel()
+  overload: TaleOfTiles.Inventory.ItemsPanelUI.ShowPanel*
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.HidePanel
+  commentId: M:TaleOfTiles.Inventory.ItemsPanelUI.HidePanel
+  id: HidePanel
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: HidePanel()
+  nameWithType: ItemsPanelUI.HidePanel()
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.HidePanel()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HidePanel
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 140
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Hides the panel and makes it non-interactive.
+  example: []
+  syntax:
+    content: public void HidePanel()
+    content.vb: Public Sub HidePanel()
+  overload: TaleOfTiles.Inventory.ItemsPanelUI.HidePanel*
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.ShowItemSpecsLoader
+  commentId: M:TaleOfTiles.Inventory.ItemsPanelUI.ShowItemSpecsLoader
+  id: ShowItemSpecsLoader
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: ShowItemSpecsLoader()
+  nameWithType: ItemsPanelUI.ShowItemSpecsLoader()
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.ShowItemSpecsLoader()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShowItemSpecsLoader
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 150
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Shows the item specifications loader.
+  example: []
+  syntax:
+    content: public void ShowItemSpecsLoader()
+    content.vb: Public Sub ShowItemSpecsLoader()
+  overload: TaleOfTiles.Inventory.ItemsPanelUI.ShowItemSpecsLoader*
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.HideItemSpecsLoader
+  commentId: M:TaleOfTiles.Inventory.ItemsPanelUI.HideItemSpecsLoader
+  id: HideItemSpecsLoader
+  parent: TaleOfTiles.Inventory.ItemsPanelUI
+  langs:
+  - csharp
+  - vb
+  name: HideItemSpecsLoader()
+  nameWithType: ItemsPanelUI.HideItemSpecsLoader()
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.HideItemSpecsLoader()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ItemsPanelUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HideItemSpecsLoader
+    path: ../Assets/Scripts/ItemsPanelUI.cs
+    startLine: 158
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Inventory
+  summary: Hides the item specifications loader.
+  example: []
+  syntax:
+    content: public void HideItemSpecsLoader()
+    content.vb: Public Sub HideItemSpecsLoader()
+  overload: TaleOfTiles.Inventory.ItemsPanelUI.HideItemSpecsLoader*
+references:
+- uid: TaleOfTiles.Inventory
+  commentId: N:TaleOfTiles.Inventory
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Inventory
+  nameWithType: TaleOfTiles.Inventory
+  fullName: TaleOfTiles.Inventory
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Inventory
+    name: Inventory
+    href: TaleOfTiles.Inventory.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Inventory
+    name: Inventory
+    href: TaleOfTiles.Inventory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: System.Collections.Generic.List{UnityEngine.GameObject}
+  commentId: T:System.Collections.Generic.List{UnityEngine.GameObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GameObject>
+  nameWithType: List<GameObject>
+  fullName: System.Collections.Generic.List<UnityEngine.GameObject>
+  nameWithType.vb: List(Of GameObject)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.GameObject)
+  name.vb: List(Of GameObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TaleOfTiles.Inventory.EquipSlotUI
+  commentId: T:TaleOfTiles.Inventory.EquipSlotUI
+  parent: TaleOfTiles.Inventory
+  href: TaleOfTiles.Inventory.EquipSlotUI.html
+  name: EquipSlotUI
+  nameWithType: EquipSlotUI
+  fullName: TaleOfTiles.Inventory.EquipSlotUI
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.ApplySelected*
+  commentId: Overload:TaleOfTiles.Inventory.ItemsPanelUI.ApplySelected
+  href: TaleOfTiles.Inventory.ItemsPanelUI.html#TaleOfTiles_Inventory_ItemsPanelUI_ApplySelected
+  name: ApplySelected
+  nameWithType: ItemsPanelUI.ApplySelected
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.ApplySelected
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.SelectSlot*
+  commentId: Overload:TaleOfTiles.Inventory.ItemsPanelUI.SelectSlot
+  href: TaleOfTiles.Inventory.ItemsPanelUI.html#TaleOfTiles_Inventory_ItemsPanelUI_SelectSlot_TaleOfTiles_Inventory_EquipSlotUI_
+  name: SelectSlot
+  nameWithType: ItemsPanelUI.SelectSlot
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.SelectSlot
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.LoadItems*
+  commentId: Overload:TaleOfTiles.Inventory.ItemsPanelUI.LoadItems
+  href: TaleOfTiles.Inventory.ItemsPanelUI.html#TaleOfTiles_Inventory_ItemsPanelUI_LoadItems_TaleOfTiles_Inventory_EquipSlotUI_
+  name: LoadItems
+  nameWithType: ItemsPanelUI.LoadItems
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.LoadItems
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.ShowPanel*
+  commentId: Overload:TaleOfTiles.Inventory.ItemsPanelUI.ShowPanel
+  href: TaleOfTiles.Inventory.ItemsPanelUI.html#TaleOfTiles_Inventory_ItemsPanelUI_ShowPanel
+  name: ShowPanel
+  nameWithType: ItemsPanelUI.ShowPanel
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.ShowPanel
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.HidePanel*
+  commentId: Overload:TaleOfTiles.Inventory.ItemsPanelUI.HidePanel
+  href: TaleOfTiles.Inventory.ItemsPanelUI.html#TaleOfTiles_Inventory_ItemsPanelUI_HidePanel
+  name: HidePanel
+  nameWithType: ItemsPanelUI.HidePanel
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.HidePanel
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.ShowItemSpecsLoader*
+  commentId: Overload:TaleOfTiles.Inventory.ItemsPanelUI.ShowItemSpecsLoader
+  href: TaleOfTiles.Inventory.ItemsPanelUI.html#TaleOfTiles_Inventory_ItemsPanelUI_ShowItemSpecsLoader
+  name: ShowItemSpecsLoader
+  nameWithType: ItemsPanelUI.ShowItemSpecsLoader
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.ShowItemSpecsLoader
+- uid: TaleOfTiles.Inventory.ItemsPanelUI.HideItemSpecsLoader*
+  commentId: Overload:TaleOfTiles.Inventory.ItemsPanelUI.HideItemSpecsLoader
+  href: TaleOfTiles.Inventory.ItemsPanelUI.html#TaleOfTiles_Inventory_ItemsPanelUI_HideItemSpecsLoader
+  name: HideItemSpecsLoader
+  nameWithType: ItemsPanelUI.HideItemSpecsLoader
+  fullName: TaleOfTiles.Inventory.ItemsPanelUI.HideItemSpecsLoader

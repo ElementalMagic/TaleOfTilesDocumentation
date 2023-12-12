@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Journey.JourneyMapContainer
+  commentId: T:TaleOfTiles.Journey.JourneyMapContainer
+  id: JourneyMapContainer
+  parent: TaleOfTiles.Journey
+  children:
+  - TaleOfTiles.Journey.JourneyMapContainer.AddActivityButtonOnClickListeners
+  langs:
+  - csharp
+  - vb
+  name: JourneyMapContainer
+  nameWithType: JourneyMapContainer
+  fullName: TaleOfTiles.Journey.JourneyMapContainer
+  type: Class
+  source:
+    remote:
+      path: Assets/JourneyMapContainer.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: JourneyMapContainer
+    path: ../Assets/JourneyMapContainer.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: The JourneyMapContainer class manages the journey map blocks in the journey map.
+  example: []
+  syntax:
+    content: 'public class JourneyMapContainer : MonoBehaviour'
+    content.vb: Public Class JourneyMapContainer Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Journey.JourneyMapContainer.AddActivityButtonOnClickListeners
+  commentId: M:TaleOfTiles.Journey.JourneyMapContainer.AddActivityButtonOnClickListeners
+  id: AddActivityButtonOnClickListeners
+  parent: TaleOfTiles.Journey.JourneyMapContainer
+  langs:
+  - csharp
+  - vb
+  name: AddActivityButtonOnClickListeners()
+  nameWithType: JourneyMapContainer.AddActivityButtonOnClickListeners()
+  fullName: TaleOfTiles.Journey.JourneyMapContainer.AddActivityButtonOnClickListeners()
+  type: Method
+  source:
+    remote:
+      path: Assets/JourneyMapContainer.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: AddActivityButtonOnClickListeners
+    path: ../Assets/JourneyMapContainer.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Journey
+  summary: >-
+    Adds click listeners to all activity buttons in the journey map blocks.
+
+    When an activity button is clicked, the corresponding activity is activated.
+  example: []
+  syntax:
+    content: public void AddActivityButtonOnClickListeners()
+    content.vb: Public Sub AddActivityButtonOnClickListeners()
+  overload: TaleOfTiles.Journey.JourneyMapContainer.AddActivityButtonOnClickListeners*
+references:
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Journey.JourneyMapContainer.AddActivityButtonOnClickListeners*
+  commentId: Overload:TaleOfTiles.Journey.JourneyMapContainer.AddActivityButtonOnClickListeners
+  href: TaleOfTiles.Journey.JourneyMapContainer.html#TaleOfTiles_Journey_JourneyMapContainer_AddActivityButtonOnClickListeners
+  name: AddActivityButtonOnClickListeners
+  nameWithType: JourneyMapContainer.AddActivityButtonOnClickListeners
+  fullName: TaleOfTiles.Journey.JourneyMapContainer.AddActivityButtonOnClickListeners

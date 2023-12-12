@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.UI.DeckCanvasUI
+  commentId: T:TaleOfTiles.UI.DeckCanvasUI
+  id: DeckCanvasUI
+  parent: TaleOfTiles.UI
+  children:
+  - TaleOfTiles.UI.DeckCanvasUI.BuildDeck
+  - TaleOfTiles.UI.DeckCanvasUI.back_button
+  - TaleOfTiles.UI.DeckCanvasUI.cards_deck_container
+  - TaleOfTiles.UI.DeckCanvasUI.ui_deck_card_prefab
+  langs:
+  - csharp
+  - vb
+  name: DeckCanvasUI
+  nameWithType: DeckCanvasUI
+  fullName: TaleOfTiles.UI.DeckCanvasUI
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/DeckCanvasUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DeckCanvasUI
+    path: ../Assets/Scripts/DeckCanvasUI.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Handles the display and functionality of the deck in the UI.
+  example: []
+  syntax:
+    content: 'public class DeckCanvasUI : MonoBehaviour'
+    content.vb: Public Class DeckCanvasUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.UI.DeckCanvasUI.cards_deck_container
+  commentId: F:TaleOfTiles.UI.DeckCanvasUI.cards_deck_container
+  id: cards_deck_container
+  parent: TaleOfTiles.UI.DeckCanvasUI
+  langs:
+  - csharp
+  - vb
+  name: cards_deck_container
+  nameWithType: DeckCanvasUI.cards_deck_container
+  fullName: TaleOfTiles.UI.DeckCanvasUI.cards_deck_container
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DeckCanvasUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: cards_deck_container
+    path: ../Assets/Scripts/DeckCanvasUI.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The container for the cards deck in the UI.
+  example: []
+  syntax:
+    content: public RectTransform cards_deck_container
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public cards_deck_container As RectTransform
+- uid: TaleOfTiles.UI.DeckCanvasUI.ui_deck_card_prefab
+  commentId: F:TaleOfTiles.UI.DeckCanvasUI.ui_deck_card_prefab
+  id: ui_deck_card_prefab
+  parent: TaleOfTiles.UI.DeckCanvasUI
+  langs:
+  - csharp
+  - vb
+  name: ui_deck_card_prefab
+  nameWithType: DeckCanvasUI.ui_deck_card_prefab
+  fullName: TaleOfTiles.UI.DeckCanvasUI.ui_deck_card_prefab
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DeckCanvasUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ui_deck_card_prefab
+    path: ../Assets/Scripts/DeckCanvasUI.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The prefab for the UI of the deck card.
+  example: []
+  syntax:
+    content: public GameObject ui_deck_card_prefab
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public ui_deck_card_prefab As GameObject
+- uid: TaleOfTiles.UI.DeckCanvasUI.back_button
+  commentId: F:TaleOfTiles.UI.DeckCanvasUI.back_button
+  id: back_button
+  parent: TaleOfTiles.UI.DeckCanvasUI
+  langs:
+  - csharp
+  - vb
+  name: back_button
+  nameWithType: DeckCanvasUI.back_button
+  fullName: TaleOfTiles.UI.DeckCanvasUI.back_button
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DeckCanvasUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: back_button
+    path: ../Assets/Scripts/DeckCanvasUI.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The button for going back in the UI.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Button back_button
+    return:
+      type: UnityEngine.UI.Button
+    content.vb: >-
+      <SerializeField>
+
+      Private back_button As Button
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.UI.DeckCanvasUI.BuildDeck
+  commentId: M:TaleOfTiles.UI.DeckCanvasUI.BuildDeck
+  id: BuildDeck
+  parent: TaleOfTiles.UI.DeckCanvasUI
+  langs:
+  - csharp
+  - vb
+  name: BuildDeck()
+  nameWithType: DeckCanvasUI.BuildDeck()
+  fullName: TaleOfTiles.UI.DeckCanvasUI.BuildDeck()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/DeckCanvasUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BuildDeck
+    path: ../Assets/Scripts/DeckCanvasUI.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Builds the deck in the UI.
+  example: []
+  syntax:
+    content: public void BuildDeck()
+    content.vb: Public Sub BuildDeck()
+  overload: TaleOfTiles.UI.DeckCanvasUI.BuildDeck*
+references:
+- uid: TaleOfTiles.UI
+  commentId: N:TaleOfTiles.UI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.UI
+  nameWithType: TaleOfTiles.UI
+  fullName: TaleOfTiles.UI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.UI.Button
+  commentId: T:UnityEngine.UI.Button
+  parent: UnityEngine.UI
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UI.Button
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: TaleOfTiles.UI.DeckCanvasUI.BuildDeck*
+  commentId: Overload:TaleOfTiles.UI.DeckCanvasUI.BuildDeck
+  href: TaleOfTiles.UI.DeckCanvasUI.html#TaleOfTiles_UI_DeckCanvasUI_BuildDeck
+  name: BuildDeck
+  nameWithType: DeckCanvasUI.BuildDeck
+  fullName: TaleOfTiles.UI.DeckCanvasUI.BuildDeck

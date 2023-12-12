@@ -1,0 +1,616 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  commentId: T:TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  id: ParticleSystemSizeAdaptation
+  parent: TaleOfTiles.UI
+  children:
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.AdaptSize
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.Awake
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.OnEnable
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.RecursiveColorFlah
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.RestartParticle(System.Single)
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.Start
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.Update
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.change_color_coroutine_main
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.change_color_coroutine_sub
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalParentSize
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalPosition
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalStartSizeX
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalStartSizeY
+  - TaleOfTiles.UI.ParticleSystemSizeAdaptation.start_color
+  langs:
+  - csharp
+  - vb
+  name: ParticleSystemSizeAdaptation
+  nameWithType: ParticleSystemSizeAdaptation
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ParticleSystemSizeAdaptation
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Adapts the size of a particle system to match the size of its parent RectTransform.
+  example: []
+  syntax:
+    content: 'public class ParticleSystemSizeAdaptation : MonoBehaviour'
+    content.vb: Public Class ParticleSystemSizeAdaptation Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalParentSize
+  commentId: F:TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalParentSize
+  id: originalParentSize
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: originalParentSize
+  nameWithType: ParticleSystemSizeAdaptation.originalParentSize
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalParentSize
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: originalParentSize
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: private Vector2 originalParentSize
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Private originalParentSize As Vector2
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalPosition
+  commentId: F:TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalPosition
+  id: originalPosition
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: originalPosition
+  nameWithType: ParticleSystemSizeAdaptation.originalPosition
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalPosition
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: originalPosition
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: private Vector2 originalPosition
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Private originalPosition As Vector2
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalStartSizeX
+  commentId: F:TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalStartSizeX
+  id: originalStartSizeX
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: originalStartSizeX
+  nameWithType: ParticleSystemSizeAdaptation.originalStartSizeX
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalStartSizeX
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: originalStartSizeX
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: private float originalStartSizeX
+    return:
+      type: System.Single
+    content.vb: Private originalStartSizeX As Single
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalStartSizeY
+  commentId: F:TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalStartSizeY
+  id: originalStartSizeY
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: originalStartSizeY
+  nameWithType: ParticleSystemSizeAdaptation.originalStartSizeY
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.originalStartSizeY
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: originalStartSizeY
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: private float originalStartSizeY
+    return:
+      type: System.Single
+    content.vb: Private originalStartSizeY As Single
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.change_color_coroutine_main
+  commentId: F:TaleOfTiles.UI.ParticleSystemSizeAdaptation.change_color_coroutine_main
+  id: change_color_coroutine_main
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: change_color_coroutine_main
+  nameWithType: ParticleSystemSizeAdaptation.change_color_coroutine_main
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.change_color_coroutine_main
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: change_color_coroutine_main
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: private IEnumerator change_color_coroutine_main
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private change_color_coroutine_main As IEnumerator
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.change_color_coroutine_sub
+  commentId: F:TaleOfTiles.UI.ParticleSystemSizeAdaptation.change_color_coroutine_sub
+  id: change_color_coroutine_sub
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: change_color_coroutine_sub
+  nameWithType: ParticleSystemSizeAdaptation.change_color_coroutine_sub
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.change_color_coroutine_sub
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: change_color_coroutine_sub
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: private IEnumerator change_color_coroutine_sub
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private change_color_coroutine_sub As IEnumerator
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.start_color
+  commentId: F:TaleOfTiles.UI.ParticleSystemSizeAdaptation.start_color
+  id: start_color
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: start_color
+  nameWithType: ParticleSystemSizeAdaptation.start_color
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.start_color
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: start_color
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: private Color start_color
+    return:
+      type: UnityEngine.Color
+    content.vb: Private start_color As Color
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Awake
+  commentId: M:TaleOfTiles.UI.ParticleSystemSizeAdaptation.Awake
+  id: Awake
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: ParticleSystemSizeAdaptation.Awake()
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Awake()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Awake
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Initializes variables and adapts the particle system size.
+  example: []
+  syntax:
+    content: private void Awake()
+    content.vb: Private Sub Awake()
+  overload: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Awake*
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Start
+  commentId: M:TaleOfTiles.UI.ParticleSystemSizeAdaptation.Start
+  id: Start
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ParticleSystemSizeAdaptation.Start()
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Sets initial state and deactivates the game object.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Start*
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RecursiveColorFlah
+  commentId: M:TaleOfTiles.UI.ParticleSystemSizeAdaptation.RecursiveColorFlah
+  id: RecursiveColorFlah
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: RecursiveColorFlah()
+  nameWithType: ParticleSystemSizeAdaptation.RecursiveColorFlah()
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RecursiveColorFlah()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: RecursiveColorFlah
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: private IEnumerator RecursiveColorFlah()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Private Function RecursiveColorFlah() As IEnumerator
+  overload: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RecursiveColorFlah*
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Update
+  commentId: M:TaleOfTiles.UI.ParticleSystemSizeAdaptation.Update
+  id: Update
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: ParticleSystemSizeAdaptation.Update()
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Update
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  syntax:
+    content: private void Update()
+    content.vb: Private Sub Update()
+  overload: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Update*
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.AdaptSize
+  commentId: M:TaleOfTiles.UI.ParticleSystemSizeAdaptation.AdaptSize
+  id: AdaptSize
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: AdaptSize()
+  nameWithType: ParticleSystemSizeAdaptation.AdaptSize()
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.AdaptSize()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: AdaptSize
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Dynamically adapts the particle system size based on the parent RectTransform's size.
+  example: []
+  syntax:
+    content: private void AdaptSize()
+    content.vb: Private Sub AdaptSize()
+  overload: TaleOfTiles.UI.ParticleSystemSizeAdaptation.AdaptSize*
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.OnEnable
+  commentId: M:TaleOfTiles.UI.ParticleSystemSizeAdaptation.OnEnable
+  id: OnEnable
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: ParticleSystemSizeAdaptation.OnEnable()
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: OnEnable
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Enables the adaptation logic and starts the color flashing coroutine.
+  example: []
+  syntax:
+    content: private void OnEnable()
+    content.vb: Private Sub OnEnable()
+  overload: TaleOfTiles.UI.ParticleSystemSizeAdaptation.OnEnable*
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RestartParticle(System.Single)
+  commentId: M:TaleOfTiles.UI.ParticleSystemSizeAdaptation.RestartParticle(System.Single)
+  id: RestartParticle(System.Single)
+  parent: TaleOfTiles.UI.ParticleSystemSizeAdaptation
+  langs:
+  - csharp
+  - vb
+  name: RestartParticle(float)
+  nameWithType: ParticleSystemSizeAdaptation.RestartParticle(float)
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RestartParticle(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ParticleSystemSizeAdaptation.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: RestartParticle
+    path: ../Assets/Scripts/ParticleSystemSizeAdaptation.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Restarts the particle system with a specified time.
+  example: []
+  syntax:
+    content: public void RestartParticle(float itme)
+    parameters:
+    - id: itme
+      type: System.Single
+    content.vb: Public Sub RestartParticle(itme As Single)
+  overload: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RestartParticle*
+  nameWithType.vb: ParticleSystemSizeAdaptation.RestartParticle(Single)
+  fullName.vb: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RestartParticle(Single)
+  name.vb: RestartParticle(Single)
+references:
+- uid: TaleOfTiles.UI
+  commentId: N:TaleOfTiles.UI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.UI
+  nameWithType: TaleOfTiles.UI
+  fullName: TaleOfTiles.UI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Awake*
+  commentId: Overload:TaleOfTiles.UI.ParticleSystemSizeAdaptation.Awake
+  href: TaleOfTiles.UI.ParticleSystemSizeAdaptation.html#TaleOfTiles_UI_ParticleSystemSizeAdaptation_Awake
+  name: Awake
+  nameWithType: ParticleSystemSizeAdaptation.Awake
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Awake
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Start*
+  commentId: Overload:TaleOfTiles.UI.ParticleSystemSizeAdaptation.Start
+  href: TaleOfTiles.UI.ParticleSystemSizeAdaptation.html#TaleOfTiles_UI_ParticleSystemSizeAdaptation_Start
+  name: Start
+  nameWithType: ParticleSystemSizeAdaptation.Start
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Start
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RecursiveColorFlah*
+  commentId: Overload:TaleOfTiles.UI.ParticleSystemSizeAdaptation.RecursiveColorFlah
+  href: TaleOfTiles.UI.ParticleSystemSizeAdaptation.html#TaleOfTiles_UI_ParticleSystemSizeAdaptation_RecursiveColorFlah
+  name: RecursiveColorFlah
+  nameWithType: ParticleSystemSizeAdaptation.RecursiveColorFlah
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RecursiveColorFlah
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Update*
+  commentId: Overload:TaleOfTiles.UI.ParticleSystemSizeAdaptation.Update
+  href: TaleOfTiles.UI.ParticleSystemSizeAdaptation.html#TaleOfTiles_UI_ParticleSystemSizeAdaptation_Update
+  name: Update
+  nameWithType: ParticleSystemSizeAdaptation.Update
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.Update
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.AdaptSize*
+  commentId: Overload:TaleOfTiles.UI.ParticleSystemSizeAdaptation.AdaptSize
+  href: TaleOfTiles.UI.ParticleSystemSizeAdaptation.html#TaleOfTiles_UI_ParticleSystemSizeAdaptation_AdaptSize
+  name: AdaptSize
+  nameWithType: ParticleSystemSizeAdaptation.AdaptSize
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.AdaptSize
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.OnEnable*
+  commentId: Overload:TaleOfTiles.UI.ParticleSystemSizeAdaptation.OnEnable
+  href: TaleOfTiles.UI.ParticleSystemSizeAdaptation.html#TaleOfTiles_UI_ParticleSystemSizeAdaptation_OnEnable
+  name: OnEnable
+  nameWithType: ParticleSystemSizeAdaptation.OnEnable
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.OnEnable
+- uid: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RestartParticle*
+  commentId: Overload:TaleOfTiles.UI.ParticleSystemSizeAdaptation.RestartParticle
+  href: TaleOfTiles.UI.ParticleSystemSizeAdaptation.html#TaleOfTiles_UI_ParticleSystemSizeAdaptation_RestartParticle_System_Single_
+  name: RestartParticle
+  nameWithType: ParticleSystemSizeAdaptation.RestartParticle
+  fullName: TaleOfTiles.UI.ParticleSystemSizeAdaptation.RestartParticle

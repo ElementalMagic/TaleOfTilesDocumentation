@@ -1,0 +1,437 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  id: TaleOfTiles.Card.Gems
+  children:
+  - TaleOfTiles.Card.Gems.GemActiveEffect
+  - TaleOfTiles.Card.Gems.GemActiveEffectType
+  - TaleOfTiles.Card.Gems.GemEffectShieldType
+  - TaleOfTiles.Card.Gems.GemItem
+  - TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+  - TaleOfTiles.Card.Gems.GemItemTier
+  - TaleOfTiles.Card.Gems.GemStatusEffect
+  - TaleOfTiles.Card.Gems.GemStatusEffectType
+  - TaleOfTiles.Card.Gems.GemSuperCombo
+  - TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard
+  - TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo
+  - TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  - TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage
+  - TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  - TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems
+  - TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  - TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo
+  - TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  - TaleOfTiles.Card.Gems.GemSuperCombo.Poison
+  - TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo
+  - TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection
+  - TaleOfTiles.Card.Gems.GemSuperComboType
+  - TaleOfTiles.Card.Gems.ISuperCombo
+  langs:
+  - csharp
+  - vb
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TaleOfTiles.Card.Gems.GemItem
+  commentId: T:TaleOfTiles.Card.Gems.GemItem
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemItem.html
+  name: GemItem
+  nameWithType: GemItem
+  fullName: TaleOfTiles.Card.Gems.GemItem
+- uid: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+  commentId: T:TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemItem.html
+  name: GemItem.OnGemItemChanged
+  nameWithType: GemItem.OnGemItemChanged
+  fullName: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemItem
+    name: GemItem
+    href: TaleOfTiles.Card.Gems.GemItem.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+    name: OnGemItemChanged
+    href: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemItem
+    name: GemItem
+    href: TaleOfTiles.Card.Gems.GemItem.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged
+    name: OnGemItemChanged
+    href: TaleOfTiles.Card.Gems.GemItem.OnGemItemChanged.html
+- uid: TaleOfTiles.Card.Gems.GemItemTier
+  commentId: T:TaleOfTiles.Card.Gems.GemItemTier
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemItemTier.html
+  name: GemItemTier
+  nameWithType: GemItemTier
+  fullName: TaleOfTiles.Card.Gems.GemItemTier
+- uid: TaleOfTiles.Card.Gems.GemActiveEffectType
+  commentId: T:TaleOfTiles.Card.Gems.GemActiveEffectType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemActiveEffectType.html
+  name: GemActiveEffectType
+  nameWithType: GemActiveEffectType
+  fullName: TaleOfTiles.Card.Gems.GemActiveEffectType
+- uid: TaleOfTiles.Card.Gems.GemEffectShieldType
+  commentId: T:TaleOfTiles.Card.Gems.GemEffectShieldType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemEffectShieldType.html
+  name: GemEffectShieldType
+  nameWithType: GemEffectShieldType
+  fullName: TaleOfTiles.Card.Gems.GemEffectShieldType
+- uid: TaleOfTiles.Card.Gems.GemStatusEffectType
+  commentId: T:TaleOfTiles.Card.Gems.GemStatusEffectType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemStatusEffectType.html
+  name: GemStatusEffectType
+  nameWithType: GemStatusEffectType
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffectType
+- uid: TaleOfTiles.Card.Gems.GemActiveEffect
+  commentId: T:TaleOfTiles.Card.Gems.GemActiveEffect
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemActiveEffect.html
+  name: GemActiveEffect
+  nameWithType: GemActiveEffect
+  fullName: TaleOfTiles.Card.Gems.GemActiveEffect
+- uid: TaleOfTiles.Card.Gems.GemStatusEffect
+  commentId: T:TaleOfTiles.Card.Gems.GemStatusEffect
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemStatusEffect.html
+  name: GemStatusEffect
+  nameWithType: GemStatusEffect
+  fullName: TaleOfTiles.Card.Gems.GemStatusEffect
+- uid: TaleOfTiles.Card.Gems.GemSuperComboType
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperComboType
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperComboType.html
+  name: GemSuperComboType
+  nameWithType: GemSuperComboType
+  fullName: TaleOfTiles.Card.Gems.GemSuperComboType
+- uid: TaleOfTiles.Card.Gems.ISuperCombo
+  commentId: T:TaleOfTiles.Card.Gems.ISuperCombo
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.ISuperCombo.html
+  name: ISuperCombo
+  nameWithType: ISuperCombo
+  fullName: TaleOfTiles.Card.Gems.ISuperCombo
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo
+  nameWithType: GemSuperCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.FrostCombo
+  nameWithType: GemSuperCombo.FrostCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo
+    name: FrostCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo
+    name: FrostCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.FrostCombo.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.RegenerationCombo
+  nameWithType: GemSuperCombo.RegenerationCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo
+    name: RegenerationCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo
+    name: RegenerationCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.RegenerationCombo.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.BurnCombo
+  nameWithType: GemSuperCombo.BurnCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo
+    name: BurnCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo
+    name: BurnCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.BurnCombo.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.HexCombo
+  nameWithType: GemSuperCombo.HexCombo
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+    name: HexCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo
+    name: HexCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.HexCombo.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.ExtraMoves
+  nameWithType: GemSuperCombo.ExtraMoves
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+    name: ExtraMoves
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves
+    name: ExtraMoves
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.ExtraMoves.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.SuddenDeathProtection
+  nameWithType: GemSuperCombo.SuddenDeathProtection
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection
+    name: SuddenDeathProtection
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection
+    name: SuddenDeathProtection
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.SuddenDeathProtection.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.DamageEvasion
+  nameWithType: GemSuperCombo.DamageEvasion
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+    name: DamageEvasion
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion
+    name: DamageEvasion
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.DamageEvasion.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.CopyEnemyDeck
+  nameWithType: GemSuperCombo.CopyEnemyDeck
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+    name: CopyEnemyDeck
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck
+    name: CopyEnemyDeck
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.CopyEnemyDeck.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.ActivateGemsOnBoard
+  nameWithType: GemSuperCombo.ActivateGemsOnBoard
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard
+    name: ActivateGemsOnBoard
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard
+    name: ActivateGemsOnBoard
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.ActivateGemsOnBoard.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.CriticalDamage
+  nameWithType: GemSuperCombo.CriticalDamage
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage
+    name: CriticalDamage
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage
+    name: CriticalDamage
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.CriticalDamage.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.DestroyEnemyGems
+  nameWithType: GemSuperCombo.DestroyEnemyGems
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems
+    name: DestroyEnemyGems
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems
+    name: DestroyEnemyGems
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.DestroyEnemyGems.html
+- uid: TaleOfTiles.Card.Gems.GemSuperCombo.Poison
+  commentId: T:TaleOfTiles.Card.Gems.GemSuperCombo.Poison
+  parent: TaleOfTiles.Card.Gems
+  href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  name: GemSuperCombo.Poison
+  nameWithType: GemSuperCombo.Poison
+  fullName: TaleOfTiles.Card.Gems.GemSuperCombo.Poison
+  spec.csharp:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.Poison
+    name: Poison
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.Poison.html
+  spec.vb:
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo
+    name: GemSuperCombo
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems.GemSuperCombo.Poison
+    name: Poison
+    href: TaleOfTiles.Card.Gems.GemSuperCombo.Poison.html
+- uid: TaleOfTiles.Card.Gems
+  commentId: N:TaleOfTiles.Card.Gems
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Card.Gems
+  nameWithType: TaleOfTiles.Card.Gems
+  fullName: TaleOfTiles.Card.Gems
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Card
+    name: Card
+    href: TaleOfTiles.Card.html
+  - name: .
+  - uid: TaleOfTiles.Card.Gems
+    name: Gems
+    href: TaleOfTiles.Card.Gems.html

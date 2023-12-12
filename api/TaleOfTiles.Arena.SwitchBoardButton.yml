@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.SwitchBoardButton
+  commentId: T:TaleOfTiles.Arena.SwitchBoardButton
+  id: SwitchBoardButton
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.SwitchBoardButton.Start
+  - TaleOfTiles.Arena.SwitchBoardButton.Update
+  langs:
+  - csharp
+  - vb
+  name: SwitchBoardButton
+  nameWithType: SwitchBoardButton
+  fullName: TaleOfTiles.Arena.SwitchBoardButton
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/SwitchBoardButton.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SwitchBoardButton
+    path: ../Assets/Scripts/SwitchBoardButton.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: A class for a switch board button in a game.
+  example: []
+  syntax:
+    content: 'public class SwitchBoardButton : MonoBehaviour'
+    content.vb: Public Class SwitchBoardButton Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Arena.SwitchBoardButton.Start
+  commentId: M:TaleOfTiles.Arena.SwitchBoardButton.Start
+  id: Start
+  parent: TaleOfTiles.Arena.SwitchBoardButton
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: SwitchBoardButton.Start()
+  fullName: TaleOfTiles.Arena.SwitchBoardButton.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/SwitchBoardButton.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/SwitchBoardButton.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Called before the first frame update.
+  example: []
+  syntax:
+    content: private void Start()
+    content.vb: Private Sub Start()
+  overload: TaleOfTiles.Arena.SwitchBoardButton.Start*
+- uid: TaleOfTiles.Arena.SwitchBoardButton.Update
+  commentId: M:TaleOfTiles.Arena.SwitchBoardButton.Update
+  id: Update
+  parent: TaleOfTiles.Arena.SwitchBoardButton
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: SwitchBoardButton.Update()
+  fullName: TaleOfTiles.Arena.SwitchBoardButton.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/SwitchBoardButton.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Update
+    path: ../Assets/Scripts/SwitchBoardButton.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Called once per frame.
+  example: []
+  syntax:
+    content: private void Update()
+    content.vb: Private Sub Update()
+  overload: TaleOfTiles.Arena.SwitchBoardButton.Update*
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Arena.SwitchBoardButton.Start*
+  commentId: Overload:TaleOfTiles.Arena.SwitchBoardButton.Start
+  href: TaleOfTiles.Arena.SwitchBoardButton.html#TaleOfTiles_Arena_SwitchBoardButton_Start
+  name: Start
+  nameWithType: SwitchBoardButton.Start
+  fullName: TaleOfTiles.Arena.SwitchBoardButton.Start
+- uid: TaleOfTiles.Arena.SwitchBoardButton.Update*
+  commentId: Overload:TaleOfTiles.Arena.SwitchBoardButton.Update
+  href: TaleOfTiles.Arena.SwitchBoardButton.html#TaleOfTiles_Arena_SwitchBoardButton_Update
+  name: Update
+  nameWithType: SwitchBoardButton.Update
+  fullName: TaleOfTiles.Arena.SwitchBoardButton.Update

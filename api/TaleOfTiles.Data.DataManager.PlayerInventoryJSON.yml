@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Data.DataManager.PlayerInventoryJSON
+  commentId: T:TaleOfTiles.Data.DataManager.PlayerInventoryJSON
+  id: DataManager.PlayerInventoryJSON
+  parent: TaleOfTiles.Data
+  children:
+  - TaleOfTiles.Data.DataManager.PlayerInventoryJSON.active_items
+  - TaleOfTiles.Data.DataManager.PlayerInventoryJSON.all_items
+  langs:
+  - csharp
+  - vb
+  name: DataManager.PlayerInventoryJSON
+  nameWithType: DataManager.PlayerInventoryJSON
+  fullName: TaleOfTiles.Data.DataManager.PlayerInventoryJSON
+  type: Struct
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: PlayerInventoryJSON
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: private struct DataManager.PlayerInventoryJSON
+    content.vb: Private Structure DataManager.PlayerInventoryJSON
+- uid: TaleOfTiles.Data.DataManager.PlayerInventoryJSON.all_items
+  commentId: F:TaleOfTiles.Data.DataManager.PlayerInventoryJSON.all_items
+  id: all_items
+  parent: TaleOfTiles.Data.DataManager.PlayerInventoryJSON
+  langs:
+  - csharp
+  - vb
+  name: all_items
+  nameWithType: DataManager.PlayerInventoryJSON.all_items
+  fullName: TaleOfTiles.Data.DataManager.PlayerInventoryJSON.all_items
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: all_items
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: public string[] all_items
+    return:
+      type: System.String[]
+    content.vb: Public all_items As String()
+- uid: TaleOfTiles.Data.DataManager.PlayerInventoryJSON.active_items
+  commentId: F:TaleOfTiles.Data.DataManager.PlayerInventoryJSON.active_items
+  id: active_items
+  parent: TaleOfTiles.Data.DataManager.PlayerInventoryJSON
+  langs:
+  - csharp
+  - vb
+  name: active_items
+  nameWithType: DataManager.PlayerInventoryJSON.active_items
+  fullName: TaleOfTiles.Data.DataManager.PlayerInventoryJSON.active_items
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: active_items
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: public DataManager.ActiveItemJSON[] active_items
+    return:
+      type: TaleOfTiles.Data.DataManager.ActiveItemJSON[]
+    content.vb: Public active_items As DataManager.ActiveItemJSON()
+references:
+- uid: TaleOfTiles.Data
+  commentId: N:TaleOfTiles.Data
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Data
+  nameWithType: TaleOfTiles.Data
+  fullName: TaleOfTiles.Data
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Data.DataManager.ActiveItemJSON[]
+  isExternal: true
+  href: TaleOfTiles.Data.DataManager.ActiveItemJSON.html
+  name: ActiveItemJSON[]
+  nameWithType: DataManager.ActiveItemJSON[]
+  fullName: TaleOfTiles.Data.DataManager.ActiveItemJSON[]
+  nameWithType.vb: DataManager.ActiveItemJSON()
+  fullName.vb: TaleOfTiles.Data.DataManager.ActiveItemJSON()
+  name.vb: ActiveItemJSON()
+  spec.csharp:
+  - uid: TaleOfTiles.Data.DataManager.ActiveItemJSON
+    name: ActiveItemJSON
+    href: TaleOfTiles.Data.DataManager.ActiveItemJSON.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: TaleOfTiles.Data.DataManager.ActiveItemJSON
+    name: ActiveItemJSON
+    href: TaleOfTiles.Data.DataManager.ActiveItemJSON.html
+  - name: (
+  - name: )

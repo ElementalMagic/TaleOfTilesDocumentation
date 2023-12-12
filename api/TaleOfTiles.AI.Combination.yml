@@ -1,0 +1,561 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.AI.Combination
+  commentId: T:TaleOfTiles.AI.Combination
+  id: Combination
+  parent: TaleOfTiles.AI
+  children:
+  - TaleOfTiles.AI.Combination.#ctor
+  - TaleOfTiles.AI.Combination.#ctor(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  - TaleOfTiles.AI.Combination.FindFirstCombo(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  - TaleOfTiles.AI.Combination.GamePieceListString(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  - TaleOfTiles.AI.Combination.SearchConnectedPiece(TaleOfTiles.AI.VirtualGamePiece,System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece},System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  - TaleOfTiles.AI.Combination.SplitIntoCombos
+  - TaleOfTiles.AI.Combination.gamePieces
+  - TaleOfTiles.AI.Combination.gamePiecesCount
+  langs:
+  - csharp
+  - vb
+  name: Combination
+  nameWithType: Combination
+  fullName: TaleOfTiles.AI.Combination
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Combination
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 200
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Represents a combination of game pieces.
+  example: []
+  syntax:
+    content: public class Combination
+    content.vb: Public Class Combination
+  inheritance:
+  - System.Object
+- uid: TaleOfTiles.AI.Combination.gamePieces
+  commentId: F:TaleOfTiles.AI.Combination.gamePieces
+  id: gamePieces
+  parent: TaleOfTiles.AI.Combination
+  langs:
+  - csharp
+  - vb
+  name: gamePieces
+  nameWithType: Combination.gamePieces
+  fullName: TaleOfTiles.AI.Combination.gamePieces
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gamePieces
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 202
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  syntax:
+    content: public List<VirtualGamePiece> gamePieces
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece}
+    content.vb: Public gamePieces As List(Of VirtualGamePiece)
+- uid: TaleOfTiles.AI.Combination.#ctor
+  commentId: M:TaleOfTiles.AI.Combination.#ctor
+  id: '#ctor'
+  parent: TaleOfTiles.AI.Combination
+  langs:
+  - csharp
+  - vb
+  name: Combination()
+  nameWithType: Combination.Combination()
+  fullName: TaleOfTiles.AI.Combination.Combination()
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 207
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Default constructor for a combination.
+  example: []
+  syntax:
+    content: public Combination()
+    content.vb: Public Sub New()
+  overload: TaleOfTiles.AI.Combination.#ctor*
+  nameWithType.vb: Combination.New()
+  fullName.vb: TaleOfTiles.AI.Combination.New()
+  name.vb: New()
+- uid: TaleOfTiles.AI.Combination.#ctor(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  commentId: M:TaleOfTiles.AI.Combination.#ctor(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  id: '#ctor(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})'
+  parent: TaleOfTiles.AI.Combination
+  langs:
+  - csharp
+  - vb
+  name: Combination(List<VirtualGamePiece>)
+  nameWithType: Combination.Combination(List<VirtualGamePiece>)
+  fullName: TaleOfTiles.AI.Combination.Combination(System.Collections.Generic.List<TaleOfTiles.AI.VirtualGamePiece>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: .ctor
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 215
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Constructor for creating a combination with a list of game pieces.
+  example: []
+  syntax:
+    content: public Combination(List<VirtualGamePiece> gamePieces)
+    parameters:
+    - id: gamePieces
+      type: System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece}
+      description: List of VirtualGamePiece objects to form the combination.
+    content.vb: Public Sub New(gamePieces As List(Of VirtualGamePiece))
+  overload: TaleOfTiles.AI.Combination.#ctor*
+  nameWithType.vb: Combination.New(List(Of VirtualGamePiece))
+  fullName.vb: TaleOfTiles.AI.Combination.New(System.Collections.Generic.List(Of TaleOfTiles.AI.VirtualGamePiece))
+  name.vb: New(List(Of VirtualGamePiece))
+- uid: TaleOfTiles.AI.Combination.gamePiecesCount
+  commentId: P:TaleOfTiles.AI.Combination.gamePiecesCount
+  id: gamePiecesCount
+  parent: TaleOfTiles.AI.Combination
+  langs:
+  - csharp
+  - vb
+  name: gamePiecesCount
+  nameWithType: Combination.gamePiecesCount
+  fullName: TaleOfTiles.AI.Combination.gamePiecesCount
+  type: Property
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gamePiecesCount
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 220
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  syntax:
+    content: public int gamePiecesCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property gamePiecesCount As Integer
+  overload: TaleOfTiles.AI.Combination.gamePiecesCount*
+- uid: TaleOfTiles.AI.Combination.SearchConnectedPiece(TaleOfTiles.AI.VirtualGamePiece,System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece},System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  commentId: M:TaleOfTiles.AI.Combination.SearchConnectedPiece(TaleOfTiles.AI.VirtualGamePiece,System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece},System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  id: SearchConnectedPiece(TaleOfTiles.AI.VirtualGamePiece,System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece},System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  parent: TaleOfTiles.AI.Combination
+  langs:
+  - csharp
+  - vb
+  name: SearchConnectedPiece(VirtualGamePiece, List<VirtualGamePiece>, List<VirtualGamePiece>)
+  nameWithType: Combination.SearchConnectedPiece(VirtualGamePiece, List<VirtualGamePiece>, List<VirtualGamePiece>)
+  fullName: TaleOfTiles.AI.Combination.SearchConnectedPiece(TaleOfTiles.AI.VirtualGamePiece, System.Collections.Generic.List<TaleOfTiles.AI.VirtualGamePiece>, System.Collections.Generic.List<TaleOfTiles.AI.VirtualGamePiece>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SearchConnectedPiece
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 234
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Searches for connected pieces matching the caller piece and adds them to the matches list.
+  example: []
+  syntax:
+    content: private void SearchConnectedPiece(VirtualGamePiece caller_vp, List<VirtualGamePiece> rest, List<VirtualGamePiece> matches)
+    parameters:
+    - id: caller_vp
+      type: TaleOfTiles.AI.VirtualGamePiece
+      description: The calling virtual game piece.
+    - id: rest
+      type: System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece}
+      description: List of remaining game pieces to search.
+    - id: matches
+      type: System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece}
+      description: List to add matching game pieces to.
+    content.vb: Private Sub SearchConnectedPiece(caller_vp As VirtualGamePiece, rest As List(Of VirtualGamePiece), matches As List(Of VirtualGamePiece))
+  overload: TaleOfTiles.AI.Combination.SearchConnectedPiece*
+  nameWithType.vb: Combination.SearchConnectedPiece(VirtualGamePiece, List(Of VirtualGamePiece), List(Of VirtualGamePiece))
+  fullName.vb: TaleOfTiles.AI.Combination.SearchConnectedPiece(TaleOfTiles.AI.VirtualGamePiece, System.Collections.Generic.List(Of TaleOfTiles.AI.VirtualGamePiece), System.Collections.Generic.List(Of TaleOfTiles.AI.VirtualGamePiece))
+  name.vb: SearchConnectedPiece(VirtualGamePiece, List(Of VirtualGamePiece), List(Of VirtualGamePiece))
+- uid: TaleOfTiles.AI.Combination.FindFirstCombo(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  commentId: M:TaleOfTiles.AI.Combination.FindFirstCombo(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  id: FindFirstCombo(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  parent: TaleOfTiles.AI.Combination
+  langs:
+  - csharp
+  - vb
+  name: FindFirstCombo(List<VirtualGamePiece>)
+  nameWithType: Combination.FindFirstCombo(List<VirtualGamePiece>)
+  fullName: TaleOfTiles.AI.Combination.FindFirstCombo(System.Collections.Generic.List<TaleOfTiles.AI.VirtualGamePiece>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: FindFirstCombo
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 277
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Finds the first combination of matching game pieces in the given list.
+  example: []
+  syntax:
+    content: private List<VirtualGamePiece> FindFirstCombo(List<VirtualGamePiece> input_list)
+    parameters:
+    - id: input_list
+      type: System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece}
+      description: List of game pieces to search for combinations.
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece}
+      description: List of matching game pieces forming a combination.
+    content.vb: Private Function FindFirstCombo(input_list As List(Of VirtualGamePiece)) As List(Of VirtualGamePiece)
+  overload: TaleOfTiles.AI.Combination.FindFirstCombo*
+  nameWithType.vb: Combination.FindFirstCombo(List(Of VirtualGamePiece))
+  fullName.vb: TaleOfTiles.AI.Combination.FindFirstCombo(System.Collections.Generic.List(Of TaleOfTiles.AI.VirtualGamePiece))
+  name.vb: FindFirstCombo(List(Of VirtualGamePiece))
+- uid: TaleOfTiles.AI.Combination.GamePieceListString(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  commentId: M:TaleOfTiles.AI.Combination.GamePieceListString(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  id: GamePieceListString(System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece})
+  parent: TaleOfTiles.AI.Combination
+  langs:
+  - csharp
+  - vb
+  name: GamePieceListString(List<VirtualGamePiece>)
+  nameWithType: Combination.GamePieceListString(List<VirtualGamePiece>)
+  fullName: TaleOfTiles.AI.Combination.GamePieceListString(System.Collections.Generic.List<TaleOfTiles.AI.VirtualGamePiece>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: GamePieceListString
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 302
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Converts a list of game pieces to a string representation.
+  example: []
+  syntax:
+    content: public static string GamePieceListString(List<VirtualGamePiece> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece}
+      description: List of VirtualGamePiece objects.
+    return:
+      type: System.String
+      description: A string representing the list of game pieces.
+    content.vb: Public Shared Function GamePieceListString(list As List(Of VirtualGamePiece)) As String
+  overload: TaleOfTiles.AI.Combination.GamePieceListString*
+  nameWithType.vb: Combination.GamePieceListString(List(Of VirtualGamePiece))
+  fullName.vb: TaleOfTiles.AI.Combination.GamePieceListString(System.Collections.Generic.List(Of TaleOfTiles.AI.VirtualGamePiece))
+  name.vb: GamePieceListString(List(Of VirtualGamePiece))
+- uid: TaleOfTiles.AI.Combination.SplitIntoCombos
+  commentId: M:TaleOfTiles.AI.Combination.SplitIntoCombos
+  id: SplitIntoCombos
+  parent: TaleOfTiles.AI.Combination
+  langs:
+  - csharp
+  - vb
+  name: SplitIntoCombos()
+  nameWithType: Combination.SplitIntoCombos()
+  fullName: TaleOfTiles.AI.Combination.SplitIntoCombos()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/AI/AIBehaviour.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: SplitIntoCombos
+    path: ../Assets/Scripts/AI/AIBehaviour.cs
+    startLine: 319
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.AI
+  summary: Splits the current combination into multiple combinations based on matching game pieces.
+  example: []
+  syntax:
+    content: public List<Combination> SplitIntoCombos()
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.AI.Combination}
+      description: A list of combinations, each containing a group of matching game pieces.
+    content.vb: Public Function SplitIntoCombos() As List(Of Combination)
+  overload: TaleOfTiles.AI.Combination.SplitIntoCombos*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Thrown when the number of iterations exceeds a set limit, indicating a possible infinite loop.
+references:
+- uid: TaleOfTiles.AI
+  commentId: N:TaleOfTiles.AI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.AI
+  nameWithType: TaleOfTiles.AI
+  fullName: TaleOfTiles.AI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.AI
+    name: AI
+    href: TaleOfTiles.AI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.AI
+    name: AI
+    href: TaleOfTiles.AI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.AI.VirtualGamePiece}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<VirtualGamePiece>
+  nameWithType: List<VirtualGamePiece>
+  fullName: System.Collections.Generic.List<TaleOfTiles.AI.VirtualGamePiece>
+  nameWithType.vb: List(Of VirtualGamePiece)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.AI.VirtualGamePiece)
+  name.vb: List(Of VirtualGamePiece)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.AI.VirtualGamePiece
+    name: VirtualGamePiece
+    href: TaleOfTiles.AI.VirtualGamePiece.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.AI.VirtualGamePiece
+    name: VirtualGamePiece
+    href: TaleOfTiles.AI.VirtualGamePiece.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TaleOfTiles.AI.Combination.#ctor*
+  commentId: Overload:TaleOfTiles.AI.Combination.#ctor
+  href: TaleOfTiles.AI.Combination.html#TaleOfTiles_AI_Combination__ctor
+  name: Combination
+  nameWithType: Combination.Combination
+  fullName: TaleOfTiles.AI.Combination.Combination
+  nameWithType.vb: Combination.New
+  fullName.vb: TaleOfTiles.AI.Combination.New
+  name.vb: New
+- uid: TaleOfTiles.AI.Combination.gamePiecesCount*
+  commentId: Overload:TaleOfTiles.AI.Combination.gamePiecesCount
+  href: TaleOfTiles.AI.Combination.html#TaleOfTiles_AI_Combination_gamePiecesCount
+  name: gamePiecesCount
+  nameWithType: Combination.gamePiecesCount
+  fullName: TaleOfTiles.AI.Combination.gamePiecesCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TaleOfTiles.AI.Combination.SearchConnectedPiece*
+  commentId: Overload:TaleOfTiles.AI.Combination.SearchConnectedPiece
+  href: TaleOfTiles.AI.Combination.html#TaleOfTiles_AI_Combination_SearchConnectedPiece_TaleOfTiles_AI_VirtualGamePiece_System_Collections_Generic_List_TaleOfTiles_AI_VirtualGamePiece__System_Collections_Generic_List_TaleOfTiles_AI_VirtualGamePiece__
+  name: SearchConnectedPiece
+  nameWithType: Combination.SearchConnectedPiece
+  fullName: TaleOfTiles.AI.Combination.SearchConnectedPiece
+- uid: TaleOfTiles.AI.VirtualGamePiece
+  commentId: T:TaleOfTiles.AI.VirtualGamePiece
+  parent: TaleOfTiles.AI
+  href: TaleOfTiles.AI.VirtualGamePiece.html
+  name: VirtualGamePiece
+  nameWithType: VirtualGamePiece
+  fullName: TaleOfTiles.AI.VirtualGamePiece
+- uid: TaleOfTiles.AI.Combination.FindFirstCombo*
+  commentId: Overload:TaleOfTiles.AI.Combination.FindFirstCombo
+  href: TaleOfTiles.AI.Combination.html#TaleOfTiles_AI_Combination_FindFirstCombo_System_Collections_Generic_List_TaleOfTiles_AI_VirtualGamePiece__
+  name: FindFirstCombo
+  nameWithType: Combination.FindFirstCombo
+  fullName: TaleOfTiles.AI.Combination.FindFirstCombo
+- uid: TaleOfTiles.AI.Combination.GamePieceListString*
+  commentId: Overload:TaleOfTiles.AI.Combination.GamePieceListString
+  href: TaleOfTiles.AI.Combination.html#TaleOfTiles_AI_Combination_GamePieceListString_System_Collections_Generic_List_TaleOfTiles_AI_VirtualGamePiece__
+  name: GamePieceListString
+  nameWithType: Combination.GamePieceListString
+  fullName: TaleOfTiles.AI.Combination.GamePieceListString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: TaleOfTiles.AI.Combination.SplitIntoCombos*
+  commentId: Overload:TaleOfTiles.AI.Combination.SplitIntoCombos
+  href: TaleOfTiles.AI.Combination.html#TaleOfTiles_AI_Combination_SplitIntoCombos
+  name: SplitIntoCombos
+  nameWithType: Combination.SplitIntoCombos
+  fullName: TaleOfTiles.AI.Combination.SplitIntoCombos
+- uid: System.Collections.Generic.List{TaleOfTiles.AI.Combination}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.AI.Combination}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Combination>
+  nameWithType: List<Combination>
+  fullName: System.Collections.Generic.List<TaleOfTiles.AI.Combination>
+  nameWithType.vb: List(Of Combination)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.AI.Combination)
+  name.vb: List(Of Combination)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.AI.Combination
+    name: Combination
+    href: TaleOfTiles.AI.Combination.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.AI.Combination
+    name: Combination
+    href: TaleOfTiles.AI.Combination.html
+  - name: )

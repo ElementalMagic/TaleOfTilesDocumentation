@@ -1,0 +1,375 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Arena.BoardShuffler
+  commentId: T:TaleOfTiles.Arena.BoardShuffler
+  id: BoardShuffler
+  parent: TaleOfTiles.Arena
+  children:
+  - TaleOfTiles.Arena.BoardShuffler.MovePieces(TaleOfTiles.Arena.GamePiece[0:,0:],System.Single)
+  - TaleOfTiles.Arena.BoardShuffler.RemoveNormalPieces(TaleOfTiles.Arena.GamePiece[0:,0:])
+  - TaleOfTiles.Arena.BoardShuffler.ShuffleList(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})
+  langs:
+  - csharp
+  - vb
+  name: BoardShuffler
+  nameWithType: BoardShuffler
+  fullName: TaleOfTiles.Arena.BoardShuffler
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/BoardShuffler.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: BoardShuffler
+    path: ../Assets/Scripts/BoardShuffler.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Provides methods to shuffle game pieces on the board.
+  example: []
+  syntax:
+    content: 'public class BoardShuffler : MonoBehaviour'
+    content.vb: Public Class BoardShuffler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.Arena.BoardShuffler.RemoveNormalPieces(TaleOfTiles.Arena.GamePiece[0:,0:])
+  commentId: M:TaleOfTiles.Arena.BoardShuffler.RemoveNormalPieces(TaleOfTiles.Arena.GamePiece[0:,0:])
+  id: RemoveNormalPieces(TaleOfTiles.Arena.GamePiece[0:,0:])
+  parent: TaleOfTiles.Arena.BoardShuffler
+  langs:
+  - csharp
+  - vb
+  name: RemoveNormalPieces(GamePiece[,])
+  nameWithType: BoardShuffler.RemoveNormalPieces(GamePiece[,])
+  fullName: TaleOfTiles.Arena.BoardShuffler.RemoveNormalPieces(TaleOfTiles.Arena.GamePiece[,])
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BoardShuffler.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: RemoveNormalPieces
+    path: ../Assets/Scripts/BoardShuffler.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Removes non-bomb and collectible pieces from your GamePiece array and returns them as a List.
+  example: []
+  syntax:
+    content: public List<GamePiece> RemoveNormalPieces(GamePiece[,] allPieces)
+    parameters:
+    - id: allPieces
+      type: TaleOfTiles.Arena.GamePiece[,]
+      description: The array of all game pieces.
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece}
+      description: A list of game pieces that are not bombs or collectibles.
+    content.vb: Public Function RemoveNormalPieces(allPieces As GamePiece(,)) As List(Of GamePiece)
+  overload: TaleOfTiles.Arena.BoardShuffler.RemoveNormalPieces*
+  nameWithType.vb: BoardShuffler.RemoveNormalPieces(GamePiece(,))
+  fullName.vb: TaleOfTiles.Arena.BoardShuffler.RemoveNormalPieces(TaleOfTiles.Arena.GamePiece(,))
+  name.vb: RemoveNormalPieces(GamePiece(,))
+- uid: TaleOfTiles.Arena.BoardShuffler.ShuffleList(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})
+  commentId: M:TaleOfTiles.Arena.BoardShuffler.ShuffleList(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})
+  id: ShuffleList(System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece})
+  parent: TaleOfTiles.Arena.BoardShuffler
+  langs:
+  - csharp
+  - vb
+  name: ShuffleList(List<GamePiece>)
+  nameWithType: BoardShuffler.ShuffleList(List<GamePiece>)
+  fullName: TaleOfTiles.Arena.BoardShuffler.ShuffleList(System.Collections.Generic.List<TaleOfTiles.Arena.GamePiece>)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BoardShuffler.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: ShuffleList
+    path: ../Assets/Scripts/BoardShuffler.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Shuffles a list of GamePieces in place using Fisher-Yates shuffle.
+  example: []
+  syntax:
+    content: public void ShuffleList(List<GamePiece> piecesToShuffle)
+    parameters:
+    - id: piecesToShuffle
+      type: System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece}
+      description: The list of game pieces to shuffle.
+    content.vb: Public Sub ShuffleList(piecesToShuffle As List(Of GamePiece))
+  overload: TaleOfTiles.Arena.BoardShuffler.ShuffleList*
+  nameWithType.vb: BoardShuffler.ShuffleList(List(Of GamePiece))
+  fullName.vb: TaleOfTiles.Arena.BoardShuffler.ShuffleList(System.Collections.Generic.List(Of TaleOfTiles.Arena.GamePiece))
+  name.vb: ShuffleList(List(Of GamePiece))
+- uid: TaleOfTiles.Arena.BoardShuffler.MovePieces(TaleOfTiles.Arena.GamePiece[0:,0:],System.Single)
+  commentId: M:TaleOfTiles.Arena.BoardShuffler.MovePieces(TaleOfTiles.Arena.GamePiece[0:,0:],System.Single)
+  id: MovePieces(TaleOfTiles.Arena.GamePiece[0:,0:],System.Single)
+  parent: TaleOfTiles.Arena.BoardShuffler
+  langs:
+  - csharp
+  - vb
+  name: MovePieces(GamePiece[,], float)
+  nameWithType: BoardShuffler.MovePieces(GamePiece[,], float)
+  fullName: TaleOfTiles.Arena.BoardShuffler.MovePieces(TaleOfTiles.Arena.GamePiece[,], float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/BoardShuffler.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: MovePieces
+    path: ../Assets/Scripts/BoardShuffler.cs
+    startLine: 94
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Arena
+  summary: Moves GamePieces into onscreen positions after being shuffled in the array.
+  example: []
+  syntax:
+    content: public void MovePieces(GamePiece[,] allPieces, float swapTime = 0.5)
+    parameters:
+    - id: allPieces
+      type: TaleOfTiles.Arena.GamePiece[,]
+      description: The array of all game pieces.
+    - id: swapTime
+      type: System.Single
+      description: The time it takes for a game piece to swap positions.
+    content.vb: Public Sub MovePieces(allPieces As GamePiece(,), swapTime As Single = 0.5)
+  overload: TaleOfTiles.Arena.BoardShuffler.MovePieces*
+  nameWithType.vb: BoardShuffler.MovePieces(GamePiece(,), Single)
+  fullName.vb: TaleOfTiles.Arena.BoardShuffler.MovePieces(TaleOfTiles.Arena.GamePiece(,), Single)
+  name.vb: MovePieces(GamePiece(,), Single)
+references:
+- uid: TaleOfTiles.Arena
+  commentId: N:TaleOfTiles.Arena
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Arena
+  nameWithType: TaleOfTiles.Arena
+  fullName: TaleOfTiles.Arena
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Arena
+    name: Arena
+    href: TaleOfTiles.Arena.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TaleOfTiles.Arena.BoardShuffler.RemoveNormalPieces*
+  commentId: Overload:TaleOfTiles.Arena.BoardShuffler.RemoveNormalPieces
+  href: TaleOfTiles.Arena.BoardShuffler.html#TaleOfTiles_Arena_BoardShuffler_RemoveNormalPieces_TaleOfTiles_Arena_GamePiece_0
+  name: RemoveNormalPieces
+  nameWithType: BoardShuffler.RemoveNormalPieces
+  fullName: TaleOfTiles.Arena.BoardShuffler.RemoveNormalPieces
+- uid: TaleOfTiles.Arena.GamePiece[,]
+  isExternal: true
+  href: TaleOfTiles.Arena.GamePiece.html
+  name: GamePiece[,]
+  nameWithType: GamePiece[,]
+  fullName: TaleOfTiles.Arena.GamePiece[,]
+  nameWithType.vb: GamePiece(,)
+  fullName.vb: TaleOfTiles.Arena.GamePiece(,)
+  name.vb: GamePiece(,)
+  spec.csharp:
+  - uid: TaleOfTiles.Arena.GamePiece
+    name: GamePiece
+    href: TaleOfTiles.Arena.GamePiece.html
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: TaleOfTiles.Arena.GamePiece
+    name: GamePiece
+    href: TaleOfTiles.Arena.GamePiece.html
+  - name: (
+  - name: ','
+  - name: )
+- uid: System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Arena.GamePiece}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GamePiece>
+  nameWithType: List<GamePiece>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Arena.GamePiece>
+  nameWithType.vb: List(Of GamePiece)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Arena.GamePiece)
+  name.vb: List(Of GamePiece)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Arena.GamePiece
+    name: GamePiece
+    href: TaleOfTiles.Arena.GamePiece.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Arena.GamePiece
+    name: GamePiece
+    href: TaleOfTiles.Arena.GamePiece.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TaleOfTiles.Arena.BoardShuffler.ShuffleList*
+  commentId: Overload:TaleOfTiles.Arena.BoardShuffler.ShuffleList
+  href: TaleOfTiles.Arena.BoardShuffler.html#TaleOfTiles_Arena_BoardShuffler_ShuffleList_System_Collections_Generic_List_TaleOfTiles_Arena_GamePiece__
+  name: ShuffleList
+  nameWithType: BoardShuffler.ShuffleList
+  fullName: TaleOfTiles.Arena.BoardShuffler.ShuffleList
+- uid: TaleOfTiles.Arena.BoardShuffler.MovePieces*
+  commentId: Overload:TaleOfTiles.Arena.BoardShuffler.MovePieces
+  href: TaleOfTiles.Arena.BoardShuffler.html#TaleOfTiles_Arena_BoardShuffler_MovePieces_TaleOfTiles_Arena_GamePiece_0
+  name: MovePieces
+  nameWithType: BoardShuffler.MovePieces
+  fullName: TaleOfTiles.Arena.BoardShuffler.MovePieces
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

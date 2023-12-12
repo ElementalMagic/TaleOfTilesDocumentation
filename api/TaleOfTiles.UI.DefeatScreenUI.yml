@@ -1,0 +1,695 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.UI.DefeatScreenUI
+  commentId: T:TaleOfTiles.UI.DefeatScreenUI
+  id: DefeatScreenUI
+  parent: TaleOfTiles.UI
+  children:
+  - TaleOfTiles.UI.DefeatScreenUI.Hide
+  - TaleOfTiles.UI.DefeatScreenUI.HideCoroutine
+  - TaleOfTiles.UI.DefeatScreenUI.Popup
+  - TaleOfTiles.UI.DefeatScreenUI.Start
+  - TaleOfTiles.UI.DefeatScreenUI.UpdateScreen(System.Int32,System.Int32)
+  - TaleOfTiles.UI.DefeatScreenUI.background
+  - TaleOfTiles.UI.DefeatScreenUI.background_init_color
+  - TaleOfTiles.UI.DefeatScreenUI.button_go_home
+  - TaleOfTiles.UI.DefeatScreenUI.button_reload_level
+  - TaleOfTiles.UI.DefeatScreenUI.exp_text
+  - TaleOfTiles.UI.DefeatScreenUI.gold_text
+  - TaleOfTiles.UI.DefeatScreenUI.message_text
+  - TaleOfTiles.UI.DefeatScreenUI.popup_form
+  - TaleOfTiles.UI.DefeatScreenUI.popup_init_pos
+  langs:
+  - csharp
+  - vb
+  name: DefeatScreenUI
+  nameWithType: DefeatScreenUI
+  fullName: TaleOfTiles.UI.DefeatScreenUI
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: DefeatScreenUI
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Handles the display and functionality of the defeat screen in the UI.
+  example: []
+  syntax:
+    content: 'public class DefeatScreenUI : MonoBehaviour'
+    content.vb: Public Class DefeatScreenUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: TaleOfTiles.UI.DefeatScreenUI.gold_text
+  commentId: F:TaleOfTiles.UI.DefeatScreenUI.gold_text
+  id: gold_text
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: gold_text
+  nameWithType: DefeatScreenUI.gold_text
+  fullName: TaleOfTiles.UI.DefeatScreenUI.gold_text
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: gold_text
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The UI element for displaying the gold.
+  example: []
+  syntax:
+    content: public TextMeshProUGUI gold_text
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public gold_text As TextMeshProUGUI
+- uid: TaleOfTiles.UI.DefeatScreenUI.exp_text
+  commentId: F:TaleOfTiles.UI.DefeatScreenUI.exp_text
+  id: exp_text
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: exp_text
+  nameWithType: DefeatScreenUI.exp_text
+  fullName: TaleOfTiles.UI.DefeatScreenUI.exp_text
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: exp_text
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The UI element for displaying the experience points.
+  example: []
+  syntax:
+    content: public TextMeshProUGUI exp_text
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public exp_text As TextMeshProUGUI
+- uid: TaleOfTiles.UI.DefeatScreenUI.message_text
+  commentId: F:TaleOfTiles.UI.DefeatScreenUI.message_text
+  id: message_text
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: message_text
+  nameWithType: DefeatScreenUI.message_text
+  fullName: TaleOfTiles.UI.DefeatScreenUI.message_text
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: message_text
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The UI element for displaying the message text.
+  example: []
+  syntax:
+    content: public TextMeshProUGUI message_text
+    return:
+      type: TMPro.TextMeshProUGUI
+    content.vb: Public message_text As TextMeshProUGUI
+- uid: TaleOfTiles.UI.DefeatScreenUI.background
+  commentId: F:TaleOfTiles.UI.DefeatScreenUI.background
+  id: background
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: background
+  nameWithType: DefeatScreenUI.background
+  fullName: TaleOfTiles.UI.DefeatScreenUI.background
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: background
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The UI element for displaying the background.
+  example: []
+  syntax:
+    content: public Image background
+    return:
+      type: UnityEngine.UI.Image
+    content.vb: Public background As Image
+- uid: TaleOfTiles.UI.DefeatScreenUI.popup_form
+  commentId: F:TaleOfTiles.UI.DefeatScreenUI.popup_form
+  id: popup_form
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: popup_form
+  nameWithType: DefeatScreenUI.popup_form
+  fullName: TaleOfTiles.UI.DefeatScreenUI.popup_form
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: popup_form
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The form for the popup in the UI.
+  example: []
+  syntax:
+    content: public RectTransform popup_form
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: Public popup_form As RectTransform
+- uid: TaleOfTiles.UI.DefeatScreenUI.background_init_color
+  commentId: F:TaleOfTiles.UI.DefeatScreenUI.background_init_color
+  id: background_init_color
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: background_init_color
+  nameWithType: DefeatScreenUI.background_init_color
+  fullName: TaleOfTiles.UI.DefeatScreenUI.background_init_color
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: background_init_color
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The initial color of the background.
+  example: []
+  syntax:
+    content: private Color background_init_color
+    return:
+      type: UnityEngine.Color
+    content.vb: Private background_init_color As Color
+- uid: TaleOfTiles.UI.DefeatScreenUI.popup_init_pos
+  commentId: F:TaleOfTiles.UI.DefeatScreenUI.popup_init_pos
+  id: popup_init_pos
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: popup_init_pos
+  nameWithType: DefeatScreenUI.popup_init_pos
+  fullName: TaleOfTiles.UI.DefeatScreenUI.popup_init_pos
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: popup_init_pos
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The initial position of the popup.
+  example: []
+  syntax:
+    content: private Vector3 popup_init_pos
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Private popup_init_pos As Vector3
+- uid: TaleOfTiles.UI.DefeatScreenUI.button_go_home
+  commentId: F:TaleOfTiles.UI.DefeatScreenUI.button_go_home
+  id: button_go_home
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: button_go_home
+  nameWithType: DefeatScreenUI.button_go_home
+  fullName: TaleOfTiles.UI.DefeatScreenUI.button_go_home
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: button_go_home
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The button for going back home.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Button button_go_home
+    return:
+      type: UnityEngine.UI.Button
+    content.vb: >-
+      <SerializeField>
+
+      Private button_go_home As Button
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.UI.DefeatScreenUI.button_reload_level
+  commentId: F:TaleOfTiles.UI.DefeatScreenUI.button_reload_level
+  id: button_reload_level
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: button_reload_level
+  nameWithType: DefeatScreenUI.button_reload_level
+  fullName: TaleOfTiles.UI.DefeatScreenUI.button_reload_level
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: button_reload_level
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: The button for reloading the level.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      private Button button_reload_level
+    return:
+      type: UnityEngine.UI.Button
+    content.vb: >-
+      <SerializeField>
+
+      Private button_reload_level As Button
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: TaleOfTiles.UI.DefeatScreenUI.Start
+  commentId: M:TaleOfTiles.UI.DefeatScreenUI.Start
+  id: Start
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: DefeatScreenUI.Start()
+  fullName: TaleOfTiles.UI.DefeatScreenUI.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Start
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Initializes the defeat screen.
+  example: []
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: TaleOfTiles.UI.DefeatScreenUI.Start*
+- uid: TaleOfTiles.UI.DefeatScreenUI.UpdateScreen(System.Int32,System.Int32)
+  commentId: M:TaleOfTiles.UI.DefeatScreenUI.UpdateScreen(System.Int32,System.Int32)
+  id: UpdateScreen(System.Int32,System.Int32)
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: UpdateScreen(int, int)
+  nameWithType: DefeatScreenUI.UpdateScreen(int, int)
+  fullName: TaleOfTiles.UI.DefeatScreenUI.UpdateScreen(int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: UpdateScreen
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Updates the screen with the provided gold and experience points.
+  example: []
+  syntax:
+    content: public void UpdateScreen(int gold, int exp)
+    parameters:
+    - id: gold
+      type: System.Int32
+      description: The amount of gold to display.
+    - id: exp
+      type: System.Int32
+      description: The amount of experience points to display.
+    content.vb: Public Sub UpdateScreen(gold As Integer, exp As Integer)
+  overload: TaleOfTiles.UI.DefeatScreenUI.UpdateScreen*
+  nameWithType.vb: DefeatScreenUI.UpdateScreen(Integer, Integer)
+  fullName.vb: TaleOfTiles.UI.DefeatScreenUI.UpdateScreen(Integer, Integer)
+  name.vb: UpdateScreen(Integer, Integer)
+- uid: TaleOfTiles.UI.DefeatScreenUI.Popup
+  commentId: M:TaleOfTiles.UI.DefeatScreenUI.Popup
+  id: Popup
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: Popup()
+  nameWithType: DefeatScreenUI.Popup()
+  fullName: TaleOfTiles.UI.DefeatScreenUI.Popup()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Popup
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 85
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Triggers the popup in the UI.
+  example: []
+  syntax:
+    content: public void Popup()
+    content.vb: Public Sub Popup()
+  overload: TaleOfTiles.UI.DefeatScreenUI.Popup*
+- uid: TaleOfTiles.UI.DefeatScreenUI.Hide
+  commentId: M:TaleOfTiles.UI.DefeatScreenUI.Hide
+  id: Hide
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: Hide()
+  nameWithType: DefeatScreenUI.Hide()
+  fullName: TaleOfTiles.UI.DefeatScreenUI.Hide()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: Hide
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Hides the defeat screen.
+  example: []
+  syntax:
+    content: public void Hide()
+    content.vb: Public Sub Hide()
+  overload: TaleOfTiles.UI.DefeatScreenUI.Hide*
+- uid: TaleOfTiles.UI.DefeatScreenUI.HideCoroutine
+  commentId: M:TaleOfTiles.UI.DefeatScreenUI.HideCoroutine
+  id: HideCoroutine
+  parent: TaleOfTiles.UI.DefeatScreenUI
+  langs:
+  - csharp
+  - vb
+  name: HideCoroutine()
+  nameWithType: DefeatScreenUI.HideCoroutine()
+  fullName: TaleOfTiles.UI.DefeatScreenUI.HideCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/DefeatScreenUI.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: HideCoroutine
+    path: ../Assets/Scripts/DefeatScreenUI.cs
+    startLine: 105
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.UI
+  summary: Coroutine to hide the defeat screen with an animation.
+  example: []
+  syntax:
+    content: public IEnumerator HideCoroutine()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Function HideCoroutine() As IEnumerator
+  overload: TaleOfTiles.UI.DefeatScreenUI.HideCoroutine*
+references:
+- uid: TaleOfTiles.UI
+  commentId: N:TaleOfTiles.UI
+  href: TaleOfTiles.html
+  name: TaleOfTiles.UI
+  nameWithType: TaleOfTiles.UI
+  fullName: TaleOfTiles.UI
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.UI
+    name: UI
+    href: TaleOfTiles.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: TMPro.TextMeshProUGUI
+  commentId: T:TMPro.TextMeshProUGUI
+  parent: TMPro
+  name: TextMeshProUGUI
+  nameWithType: TextMeshProUGUI
+  fullName: TMPro.TextMeshProUGUI
+- uid: TMPro
+  commentId: N:TMPro
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.UI.Button
+  commentId: T:UnityEngine.UI.Button
+  parent: UnityEngine.UI
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UI.Button
+- uid: TaleOfTiles.UI.DefeatScreenUI.Start*
+  commentId: Overload:TaleOfTiles.UI.DefeatScreenUI.Start
+  href: TaleOfTiles.UI.DefeatScreenUI.html#TaleOfTiles_UI_DefeatScreenUI_Start
+  name: Start
+  nameWithType: DefeatScreenUI.Start
+  fullName: TaleOfTiles.UI.DefeatScreenUI.Start
+- uid: TaleOfTiles.UI.DefeatScreenUI.UpdateScreen*
+  commentId: Overload:TaleOfTiles.UI.DefeatScreenUI.UpdateScreen
+  href: TaleOfTiles.UI.DefeatScreenUI.html#TaleOfTiles_UI_DefeatScreenUI_UpdateScreen_System_Int32_System_Int32_
+  name: UpdateScreen
+  nameWithType: DefeatScreenUI.UpdateScreen
+  fullName: TaleOfTiles.UI.DefeatScreenUI.UpdateScreen
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TaleOfTiles.UI.DefeatScreenUI.Popup*
+  commentId: Overload:TaleOfTiles.UI.DefeatScreenUI.Popup
+  href: TaleOfTiles.UI.DefeatScreenUI.html#TaleOfTiles_UI_DefeatScreenUI_Popup
+  name: Popup
+  nameWithType: DefeatScreenUI.Popup
+  fullName: TaleOfTiles.UI.DefeatScreenUI.Popup
+- uid: TaleOfTiles.UI.DefeatScreenUI.Hide*
+  commentId: Overload:TaleOfTiles.UI.DefeatScreenUI.Hide
+  href: TaleOfTiles.UI.DefeatScreenUI.html#TaleOfTiles_UI_DefeatScreenUI_Hide
+  name: Hide
+  nameWithType: DefeatScreenUI.Hide
+  fullName: TaleOfTiles.UI.DefeatScreenUI.Hide
+- uid: TaleOfTiles.UI.DefeatScreenUI.HideCoroutine*
+  commentId: Overload:TaleOfTiles.UI.DefeatScreenUI.HideCoroutine
+  href: TaleOfTiles.UI.DefeatScreenUI.html#TaleOfTiles_UI_DefeatScreenUI_HideCoroutine
+  name: HideCoroutine
+  nameWithType: DefeatScreenUI.HideCoroutine
+  fullName: TaleOfTiles.UI.DefeatScreenUI.HideCoroutine
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections

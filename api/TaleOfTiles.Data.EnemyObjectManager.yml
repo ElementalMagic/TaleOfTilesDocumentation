@@ -1,0 +1,364 @@
+### YamlMime:ManagedReference
+items:
+- uid: TaleOfTiles.Data.EnemyObjectManager
+  commentId: T:TaleOfTiles.Data.EnemyObjectManager
+  id: EnemyObjectManager
+  parent: TaleOfTiles.Data
+  children:
+  - TaleOfTiles.Data.EnemyObjectManager.LoadAllBundleObjects
+  - TaleOfTiles.Data.EnemyObjectManager.LoadEnemiesBundleObject(System.String)
+  - TaleOfTiles.Data.EnemyObjectManager.cashed_bundles
+  - TaleOfTiles.Data.EnemyObjectManager.resourcePath
+  langs:
+  - csharp
+  - vb
+  name: EnemyObjectManager
+  nameWithType: EnemyObjectManager
+  fullName: TaleOfTiles.Data.EnemyObjectManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: EnemyObjectManager
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 852
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  summary: Manages operations related to EnemyObject bundles, including loading and retrieval.
+  example: []
+  syntax:
+    content: public class EnemyObjectManager
+    content.vb: Public Class EnemyObjectManager
+  inheritance:
+  - System.Object
+- uid: TaleOfTiles.Data.EnemyObjectManager.resourcePath
+  commentId: F:TaleOfTiles.Data.EnemyObjectManager.resourcePath
+  id: resourcePath
+  parent: TaleOfTiles.Data.EnemyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: resourcePath
+  nameWithType: EnemyObjectManager.resourcePath
+  fullName: TaleOfTiles.Data.EnemyObjectManager.resourcePath
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: resourcePath
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 854
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: private const string resourcePath = "ScriptableObjects/Enemies/Bundles/"
+    return:
+      type: System.String
+    content.vb: Private Const resourcePath As String = "ScriptableObjects/Enemies/Bundles/"
+- uid: TaleOfTiles.Data.EnemyObjectManager.cashed_bundles
+  commentId: F:TaleOfTiles.Data.EnemyObjectManager.cashed_bundles
+  id: cashed_bundles
+  parent: TaleOfTiles.Data.EnemyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: cashed_bundles
+  nameWithType: EnemyObjectManager.cashed_bundles
+  fullName: TaleOfTiles.Data.EnemyObjectManager.cashed_bundles
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: cashed_bundles
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 855
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: private List<EnemiesObjectsBundle> cashed_bundles
+    return:
+      type: System.Collections.Generic.List{TaleOfTiles.Journey.EnemiesObjectsBundle}
+    content.vb: Private cashed_bundles As List(Of EnemiesObjectsBundle)
+- uid: TaleOfTiles.Data.EnemyObjectManager.LoadAllBundleObjects
+  commentId: M:TaleOfTiles.Data.EnemyObjectManager.LoadAllBundleObjects
+  id: LoadAllBundleObjects
+  parent: TaleOfTiles.Data.EnemyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: LoadAllBundleObjects()
+  nameWithType: EnemyObjectManager.LoadAllBundleObjects()
+  fullName: TaleOfTiles.Data.EnemyObjectManager.LoadAllBundleObjects()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadAllBundleObjects
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 856
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: public EnemiesObjectsBundle[] LoadAllBundleObjects()
+    return:
+      type: TaleOfTiles.Journey.EnemiesObjectsBundle[]
+    content.vb: Public Function LoadAllBundleObjects() As EnemiesObjectsBundle()
+  overload: TaleOfTiles.Data.EnemyObjectManager.LoadAllBundleObjects*
+- uid: TaleOfTiles.Data.EnemyObjectManager.LoadEnemiesBundleObject(System.String)
+  commentId: M:TaleOfTiles.Data.EnemyObjectManager.LoadEnemiesBundleObject(System.String)
+  id: LoadEnemiesBundleObject(System.String)
+  parent: TaleOfTiles.Data.EnemyObjectManager
+  langs:
+  - csharp
+  - vb
+  name: LoadEnemiesBundleObject(string)
+  nameWithType: EnemyObjectManager.LoadEnemiesBundleObject(string)
+  fullName: TaleOfTiles.Data.EnemyObjectManager.LoadEnemiesBundleObject(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data Management/DataManager.cs
+      branch: dev
+      repo: https://github.com/ElementalMagic/Match-3-Mobile-Game.git
+    id: LoadEnemiesBundleObject
+    path: ../Assets/Scripts/Data Management/DataManager.cs
+    startLine: 870
+  assemblies:
+  - Assembly-CSharp
+  namespace: TaleOfTiles.Data
+  syntax:
+    content: public EnemiesObjectsBundle LoadEnemiesBundleObject(string bundle_id)
+    parameters:
+    - id: bundle_id
+      type: System.String
+    return:
+      type: TaleOfTiles.Journey.EnemiesObjectsBundle
+    content.vb: Public Function LoadEnemiesBundleObject(bundle_id As String) As EnemiesObjectsBundle
+  overload: TaleOfTiles.Data.EnemyObjectManager.LoadEnemiesBundleObject*
+  nameWithType.vb: EnemyObjectManager.LoadEnemiesBundleObject(String)
+  fullName.vb: TaleOfTiles.Data.EnemyObjectManager.LoadEnemiesBundleObject(String)
+  name.vb: LoadEnemiesBundleObject(String)
+references:
+- uid: TaleOfTiles.Data
+  commentId: N:TaleOfTiles.Data
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Data
+  nameWithType: TaleOfTiles.Data
+  fullName: TaleOfTiles.Data
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Data
+    name: Data
+    href: TaleOfTiles.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{TaleOfTiles.Journey.EnemiesObjectsBundle}
+  commentId: T:System.Collections.Generic.List{TaleOfTiles.Journey.EnemiesObjectsBundle}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EnemiesObjectsBundle>
+  nameWithType: List<EnemiesObjectsBundle>
+  fullName: System.Collections.Generic.List<TaleOfTiles.Journey.EnemiesObjectsBundle>
+  nameWithType.vb: List(Of EnemiesObjectsBundle)
+  fullName.vb: System.Collections.Generic.List(Of TaleOfTiles.Journey.EnemiesObjectsBundle)
+  name.vb: List(Of EnemiesObjectsBundle)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: TaleOfTiles.Journey.EnemiesObjectsBundle
+    name: EnemiesObjectsBundle
+    href: TaleOfTiles.Journey.EnemiesObjectsBundle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TaleOfTiles.Journey.EnemiesObjectsBundle
+    name: EnemiesObjectsBundle
+    href: TaleOfTiles.Journey.EnemiesObjectsBundle.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TaleOfTiles.Data.EnemyObjectManager.LoadAllBundleObjects*
+  commentId: Overload:TaleOfTiles.Data.EnemyObjectManager.LoadAllBundleObjects
+  href: TaleOfTiles.Data.EnemyObjectManager.html#TaleOfTiles_Data_EnemyObjectManager_LoadAllBundleObjects
+  name: LoadAllBundleObjects
+  nameWithType: EnemyObjectManager.LoadAllBundleObjects
+  fullName: TaleOfTiles.Data.EnemyObjectManager.LoadAllBundleObjects
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle[]
+  isExternal: true
+  href: TaleOfTiles.Journey.EnemiesObjectsBundle.html
+  name: EnemiesObjectsBundle[]
+  nameWithType: EnemiesObjectsBundle[]
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle[]
+  nameWithType.vb: EnemiesObjectsBundle()
+  fullName.vb: TaleOfTiles.Journey.EnemiesObjectsBundle()
+  name.vb: EnemiesObjectsBundle()
+  spec.csharp:
+  - uid: TaleOfTiles.Journey.EnemiesObjectsBundle
+    name: EnemiesObjectsBundle
+    href: TaleOfTiles.Journey.EnemiesObjectsBundle.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: TaleOfTiles.Journey.EnemiesObjectsBundle
+    name: EnemiesObjectsBundle
+    href: TaleOfTiles.Journey.EnemiesObjectsBundle.html
+  - name: (
+  - name: )
+- uid: TaleOfTiles.Data.EnemyObjectManager.LoadEnemiesBundleObject*
+  commentId: Overload:TaleOfTiles.Data.EnemyObjectManager.LoadEnemiesBundleObject
+  href: TaleOfTiles.Data.EnemyObjectManager.html#TaleOfTiles_Data_EnemyObjectManager_LoadEnemiesBundleObject_System_String_
+  name: LoadEnemiesBundleObject
+  nameWithType: EnemyObjectManager.LoadEnemiesBundleObject
+  fullName: TaleOfTiles.Data.EnemyObjectManager.LoadEnemiesBundleObject
+- uid: TaleOfTiles.Journey.EnemiesObjectsBundle
+  commentId: T:TaleOfTiles.Journey.EnemiesObjectsBundle
+  parent: TaleOfTiles.Journey
+  href: TaleOfTiles.Journey.EnemiesObjectsBundle.html
+  name: EnemiesObjectsBundle
+  nameWithType: EnemiesObjectsBundle
+  fullName: TaleOfTiles.Journey.EnemiesObjectsBundle
+- uid: TaleOfTiles.Journey
+  commentId: N:TaleOfTiles.Journey
+  href: TaleOfTiles.html
+  name: TaleOfTiles.Journey
+  nameWithType: TaleOfTiles.Journey
+  fullName: TaleOfTiles.Journey
+  spec.csharp:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
+  spec.vb:
+  - uid: TaleOfTiles
+    name: TaleOfTiles
+    href: TaleOfTiles.html
+  - name: .
+  - uid: TaleOfTiles.Journey
+    name: Journey
+    href: TaleOfTiles.Journey.html
